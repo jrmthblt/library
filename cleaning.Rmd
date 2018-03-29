@@ -1,0 +1,84 @@
+---
+title: "Cleaning text data"
+output: html_notebook
+---
+
+This R script clean the data scraped from Livre de Poche website.
+
+First of all, we install the dependencies we need (the project is managed by Packrat).
+```{r install dependencies}
+# FIXME : does packrat scan all R source files of the project before removing the unused packages ?
+# packrat::clean()
+# install.packages("rvest")
+# install.packages("testthat")
+# install.packages("tidyverse")
+```
+
+Then we load them :
+```{r}
+library(rvest)
+library(tidyverse)
+library(testthat)
+# Installer
+# install.packages("tm")  # pour le text mining
+# install.packages("SnowballC") # pour le text stemming
+# install.packages("wordcloud") # générateur de word-cloud 
+# install.packages("RColorBrewer") # Palettes de couleurs
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+```
+
+Now we perform some text cleanup on the dataframe we saved as a CSV file :
+
+```{r tm cleanup}
+
+# TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
+# en stats tu supposes qu'il y a une loi
+# en ML tu cherches à minimiser le coût
+
+dfBookSummaries <- read_csv("dfBookSummaries.csv")
+
+docs <- Corpus(VectorSource(dfBookSummaries$text))
+# Convertir le texte en minuscule
+docs <- tm_map(docs, content_transformer(tolower))
+# Remplacer les points par des espaces
+toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
+docs <- tm_map(docs, toSpace, "\\.")
+
+# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
+docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
+
+# Supprimer les nombres
+docs <- tm_map(docs, removeNumbers)
+# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
+docs <- tm_map(docs, removeWords, c("d'", "l'", "résumé", "où"))
+# Supprimer les mots vides français
+docs <- tm_map(docs, removeWords, stopwords("french"))
+# Supprimer les ponctuations
+docs <- tm_map(docs, removePunctuation)
+# Supprimer les espaces vides supplémentaires
+docs <- tm_map(docs, stripWhitespace)
+# FIXME : Text stemming. Donne de drôles de résultats !!
+# docs <- tm_map(docs, stemDocument)
+inspect(docs)
+
+# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+# TODO : récupérer les couvertures ?
+
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 10)
+head(v, 10)
+head(m,10)
+head(as.data.frame(t(m)), 50)
+
+
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+```
