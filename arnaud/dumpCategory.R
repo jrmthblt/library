@@ -138,7 +138,7 @@ dumpCategory <- function (p_category) {
     
   }
   
-  print(sprintf("Writing %s category file to disk...", category))
+  print(sprintf("Writing \"%s\" category file to disk...", category))
   write_json(df_volInfos, paste0(category,".json"), pretty = TRUE) #JSON
   
   # Transformation avant csv : ex. list() to comma separated strings
