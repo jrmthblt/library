@@ -1,0 +1,2741 @@
+[
+  {
+    "volumeInfo.title": "Ce que (ne) font (pas) les sociologues",
+    "volumeInfo.subtitle": "petit essai d'épistémologie critique",
+    "volumeInfo.authors": ["Charles-Henry Cuin"],
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "2000",
+    "volumeInfo.description": "Que produit la sociologie ? Quelle est la valeur cognitive et scientifique de cette production, et à quelle aune doit-on la mesurer ? La démarche de cet essai n'est donc pas seulement analytique. Elles est aussi évaluative puisqu'on tente de mesurer la distance existant entre un certain nombre de pratiques sociologiques et une conception assez exigeante de scientificité.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600004262"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600004268"
+      }
+    ],
+    "volumeInfo.pageCount": 214,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Critical essays in sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=DBgzoFIMWToC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=1&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=DBgzoFIMWToC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Ce_que_ne_font_pas_les_sociologues.html?hl=&id=DBgzoFIMWToC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=DBgzoFIMWToC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=DBgzoFIMWToC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le métier de sociologue",
+    "volumeInfo.subtitle": "préalables épistémologiques",
+    "volumeInfo.authors": ["Pierre Bourdieu", "Jean-Claude Chamboredon", "Jean Claude Passeron"],
+    "volumeInfo.publisher": "Walter de Gruyter",
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.description": "La 4e de couv. indique : \"L'oeuvre de Pierre Bourdieu compte parmi les contributions les plus importantes et novatrices de la sociologie contemporaine. Le métier de sociologue, paru d'abord en 1968, témoigne d'un travail d'auto-réflexion sur la pratique sociologique par ses auteurs Pierre Bourdieu, Jean-Claude Chamboredon et Jean-Claude Passeron à un moment où les débats épistémologiques en sociologie n'étaient pas très avancés. Formés dans la tradition philosophique de Bachelard, Canguilhem, Koyré qui devait amener au tournant relativiste de l'épistémologie, les auteurs visent les embûches de la pensée scolastique. Contre la primauté de la logique de validation, ils accentuent le rôle de la logique de l'invention ; contre la distinction rigide entre théorie et expérience, ils confirment l'unité de la réflexion théorique et du difficile travail de rendre intelligible la réalité concrète de la pratique sociale ; contre l'utilisation aveugle par la sociologie des prénotions de la pensée naïve ou naïvement savante, ils exigent la rupture avec ces prénotions et la construction consciente de l'objet scientifique. Le métier de sociologue est à la fois un manuel et un traité sur la méthode, qui élabore une position originale et déterminée du travail de sociologue, tout en éclairant les \"outils\" de la vigilance épistémologique par des textes classiques des sciences humaines. A son tour, ce livre est devenu un classique pour apprendre à éviter les \"maladies de la raison sociologique\".\"",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "3110174294"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9783110174298"
+      }
+    ],
+    "volumeInfo.pageCount": 357,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Language Arts & Disciplines"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=2m9rY3phzzcC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=2&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=2m9rY3phzzcC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_m%C3%A9tier_de_sociologue.html?hl=&id=2m9rY3phzzcC",
+    "volumeInfo.averageRating": 4,
+    "volumeInfo.ratingsCount": 2,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=2m9rY3phzzcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=2m9rY3phzzcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Sociologie et valeurs : quatorze penseurs québécois du XXe siècle",
+    "volumeInfo.authors": ["Gilles Gagné", "Léon Gérin", "Jean-Philippe Warren"],
+    "volumeInfo.publisher": "PUM",
+    "volumeInfo.publishedDate": "2003-01-01",
+    "volumeInfo.description": "Sociologie et valeurs regroupe des textes de sociologues qui se sont penches, tout au long du siecle, sur le statut epistemologique de leur entreprise commune pour tenter de depasser une opposition theorique que leur pratique dementait chaque jour, celle des faits et des valeurs. Chaque texte cle est accompagne d'une presentation de l'auteur, d'une introduction a son uvre, d'un resume du texte presente et enfin d'une bibliographie succincte de l'auteur. L'ensemble forme un guide indispensable qui permet de mieux comprendre l'evolution de la pensee sociologique au Quebec.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2760618315"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782760618312"
+      }
+    ],
+    "volumeInfo.pageCount": 393,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Z63NA_VcA0UC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=3&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Z63NA_VcA0UC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Sociologie_et_valeurs_quatorze_penseurs.html?hl=&id=Z63NA_VcA0UC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Z63NA_VcA0UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Z63NA_VcA0UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Dictionnaire de sciences économiques et sociales",
+    "volumeInfo.authors": ["Philippe Deubel", "Marc Montoussé", "Serge d'. Agostino"],
+    "volumeInfo.publisher": "Editions Bréal",
+    "volumeInfo.publishedDate": "2008",
+    "volumeInfo.description": "Dictionnaire construit autour de 80 thèmes incontournables du programme de sciences économiques et sociales aux lycées. Les définitions sont réactualisées en fonction des données les plus récentes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2749505127"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782749505121"
+      }
+    ],
+    "volumeInfo.pageCount": 575,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Dictionnaires"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Vf0Arl7iStUC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=4&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Vf0Arl7iStUC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Dictionnaire_de_sciences_%C3%A9conomiques_et.html?hl=&id=Vf0Arl7iStUC",
+    "volumeInfo.averageRating": 4.5,
+    "volumeInfo.ratingsCount": 2,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Vf0Arl7iStUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Vf0Arl7iStUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le paradoxe des consequences",
+    "volumeInfo.subtitle": "essai sur une théorie wébérienne des effets inattendus et non voulus des actions",
+    "volumeInfo.authors": ["Mohamed Cherkaoui"],
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Il existe un troisième monde composé d'effets non intentionnels et non voulus des actions individuelles à côté du premier univers des phénomènes naturels et du second constitué d'artifices qui sont les produits directs et voulus des intérêts et des projets humains. La recherche des conséquences inattendues est un axe fondamental du programme des sciences sociales. Ces phénomènes omniprésents constituent un défi lancé à tous ceux qui ont des représentations simplificatrices de l'ordre social et aux positivistes qui croient en la capacité de la science à prédire toutes les conséquences des actions humaines. Depuis au moins les philosophes écossais jusqu'aux travaux théoriques et empiriques les plus récents, les sciences sociales se trouvent confrontées à cette énigme qu'elles ont tenté d'élucider. C'est dans le cadre de cette réflexion novatrice sur l'ordre social qu'économistes et sociologues au siècle des Lumières ont soulevé le problème général de l'émergence de phénomènes complexes bien avant que les biologistes et les physiciens ne le croisent sur leur chemin plus de cent ans plus tard. Max Weber est sans doute celui qui a le plus contribué à identifier les sources de ces effets remarquables non recherchés. Cette étude a une triple ambition. Elle s'efforce d'abord de reconstruire et de restituer, en la systématisant, la sociologie wébérienne du paradoxe des conséquences à partir des éléments dispersés dans l'œuvre du maître de la sociologie allemande. Elle vise ensuite à concourir à l'édification de la théorie de ces processus en mobilisant les acquis de la recherche actuelle. Elle teste enfin le pouvoir explicatif de cette conception en proposant une interprétation de phénomènes sociaux contemporains.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600010734"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600010733"
+      }
+    ],
+    "volumeInfo.pageCount": 236,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Action, Théorie de l'"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=BsdlaBmEOhIC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=5&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=BsdlaBmEOhIC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_paradoxe_des_consequences.html?hl=&id=BsdlaBmEOhIC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=BsdlaBmEOhIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=BsdlaBmEOhIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La sociologie sur le vif",
+    "volumeInfo.authors": ["Cyril Lemieux"],
+    "volumeInfo.publisher": "Presses des MINES",
+    "volumeInfo.publishedDate": "2010",
+    "volumeInfo.description": "Emeutes de Villiers-le-Bel, affaire Kerviel, péripéties de l'Arche de Zoé, fiasco de la France à l'Euro de football, élection de Barack Obama, crise financière : des sujets qui se bousculent à la une des journaux télévisés, la sociologie a-t-elle quelque chose à dire ? Sa vocation première n'a jamais été de s'exprimer dans l'urgence et l'immédiateté. Le temps, souvent très long, de l'enquête lui est nécessaire pour réussir à éclairer d'une intelligibilité nouvelle le monde social qui se bâtit sous nos yeux. Restent pourtant les attitudes et les tournures de pensée qu'elle nous enseigne. Restent ces connaissances, si nombreuses, qu'elle accumule patiemment depuis ses débuts. Autant de ressources pour nous aider, face à un quotidien incertain et opaque, non pas à produire dans l'instant un discours de vérité mais, plutôt, à nous distancier des analyses propres à \" l'air du temps \" et ainsi, peut-être, à mieux saisir des enjeux demeurés inaperçus et à éviter certaines erreurs de jugement. C'est un tel pari émancipateur que poursuit ce livre, où le lecteur retrouvera les chroniques que l'auteur donna, selon un rythme hebdomadaire, sur l'antenne de France-Culture entre août 2007 et juillet 2009. Un fait d'actualité brûlant y est à chaque fois place sous l'éclairage d'une théorie, d'un concept ou d'un raisonnement sociologiques. Manière de revisiter notre époque et, d'un même mouvement, d'éprouver les pouvoirs de distanciation qu'offre la pratique de la sociologie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782911256196"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2911256190"
+      }
+    ],
+    "volumeInfo.pageCount": 326,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["France"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=haqo_7x0SCUC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=6&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=haqo_7x0SCUC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_sur_le_vif.html?hl=&id=haqo_7x0SCUC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=haqo_7x0SCUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=haqo_7x0SCUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Anthropologie et développement",
+    "volumeInfo.subtitle": "essai en socio-anthropologie du changement social",
+    "volumeInfo.authors": ["Jean-Pierre Olivier de Sardan"],
+    "volumeInfo.publisher": "KARTHALA Editions",
+    "volumeInfo.publishedDate": "1995",
+    "volumeInfo.description": "Depuis 1960, année de leur indépendance, les pays d'Afrique ont connu plus de 30 ans de \" développement \". Cependant les résultats n'ont pas été à la hauteur des espérances et le mot \" développement \" a besoin lui-même d'approches fondées sur l'analyse et le doute. Comment, aujourd'hui, décrire et comprendre les relations multiples qui existent entre les institutions de développement (publiques ou privées) et les populations locales auxquelles elles s'adressent ? La socio-anthropologie considère le \" développement \" comme une forme particulière de changement social, qu'un ensemble complexe d'intervenants (ONG, agences nationales ou internationales, experts, coopérants, techniciens...) cherche à impulser auprès de \" groupes-cibles \" eux-mêmes divers et évoluant selon les dynamiques propres. Ces phénomènes sont particulièrement importants en Afrique, en raison du rôle qu'y jouent les flux d'\" aide \" et les \" projets \" de tous ordres. La socio-anthropologie du développement peut contribuer, pour une part modeste mais réelle, à améliorer la qualité des services que les institutions de développement proposent aux populations, en permettant une meilleure prise en compte des dynamiques locales. Pour ce faire, il faut éviter une anthropologie au rabais, enfermée dans le ghetto de l'expertise et de la consultance. Il ne peut y avoir de \" socio-anthropologie appliquée au développement \" sans une \" socio-anthropologie fondamentale du développement \", dont la compétence en matière de recherche empirique se fonde sur la maîtrise de notions et de concepts situés au cœur des sciences sociales contemporaines et qui se démarque des rhétoriques et des idéologies développementistes. Logiques, rationalités, représentations, stéréotypes, stratégies, innovations, modes d'action économique, détournements, dispositifs, savoirs techniques populaires, médiations, négociations, courtages, arènes... Ces mots clés scandent les analyses ici proposées, alimentées par une abondante littérature comparée et étayées par des exemples de terrain, et dessinent un ouvrage de référence sur le sujet, qui, jusqu'à ce jour, faisait complètement défaut en France.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2865375897"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782865375899"
+      }
+    ],
+    "volumeInfo.pageCount": 221,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Africa"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.3",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=qTQvS4QNSBcC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=7&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=qTQvS4QNSBcC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Anthropologie_et_d%C3%A9veloppement.html?hl=&id=qTQvS4QNSBcC",
+    "volumeInfo.readingModes.text": true,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=qTQvS4QNSBcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=qTQvS4QNSBcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Sociologie générale et africaine",
+    "volumeInfo.subtitle": "les sciences sociales et les mutations des sociétés africaines",
+    "volumeInfo.authors": ["Albert Muluma Munanga G. T."],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "2008",
+    "volumeInfo.description": "\"L'auteur de Sociologie générale et africaine présente les questions théoriques liées notamment aux définitions de la sociologie et de son objet, à sa subdivision, à ses rapports avec les autres disciplines des sciences sociales et humaines, aux grandes théories contemporaines. Il propose la maîtrise des concepts de base s'inscrivant tant au niveau de la microsociologie que de la macrosociologie. L'auteur offre aux lecteurs les outils d'analyse, d'interprétation et de compréhension de la réalité sociale afin d'en proposer des remèdes. La sociologie requiert des méthodes et des techniques complexes. L'originalité de ce livre est de se démarquer de la vision idéologique et classique de certains sociologues qui abordent les réalités africaines dans les seuls cadres du mariage, des traditions et de la prostitution des femmes. Albert Muluma propose de dépasser cette approche statique pour envisager une démarche plus dynamique, les sociétés africaines notamment étant évolutives. Il convient, à juste titre, de prendre en compte les enjeux actuels dont la pauvreté, le sous-développement, les conflits inter-ethniques, la démocratie piégée, les guerres entre les Etats... Ces faits déterminent la morphologie de la réalité sociale, la structure de l'organisation sociale et les conduites collectives\"--P. [4] of cover.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782296050938"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "229605093X"
+      }
+    ],
+    "volumeInfo.pageCount": 328,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=DKphIglGwIEC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=8&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=DKphIglGwIEC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Sociologie_g%C3%A9n%C3%A9rale_et_africaine.html?hl=&id=DKphIglGwIEC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=DKphIglGwIEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=DKphIglGwIEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Hommages à Alain Pessin",
+    "volumeInfo.subtitle": "un sociologue en liberté",
+    "volumeInfo.authors": ["Catherine Dutheil", "Yvonne Neyrat"],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "Recueil de vingt-deux textes évoquant la figure et les travaux de ce sociologue des imaginaires politiques et spécialiste du XIXe siècle, au sein particulièrement du Centre de sociologie des représentations et des pratiques culturelles (CSRPC) de l'Université Pierre Mendès-France de Grenoble, et du groupe de recherche Oeuvres, publics, sociétés (OPuS) du CNRS.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782296042025"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2296042023"
+      }
+    ],
+    "volumeInfo.pageCount": 256,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=8iCkQE2AKosC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=9&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=8iCkQE2AKosC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Hommages_%C3%A0_Alain_Pessin.html?hl=&id=8iCkQE2AKosC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=8iCkQE2AKosC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=8iCkQE2AKosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Dérive autour de l'oeuvre de Michel Maffesoli",
+    "volumeInfo.authors": {},
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "2004",
+    "volumeInfo.description": "Depuis trente ans, Michel Maffesoli, dont nous fêtons le soixantième anniversaire le 14 novembre 2004, explore l'imaginaire contemporain. S'attachant à une lecture compréhensive de la vie quotidienne, ce sociologue a mis en exergue les grandes figures de la postmodernité: le tribalisme, le nomadisme, le devenir féminin du monde, l'importance du lieu et de l'esthétique dans l'être ensemble...",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782747573023"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2747573028"
+      }
+    ],
+    "volumeInfo.pageCount": 299,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ej3xnRadlx4C&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=10&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ej3xnRadlx4C&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/D%C3%A9rive_autour_de_l_oeuvre_de_Michel_Maf.html?hl=&id=ej3xnRadlx4C",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=ej3xnRadlx4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=ej3xnRadlx4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Débordements",
+    "volumeInfo.subtitle": "mélanges offerts à Michel Callon",
+    "volumeInfo.authors": ["Madeleine Akrich", "Yannick Barthe", "Fabian Muniesa"],
+    "volumeInfo.publisher": "Presses des MINES",
+    "volumeInfo.publishedDate": "2011-01-05",
+    "volumeInfo.description": "MICHEL CALLON a marqué les sciences humaines et sociales par sa production académique, par ses activités d'animateur de la communauté scientifique et par son rôle de médiateur entre la recherche et le monde de la politique, de l'administration et de l'entreprise. Il a multiplié les espaces d'entente et de confrontation, en se déplaçant aussi bien sur le terrain de la sociologie que sur celui des politiques de recherche et d'innovation, de l'anthropologie économique, de la scientométrie, de la science politique ou de l'anthropologie de la médecine.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782911256387"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2911256387"
+      }
+    ],
+    "volumeInfo.pageCount": 407,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Actor-network theory"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=xF-WMYk9W7sC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=11&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=xF-WMYk9W7sC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/D%C3%A9bordements.html?hl=&id=xF-WMYk9W7sC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=xF-WMYk9W7sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=xF-WMYk9W7sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Sociologie de l'expérience",
+    "volumeInfo.authors": ["François Dubet"],
+    "volumeInfo.publisher": "Seuil",
+    "volumeInfo.publishedDate": "1994",
+    "volumeInfo.description": "L'éclatement actuel du champ des théories sociologiques ne renvoie pas seulement à l'histoire des idées ; il s'inscrit dans une mutation sociale profonde qui conduit à abandonner la représentation classique d'une société conçue comme un ordre, où l'on peut identifier l'action sociale aux \" lois \" du système. En fait, ce que l'on appelle \" la société \" n'est plus réductible à un système intégré, un mode de production et un Etat national. Dès lors, l'objet même de la sociologie change : elle doit décrire des expériences sociales, c'est-à-dire les conduites individuelles de chacun d'entre nous. Celles-ci combinent plusieurs rationalités et plusieurs logiques, elles se présentent comme la juxtaposition d'appartenances communautaires, des calculs du marché et des exigences d'une authenticité individuelle ; et le seul principe d'unité de l'expérience sociale est le travail sur lui-même que poursuit chacun de nous afin de se percevoir comme l'auteur de sa propre vie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCBK:C095654702"
+      }
+    ],
+    "volumeInfo.pageCount": 272,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Action theory"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.0.0.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=AdR8KoT2r4wC&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=12&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=AdR8KoT2r4wC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Sociologie_de_l_exp%C3%A9rience.html?hl=&id=AdR8KoT2r4wC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=AdR8KoT2r4wC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=AdR8KoT2r4wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Le travail des sociétés",
+    "volumeInfo.authors": ["François Dubet"],
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.description": "\" Longtemps, j'ai cru vivre dans une société\", dit François Dubet, mais la représentation traditionnelle de la société s'épuise sous les coups de la mondialisation et de la modernité elle-même. Ainsi, la société n'est plus conçue comme le progrès de l'intégration d'une structure sociale, d'une culture nationale homogène et d'une souveraineté politique toute puissante. Désormais, les individus, de plus en plus mobilisés, sont chargés de faire ce que la société ne fait plus pour eux. Les sociétés ne disparaissent pas pour autant. Elles imposent des formes de domination. Elles continuent à déterminer les épreuves que les individus affrontent. Elles sont le cadre fondamental de la critique sociale et des mouvements sociaux. C'est ce \" travail des sociétés\" qu'il nous faut comprendre afin de construire les représentations et les forces politiques qui nous permettent de vivre ensemble. A travers une démonstration précise, claire et très pédagogique, cet essai magistral de François Dubet poursuit, après Le Déclin de l'institution, son travail sur la sociologie des sociétés. Une réflexion qui bouscule fortement les théories actuelles, en décrit les limites et les dépasse en proposant un nouveau modèle, un outil pour repenser l'avenir.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2020995271"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782020995276"
+      }
+    ],
+    "volumeInfo.pageCount": 348,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Contemporary Sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=76vhAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=13&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=76vhAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_travail_des_soci%C3%A9t%C3%A9s.html?hl=&id=76vhAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=76vhAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=76vhAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le raisonnement sociologique",
+    "volumeInfo.subtitle": "Un espace non poppérien de l'argumentation",
+    "volumeInfo.authors": ["Jean Claude Passeron"],
+    "volumeInfo.publisher": "Albin Michel",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Science ou non ? Comme les autres ou pas ? La sociologie ne peut répondre à cette question en son nom seul. La comparaison entre des configurations historiques, toujours singulières, qui fait le ressort du raisonnement sociologique et garantit ainsi la pertinence descriptive des concepts typologiques utilisés dans toutes les sciences sociales, n'a jamais pu engendrer la \" science expérimentale des faits sociaux \" qu'avait espérée Durkheim. Dans ce livre fondateur, publié pour la première fois en 1991, Jean-Claude Passeron montre que \" l'espace logique \" dans lequel la sociologie articule ses constats empiriques et ses argumentations reste irréductible, même quand elle recourt à des méthodes quantitatives ou à la formalisation, à celui de la \" falsifiabilité \" décrit par Popper.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2226158898"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782226158895"
+      }
+    ],
+    "volumeInfo.pageCount": 666,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["History"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4fS4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=14&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4fS4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_raisonnement_sociologique.html?hl=&id=4fS4AAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=4fS4AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=4fS4AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Essais sur la mécanique sociale",
+    "volumeInfo.authors": ["Léon Winiarski"],
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "1967",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600040404"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600040402"
+      }
+    ],
+    "volumeInfo.pageCount": 313,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Economics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=MyC0UURXJTIC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=15&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=MyC0UURXJTIC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Essais_sur_la_m%C3%A9canique_sociale.html?hl=&id=MyC0UURXJTIC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=MyC0UURXJTIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=MyC0UURXJTIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les reprâesentations du sud",
+    "volumeInfo.subtitle": "du factuel au fictif",
+    "volumeInfo.authors": ["Jean Mondot"],
+    "volumeInfo.publisher": "Maison des Sciences de l'Homme d'Aquitaine",
+    "volumeInfo.publishedDate": "2003",
+    "volumeInfo.description": "Eminemment ambiguë, l'icône s'articule doublement sur l'infini et le fini, l'invisible et le visible, l'immatériel et le matériel, mais aussi sur une apparition et un retrait, un pouvoir et une vacance. On ne s'étonnera donc pas que la question de l'icône, religieuse, mais aussi politique, culturelle, et plus largement médiatique permette à l'artiste de revenir sur les enjeux politiques, éthiques, de sa propre relation à l'image consacrée et à la consécration. On ne sera pas plus surpris qu'elle l'invite à préciser sa relation au signe et à la signification, comme condensation, fixation, ou, au contraire, comme dépassement, dissolution. Enfin, on comprendra que ces questions se posent avec une acuité toute particulière en Amérique du Nord, où le religieux et le politique ont pendant si longtemps travaillé de concert et où la culture de masse a déversé sur le monde ses légions d'idoles et d'icônes populaires. Ce que suggèrent les études ici rassemblées, c'est que finalement les iconoclastes qui partent en guerre contre les signes du pouvoir et le fétichisme du sens s'élèvent moins contre les icônes que les idoles et sont parfois plus iconophiles que les iconolâtres eux-mêmes. The ambiguous icon connects the finite and the infinite, the visible and the invisible, the material and the immaterial in a double movement of affirmation and withdrawal. Critical questions surrounding religious, political or cultural icons thus prompt the artist to reassess the ethical and political implications of her/his practice, particularly as it relates to processes of consecration, to canonical works and consecrated images. Such questions also impel artists to rethink their approaches to signs and signification: are signs to be approached as sites of capture or, rather, of rapture ? Such questions take on added emphasis in the context of a North American culture where political and religious discourses have worked hand in hand, while mass culture produced hosts of popular icons that took over the world. The studies collected in this volume suggest that iconoclastic artists struggling against the signs of power and the fetishization of meaning are less at odds with icons than with idols, and are more at home with the ambiguous economy of the icon than those who have turned icons into idols.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105113647171"
+      }
+    ],
+    "volumeInfo.pageCount": 368,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Anthropologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Mgq4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=16&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Mgq4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_repr%C3%A2esentations_du_sud.html?hl=&id=Mgq4AAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Mgq4AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Mgq4AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'intelligence du social",
+    "volumeInfo.subtitle": "le pluralisme explicatif en sociologie",
+    "volumeInfo.authors": ["Jean-Michel Berthelot"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1990-01-01",
+    "volumeInfo.description": "Bouleversements du monde contemporain et faillite des idéologies sollicitent les sciences sociales. Maîtriser le social devient affaire de savoir et d'expertise. Mais la connaissance du social n'est pas simple. On en fustigeait la neutralité dans les années 60. On en éprouve aujourd'hui la complexité. La thèse de ce livre est que, contrairement à l'illusion positiviste, toute connaissance implique une intelligence de son objet, une aptitude à lui donner sens et à l'insérer dans un système d'intelligibilité. Mais l'intelligence du social est plurielle : disciplines, approches, méthodes, paradigmes... rien ne s'y conjugue au singulier. Cette pluralité est ici prise au sérieux : son enracinement logique et symbolique est systématiquement mis au jour, révélant l'irréductible combinaison de schèmes d'intelligibilité, de programmes d'analyse, de paradigmes analogiques, d'engagements métaphysiques par lesquels s'opère la construction d'un discours de connaissance. La question décisive est alors : comment la pluralité des schèmes d'intelligence de l'objet peut-elle s'associer à l'unicité de l'exigence de la preuve ?",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130431844"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130431848"
+      }
+    ],
+    "volumeInfo.pageCount": 249,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cultural pluralism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=9gq2AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=17&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=9gq2AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_intelligence_du_social.html?hl=&id=9gq2AAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=9gq2AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=9gq2AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Pareto, Croce, les socialismes et la sociologie",
+    "volumeInfo.authors": ["Giovanni Busino"],
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600041044"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600041041"
+      }
+    ],
+    "volumeInfo.pageCount": 202,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Socialism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=jM2yBoG_iTwC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=18&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=jM2yBoG_iTwC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pareto_Croce_les_socialismes_et_la_socio.html?hl=&id=jM2yBoG_iTwC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=jM2yBoG_iTwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=jM2yBoG_iTwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Neuf leçons de sociologie",
+    "volumeInfo.authors": ["Michel Wieviorka"],
+    "volumeInfo.publisher": "Robert Laffont",
+    "volumeInfo.publishedDate": "2008",
+    "volumeInfo.description": "\" D'immenses transformations modifient la planète, et les outils disponibles pour penser ces phénomènes évoluent à grande vitesse. En quelques années, ma génération de chercheurs en sciences sociales a vécu l'effondrement du fonctionnalisme, le triomphe, puis le déclin du structuralisme, l'apogée, puis l'affaiblissement du marxisme, les succès de l'interactionnisme symbolique, la montée en puissance de diverses variantes de l'individualisme méthodologique, le retour du thème du Sujet, etc. Il y a là non pas une crise, mais une mutation dans nos façons de réfléchir et d'aborder un monde en changement. Cette mutation concerne toutes les disciplines du savoir, et pas seulement les sciences sociales, mais celles-ci sont en première ligne, et appelées à jouer un rôle central. L'objectif de ce livre est d'abord de mettre en valeur les instruments d'analyse les plus prometteurs. Il est ensuite d'étudier à leur lumière des phénomènes tels que les mouvements sociaux, la diversité, la mémoire, la violence, le terrorisme ou encore le racisme, afin d'appréhender dans toute son épaisseur le monde dans lequel nous vivons. \" M.W.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2221110811"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782221110812"
+      }
+    ],
+    "volumeInfo.pageCount": 329,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Politique mondiale - 20e siècle"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=KqzZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=19&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=KqzZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Neuf_le%C3%A7ons_de_sociologie.html?hl=&id=KqzZAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=KqzZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=KqzZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Fragments de philosophie positive et de sociologie contemporaine",
+    "volumeInfo.authors": ["Emile Littré"],
+    "volumeInfo.publishedDate": "1876",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "NYPL:33433087386300"
+      }
+    ],
+    "volumeInfo.pageCount": 606,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Positivism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.2.0.full.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=eZdRAAAAYAAJ&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=20&source=gbs_api",
+    "volumeInfo.infoLink": "https://play.google.com/store/books/details?id=eZdRAAAAYAAJ&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://market.android.com/details?id=book-eZdRAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=eZdRAAAAYAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=eZdRAAAAYAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Les trois états",
+    "volumeInfo.subtitle": "Science, théologie et métaphysique chez Auguste Comte",
+    "volumeInfo.authors": ["Michel Bourdeau"],
+    "volumeInfo.publisher": "Cerf",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Le nom d'Auguste Comte nous arrive d'ordinaire précédé d'une réputation peu flatteuse. Le présent ouvrage voudrait montrer combien l'image du positivisme qui a cours aujourd'hui s'applique mal à celui qui en fut le fondateur, et rendre à nouveau compréhensible l'accueil plus que favorable réservé, il y a quelque cent cinquante ans, à la philosophie positive par des esprits aussi éminents que Mill ou Littré. A cette fin, il prend pour fil conducteur la loi des trois états, que l'auteur du Cours a toujours donnée comme la matrice de son œuvre et qui résume l'histoire de l'humanité dans la succession de trois états, théologique, métaphysique, puis positif. Après Auschwitz ou Hiroshima, le lecteur du XXIe siècle a toutefois du mal à se reconnaître dans la croyance au progrès que Comte partageait avec ses contemporains et dont cette loi est l'expression emblématique. C'est pourquoi les états sont présentés ici comme autant de formes d'esprit dont Comte était le premier à admettre qu'ils avaient très souvent cohabité. Il en résulte un double avantage. Tout d'abord, alors que, en partie sous l'influence du néopositivisme, le positivisme en était venu à ne plus être qu'une philosophie des sciences, il devient possible de refaire une place à la politique positive et de montrer comment, dans le projet comtien, la philosophie politique et la philosophie des sciences s'appellent l'une l'autre. De plus, un exposé en deux temps permet de faire le partage entre ces aspects de la pensée de Comte qui correspondent à peu près à l'image que l'on s'en fait d'ordinaire et ceux qui, aujourd'hui encore, continuent à nous paraître extravagants et qui ne sont pas toujours les moins intéressants.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2204080802"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782204080804"
+      }
+    ],
+    "volumeInfo.pageCount": 177,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Histoire"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=OC3XAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=21&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=OC3XAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_trois_%C3%A9tats.html?hl=&id=OC3XAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=OC3XAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=OC3XAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Matériaux pour une sociologie de la géographie",
+    "volumeInfo.authors": ["Daniel Dory", "Denise Douzant-Rosenfeld"],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "1993",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738419699"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2738419690"
+      }
+    ],
+    "volumeInfo.pageCount": 187,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Geography"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.5.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=dlgH1rCyDMQC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=22&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=dlgH1rCyDMQC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Mat%C3%A9riaux_pour_une_sociologie_de_la_g%C3%A9.html?hl=&id=dlgH1rCyDMQC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=dlgH1rCyDMQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=dlgH1rCyDMQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Esprit objectif et sociologie hégélienne",
+    "volumeInfo.authors": ["Roland Maspétiol"],
+    "volumeInfo.publisher": "Vrin",
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2711608158"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782711608157"
+      }
+    ],
+    "volumeInfo.pageCount": 124,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UwnWp0tPbFEC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=23&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UwnWp0tPbFEC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Esprit_objectif_et_sociologie_h%C3%A9g%C3%A9lien.html?hl=&id=UwnWp0tPbFEC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=UwnWp0tPbFEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=UwnWp0tPbFEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Durkheim",
+    "volumeInfo.authors": ["José A. Prades"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1990-01-01",
+    "volumeInfo.description": "Après une brève synthèse sur la vie de Durkheim, l'ouvrage trace l'évolution de la pensée et de l'oeuvre du sociologue dans diverses disciplines: sociologie, suicide, division du travail, éducation, économie, morale, philosophie, religion.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UVA:X001843575"
+      }
+    ],
+    "volumeInfo.pageCount": 126,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Durkheimian school of sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wNxHAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=24&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wNxHAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Durkheim.html?hl=&id=wNxHAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=wNxHAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=wNxHAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Démographie et sociologie",
+    "volumeInfo.subtitle": "hommage à Alain Girard",
+    "volumeInfo.authors": ["Alain Girard"],
+    "volumeInfo.publisher": "Publications de la Sorbonne",
+    "volumeInfo.publishedDate": "1986-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2859441115"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782859441111"
+      }
+    ],
+    "volumeInfo.pageCount": 304,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Demography"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=hkJ_zyd4VGcC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=25&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=hkJ_zyd4VGcC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/D%C3%A9mographie_et_sociologie.html?hl=&id=hkJ_zyd4VGcC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=hkJ_zyd4VGcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=hkJ_zyd4VGcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les images de l'identité",
+    "volumeInfo.authors": ["Denis Vidal"],
+    "volumeInfo.publisher": "IRD Editions",
+    "volumeInfo.publishedDate": "2002",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2876788128"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782876788121"
+      }
+    ],
+    "volumeInfo.pageCount": 205,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ciencias sociales"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Oth_grHxxMMC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=26&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Oth_grHxxMMC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_images_de_l_identit%C3%A9.html?hl=&id=Oth_grHxxMMC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Oth_grHxxMMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Oth_grHxxMMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Pour repenser la sociologie de la connaissance scientifique",
+    "volumeInfo.authors": {},
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "1995",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600001271"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600001274"
+      }
+    ],
+    "volumeInfo.pageCount": 199,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=A_QFON7xbScC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=27&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=A_QFON7xbScC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pour_repenser_la_sociologie_de_la_connai.html?hl=&id=A_QFON7xbScC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=A_QFON7xbScC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=A_QFON7xbScC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Émile Durkheim",
+    "volumeInfo.subtitle": "1858-1917",
+    "volumeInfo.authors": ["Marcel Fournier"],
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "Fils et petit-fils de rabbin, né à Épinal en 1858, Émile Durkheim refuse de suivre la voie familiale. Agrégé de philosophie, il devient professeur de sciences sociales à Bordeaux et commence la rédaction de ses ouvrages de sociologie. Sachant s'entourer des collaborateurs les plus zélés (Célestin Bouglé, Paul Fauconnet, Maurice Halbwachs, Robert Hertz, Henri Hubert, Paul Lapie, Emmanuel Lévy, Marcel Mauss, Paul Richard, François Simiand, etc.), il crée avec eux en 1896 une revue, L'Année sociologique, et forme ce qu'il est convenu d'appeler l'école française de sociologie. Voilà pourquoi Marcel Fournier s'intéresse non seulement à l'homme, mais aussi à tous ceux qui l'ont entouré et ont participé avec lui à la fondation de cette nouvelle école de pensée, souvent qualifiée à l'époque de \" réalisme social \". Dans cette biographie, à la fois intellectuelle et collective, l'auteur ne laisse rien au hasard de la vie et de l'œuvre considérable du fondateur de la sociologie en France. De De La Division du travail social (1893) aux Formes élémentaires de la vie religieuse (1912), en passant par Les Règles de la méthode sociologique (1895) et Le Suicide (1897), les préoccupations majeures de Durkheim (l'individu, la famille, le travail, la politique, la morale, la religion, la maladie, la guerre, la mort) résonnent aujourd'hui avec autant d'acuité. Si c'est une vie avant tout consacrée à la recherche et à l'enseignement que l'on découvre ici, c'est aussi une existence qui, sans être partisane, est sincèrement engagée : dans l'affaire Dreyfus, dans la séparation de l'Église et de l'État, dans la montée du socialisme en France. Enfin, profondément marqué par la mélancolie et la tragédie, Durkheim parviendra difficilement à supporter les malheurs d'une vie - la perte de son fils à la guerre -, d'une société et d'une époque.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105131813524"
+      }
+    ],
+    "volumeInfo.pageCount": 940,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=-9K4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=28&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=-9K4AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/%C3%89mile_Durkheim.html?hl=&id=-9K4AAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=-9K4AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=-9K4AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La trame de l'évidence",
+    "volumeInfo.subtitle": "sociologie de la démonstration en logique",
+    "volumeInfo.authors": ["Claude Rosental"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "2003",
+    "volumeInfo.description": "Cet ouvrage est le fruit d'une enquête sociologique, menée dans les années 1990 aux Etats-Unis, sur la forme d'activité scientifique réputée la plus pure et la plus rebelle à l'investigation des sciences sociales : celle des logiciens et des chercheurs en intelligence artificielle. La production d'énoncés en logique est en effet généralement perçue comme un exercice essentiellement immatériel ou solitaire, procédant d'une activité purement individuelle et cérébrale, de ce fait inobservable pour le sociologue. Ce livre met en lumière une réalité bien différente, en partant entre autres d'observations réalisées au sein de grandes Universités américaines et de diverses tribunes savantes (conférences et forums électroniques notamment). Les investigations ont porté en particulier sur les modes d'apprentissage des manipulations symboliques et des langages formels, sur le travail et les interactions des chercheurs au quotidien, et sur les étapes conduisant à l'élaboration et à la validation collective de démonstrations. Le compte rendu d'enquête est structuré autour de l'analyse d'un cas historique. L'ouvrage retrace les différentes phases de l'émergence d'un théorème, depuis la rédaction de ses premiers brouillons jusqu'à la diffusion de plusieurs versions de sa preuve, formulées en réponse aux nombreuses réactions exprimées à l'issue de sa publication. Ce résultat a en effet suscité beaucoup d'attention outre-Atlantique, compte tenu de ses enjeux pour l'évolution des recherches théoriques et technologiques dans le domaine de l'intelligence artificielle. En analysant minutieusement les mécanismes concrets de production et d'accréditation d'un théorème, l'auteur montre comment peuvent s'opérer en pratique une découverte logique et sa reconnaissance dans le monde savant à l'aube du XXIe siècle. A ce titre, ce livre s'adresse à un large public chercheurs en sciences sociales, philosophes, historiens des savoirs, mais aussi étudiants, amateurs et professionnels de la science.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCSD:31822032974966"
+      }
+    ],
+    "volumeInfo.pageCount": 367,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Artificial intelligence"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=RWA-AQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=29&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=RWA-AQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_trame_de_l_%C3%A9vidence.html?hl=&id=RWA-AQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=RWA-AQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=RWA-AQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Pierre Bourdieu",
+    "volumeInfo.subtitle": "vie, oeuvres, concepts",
+    "volumeInfo.authors": ["Patrice Bonnewitz"],
+    "volumeInfo.publisher": "Ellipses Marketing",
+    "volumeInfo.publishedDate": "2002",
+    "volumeInfo.description": "Pierre Bourdieu est de ceux qui auront redonné confiance dans l'utilité et l'importance de la sociologie. Il a affirmé la possibilité que la sociologie pouvait atteindre un haut degré de scientificité et d'objectivité. Il a montré que la sociologie possédait une fonction critique, de dévoilement des mécanismes sociaux, qui peut servir dans la lutte politique. Ainsi, il a manifesté son objectif ultime : faire de la sociologie une science totale, capable de restituer l'unité fondamentale de la pratique humaine. Cet ouvrage vous aide à décrypter l'approche spécifique des faits sociaux que Bourdieu a rendue incontournable dans la sociologie contemporaine.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2729810293"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782729810290"
+      }
+    ],
+    "volumeInfo.pageCount": 94,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie sociale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=f-jwAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=30&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=f-jwAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pierre_Bourdieu.html?hl=&id=f-jwAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=f-jwAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=f-jwAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Études sociologiques",
+    "volumeInfo.authors": ["Jean Piaget"],
+    "volumeInfo.publisher": "Librairie Droz",
+    "volumeInfo.publishedDate": "1965",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2600040188"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782600040181"
+      }
+    ],
+    "volumeInfo.pageCount": 202,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie génétique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=zH-VtIOiYCwC&printsec=frontcover&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=31&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=zH-VtIOiYCwC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/%C3%89tudes_sociologiques.html?hl=&id=zH-VtIOiYCwC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=zH-VtIOiYCwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=zH-VtIOiYCwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le nouvel esprit du capitalisme",
+    "volumeInfo.authors": ["Luc Boltanski", "Eve Chiapello"],
+    "volumeInfo.publisher": "Editions Gallimard",
+    "volumeInfo.publishedDate": "1999",
+    "volumeInfo.description": "Le nouvel esprit du capitalisme, les auteurs en tracent les contours à partir d'une analyse de l'ensemble des textes de management qui, des années 70 à 80, ont nourri la pensée du patronat : c'est dans ces années que le capitalisme renonce au principe fordiste de l'organisation hiérarchique du travail pour développer un capitalisme en réseau, fondé sur l'initiative des acteurs.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070749959"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070749959"
+      }
+    ],
+    "volumeInfo.pageCount": 843,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Capitalism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=PaQKnAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=32&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=PaQKnAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_nouvel_esprit_du_capitalisme.html?hl=&id=PaQKnAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La science sociale contemporaine",
+    "volumeInfo.authors": ["Alfred Fouillée"],
+    "volumeInfo.publishedDate": "1880",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015030050713"
+      }
+    ],
+    "volumeInfo.pageCount": 424,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.2.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=EEs4AAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=33&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=EEs4AAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_science_sociale_contemporaine.html?hl=&id=EEs4AAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=EEs4AAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=EEs4AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La morale scientifique",
+    "volumeInfo.subtitle": "Essai sur les applications morales des sciences sociologiques",
+    "volumeInfo.authors": ["Albert Bayet"],
+    "volumeInfo.publishedDate": "1905",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105046703836"
+      }
+    ],
+    "volumeInfo.pageCount": 180,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ethics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.0.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=3GIwAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=34&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=3GIwAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_morale_scientifique.html?hl=&id=3GIwAQAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=3GIwAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=3GIwAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'évolution régressive en biologie et en sociologie",
+    "volumeInfo.authors": ["Jean Demoor", "Jean Massart", "Emile Vandervelde"],
+    "volumeInfo.publishedDate": "1897",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B20541"
+      }
+    ],
+    "volumeInfo.pageCount": 324,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Évolution"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=mXZDAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=35&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=mXZDAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_%C3%A9volution_r%C3%A9gressive_en_biologie_et.html?hl=&id=mXZDAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=mXZDAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=mXZDAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Essai historique et critique sur la sociologie chez Auguste Comte",
+    "volumeInfo.authors": ["Franck Alengry"],
+    "volumeInfo.publishedDate": "1899",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "BML:37001103828252"
+      }
+    ],
+    "volumeInfo.pageCount": 512,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UvJsbADLMNAC&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=36&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UvJsbADLMNAC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Essai_historique_et_critique_sur_la_soci.html?hl=&id=UvJsbADLMNAC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=UvJsbADLMNAC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=UvJsbADLMNAC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Orthopoles",
+    "volumeInfo.subtitle": "villes et îles",
+    "volumeInfo.authors": ["René Magnan", "Hervé Mathieu"],
+    "volumeInfo.publishedDate": "1975",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015007252052"
+      }
+    ],
+    "volumeInfo.pageCount": 196,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Amenagement"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=YndPAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=37&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=YndPAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Orthopoles.html?hl=&id=YndPAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=YndPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=YndPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'irréligion de l'avenir",
+    "volumeInfo.subtitle": "étude sociologique",
+    "volumeInfo.authors": ["Jean-Marie Guyau"],
+    "volumeInfo.publishedDate": "1902",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "NYPL:33433081613345"
+      }
+    ],
+    "volumeInfo.pageCount": 479,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Irreligion and sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.2.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=lyoOAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=38&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=lyoOAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_irr%C3%A9ligion_de_l_avenir.html?hl=&id=lyoOAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=lyoOAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=lyoOAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Stratégie générative",
+    "volumeInfo.subtitle": "De l'anthropologie à la géopolitique",
+    "volumeInfo.authors": ["Jean Paul Charnay"],
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UVA:X002135296"
+      }
+    ],
+    "volumeInfo.pageCount": 347,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Geopolitics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Mp4rAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=39&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Mp4rAAAAYAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Strat%C3%A9gie_g%C3%A9n%C3%A9rative.html?hl=&id=Mp4rAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Mp4rAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Mp4rAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Principes d'orientation sociale",
+    "volumeInfo.subtitle": "résumé des études de M. Ernest Solvay sur le productivisme et le comptabilisme",
+    "volumeInfo.authors": ["Ernest Solvay"],
+    "volumeInfo.publishedDate": "1904",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B266371"
+      }
+    ],
+    "volumeInfo.pageCount": 92,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Capital"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=a4JJAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=40&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=a4JJAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Principes_d_orientation_sociale.html?hl=&id=a4JJAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=a4JJAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=a4JJAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Philosophie, morale et société",
+    "volumeInfo.authors": ["Gilbert Hottois", "Marcel Voisin"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "NWU:35556016568776"
+      }
+    ],
+    "volumeInfo.pageCount": 148,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ethics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UOweAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=41&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UOweAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Philosophie_morale_et_soci%C3%A9t%C3%A9.html?hl=&id=UOweAQAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=UOweAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=UOweAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Histoire de la sociologie",
+    "volumeInfo.subtitle": "De 1789 à nos jours",
+    "volumeInfo.authors": ["Charles-Henry Cuin", "François Gresle", "Ronan Hervouet"],
+    "volumeInfo.publishedDate": "2017-09-07",
+    "volumeInfo.description": "La sociologie n'est pas une activité purement spéculative ; elle n'est pas davantage le simple reflet de la vie sociale et politique d'une époque ou d'une collectivité donnée. On ne saurait donc ramener son histoire ni à celle d'une \" pensée \" ni à celle des sociétés où elle se développe, ce qui aboutirait à un relativisme historique au souffle court. L'hypothèse des auteurs de cet ouvrage est que leur discipline doit son développement à un ensemble de conditions intellectuelles, sociales et institutionnelles qui restent à démêler. En conséquence, la démarche adoptée relate l'histoire d'un projet et d'une pratique scientifiques, tout en en proposant quelques clés d'analyse. Quelles sont les dates, les oeuvres, les institutions, les techniques de recherche et les personnalités qui ont marqué le développement de la sociologie ? La sociologie est-elle une invention française, allemande ou américaine ? Pourquoi a-t-on pu parler d'un magistère français ? A travers l'histoire et les traditions nationales, y a-t-il une ou plusieurs sociologies ? Quel sens donner aux conflits qui opposent les sociologues sur les concepts et les méthodes ? Peut-on parler d'un progrès de la sociologie ?",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2707179167"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782707179166"
+      }
+    ],
+    "volumeInfo.pageCount": 283,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=NZVMswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=42&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=NZVMswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Histoire_de_la_sociologie.html?hl=&id=NZVMswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Éléments de sociologie",
+    "volumeInfo.subtitle": "une initiation à l'analyse sociologique",
+    "volumeInfo.authors": ["Henri Mendras"],
+    "volumeInfo.publishedDate": "1967",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015032851647"
+      }
+    ],
+    "volumeInfo.pageCount": 253,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.2.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Y5PZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=43&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Y5PZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/%C3%89l%C3%A9ments_de_sociologie.html?hl=&id=Y5PZAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Y5PZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Y5PZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Pour une sociologie relationnelle",
+    "volumeInfo.authors": ["Guy Bajoit"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B3745022"
+      }
+    ],
+    "volumeInfo.pageCount": 308,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Changement social"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=554vAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=44&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=554vAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pour_une_sociologie_relationnelle.html?hl=&id=554vAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=554vAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=554vAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Problèmes de morale et de sociologie",
+    "volumeInfo.authors": ["Herbert Spencer"],
+    "volumeInfo.publishedDate": "1894",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B44966"
+      }
+    ],
+    "volumeInfo.pageCount": 376,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ethics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.2.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=DsFCAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=45&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=DsFCAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Probl%C3%A8mes_de_morale_et_de_sociologie.html?hl=&id=DsFCAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=DsFCAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=DsFCAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Morale théorique et science des mœurs",
+    "volumeInfo.subtitle": "leurs possibilités, leurs conditions",
+    "volumeInfo.authors": ["Georges Gurvitch"],
+    "volumeInfo.publishedDate": "1948",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015030990793"
+      }
+    ],
+    "volumeInfo.pageCount": 206,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ethics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=m630PDQ6CYUC&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=46&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=m630PDQ6CYUC&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Morale_th%C3%A9orique_et_science_des_m%C5%93urs.html?hl=&id=m630PDQ6CYUC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=m630PDQ6CYUC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=m630PDQ6CYUC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La sociologie moderne et la crise morale",
+    "volumeInfo.authors": ["Martin G. Plattel"],
+    "volumeInfo.publishedDate": "1952",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B2634034"
+      }
+    ],
+    "volumeInfo.pageCount": 138,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Christian ethics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=yUwUAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=47&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=yUwUAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_moderne_et_la_crise_morale.html?hl=&id=yUwUAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=yUwUAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=yUwUAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La connaissance ordinaire",
+    "volumeInfo.subtitle": "précis de sociologie compréhensive",
+    "volumeInfo.authors": ["Michel Maffesoli"],
+    "volumeInfo.publisher": "Klincksieck",
+    "volumeInfo.publishedDate": "1985",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UTEXAS:059173023579211"
+      }
+    ],
+    "volumeInfo.pageCount": 260,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cognition"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=2VtZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=48&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=2VtZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_connaissance_ordinaire.html?hl=&id=2VtZAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=2VtZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=2VtZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'Esprit au long cours",
+    "volumeInfo.subtitle": "pour une sociologie du voyage",
+    "volumeInfo.authors": ["Alain Médam"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015009299069"
+      }
+    ],
+    "volumeInfo.pageCount": 180,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Travel in literature"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=MNRkAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=49&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=MNRkAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_Esprit_au_long_cours.html?hl=&id=MNRkAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=MNRkAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=MNRkAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Georg Simmel",
+    "volumeInfo.subtitle": "la sociologie et l'expérience du monde moderne",
+    "volumeInfo.authors": ["Patrick Watier"],
+    "volumeInfo.publisher": "Klincksieck",
+    "volumeInfo.publishedDate": "1986-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105040538873"
+      }
+    ],
+    "volumeInfo.pageCount": 292,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sciences sociales"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=buq1AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=50&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=buq1AAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Georg_Simmel.html?hl=&id=buq1AAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=buq1AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=buq1AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Théorie sociologique",
+    "volumeInfo.authors": ["Pierre Birnbaum", "François Chazel"],
+    "volumeInfo.publishedDate": "1975",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015028051640"
+      }
+    ],
+    "volumeInfo.pageCount": 598,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sistemas sociales"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=6cslAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=51&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=6cslAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Th%C3%A9orie_sociologique.html?hl=&id=6cslAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=6cslAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=6cslAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'attraction sociale",
+    "volumeInfo.subtitle": "le dynamisme de l'Imaginaire dans la société monocéphale",
+    "volumeInfo.authors": ["Patrick Tacussel"],
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "IND:30000112154178"
+      }
+    ],
+    "volumeInfo.pageCount": 204,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Groupes, Dynamique des"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.0.0.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=gxUjAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=52&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=gxUjAQAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_attraction_sociale.html?hl=&id=gxUjAQAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=gxUjAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=gxUjAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La Littérature et la société",
+    "volumeInfo.authors": ["Georges Doutrepont"],
+    "volumeInfo.publishedDate": "1942",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105210915984"
+      }
+    ],
+    "volumeInfo.pageCount": 688,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Literature"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=BpwjAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=53&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=BpwjAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Litt%C3%A9rature_et_la_soci%C3%A9t%C3%A9.html?hl=&id=BpwjAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=BpwjAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=BpwjAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'Homme et le nombre des hommes",
+    "volumeInfo.subtitle": "éssais sur les conséquences de la révolution démographique",
+    "volumeInfo.authors": ["Alain Girard"],
+    "volumeInfo.publisher": "Presses universitaires de France",
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015055335692"
+      }
+    ],
+    "volumeInfo.pageCount": 359,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Demography"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Y5EtAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=54&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Y5EtAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_Homme_et_le_nombre_des_hommes.html?hl=&id=Y5EtAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Y5EtAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Y5EtAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La société du vide",
+    "volumeInfo.authors": ["Yves Barel"],
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2020068249"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782020068246"
+      }
+    ],
+    "volumeInfo.pageCount": 267,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Autonomie (Psychologie)"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=tp8yAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=55&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=tp8yAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_soci%C3%A9t%C3%A9_du_vide.html?hl=&id=tp8yAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=tp8yAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=tp8yAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La forme et le sens dans la société",
+    "volumeInfo.authors": ["Raymond Ledrut"],
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015033865570"
+      }
+    ],
+    "volumeInfo.pageCount": 192,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Forme (Philosophie)"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=8pLZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=56&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=8pLZAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_forme_et_le_sens_dans_la_soci%C3%A9t%C3%A9.html?hl=&id=8pLZAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=8pLZAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=8pLZAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le rite et l'outil",
+    "volumeInfo.subtitle": "Essai sur le rationalisme social et la pluralité des civilisations",
+    "volumeInfo.authors": ["Charles Le Coeur"],
+    "volumeInfo.publishedDate": "1939",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B607866"
+      }
+    ],
+    "volumeInfo.pageCount": 337,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Civilisation - Philosophie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=jLcMAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=57&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=jLcMAQAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_rite_et_l_outil.html?hl=&id=jLcMAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=jLcMAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=jLcMAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Essais sur les groupements sociaux",
+    "volumeInfo.authors": ["René Maunier"],
+    "volumeInfo.publishedDate": "1929",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B266268"
+      }
+    ],
+    "volumeInfo.pageCount": 120,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=nl1JAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=58&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=nl1JAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Essais_sur_les_groupements_sociaux.html?hl=&id=nl1JAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=nl1JAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=nl1JAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La sociologie",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1930",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B21045"
+      }
+    ],
+    "volumeInfo.pageCount": 450,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=RHtDAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=59&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=RHtDAAAAIAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie.html?hl=&id=RHtDAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=RHtDAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=RHtDAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les théories sociologiques contemporaines",
+    "volumeInfo.authors": ["Pitirim Aleksandrovich Sorokin"],
+    "volumeInfo.publishedDate": "1938",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "PSU:000026326849"
+      }
+    ],
+    "volumeInfo.pageCount": 552,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.0.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Ig_uAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=60&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Ig_uAAAAMAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_th%C3%A9ories_sociologiques_contemporain.html?hl=&id=Ig_uAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Ig_uAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Ig_uAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Economie, Sociologie, Histoire du monde contemporain, Economie approfondie",
+    "volumeInfo.subtitle": "ECE 2e année",
+    "volumeInfo.authors": ["Alain Combes", "Philippe Dalpra", "Jean-Yves Deler"],
+    "volumeInfo.publishedDate": "2014",
+    "volumeInfo.description": "Cet ouvrage s'adresse aux élèves de 2e année des classes préparatoires commerciales, filière ECE. Pour réussir les épreuves le jour des concours, ils devront maîtriser les concepts, mécanismes et modèles de l'analyse économique, connaître et comprendre les principaux phénomènes économiques et sociaux depuis le début du XIXe siècle et appréhender les bases, méthodes et démarches de la sociologie. Suivant pas à pas le nouveau programme, cet ouvrage s'organise en deux grandes parties qui couvrent la totalité du cours de 2e année : Economie, sociologie et histoire des sociétés contemporaines (La mondialisation économique et financière, Déséquilibres, régulation et action publique). Economie approfondie : microéconomie et macroéconomie. Chaque chapitre propose des objectifs d'apprentissage, les notions essentielles à apprendre, ainsi qu'une synthèse et des chiffres clés. Pour accompagner l'étudiant dans son apprentissage et ses révisions, chaque chapitre est accompagné de tests de cours sous forme de QCM, d'exercices corrigés pour une mise en pratique et de dissertations détaillées. Economie, sociologie et histoire des sociétés contemporaines (La mondialisation économique et financière, Déséquilibres, régulation et action publique). Economie approfondie : microéconomie et macroéconomie. Chaque chapitre propose des objectifs d'apprentissage, les notions essentielles à apprendre, ainsi qu'une synthèse et des chiffres clés. Pour accompagner l'étudiant dans son apprentissage et ses révisions, chaque chapitre est accompagné de tests de cours sous forme de QCM, d'exercices corrigés pour une mise en pratique et de dissertations détaillées.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2100712756"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782100712755"
+      }
+    ],
+    "volumeInfo.pageCount": 410,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=N_6WoAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=61&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=N_6WoAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Economie_Sociologie_Histoire_du_monde_co.html?hl=&id=N_6WoAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La destruction de la raison",
+    "volumeInfo.subtitle": "Nietzsche",
+    "volumeInfo.authors": ["György Lukács", "Georg Lukács"],
+    "volumeInfo.publisher": "Editions Delga",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Lorsqu'on relit La Destruction de la raison, publiée par Georges Lukàcs en 1954, la position de l'idéologie dominante, confrontée à une critique marxiste et authentiquement philosophique de Nietzsche, devient plus difficile. Que la relation de Nietzsche au nazisme se trouve non seulement élucidée, mais développée en une critique de la philosophie irrationaliste mise en place pour contrer le progressisme issu de la Révolution française, voilà qui fait mieux comprendre le destin de ce livre, impublié depuis trente ans, mauvaise conscience de l'Université française. Voir la nietzschéolâtrie ambiante dénoncée, mais surtout réfutée et expliquée, constitue déjà pour elle un scandale. Mais ce qui explose ici, c'est aussi le consensus philosophique dominant: à savoir les éternels hommages de la vertu au vice, et du vice à la vertu, entre d'un côté une critique seulement morale de Nietzsche (Ferry, Comte-Sponville...), de l'autre l'immoralisme primesautier des Deleuze, Foucault, Derrida - et même le sous-nietzschéisme d'un Onfray. Les débordements identitaires actuels, aboutissement de cet irrationalisme, viennent confirmer les vues de l'un des plus grands penseurs du XXe siècle. A la suite du travail d'Emmanuel Faye sur Heidegger, qui nous fait aujourd'hui mieux comprendre les bases idéologiques du fascisme, il nous a paru nécessaire de restituer le chapitre central de La Destruction de la raison (panorama de l'idéologie réactionnaire de Schelling à Hitler), assorti d'une préface de l'auteur (1966) inédite en français et augmenté des passages \"anti-américains\" initialement censurés dans la précédente édition française. Livre maudit, donc. Livre essentiel, pour comprendre que le fascisme n'est pas seulement derrière, mais devant nous.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2915854033"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782915854039"
+      }
+    ],
+    "volumeInfo.pageCount": 217,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophy, German"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=PULDPQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=62&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=PULDPQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_destruction_de_la_raison.html?hl=&id=PULDPQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Mouvements d'une pensée",
+    "volumeInfo.subtitle": "Pierre Bourdieu",
+    "volumeInfo.authors": ["Patrick Champagne", "Olivier Christin"],
+    "volumeInfo.publisher": "Bordas Editions",
+    "volumeInfo.publishedDate": "2004",
+    "volumeInfo.description": "Pierre Bourdieu est l'un des grands penseurs du XXe siècle mais son œuvre est paradoxalement mal connue voire déformée. Trop souvent, sa théorie du sujet social est réduite aux titres de ses livres - La Reproduction, La Distinction, La Misère du monde, La Domination masculine etc. Cet ouvrage se propose de présenter, dans leur dynamique, les trois concepts majeurs - habitus, capital et champ - qui sont au fondement de sa théorie du monde social. Après avoir rappelé les bases philosophiques de sa démarche, l'ouvrage présente chacun des concepts en montrant comment ils ont été progressivement élaborés, enquête après enquête. Outils plus que système conceptuel clos et achevé, ces concepts permettent une synthèse originale entre les deux courants opposés de la pensée contemporaine, à savoir le structuralisme et la phénoménologie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2047299411"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782047299418"
+      }
+    ],
+    "volumeInfo.pageCount": 251,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=EDt1QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=63&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=EDt1QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Mouvements_d_une_pens%C3%A9e.html?hl=&id=EDt1QgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La sociologie en fiches",
+    "volumeInfo.authors": ["Béatrice Barbusse", "Dominique Glaymann"],
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.description": "Ce livre propose 50 fiches classées en 5 parties. Après une présentation des grands auteurs, de l'histoire de la sociologie, des principales notions et des méthodes utilisées par les sociologues, il aborde les grandes questions qui traversent al société française. Malgré ce classement, le lecteur peut utiliser les fiches en fonction de ses besoins sans être tenu à une lecture linéaire. Ce type de présentation est particulièrement pertinent pour les étudiants et tous ceux qui préparent des concours ou des examens de sociologie. La forme synthétique de l'ouvrage permet en effet d'aller rapidement à l'essentiel. Par sa diversité, ce livre s'adresse tant aux étudiants de Licence qu'à ceux de Masters qui ont de la sociologie ou de la culture générale dans leur cursus. Il convient aussi à tous ceux qui parent des concours administratifs (catégories A ou BN) au sein des IPAG, du CNFPT ou dans d'autres structures. Mais il peut aussi être utile aux citoyens qui cherchent à s'informer et à comprendre le fonctionnement d'une société de plus en plus complexe.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "272982457X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782729824570"
+      }
+    ],
+    "volumeInfo.pageCount": 410,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=CskZtAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=64&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=CskZtAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_en_fiches.html?hl=&id=CskZtAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Questions de sociologie",
+    "volumeInfo.authors": ["Pierre Bourdieu"],
+    "volumeInfo.publisher": "Les Editions de Minuit",
+    "volumeInfo.publishedDate": "2002",
+    "volumeInfo.description": "\" Ce qui circule entre les chercheurs et les non-spécialistes, ou même entre une science et les spécialistes des autres sciences, ce sont, au mieux, les résultats, mais jamais les opérations. On n'entre jamais dans les cuisines de la science. \" Ce sont ces secrets de métier, ces recettes de fabrication, ces tours de main, que Pierre Bourdieu tente de livrer ici. En regroupant l'ensemble des réponses qu'il a faites, dans des exposés, des interventions orales ou des interviews, aux principales questions que pose la sociologie, il livre sous la forme à la fois directe et nuancée que permet le discours oral, des réflexions sur la méthode et sur les concepts fondamentaux de sa sociologie (champ, habitus, capital, investissement, etc.), sur les problèmes épistémologiques et philosophiques que pose la science sociale, en même temps que des analyses nouvelles sur la culture et la politique, la grève et le syndicalisme, le sport et la littérature, la mode et la vie artistique, le langage et la musique. En donnant accès au travail sociologique en train de se faire, il invite le lecteur non à s'identifier à une \" pensée \" toute pensée mais à se rendre maître d'une méthode de pensée.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2707318256"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782707318251"
+      }
+    ],
+    "volumeInfo.pageCount": 277,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Fs_NoAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=65&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Fs_NoAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Questions_de_sociologie.html?hl=&id=Fs_NoAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Economie, sociologie et histoire du monde contemporain",
+    "volumeInfo.authors": ["Alain Beitone"],
+    "volumeInfo.publishedDate": "2016-05-18",
+    "volumeInfo.description": "Conforme à la lettre et à l’esprit des nouveaux programmes d’Economie, sociologie et histoire du monde contemporain des classes préparatoires économiques et commerciales (voie économique), ce manuel aborde tous les grands thèmes : mondialisation, crises économiques et financières, politiques économiques, transformations sociales et démographiques, justice sociale et politiques sociales, intégration européenne, entreprise et sociologie des organisations. Cette seconde édition est conçue pour permettre une préparation méthodique aux concours : - synthèse rigoureuse des savoirs essentiels ; - mise en évidence des problématiques des différents champs du savoir ; - présentation claire des principaux courants théoriques ; - mises en perspective historiques des enjeux contemporains.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2200613490"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782200613495"
+      }
+    ],
+    "volumeInfo.pageCount": 720,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=EjIPkAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=66&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=EjIPkAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Economie_sociologie_et_histoire_du_monde.html?hl=&id=EjIPkAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Invitation à la sociologie réflexive",
+    "volumeInfo.authors": ["Pierre Bourdieu", "Loïc Wacquant"],
+    "volumeInfo.publishedDate": "2014",
+    "volumeInfo.description": "L'œuvre multiple et complexe de Pierre Bourdieu a suscité, de par le monde, de très nombreuses interprétations et interpellations. C'est cet espace de discussions que Loïc Wacquant a reconstitué lors d'un séminaire tenu à l'Université de Chicago en 1987 puis au cours d'échanges serrés avec Pierre Bourdieu entre 1988 et 1991. Après une première partie exposant l'architecture conceptuelle et thématique des travaux de Pierre Bourdieu, Loïc Wacquant, au cours d'une interrogation méthodique nourrie de la lecture de l'œuvre et de ses critiques, permet non seulement au sociologue de répondre aux objections qui lui ont été adressées, mais aussi de livrer, plus clairement que jamais, les fondements philosophiques et épistémologiques de son anthropologie générale. Poussé et porté par ce dialogue, Pierre Bourdieu est conduit à clarifier jusqu'aux implications éthiques et civiques de son travail et à expliciter les effets sociaux qu'il entend produire. En présentant, dans une troisième partie, le préambule à son séminaire de recherche à l'Ecole des hautes études en sciences sociales, Pierre Bourdieu expose les principes de son enseignement à travers son application pratique. Enfin, dans \" Comment lire Bourdieu \", Loïc Wacquant propose deux itinéraires de lecture pour s'orienter dans une œuvre majeure à laquelle ce livre constitue la meilleure introduction.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2021059944"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782021059946"
+      }
+    ],
+    "volumeInfo.pageCount": 409,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Anthropologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=fVq9oQEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=67&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=fVq9oQEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Invitation_%C3%A0_la_sociologie_r%C3%A9flexive.html?hl=&id=fVq9oQEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "L'analyse de données quantitatives",
+    "volumeInfo.authors": ["Olivier Martin"],
+    "volumeInfo.publisher": "Armand Colin",
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.description": "Ce livre répond avec clarté et rigueur aux questions majeures que se pose tout concepteur d'enquête par questionnaire (comment concevoir un échantillon ? qu'est-ce qu'un sondage représentatif, un chiffre \" significatif \" ou une \" bonne estimation \" ?) ou toute personne souhaitant analyser des données quantitatives (comment recoder des variables et concevoir des indicateurs ? comment étudier leurs relations ?). Sans recours inutile au formalisme mathématique, il expose les principes des raisonnements statistiques et des arguments probabilistes en s'appuyant sur des exemples issus d'enquêtes récentes ou classiques. Que ce soit en sociologie ou dans les domaines des études, du marketing, des sondages d'opinion ou des enquêtes de comportement, il répond aux besoins bien identifiés des étudiants, enseignants et intervenants en sciences sociales.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2200244614"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782200244613"
+      }
+    ],
+    "volumeInfo.pageCount": 126,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Analyse des données / ram"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=GQmzQQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=68&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=GQmzQQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_analyse_de_donn%C3%A9es_quantitatives.html?hl=&id=GQmzQQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Education et sociologie",
+    "volumeInfo.authors": ["Émile Durkheim"],
+    "volumeInfo.publishedDate": "1980",
+    "volumeInfo.description": "La première édition de cet ouvrage d'un grand sociologue français remonte à 1922. L'ouvrage contient quatre études, précédées d'une introduction, p. 11-40, sur l'oeuvre pédagogique de Durkheim.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130365116"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130365112"
+      }
+    ],
+    "volumeInfo.pageCount": 130,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Educational sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=VQaYswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=69&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=VQaYswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Education_et_sociologie.html?hl=&id=VQaYswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Le récit de vie",
+    "volumeInfo.authors": ["Daniel Bertaux"],
+    "volumeInfo.publisher": "Armand Colin",
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.description": "Un récit de vie est-il autre chose qu'une reconstruction subjective de l'expérience vécue ? Porte-t-il en lui des contenus objectifs ? Y a-t-il des techniques spécifiques d'analyse des récits de vie ? Comment passe-t-on des contenus de ces récits à une compréhension sociologique d'un phénomène social ? La perspective ethnosociologique qui a guidé cet ouvrage répond clairement à ces questions. Elle se donne pour objectif d'étudier un fragment particulier de réalité sociohistorique. Le recours au récit de vie comme description, sous forme narrative, de l'expérience vécue l'enrichit d'une dimension diachronique ; celle-ci permet de saisir les logiques d'action dans leur développement biographique, et les configurations de rapports sociaux dans leur développement historique.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2200341288"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782200341282"
+      }
+    ],
+    "volumeInfo.pageCount": 126,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Biographie / rasuqam"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wziyGwAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=70&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wziyGwAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_r%C3%A9cit_de_vie.html?hl=&id=wziyGwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Lexique de sociologie",
+    "volumeInfo.authors": ["Yves Alpe", "Alain Beitone"],
+    "volumeInfo.publisher": "Dalloz-Sirey",
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "La sociologie occupe une place croissante dans le débat public et elle est aujourd'hui enseignée dans de nombreux cursus de formation (départements de sociologie des universités, Instituts d'études politiques, préparations aux concours de la fonction publique...). Les médias font souvent référence à des problèmes ou à des analyses sociologiques (exclusion, famille, délinquance, etc.). Et pourtant le vocabulaire sociologique reste assez mal connu bien qu'il soit indispensable pour comprendre le monde. Cette nouvelle édition du Lexique de sociologie, sensiblement augmentée, couvre tous les courants théoriques de la sociologie (subjectivisme, sociologie critique, individualisme méthodologique, fonctionnalisme, ethnométhodologie, interactionnisme...). Chaque fois que cela est nécessaire, les divergences ou les rapprochements entre courants théoriques sont explicités. Un effort particulier a été fait pour présenter les analyses récentes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2247075363"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782247075362"
+      }
+    ],
+    "volumeInfo.pageCount": 377,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=6whsIAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=71&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=6whsIAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Lexique_de_sociologie.html?hl=&id=6whsIAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La sociologie",
+    "volumeInfo.subtitle": "par A.Akoun et autres",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1978",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:757276418"
+      }
+    ],
+    "volumeInfo.pageCount": 255,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=2A6buAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=72&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=2A6buAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie.html?hl=&id=2A6buAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La physiologie sociale",
+    "volumeInfo.authors": ["Henri comte de Saint-Simon"],
+    "volumeInfo.publishedDate": "1965",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:840610"
+      }
+    ],
+    "volumeInfo.pageCount": 160,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Socialism in France"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=9rKyswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=73&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=9rKyswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_physiologie_sociale.html?hl=&id=9rKyswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Le monde au 21e siècle",
+    "volumeInfo.subtitle": "une théorie des systèmes mondiaux",
+    "volumeInfo.authors": ["Robert Fossaert"],
+    "volumeInfo.publishedDate": "1991",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2213027145"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782213027142"
+      }
+    ],
+    "volumeInfo.pageCount": 524,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Civilisation - Histoire"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=yddiQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=74&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=yddiQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_monde_au_21e_si%C3%A8cle.html?hl=&id=yddiQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Journal sociologique",
+    "volumeInfo.authors": ["Émile Durkheim"],
+    "volumeInfo.publishedDate": "1969",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:186660088"
+      }
+    ],
+    "volumeInfo.pageCount": 728,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=GBYYMQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=75&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=GBYYMQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Journal_sociologique.html?hl=&id=GBYYMQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La constitution de la société",
+    "volumeInfo.subtitle": "éléments de la théorie de la structuration",
+    "volumeInfo.authors": ["Anthony Giddens"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130399754"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130399759"
+      }
+    ],
+    "volumeInfo.pageCount": 474,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Institutions sociales"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=QIAqAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=76&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=QIAqAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_constitution_de_la_soci%C3%A9t%C3%A9.html?hl=&id=QIAqAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Sociologie et géographie",
+    "volumeInfo.authors": ["Pierre George"],
+    "volumeInfo.publisher": "Paris, Presses universitaires de France",
+    "volumeInfo.publishedDate": "1966",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "LCCN:67076547"
+      }
+    ],
+    "volumeInfo.pageCount": 218,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Geografía"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=gW16NAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=77&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=gW16NAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Sociologie_et_g%C3%A9ographie.html?hl=&id=gW16NAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les tabous des Français",
+    "volumeInfo.authors": ["Jean Duvignaud", "Jean Pierre Corbeau"],
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2010078195"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782010078194"
+      }
+    ],
+    "volumeInfo.pageCount": 240,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Caractéristiques nationales - Français"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=PFpoQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=78&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=PFpoQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_tabous_des_Fran%C3%A7ais.html?hl=&id=PFpoQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction à la sociologie générale",
+    "volumeInfo.authors": ["Guy Rocher"],
+    "volumeInfo.publisher": "LaSalle, Québec : Hurtubise HMH",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2890459438"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782890459434"
+      }
+    ],
+    "volumeInfo.pageCount": 685,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Social action"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=CJBJAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=79&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=CJBJAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_%C3%A0_la_sociologie_g%C3%A9n%C3%A9rale.html?hl=&id=CJBJAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Dictionnaire de sociologie",
+    "volumeInfo.authors": ["Joseph Sumpf", "Michel Hugues"],
+    "volumeInfo.publishedDate": "1973",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2030754218"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782030754214"
+      }
+    ],
+    "volumeInfo.pageCount": 255,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=xLhpQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=80&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=xLhpQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Dictionnaire_de_sociologie.html?hl=&id=xLhpQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Le livre des plaisirs",
+    "volumeInfo.authors": ["Raoul Vaneigem"],
+    "volumeInfo.publisher": "Bruxelles : Labor",
+    "volumeInfo.publishedDate": "1993",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "280400905X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782804009052"
+      }
+    ],
+    "volumeInfo.pageCount": 200,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Economics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=OKvDQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=81&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=OKvDQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_livre_des_plaisirs.html?hl=&id=OKvDQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction à la sociologie",
+    "volumeInfo.authors": ["Jacques Leclercq", "Jean Ladrière"],
+    "volumeInfo.publishedDate": "1969",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:18565950"
+      }
+    ],
+    "volumeInfo.pageCount": 292,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=k9ZNSAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=82&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=k9ZNSAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_%C3%A0_la_sociologie.html?hl=&id=k9ZNSAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La sociologie face au troisième millénaire",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1998",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:49171219"
+      }
+    ],
+    "volumeInfo.pageCount": 352,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Fundamentalism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ZQSCswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=83&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ZQSCswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_face_au_troisi%C3%A8me_mill%C3%A9n.html?hl=&id=ZQSCswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La sociologie d'Auguste Comte",
+    "volumeInfo.authors": ["Jean Lacroix"],
+    "volumeInfo.publishedDate": "1961",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "LCCN:a57001965"
+      }
+    ],
+    "volumeInfo.pageCount": 114,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=3AchvgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=84&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=3AchvgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_d_Auguste_Comte.html?hl=&id=3AchvgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La croyance et l'enquête",
+    "volumeInfo.subtitle": "aux sources du pragmatisme",
+    "volumeInfo.authors": ["Bruno Karsenti", "Louis Quéré"],
+    "volumeInfo.publisher": "Editions de l'Ecole des Hautes Etudes en Sciences Sociales",
+    "volumeInfo.publishedDate": "2004",
+    "volumeInfo.description": "En sciences sociales, l'héritage du pragmatisme a été longtemps défini en termes d'inspiration intellectuelle. Mais n'y a-t-il pas d'autres manières de constituer un héritage intellectuel qu'en termes d'acceptation de vérités ou de dogmes ? Cette question a été à l'origine du volume. Remonter à la source du pragmatisme américain, relire Peirce, Dewey, James et Mead, c'est d'emblée poser la question de la façon dont elle irrigue la connaissance au présent, puisque le pragmatisme consiste justement à s'engager dans son procès réel. C'est cette forme d'engagement, avec le dépassement qu'elle implique de nombreux clivages traditionnels, que les études du volume examinent sous différents angles. Elle apparaît surtout par la centralité du thème de l'enquête, comprise à la fois comme pratique (réalisation d'opérations) et comme expérimentation. À travers l'enquête, le pragmatisme américain connote d'emblée la connaissance et l'action socialement.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "271322022X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782713220227"
+      }
+    ],
+    "volumeInfo.pageCount": 349,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Pragmatism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Nip3AAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=85&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Nip3AAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_croyance_et_l_enqu%C3%AAte.html?hl=&id=Nip3AAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Genesis",
+    "volumeInfo.subtitle": "mouvements et institutions",
+    "volumeInfo.authors": ["Francesco Alberoni"],
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2859569952"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782859569952"
+      }
+    ],
+    "volumeInfo.pageCount": 684,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Changement social"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=uARLAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=86&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=uARLAAAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Genesis.html?hl=&id=uARLAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Le social avant la sociologie",
+    "volumeInfo.authors": ["François Vatin"],
+    "volumeInfo.publishedDate": "2017",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "213078786X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130787860"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophie sociale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=HfGmswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=87&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=HfGmswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_social_avant_la_sociologie.html?hl=&id=HfGmswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Sociologie des ruptures",
+    "volumeInfo.subtitle": "les pièges du temps en sciences sociales",
+    "volumeInfo.authors": ["Alain Gras"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1979",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130357741"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130357742"
+      }
+    ],
+    "volumeInfo.pageCount": 205,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Changement social"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=vmFsQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=88&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=vmFsQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Sociologie_des_ruptures.html?hl=&id=vmFsQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "L'Empire du sociologue",
+    "volumeInfo.authors": ["Jacques Rancière", "Collectif \"Révoltes logiques.\""],
+    "volumeInfo.publisher": "Éditions la Découverte",
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2707114472"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782707114471"
+      }
+    ],
+    "volumeInfo.pageCount": 164,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=bPFfQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=89&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=bPFfQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_Empire_du_sociologue.html?hl=&id=bPFfQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La machine à faire des dieux",
+    "volumeInfo.subtitle": "sociologie et psychologie",
+    "volumeInfo.authors": ["Serge Moscovici"],
+    "volumeInfo.publishedDate": "1988",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2213020671"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782213020679"
+      }
+    ],
+    "volumeInfo.pageCount": 485,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=mcNyQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=90&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=mcNyQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_machine_%C3%A0_faire_des_dieux.html?hl=&id=mcNyQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La sociologie en France",
+    "volumeInfo.authors": ["Jacques Ardoino"],
+    "volumeInfo.publisher": "Editions La Découverte",
+    "volumeInfo.publishedDate": "1988",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2707117625"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782707117625"
+      }
+    ],
+    "volumeInfo.pageCount": 125,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sociologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WcKVQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=91&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WcKVQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_sociologie_en_France.html?hl=&id=WcKVQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La Mort aujourd'hui",
+    "volumeInfo.authors": ["Louis-Vincent Thomas"],
+    "volumeInfo.publishedDate": "1977",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:299357943"
+      }
+    ],
+    "volumeInfo.pageCount": 274,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Anthropologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=dWRpswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=92&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=dWRpswEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Mort_aujourd_hui.html?hl=&id=dWRpswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Le progrès social",
+    "volumeInfo.subtitle": "composantes et intégration",
+    "volumeInfo.authors": ["Émile Girardeau"],
+    "volumeInfo.publishedDate": "1959",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "LCCN:a60002689"
+      }
+    ],
+    "volumeInfo.pageCount": 344,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Economic policy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=3f1_tAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=93&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=3f1_tAEACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_progr%C3%A8s_social.html?hl=&id=3f1_tAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La relation à l'autre",
+    "volumeInfo.subtitle": "au cœur de la pensée sociologique",
+    "volumeInfo.authors": ["Dominique Schnapper"],
+    "volumeInfo.publisher": "Editions Gallimard",
+    "volumeInfo.publishedDate": "1998",
+    "volumeInfo.description": "Classes, groupes, communautés, collectivités historiques, la sociologie n'a cessé, depuis ses origines, de penser la question de l'Autre. Critique par nature, elle s'interroge sur le sens des écarts qu'elle observe entre les réalités sociales et les principes affichés - particulièrement le principe de citoyenneté. Celui-ci organise effectivement les sociétés démocratiques, bien qu'il procède au renversement du monde social puisqu'il affirme l'égalité juridique et politique d'individus inégaux. En étudiant les préjugés et les discriminations, la genèse et les pratiques du racisme, les minorités ethniques ou culturelles, l'assimilation des immigrants, les relations concrètes entre les groupes dits ethniques, les origines économiques, politiques et idéologiques des nations et des nationalismes, l'enquête sociologique montre les tensions ou les contradictions entre le principe de l'égalité juridique et politique revendiqué dans les sociétés modernes et les diversités et les inégalités de l'ordre économique et social, entre les valeurs affirmées et les pratiques concrètes inspirées par les passions des hommes. Or le sociologue mène ses enquêtes et forge ses concepts dans une société particulière, dans une tradition intellectuelle marquées par les réalités nationales. L'analyse de la sociologie des relations interethniques comme enquête sur les effets et les limites de la citoyenneté moderne se révèle en cela le meilleur angle d'attaque pour comprendre aujourd'hui ce qu'est la pensée sociologique. La relation à l'Autre - assurément un ouvrage des plus ambitieux et des plus neufs -, d'un même mouvement, restitue de manière originale l'histoire de la sociologie; montre que celle-ci se structure autour de styles nationaux qui n'ont ni la même origine ni les mêmes objets premiers (par exemple, Durkheim et le défi de l'intégration républicaine; Max Weber et l'interaction des hommes en société ou en Communauté; la sociologie anglaise et l'héritage de l'Empire; ou bien encore l'école de Chicago et l'obsession de la ségrégation des Noirs); définit enfin la nature de la sociologie - cet effort de connaissance rationnelle de l'ordre social qui universalise par principe des données objectives toujours particulières.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070751139"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070751136"
+      }
+    ],
+    "volumeInfo.pageCount": 562,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Citizenship"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=F5dzQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=94&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=F5dzQgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_relation_%C3%A0_l_autre.html?hl=&id=F5dzQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les Règles du jeu",
+    "volumeInfo.subtitle": "l'action collective et la régulation sociale",
+    "volumeInfo.authors": ["Jean-Daniel Reynaud"],
+    "volumeInfo.publishedDate": "1989",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2200312563"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782200312565"
+      }
+    ],
+    "volumeInfo.pageCount": 306,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Action, Théorie de l'"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=-qF2QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=95&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=-qF2QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_R%C3%A8gles_du_jeu.html?hl=&id=-qF2QgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Philosophie des sciences sociales",
+    "volumeInfo.authors": ["Paul Felix Lazarsfeld", "Raymond Boudon"],
+    "volumeInfo.publishedDate": "1970",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:248356301"
+      }
+    ],
+    "volumeInfo.pageCount": 506,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Sciences sociales - Méthodologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4-d_QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=96&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4-d_QgAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Philosophie_des_sciences_sociales.html?hl=&id=4-d_QgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Du sacré",
+    "volumeInfo.subtitle": "croisades et pèlerinages, images et langages",
+    "volumeInfo.authors": ["Alphonse Dupront"],
+    "volumeInfo.publisher": "Editions Gallimard",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2070708926"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782070708925"
+      }
+    ],
+    "volumeInfo.pageCount": 541,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Christian pilgrims and pilgrimages"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=u-8BPQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&cd=97&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=u-8BPQAACAAJ&dq=subject:Sociologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Du_sacr%C3%A9.html?hl=&id=u-8BPQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  }
+]

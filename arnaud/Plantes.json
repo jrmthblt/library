@@ -1,0 +1,2744 @@
+[
+  {
+    "volumeInfo.title": "Assimilation de l'azote chez les plantes",
+    "volumeInfo.subtitle": "aspects physiologique, biochimique et moléculaire",
+    "volumeInfo.authors": ["Jean-François Morot-Gaudry"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1997",
+    "volumeInfo.description": "Le souci de la protection de l'environnement et de la qualité des aliments ainsi que la nécessité de régulariser les rendements demandent de reconsidérer les potentialités physiologiques des plantes. Par Exemple, l'apport massif et ponctuel d'engrais azotés, pour des raisons économiques et techniques amène des gaspillages souvent à l'origine des pollutions. Améliorer l'efficacité de capture et de stockage de l'azote par les plantes est donc nécessaire. L'application des techniques agronomiques modernes permet déjà de réduire considérablement les pertes de nitrates. Cependant, à l'avenir, les moyens d'action devraient être essentiellement tournés vers la génétique et conduire à l'élaboration de variétés plus économes en azote. L'objectif de cet ouvrage est de publier les principales connaissances acquises ces vingt dernières années sur le métabolisme azoté. Elles permettent d'envisager de nouvelles stratégies d'amélioration des espèces adaptées à des itinéraires techniques appropriés. Ce livre s'adresse aux étudiants de 2e et 3e cycles universitaires et des écoles d'agronomie ou d'agriculture. Il sera très utile aux professeurs de ces établissements et à toutes les personnes qui doivent acquérir rapidement des connaissances dans le domaine de l'assimilation de l'azote chez les plantes supérieures d'intérêt agronomique.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738007163"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738007162"
+      }
+    ],
+    "volumeInfo.pageCount": 422,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Crops and nitrogen"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=45ceHEqjZtcC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=1&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=45ceHEqjZtcC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Assimilation_de_l_azote_chez_les_plantes.html?hl=&id=45ceHEqjZtcC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=45ceHEqjZtcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=45ceHEqjZtcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'épidémiologie en pathologie végétale",
+    "volumeInfo.subtitle": "mycoses aériennes",
+    "volumeInfo.authors": ["Frantz Rapilly"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1991",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738002978"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738002976"
+      }
+    ],
+    "volumeInfo.pageCount": 317,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Fungal diseases of plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Sj3RLjAHGcUC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=2&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Sj3RLjAHGcUC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_%C3%A9pid%C3%A9miologie_en_pathologie_v%C3%A9g%C3%A9ta.html?hl=&id=Sj3RLjAHGcUC",
+    "volumeInfo.averageRating": 3,
+    "volumeInfo.ratingsCount": 1,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Sj3RLjAHGcUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Sj3RLjAHGcUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Amélioration des espèces végétales cultivées",
+    "volumeInfo.subtitle": "objectifs et critères de sélection",
+    "volumeInfo.authors": ["A. Gallais", "H. Bannerot"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738003834"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738003836"
+      }
+    ],
+    "volumeInfo.pageCount": 768,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Crop improvement"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FxMsqJwYe3AC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=3&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FxMsqJwYe3AC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Am%C3%A9lioration_des_esp%C3%A8ces_v%C3%A9g%C3%A9tales_c.html?hl=&id=FxMsqJwYe3AC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=FxMsqJwYe3AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=FxMsqJwYe3AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Lutte intégrée contre les ravageurs des cultures pérennes tropicales",
+    "volumeInfo.authors": ["Dominique Mariau"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1996",
+    "volumeInfo.description": "Lutte intégrée contre les ravageurs des cultures pérennes tropicales se veut la synthèse de trente années de recherche entreprises par les spécialistes des départements des cultures pérennes, des productions fruitières et des forêts du Centre de coopération en recherche agronomique pour le développement. Leurs travaux montrent que des résultats importants ont été obtenus en vue d'une utilisation plus rationnelle des pesticides chimiques. Dans bien des cas, cependant, l'action de ceux-ci peut être complétée, voire remplacée, par différentes techniques ou agents biologiques. Cet ouvrage étudie l'utilisation de produits biologiques commercialisés ou de pesticides mieux ciblés sur les ravageurs, le rôle déterminant joué par les insectes auxiliaires, ainsi que les procédés à mettre en place pour en respecter l'action et promouvoir les introductions des parasitoïdes et prédateurs les plus efficaces. Il montre l'impact souvent très important joué par les germes entomopathogènes dans la régulation des populations et les possibilités offertes par leur utilisation comme agent de lutte biologique, la mise en œuvre de techniques culturales défavorables aux ravageurs ou, au contraire, la suppression de méthodes qui leur sont favorables. Il met en évidence l'importance des stimuli olfactifs et visuels dans le comportement des insectes et l'usage que l'on peut en faire, soit comme méthode de lutte directe, soit pour améliorer les connaissances sur l'importance et la dynamique des populations. Enfin, il aborde l'emploi de matériel végétal plus tolérant qui, avec les progrès des techniques d'amélioration du matériel végétal et l'augmentation des connaissances du génome, est un domaine très largement ouvert. Les chercheurs doivent aussi avoir pour souci constant l'application effective de leurs méthodes par les agriculteurs avec un double objectif : mieux protéger les cultures, souvent à moindre coût, pour satisfaire les besoins d'une population sans cesse croissante, et limiter la pollution, le plus gros handicap au développement spectaculaire de l'industrie des pesticides chimiques.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2876142538"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782876142534"
+      }
+    ],
+    "volumeInfo.pageCount": 196,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Pests"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=GOf6IKIOaAsC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=4&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=GOf6IKIOaAsC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Lutte_int%C3%A9gr%C3%A9e_contre_les_ravageurs_de.html?hl=&id=GOf6IKIOaAsC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=GOf6IKIOaAsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=GOf6IKIOaAsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Elaboration du rendement des principales cultures annuelles",
+    "volumeInfo.authors": ["Laurette Combe", "Didier Picard"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1994-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738005373"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738005373"
+      }
+    ],
+    "volumeInfo.pageCount": 191,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Agronomy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WTLrYaBnU3kC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=5&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WTLrYaBnU3kC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Elaboration_du_rendement_des_principales.html?hl=&id=WTLrYaBnU3kC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=WTLrYaBnU3kC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=WTLrYaBnU3kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Flore d'Île-de-France",
+    "volumeInfo.subtitle": "Clés de détermination, taxonomie, statuts",
+    "volumeInfo.authors": [" Philippe Jauzein", "Olivier Nawrot"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2013-11-05",
+    "volumeInfo.description": "Second tome de la Flore d’Ile-de-France (Quæ, 2011), un guide de détermination unique en France, qui renoue avec les flores anciennes en offrant plus de 1900 dessins au trait. Cette flore aux clefs de détermination dichotomiques novatrices et actualisées propose une iconographie entièrement renouvelée, des statuts pour chaque taxon (indigénat, rareté, vulnérabilité, patrimonialité, fréquence…) méthodiquement validés et des choix taxonomiques clairement étayés. Elle offre une mise à jour nomenclaturale, un index synonymique moderne et un chapitre de biogéographie intégrant les connaissances les plus récentes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759220205"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759220206"
+      }
+    ],
+    "volumeInfo.pageCount": 608,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botany"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WxpbAgAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=6&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WxpbAgAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Flore_d_%C3%8Ele_de_France.html?hl=&id=WxpbAgAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=WxpbAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=WxpbAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les supports de culture horticoles",
+    "volumeInfo.subtitle": "les matériaux complémentaires et alternatifs à la tourbe",
+    "volumeInfo.authors": ["Philippe Morel", "Laurent Poncet", "Louis-Marie Rivière"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2000",
+    "volumeInfo.description": "Depuis une vingtaine d'années, les cultures hors-sol ont connu un grand essor et plusieurs matériaux se sont imposés : les tourbes (pour les plantes en pot et les mottes), les écorces (pour les plantes en conteneur) et les laines minérales (en cultures maraîchères et fleurs coupées). A la fin des années 90, de nouvelles contraintes sont apparues : le classement de tourbières européennes en zones protégées, risquant d'entraîner une interdiction d'exploiter et la réglementation européenne imposant une valorisation des déchets après enfouissement. Ce dernier point remet en cause l'utilisation de substrats comme les laines minérales et oriente les recherches vers des substrats de culture dérivés de déchets, organiques ou non, issus des activités humaines. Reposant sur une étude bibliographique approfondie, cet ouvrage décrit (origine, disponibilité et traitements préalables, propriétés physiques et physico-chimiques, caractéristiques agronomiques, contraintes environnementales) et recense les matériaux de toutes origines pouvant entrer dans la fabrication d'un support de culture. Outil pratique d'information pour les fabricants et utilisateurs de substrats, ce livre intéressera aussi chercheurs, enseignants et étudiants à la recherche de références précises ou d'une vision globale du sujet.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738009077"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738009074"
+      }
+    ],
+    "volumeInfo.pageCount": 87,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Horticultural crops"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=9fXs4SPyJXUC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=7&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=9fXs4SPyJXUC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_supports_de_culture_horticoles.html?hl=&id=9fXs4SPyJXUC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=9fXs4SPyJXUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=9fXs4SPyJXUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "De la domestication à la transgénèse",
+    "volumeInfo.subtitle": "évolution des outils pour l'amélioration des plantes",
+    "volumeInfo.authors": ["André Gallais"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2013",
+    "volumeInfo.description": "La quatrième de couverture indique : \"L’amélioration génétique des plantes vise à réunir dans un même génotype, la variété, le maximum de gènes favorables pour les caractères à améliorer. Mais quels sont les outils mis en œuvre pour y parvenir ? Cet ouvrage répond à cette question et montre que, depuis la domestication, l’amélioration des plantes a toujours relevé du génie génétique. Ainsi, grâce au croisement et à la sélection, des gènes initialement présents chez des plantes différentes sont associés dans un même génotype. L’autofécondation ou l’haplodiploïdisation permettent de fixer les caractères. Pour accéder à une nouvelle variabilité génétique, des croisements interspécifiques sont aussi réalisés et exploités par la « manipulation » des chromosomes. La mutagénèse est également utilisée dans ce but. Aujourd’hui, les marqueurs moléculaires du génome permettent de passer d’une sélection phénotypique à une véritable sélection sur le génotype. Les progrès dans la transgénèse rendent possible le transfert dans un génome, de façon rapide et précise, de gènes d’espèces plus ou moins éloignées. C’est une ère nouvelle qui s’ouvre pour l’amélioration des plantes. Cet ouvrage s’adresse à tous ceux qui veulent comprendre comment les outils utilisés par la sélection végétale modifient le génotype des plantes. Il est destiné aux techniciens et ingénieurs de la sélection végétale ainsi qu’aux étudiants, enseignants et chercheurs de ce domaine.\"",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759219100"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759219100"
+      }
+    ],
+    "volumeInfo.pageCount": 175,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plant breeding"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=RHCbzEK3KfEC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=8&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=RHCbzEK3KfEC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/De_la_domestication_%C3%A0_la_transg%C3%A9n%C3%A8se.html?hl=&id=RHCbzEK3KfEC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=RHCbzEK3KfEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=RHCbzEK3KfEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Contaminations métalliques des agrosystèmes et écosystèmes péri-industriels",
+    "volumeInfo.authors": ["Philippe Cambier", "Christian Schvartz", "Folkert Van Oort"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759202751"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759202755"
+      }
+    ],
+    "volumeInfo.pageCount": 304,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Industrial toxicology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WGzuAkOp2h4C&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=9&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WGzuAkOp2h4C&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Contaminations_m%C3%A9talliques_des_agrosyst.html?hl=&id=WGzuAkOp2h4C",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=WGzuAkOp2h4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=WGzuAkOp2h4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Virus des solanacées",
+    "volumeInfo.subtitle": "du génome viral à la protection des cultures",
+    "volumeInfo.authors": ["Georges Marchoux", "Patrick Gognalons", "Kahsay Gébré Sélassié"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2008",
+    "volumeInfo.description": "Depuis la découverte du virus de la mosaïque du tabac il y a plus d'un siècle, les virus des Solanacées ont joué un rôle pionnier dans les recherches sur les bases moléculaires des interactions virus-vecteurs, les déterminants du pouvoir pathogène, les causes de l'évolution des virus émergents, la caractérisation et l'utilisation des gènes de résistance naturelle et enfin la transgénèse végétale. Pas moins de 164 virus et 7 viroïdes sont connus chez les Solanacées. Plusieurs dizaines sont associés à de graves maladies pour les productions potagères et maraîchères (tomate, pomme de terre, piment, aubergine, pépino, tamarillo, tomatillo...), industrielles (tabac), ornementales (pétunia) ou médicinales (Datura, Atropa, Hyoscyamus, Solanum...). Ce livre présente pour la première fois une synthèse des connaissances, par 18 virologues, généticiens, améliorateurs et taxonomistes de réputation internationale. Le lecteur y trouvera un rappel des données sur les centres de domestication et la dispersion des Solanacées dans le monde et leur taxonomie. Pour chacun des virus qui affectent ces plantes sont détaillées la gamme d'hôtes, la symptomatologie et l'importance des dégâts, la structure et les fonctions du génome, la variabilité et les interactions virus-hôtes, la transmission, l'épidémiologie et la distribution géographique. Sont également développés les progrès récents dans la classification des espèces virales et l'amélioration des méthodes de diagnostic, de détection et de lutte. Richement illustré, comportant un glossaire et plus de 2 000 références bibliographiques, cet ouvrage constituera une source précieuse de documentation pour les étudiants, les enseignants, les chercheurs, les techniciens, les sélectionneurs et les virologues, notamment dans les pays francophones en développement. II est en outre complété par un index des familles, genres et espèces viraux cités.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759200764"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759200760"
+      }
+    ],
+    "volumeInfo.pageCount": 843,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Solanaceae"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=gP9sUIwxeSsC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=10&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=gP9sUIwxeSsC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Virus_des_solanac%C3%A9es.html?hl=&id=gP9sUIwxeSsC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=gP9sUIwxeSsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=gP9sUIwxeSsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Croissance et développement des plantes cultivées",
+    "volumeInfo.authors": ["Collectif d'auteurs,"],
+    "volumeInfo.publisher": "Educagri Editions",
+    "volumeInfo.publishedDate": "2013",
+    "volumeInfo.description": "La conduite d'un atelier de production végétale nécessite la connaissance des caractéristiques physiologiques des plantes. Comment une plante grandit-elle ? Quels sont les facteurs qui impactent sur son développement et donc sur le rendement de la culture ? Cet ouvrage permet d'étudier les différents aspects de la croissance et du développement des végétaux ainsi que les cycles de vie et de culture des principaux types de plantes cultivées. Les deux séquences (croissance et développement, cycles de vie et cycles de culture) fournissent à l'apprenant la connaissance des mécanismes de croissance et de développement des plantes cultivées et le mode d'élaboration du rendement d'une culture. Ce volume est adapté aux formations de niveau 4 de l'enseigne- ment et de la formation professionnelle. C'est un dossier d'auto- formation alternant apports de connaissance avec leurs résumés et tests d'autoévaluation avec leurs corrigés.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782844449252"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2844449255"
+      }
+    ],
+    "volumeInfo.pageCount": 98,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Zx56gEPRTngC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=11&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Zx56gEPRTngC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Croissance_et_d%C3%A9veloppement_des_plantes.html?hl=&id=Zx56gEPRTngC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Zx56gEPRTngC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Zx56gEPRTngC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Plantes transgéniques",
+    "volumeInfo.subtitle": "faits et enjeux",
+    "volumeInfo.authors": ["André Gallais", "Agnès Ricroch"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Les plantes transgéniques sont maintenant cultivées dans plus de 90 millions d'hectares dans le monde, mais leur développement est bloqué en Europe. En France, elles sont l'objet de débats fréquents, passionnés, polémiques et de prises de position politiques. En conséquence, il n'est pas toujours facile de bien cerner toutes les facettes de ce dossier. Cet ouvrage rassemble des informations permettant de mieux comprendre les objets des débats en s'appuyant, pour chacun d'eux, sur des références précises. Qu'est-ce que la transgénèse, que peut-elle apporter ? Quels sont les risques éventuels pour la santé et pour l'environnement, comment sont-ils ou peuvent-ils être gérés ? Les raisons du refus des plantes transgéniques sont-elles de nature scientifique, économique, éthique ou politique et quelles en sont les conséquences ? Les auteurs ont examiné la balance bénéfices/risques des plantes transgéniques en considérant les points de vue techniques, scientifiques, économiques et sociétaux. Cet ouvrage s'adresse aux étudiants et aux enseignants en biologie végétale ou en agronomie, aux chercheurs et ingénieurs de la sélection végétale, aux décideurs et à tout citoyen s'intéressant à ce sujet de société.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2759200019"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759200016"
+      }
+    ],
+    "volumeInfo.pageCount": 284,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Transgenic plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=I89D3FhIEcoC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=12&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=I89D3FhIEcoC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Plantes_transg%C3%A9niques.html?hl=&id=I89D3FhIEcoC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=I89D3FhIEcoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=I89D3FhIEcoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Comprendre l'amélioration des plantes",
+    "volumeInfo.subtitle": "Enjeux, méthodes, objectifs et critères de sélection",
+    "volumeInfo.authors": ["André Gallais"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2015-05-21",
+    "volumeInfo.description": "Quels en sont les enjeux socio-économiques (nourrir la planète, respecter l'environnement, s'adapter au changement climatique, organisation de la filière semences) ? Quels sont les outils et les méthodes utilisés ? Comment les principaux caractères sont-ils améliorés ? L'ouvrage répond à ces questions et se termine par un bilan de ce qu'a apporté l'amélioration des plantes, tant à l’agriculteur qu’au consommateur, à l’industriel ou à la société.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759223466"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759223469"
+      }
+    ],
+    "volumeInfo.pageCount": 240,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=CZ2tCQAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=13&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=CZ2tCQAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Comprendre_l_am%C3%A9lioration_des_plantes.html?hl=&id=CZ2tCQAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=CZ2tCQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=CZ2tCQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Identifier les champignons transmis par les semences",
+    "volumeInfo.authors": ["Rémi Champion"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1997",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738007023"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738007025"
+      }
+    ],
+    "volumeInfo.pageCount": 398,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Agriculture - Disease"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.2.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=eyQ2xj5D9VgC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=14&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=eyQ2xj5D9VgC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Identifier_les_champignons_transmis_par.html?hl=&id=eyQ2xj5D9VgC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=eyQ2xj5D9VgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=eyQ2xj5D9VgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Une visite au Jardin Roger-Van den Hende",
+    "volumeInfo.subtitle": "un parcours de l'évolution des végétaux",
+    "volumeInfo.authors": ["Joanne Tardif", "Société des amis du Jardin Van den Hende"],
+    "volumeInfo.publisher": "Éditions MultiMondes",
+    "volumeInfo.publishedDate": "2003",
+    "volumeInfo.description": "Destiné à faciliter l'appréciation des richesses du jardin botanique à vocation pédagogique de l'Université Laval, ce guide présente, photographies, schémas et tableaux à l'appui, des informations détaillées sur les plantes qu'on peut y observer. Les plantes sont classées par familles botaniques et regroupées selon un ordre évolutif. [SDM].",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782895440406"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2895440409"
+      }
+    ],
+    "volumeInfo.pageCount": 161,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botany"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=b3AHCIWGr7AC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=15&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=b3AHCIWGr7AC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Une_visite_au_Jardin_Roger_Van_den_Hende.html?hl=&id=b3AHCIWGr7AC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=b3AHCIWGr7AC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=b3AHCIWGr7AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Techniques de cytogénétique végétale",
+    "volumeInfo.authors": ["Joseph Jahier"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738003966"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738003966"
+      }
+    ],
+    "volumeInfo.pageCount": 183,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plant biotechnology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=u0fcvvduX5YC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=16&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=u0fcvvduX5YC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Techniques_de_cytog%C3%A9n%C3%A9tique_v%C3%A9g%C3%A9tale.html?hl=&id=u0fcvvduX5YC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=u0fcvvduX5YC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=u0fcvvduX5YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Des plantes et leurs insectes",
+    "volumeInfo.authors": ["Bruno Didier", "Hervé Guyot"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2012-05-23",
+    "volumeInfo.description": "La quatrième de couverture indique : \"Etes-vous partant pour un safari entomologique\" ? Quelle que soit votre motivation, que vous soyez porté par une curiosité naturaliste ou par le souci de voir s'épanouir les plantes de votre jardin sans massacrer inutilement la petite faune qu'elles abritent, cet ouvrage vous procure des clés indispensables et intelligentes pour apprendre à connaître et à reconnaître plusieurs centaines d'insectes et autres arthropodes courants. Une approche originale qui présente ensemble des informations habituellement dissociées : la description des plantes et celle des insectes qui vivent à leurs dépens. \"Quelles sont les principales espèces que j'ai la chance de trouver sur mon fusain d'Europe ? Qui troue allègrement les noisettes de mon jardin ? Quel est le responsable de ces traînées blanches à la surface des feuilles de ronces ? Quelles sont ces chenilles dans mes gousses de pois ?\" Quelques questions parmi des centaines d'autres qui trouveront réponse ici. Par le texte et par l'image, vous apprendrez à découvrir la faune entomologique associée à quelques-unes des plantes les plus communes de nos régions : arbres, arbustes, plantes potagères ou fleurs sauvages. Qui sont ces insectes ? A quelle période et sur quelles parties de la plante peut-on les trouver ? Comment affectent-ils la plante ? Outil d'aide à la reconnaissance des insectes, ce petit précis d'écologie est aussi une mine d'informations sur l'origine des plantes décrites, leur culture, leur cycle de croissance ou encore leur étymologie. Ce recueil de textes, issus de la revue Insectes et mis à jour pour cette édition, est l'oeuvre d'entomologistes pédagogues. Il sera utile au jardin aussi bien qu'au cours de la promenade naturaliste, et réjouira autant les amateurs de petites bêtes que les amoureux des plantes. \"",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759217748"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759217744"
+      }
+    ],
+    "volumeInfo.pageCount": 263,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Insect pests"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=8JnlFwBL2pkC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=17&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=8JnlFwBL2pkC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Des_plantes_et_leurs_insectes.html?hl=&id=8JnlFwBL2pkC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=8JnlFwBL2pkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=8JnlFwBL2pkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La défense des cultures",
+    "volumeInfo.authors": {},
+    "volumeInfo.publisher": "Educagri Editions",
+    "volumeInfo.publishedDate": "2010",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782844447531"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2844447538"
+      }
+    ],
+    "volumeInfo.pageCount": 177,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Kd6QKSSiL7QC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=18&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Kd6QKSSiL7QC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_d%C3%A9fense_des_cultures.html?hl=&id=Kd6QKSSiL7QC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Kd6QKSSiL7QC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Kd6QKSSiL7QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les végétaux",
+    "volumeInfo.subtitle": "Les relations avec leur environnement",
+    "volumeInfo.authors": ["Lydie Suty"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2015-01-21",
+    "volumeInfo.description": "Cet ouvrage retrace les relations complexes que les plantes établissent avec leur environnement biotique (ensemble des organismes vivants) et abiotique (climatique par exemple). Il aborde les principaux aspects de ces relations et dispense quelques notions d’écologie permettant d’expliciter l’importance des végétaux dans tous les écosystèmes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759222872"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "275922287X"
+      }
+    ],
+    "volumeInfo.pageCount": 56,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.0.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=02a9BgAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=19&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=02a9BgAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_v%C3%A9g%C3%A9taux.html?hl=&id=02a9BgAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=02a9BgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=02a9BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les mycorhizes",
+    "volumeInfo.subtitle": "L'essor de la nouvelle révolution verte",
+    "volumeInfo.authors": ["J. André Fortin", "Christian Plenchette", "Yves Piché"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2016-02-01",
+    "volumeInfo.description": "Les mycorhizes sont formées par des champignons microscopiques qui font merveille en horticulture en travaillant en symbiose avec les racines des plantes. L'intérêt scientifique et pratique de ces symbioses pour l'ensemble des végétaux a été clairement démontré, en horticulture, en agriculture, en foresterie, et en environnement. Cette nouvelle édition vise à la fois à faire comprendre la biologie des mycorhizes et comment en tirer profit dans de très nombreux aspects de la culture des plantes et de leur protection, tout en assurant le maintien des équilibres naturels.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759224333"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759224333"
+      }
+    ],
+    "volumeInfo.pageCount": 184,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=HiOICwAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=20&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=HiOICwAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_mycorhizes.html?hl=&id=HiOICwAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=HiOICwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=HiOICwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Indicator plant species in Canadian forests",
+    "volumeInfo.authors": ["Gordon S. Ringius", "Sue Meades", "R. A. Sims", "Service canadien des forêts"],
+    "volumeInfo.publisher": "Presses Université Laval",
+    "volumeInfo.publishedDate": "1997",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0660955083"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780660955087"
+      }
+    ],
+    "volumeInfo.pageCount": 217,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Forest ecology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=eElUh_Jvy1kC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=21&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=eElUh_Jvy1kC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Indicator_plant_species_in_Canadian_fore.html?hl=&id=eElUh_Jvy1kC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=eElUh_Jvy1kC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=eElUh_Jvy1kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Hétérosis et variétés hybrides en amélioration des plantes",
+    "volumeInfo.authors": ["André Gallais"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759203741"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759203743"
+      }
+    ],
+    "volumeInfo.pageCount": 356,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Heterosis"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=M7iQF2sDmjoC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=22&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=M7iQF2sDmjoC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/H%C3%A9t%C3%A9rosis_et_vari%C3%A9t%C3%A9s_hybrides_en_am.html?hl=&id=M7iQF2sDmjoC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=M7iQF2sDmjoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=M7iQF2sDmjoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Protection agroécologique des cultures",
+    "volumeInfo.subtitle": "",
+    "volumeInfo.authors": ["Jean-Philippe DEGUINE", "Caroline GLOANEC ", "Philippe LAURENT", "Alain RATNADASS", "Jean-Noël AUBERTOT"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2016-01-13",
+    "volumeInfo.description": "À partir d’une présentation des principes de l’agroécologie et de leur application à la protection des cultures, cet ouvrage analyse plusieurs expériences participatives réalisées en vraie grandeur, dans différents contextes. Il en tire des recommandations concrètes pour l'ensemble des systèmes de cultures tempérés et tropicaux, véritables clés de cette transition agroécologique recherchée.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759224104"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759224104"
+      }
+    ],
+    "volumeInfo.pageCount": 288,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.0.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=9iGICwAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=23&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=9iGICwAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Protection_agro%C3%A9cologique_des_cultures.html?hl=&id=9iGICwAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=9iGICwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=9iGICwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Comment l'herbe pousse",
+    "volumeInfo.subtitle": "développement végétatif, structures clonales et spatiales des graminées",
+    "volumeInfo.authors": ["Michel Lafarge", "Jean-Louis Durand"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2011",
+    "volumeInfo.description": "Les prairies couvrent près du quart des surfaces émergées du globe, et les graminées y occupent une place prépondérante. Outre leur importance dans les écosystèmes herbacés d'une manière générale, les individus de cette famille botanique présentent un mode de croissance particulier. L'originalité de cette synthèse, la première depuis plus de trente ans, est de privilégier le développement végétatif et ses règles communes en faisant état des nombreuses connaissances acquises, notamment sur le tallage, son rythme et sa régulation, les structures clonales et leur dynamique, ainsi que sur l'évolution spatiale des peuplements herbacés. Au fil de l'exposé, on découvre que c'est là que se jouent fondamentalement la structure et le renouvellement de végétations pérennes soumises aux contraintes du sol et des saisons, et régulièrement défoliées parles animaux ou les outils de récolte. C'est par leur morphogenèse végétative que les graminées se révèlent le plus clairement différentes des autres groupes d'herbacées. Et c'est sans doute là qu'il faut chercher une raison majeure de leur succès écologique. L'ouvrage décrit les caractères génériques de forme des organes et d'architecture des graminées, leur formation et leur renouvellement au niveau individuel, les rythmes qui les gouvernent et leurs réponses aux contraintes environnementales, puis les conséquences de ces phénomènes sur la dynamique des colonies d'individus composant une végétation pérenne. Cette synthèse, issue d'échanges approfondis entre l'écophysiologie et l'écologie prairiale, s'adresse aux chercheurs et aux enseignants, mais aussi directement aux étudiants en écologie et en agronomie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759210459"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759210456"
+      }
+    ],
+    "volumeInfo.pageCount": 169,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Grasses"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=b4eZjm7a9RsC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=24&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=b4eZjm7a9RsC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Comment_l_herbe_pousse.html?hl=&id=b4eZjm7a9RsC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=b4eZjm7a9RsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=b4eZjm7a9RsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les secrets de l'électroculture",
+    "volumeInfo.authors": ["Arnaud Colombier"],
+    "volumeInfo.publisher": "Editions Eyrolles",
+    "volumeInfo.publishedDate": "2017",
+    "volumeInfo.description": "Les différents mouvements écologiques ont favorisé l'électroculture, qui consiste à utiliser l'électricité statique pour permettre aux plantes de se développer et d'améliorer les qualités gustatives de leur production. Cet ouvrage présente cette méthode et ses techniques.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782212118766"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2212118767"
+      }
+    ],
+    "volumeInfo.pageCount": 95,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.6.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=8baWDgAAQBAJ&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=25&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=8baWDgAAQBAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_secrets_de_l_%C3%A9lectroculture.html?hl=&id=8baWDgAAQBAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=8baWDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=8baWDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Histoire et amélioration de cinquante plantes cultivées",
+    "volumeInfo.authors": ["Claire Doré", "F. Varoquaux"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "Les méthodes utilisées en amélioration des plantes ainsi que les critères de sélection évoluent très rapidement. Cet ouvrage, clair et pédagogique, offre à la fois un historique et un bilan sur les acquis en la matière. Les bases de la génétique et les modes de reproduction des espèces végétales sont tout d'abord rappelés comme éléments nécessaires à la compréhension des principes et méthodes de l'amélioration des plantes. Chaque plante cultivée est ensuite présentée sous forme de fiche construite sur un même plan : synthèse sur l'histoire de l'espèce et les innovations marquantes en matière de création variétale (les principales étapes de l'amélioration génétique, les perspectives à envisager, l'état de données sur l'inscription et la protection des variétés), avec des illustrations de la plante entière et des produits de la récolte. Classées par ordre alphabétique, ces fiches permettent au lecteur d'accéder facilement à l'information sur les diverses plantes cultivées présentées : quatre céréales, six plantes oléo-protéagineuses, trois industrielles, trois forestières, cinq fourragères, huit fruitières, douze légumières, cinq ornementales, trois exemples d'espèces cultivées en milieu tropical et la vigne. Fruit de la consultation et de la collaboration d'environ deux-cent-trente spécialistes du secteur public et du secteur privé, cet ouvrage est destiné aux étudiants, enseignants, professionnels des semences et à toute personne qui s'intéresse à l'amélioration des plantes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2738012159"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738012159"
+      }
+    ],
+    "volumeInfo.pageCount": 812,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Crop improvement"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=6pbtFya2zy8C&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=26&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=6pbtFya2zy8C&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Histoire_et_am%C3%A9lioration_de_cinquante_p.html?hl=&id=6pbtFya2zy8C",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=6pbtFya2zy8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=6pbtFya2zy8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'art d'acclimater les plantes exotiques",
+    "volumeInfo.subtitle": "le jardin de la villa Thuret",
+    "volumeInfo.authors": ["Catherine Ducatillion", "Landy Blanc-Chabaud"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2010",
+    "volumeInfo.description": "Si les arbres du jardin Thuret savaient parler, quelles histoires ils pourraient nous conter ! Défilé de visages aux regards curieux, de mains prolongées de leurs outils métalliques. Succession de modes de culture et d'usages. Visiteurs aux costumes changeants. Émotions renouvelées devant ces étranges plantes venues d'ailleurs. Mais aussi graines dispersées par le vent ou les oiseaux, boutures offertes ou... dérobées ! Le jardin de la villa Thuret - l'un des plus anciens jardins botaniques de la Côte d'Azur - accueille en effet des plantes de lointaines contrées pour les acclimater à nos régions méditerranéennes. Depuis cent cinquante ans, des milliers de plantes ont été invitées à séjourner au cap d'Antibes sous le regard attentif des botanistes et des jardiniers. Certaines s'y sont tant plu qu'elles ont fondé famille et, façonnant le paysage de la Riviera, ont transformé à jamais une terre ingrate en un paradis de verdure. De nos jours, les jardins d'acclimatation, réservoir de ressources et observatoire des plantes exotiques, ont toujours un rôle à jouer. Car, avec l'évolution du climat et des usages, des besoins nouveaux apparaissent : arbres capables de résister à la pollution ou à la sécheresse, arbustes ornementaux pour retenir les sols des remblais, fleurs à couper de couleur rare... Il faut pouvoir y répondre. Après un siècle et demi d'expérimentation, le jardin Thuret continue d'accueillir des scientifiques, des plantes et des visiteurs. Il poursuit son chemin, avec - est-ce volontaire ? - la même lenteur, le même silence que ses arbres. Chut, pénétrons dans ce monde vertical et écoutons son histoire...",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759206810"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759206815"
+      }
+    ],
+    "volumeInfo.pageCount": 190,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Acclimatization (Plants)"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=VJahV1CDlHoC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=27&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=VJahV1CDlHoC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_art_d_acclimater_les_plantes_exotiques.html?hl=&id=VJahV1CDlHoC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=VJahV1CDlHoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=VJahV1CDlHoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Méthodes de création de variétés en amélioration des plantes",
+    "volumeInfo.authors": ["André Gallais"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2011",
+    "volumeInfo.description": "Qu'est-ce qu'une variété en amélioration des plantes ? Pourquoi et comment crée-t-on une variété ? Le but de l'ouvrage est de répondre à ces questions en présentant assez simplement toutes les méthodes de sélection importantes pour la création de variétés, et en y intégrant deux outils de plus en plus utilisés : l'haplodiploïdisation et les marqueurs moléculaires. Le développement d'une sélection \"scientifique\" à la fin du XIXe siècle a très rapidement conduit à des populations plus ou moins homogènes, appelées variétés. En fonction des caractéristiques biologiques de l'espèce et des considérations socio-économiques, le sélectionneur crée des variétés populations, des lignées pures, des hybrides, des variétés synthétiques ou des clones. Le but de l'amélioration des plantes est de réunir dans une même variété le maximum de gènes favorables. L'ouvrage montre comment cela peut se réaliser par la combinaison de la sélection et des systèmes de reproduction. Cet ouvrage s'adresse à toute personne qui veut mieux comprendre ce qu'est une variété et comment l'obtenir. Sont ainsi particulièrement concernés les techniciens et ingénieurs de la sélection végétale et de la production de semences, les étudiants, les enseignants et les chercheurs dans ces domaines.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759216574"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2759216578"
+      }
+    ],
+    "volumeInfo.pageCount": 278,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Hb962WwMKQIC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=28&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Hb962WwMKQIC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/M%C3%A9thodes_de_cr%C3%A9ation_de_vari%C3%A9t%C3%A9s_en.html?hl=&id=Hb962WwMKQIC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Hb962WwMKQIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Hb962WwMKQIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les plantes qui puent, qui pètent, qui piquent",
+    "volumeInfo.authors": ["Lionel Hignard", "Alain Pontoppidan"],
+    "volumeInfo.publishedDate": "2008",
+    "volumeInfo.description": "Les plantes ne sont pas toujours aussi inoffensives qu'elles en ont l'air : les unes griffent, les autres dégagent une odeur insupportable, d'autres encore brûlent ou ne vous lâchent plus ! Ce livre documentaire, écrit par deux passionnés du règne végétal, traite avec sérieux et humour de ces plantes aux vertus si désagréables pour nous mais qui leur permettent de se défendre et ainsi de survivre. Regroupées par type de comportement ou d'adaptation (mauvaise odeur, sécrétion collante ou baveuse et autres armes tranchantes...), près de trente espèces de plantes sont décrites de façon détaillée.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2909421880"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782909421889"
+      }
+    ],
+    "volumeInfo.pageCount": 83,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=OX1xQgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=29&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=OX1xQgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_plantes_qui_puent_qui_p%C3%A8tent_qui_pi.html?hl=&id=OX1xQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Nuclear Techniques and in Vitro Culture for Plant Improvement",
+    "volumeInfo.subtitle": "Proceedings of an International Symposium on Nuclear Techniques and In Vitro Culture for Plant Improvement : Jointly Organized by the International Atomic Energy Agency and the Food and Agriculture Organisation of the United Nations and Held in Vienna, 19-23 August 1985",
+    "volumeInfo.authors": ["International Atomic Energy Agency"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.description": "Genetic variation from in vitro culture. Genetic stability of in vitro cultures. In vitro culture with application of mutagens. Haploids. In vitro mutant selection. Use of genetic variation derived by in vitro culture. In vitro techniques as aids in mutation breeding. Genetic engineering.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015011173245"
+      }
+    ],
+    "volumeInfo.pageCount": 529,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Technology & Engineering"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=QXWF6zugZAAC&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=30&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=QXWF6zugZAAC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Nuclear_Techniques_and_in_Vitro_Culture.html?hl=&id=QXWF6zugZAAC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=QXWF6zugZAAC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=QXWF6zugZAAC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Plantes des rizières de Camargue",
+    "volumeInfo.authors": ["Pascal Marnotte", "Alain Carrara"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2876146215"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782876146211"
+      }
+    ],
+    "volumeInfo.pageCount": 262,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=T_JvqEx7RP4C&pg=PP1&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=31&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=T_JvqEx7RP4C&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Plantes_des_rizi%C3%A8res_de_Camargue.html?hl=&id=T_JvqEx7RP4C",
+    "volumeInfo.averageRating": 5,
+    "volumeInfo.ratingsCount": 1,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=T_JvqEx7RP4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=T_JvqEx7RP4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Au jardin des plantes de la Bible",
+    "volumeInfo.subtitle": "botanique, symboles et usages",
+    "volumeInfo.authors": ["Jean Paquereau"],
+    "volumeInfo.publisher": "Forêt privée française",
+    "volumeInfo.publishedDate": "2016-01-04",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782916525068"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2916525068"
+      }
+    ],
+    "volumeInfo.pageCount": 416,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=f7qhjLdyafgC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=32&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=f7qhjLdyafgC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Au_jardin_des_plantes_de_la_Bible.html?hl=&id=f7qhjLdyafgC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=f7qhjLdyafgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=f7qhjLdyafgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Protection intégrée des cultures",
+    "volumeInfo.subtitle": "Fiches pour le conseil des techniques utilisables",
+    "volumeInfo.authors": ["Association nationale pour la protection des plantes (France). Commission des moyens de protection pour une production intégrée"],
+    "volumeInfo.publisher": "France Agricole",
+    "volumeInfo.publishedDate": "2013-09-25",
+    "volumeInfo.description": "La quatrième de couverture indique : \"Il existe peu de documents où les méthodes dites \"alternatives\" ou \"complémentaires\" à l'emploi des produits phytopharmaceutiques en agriculture sont décrites et commentées. C'est pourquoi des membres de l'Association française de protection des plantes ont estimé utile d'élaborer un document de synthèse sur ce sujet d'importance. Les principales méthodes recommandables pour mettre en place une véritable \"protection intégrée\" des cultures sont ici regroupées sous la forme de 66 fiches techniques, afin d'aider les formateurs, les conseillers et les agriculteurs dans leur réflexion et leur pratique quotidienne. Certaines de ces méthodes s'adressent à des millions d'hectares de cultures, d'autres s'appliquent sur quelques centaines d'hectares de productions spécialisées. La plupart possèdent une valeur technique reconnue, d'autres restent encore des sujets pour la recherche. Cette revue qui émane d'experts issus de milieux professionnels variés rappelle l'importance de la santé végétale pour nos sociétés, les règles de base d'une protection raisonnée et propose une vision circulaire sur les méthodes à prendre en compte pour organiser, à grande échelle, la protection intégrée des cultures. Méthodes que l'agriculteur et ses conseillers auront la charge de jauger pour les adapter au cas concret de leur exploitation.\"",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "285557255X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782855572550"
+      }
+    ],
+    "volumeInfo.pageCount": 256,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ZIjOngEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=33&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ZIjOngEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Protection_int%C3%A9gr%C3%A9e_des_cultures.html?hl=&id=ZIjOngEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=ZIjOngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=ZIjOngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Végétation du Viet-Nam",
+    "volumeInfo.subtitle": "le massif sud-annamitique et les régions limitrophes",
+    "volumeInfo.authors": ["Maurice Schmid"],
+    "volumeInfo.publisher": "IRD Editions",
+    "volumeInfo.publishedDate": "1974",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2709903490"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782709903493"
+      }
+    ],
+    "volumeInfo.pageCount": 243,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique - Vietnam"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=X4QCsbGdBUoC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=34&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=X4QCsbGdBUoC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/V%C3%A9g%C3%A9tation_du_Viet_Nam.html?hl=&id=X4QCsbGdBUoC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=X4QCsbGdBUoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=X4QCsbGdBUoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les plantes",
+    "volumeInfo.authors": ["Pamela Hickman", "Heather Collins", "Martine Faubert"],
+    "volumeInfo.publisher": "Markham, Ont. : Éditions Scholastic",
+    "volumeInfo.publishedDate": "2000",
+    "volumeInfo.description": "Le Canada possède de nombreuses plantes, de la minuscule fleur sauvage à la gigantesque fleur de tournesol. Découvrez les fleurs de la ville et les fleurs de la campagne grâce aux informations et aux activités contenues dans ce livre!",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0439005507"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780439005500"
+      }
+    ],
+    "volumeInfo.pageCount": 32,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=vbgIOQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=35&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=vbgIOQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_plantes.html?hl=&id=vbgIOQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=vbgIOQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=vbgIOQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Dictionnaire des agents pathogènes des plantes cultivées",
+    "volumeInfo.subtitle": "latin, français, anglais",
+    "volumeInfo.authors": ["Irène Fiala", "Francine Fèvre"],
+    "volumeInfo.publisher": "Editions Quae",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738003355"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2738003354"
+      }
+    ],
+    "volumeInfo.pageCount": 136,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["French language"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=XMsiKn0Mh9oC&printsec=frontcover&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=36&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=XMsiKn0Mh9oC&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Dictionnaire_des_agents_pathog%C3%A8nes_des.html?hl=&id=XMsiKn0Mh9oC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=XMsiKn0Mh9oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=XMsiKn0Mh9oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Biodiversité et évolution du monde végétal",
+    "volumeInfo.authors": ["David Garon", "Jean-Christophe Guéguen"],
+    "volumeInfo.publishedDate": "2014",
+    "volumeInfo.description": "Les ouvrages de la collection : Les cahiers de la biodiversité s'adressent aux étudiants suivant un cursus pharmaceutique, médical ou biologique ; aux étudiants en première année commune des études de santé (PACES) ; aux élèves ingénieurs ; aux candidats au CAPES, à l'Agrégation et aux enseignants en SVT. Ils sont aussi destinés à un plus large public sensibilisé à la biodiversité et à sa sauvegarde. Cet ouvrage nous fait plonger dans l'univers fascinant des plantes. Vouloir faire tenir le monde végétal dans un seul ouvrage relevait de l'impossible. Pourtant, dans ce deuxième volet, les auteurs se sont d'abord employés à présenter un panorama général des plantes, puis ont détaillé les liens étroits que l'homme entretient depuis toujours avec les plantes, jusqu'à comparer nos patrimoines génétiques respectifs : n'oublions pas que nous partageons un quart de nos gènes avec le grain de blé qui nous fournit notre pain ! Après de brefs rappels sur l'autotrophie et la photosynthèse qui caractérisent le monde végétal, les grandes étapes de l'évolution des plantes sont décrites : des algues peuplaient déjà les océans il y a trois milliards d'années ; des plantes avaient fait la conquête des continents, 430 millions d'années avant que notre espèce ne marche sur la Terre. Mais ceci n'était que l'embryon d'une histoire qui allait faire place à l'extraordinaire invention de la fleur et au développement de ses stratégies de coévolution avec les insectes. Deux chapitres sont consacrés au métabolisme végétal qui assure à la fois notre alimentation et notre arsenal de molécules pharmacologiquement actives. Un accent est mis sur les formidables capacités d'adaptation des plantes qui sont capables de communiquer, de se reproduire ou d'éloigner leurs agresseurs. Les plantes toxiques qui sont chaque année à l'origine d'intoxications ne sont pas oubliées. Ainsi, les plantes ont modelé le visage de notre planète ; elles lui ont donné cette couleur verte et bleue visible depuis l'espace. Sans ces \"choses vertes\" sur lesquelles on marche ou on s'assied, sans même souvent leur jeter le moindre regard, l'Histoire de l'humanité n'existerait même pas.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2759810933"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782759810932"
+      }
+    ],
+    "volumeInfo.pageCount": 270,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Human-plant relationships"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=0r_moQEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=37&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=0r_moQEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Biodiversit%C3%A9_et_%C3%A9volution_du_monde_v%C3%A9.html?hl=&id=0r_moQEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Proceedings of a Seminar on Crop Protection for Resource-Poor Farmers, Isle of Thorns Conference Centre, East Sussex, UK, 4-8 November 1991",
+    "volumeInfo.authors": ["R. W. Gibson", "A. Sweetmore", "Natural Resources Institute (Great Britain)"],
+    "volumeInfo.publisher": "Hyperion Books",
+    "volumeInfo.publishedDate": "1992-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "CORNELL:31924074185418"
+      }
+    ],
+    "volumeInfo.pageCount": 167,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Technology & Engineering"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=jAlNAAAAYAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=38&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=jAlNAAAAYAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Proceedings_of_a_Seminar_on_Crop_Protect.html?hl=&id=jAlNAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=jAlNAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=jAlNAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Croissance végétale et morphogénèse",
+    "volumeInfo.authors": ["Roger V. Jean"],
+    "volumeInfo.publisher": "Masson ; Québec : Presses de l'Université du Québec",
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "276050316X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782760503168"
+      }
+    ],
+    "volumeInfo.pageCount": 322,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Phyllotaxis"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=f1AOmQEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=39&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=f1AOmQEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Croissance_v%C3%A9g%C3%A9tale_et_morphog%C3%A9n%C3%A8se.html?hl=&id=f1AOmQEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=f1AOmQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=f1AOmQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Maladies cryptogamiques de la vigne",
+    "volumeInfo.subtitle": "champignons parasites des organes herbacés et du bois de la vigne",
+    "volumeInfo.authors": ["Bernadette Dubos"],
+    "volumeInfo.publisher": "Féret",
+    "volumeInfo.publishedDate": "2002",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2902416776"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782902416776"
+      }
+    ],
+    "volumeInfo.pageCount": 207,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=0p4qAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=40&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=0p4qAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Maladies_cryptogamiques_de_la_vigne.html?hl=&id=0p4qAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Curieuses Histoires de Plantes du Canada",
+    "volumeInfo.authors": ["Alain Asselin", "Jacques Cayouette", "Jacques Mathieu"],
+    "volumeInfo.publishedDate": "2014",
+    "volumeInfo.description": "Tome 1 : 1000-1670. \"Le Vinland que les Vikings visitent vers l'an 1000 pourrait-il se situer dans la région de Québec? En 1534, Jacques Cartier décrit l'usage du maïs, du tabac et d'une mystérieuse plante, l'annedda, qui guérirait du scorbut et de la syphilis. Mais quel est donc ce miraculeux conifère? Quel usage fait-on de la gomme de sapin dans les églises en Europe? Quelle sorte de chapelet mangeaient donc les Amérindiens? Il est stimulant de constater que plusieurs questions concernant les premières observations des plantes canadiennes demeurent sans réponse et requièrent encore des efforts de recherche. Cette histoire détaillée, palpitante et pleine de rebondissements, est aussi riche en informations scientifiques, culturelles et historiques souvent méconnues. Alain Asselin, Jacques Cayouette et Jacques Mathieu sont partis à la conquête de l'origine de ces plantes et relatent la curieuse et étonnante histoire des usages qu'on en faisait, tant en Amérique qu'en Europe.\" -- Source : page 4 de la couverture.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2894488858"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782894488850"
+      }
+    ],
+    "volumeInfo.pageCount": 312,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Europe"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Jd7pswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=41&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Jd7pswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Curieuses_Histoires_de_Plantes_du_Canada.html?hl=&id=Jd7pswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Guide de la flore du littoral sableux méditerranéen",
+    "volumeInfo.subtitle": "De la Camargue au Roussillon",
+    "volumeInfo.authors": ["Benoît Larroque", "Jean Favennec"],
+    "volumeInfo.publishedDate": "2016-03-25",
+    "volumeInfo.description": "Un guide d'identification de plus de 300 espèces du bord de mer, de la Camargue au Roussillon. Une équipe de 40 personnes, rédacteurs et photographes, de l'ONF, du Conservatoire botanique méditerranéen, du Parc naturel de Camargue, de l'EID, a réuni dans ce guide la plupart des plantes du littoral. 330 espèces classées par couleur de la fleur avec des clés de détermination simplifiées. Utilisable par tous, quel que soit le niveau de connaissances en sciences naturelles, cet ouvrage a pour vocation d'aider à la découverte du milieu naturel, mais aussi la gestion et la conservation du littoral méditerranéen.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2817704487"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782817704487"
+      }
+    ],
+    "volumeInfo.pageCount": 277,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=bdXcjwEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=42&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=bdXcjwEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Guide_de_la_flore_du_littoral_sableux_m.html?hl=&id=bdXcjwEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Contrôle Naturel des Parasites",
+    "volumeInfo.subtitle": "Techniques Naturelles Pour Enrayer les Bestioles de Votre Jardin",
+    "volumeInfo.authors": ["Elizabeth Miller", "Crow Miller"],
+    "volumeInfo.publisher": "Montréal : Modus Vivendi",
+    "volumeInfo.publishedDate": "2005-01-01",
+    "volumeInfo.description": "Les parasites : les araignées, les vers, les coccinelles, les pucerons, les cochenilles, etc. Ils envahissent presque tous les jardins. Jusqu'à tout récemment notre seule défense était de les bombarder avec des produits chimiques. Aujourd'hui, de plus en plus de jardiniers, sensibles à la protection de l'environnement, utilisent des méthodes naturelles mais tout aussi efficaces, afin de créer un espace favorable à la culture et libre de bestioles nuisibles. Santé et équilibre du sol. Le contrôle naturel des parasites doit commencer avec une analyse du sol et de l'environnement. Il y a évidemment des conditions objectives qui mènent à la propagation de certains types d'insectes nuisibles. Cet examen du sol et de l'environnement peut être fait très facilement et vous donnera une base objective pour développer une stratégie efficace afin d'enrayer les parasites de votre jardin. Plus futés que les insectes. Cet ouvrage vous offre une gamme d'outils efficaces pour lutter contre les parasites. Il s'agit tout d'abord d'identifier vos vrais ennemis, les insectes qui peuvent ravager vos plantes et vos animaux, ainsi que les oiseaux et les insectes qui vous seront bénéfiques. Le contrôle des insectes. Il existe maintenant des poudres et des poussières organiques, des pesticides biologiques qui sont tout aussi efficaces contre les ennemis de nos jardins. En lisant ces pages, vous développerez un véritable arsenal d'armes et de méthodes douces pour assurer la vitalité de vos fleurs, de vos arbustes et de vos arbres.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2895233128"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782895233121"
+      }
+    ],
+    "volumeInfo.pageCount": 129,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Jardinage biologique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=8sV0AAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=43&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=8sV0AAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Contr%C3%B4le_Naturel_des_Parasites.html?hl=&id=8sV0AAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Physiologie végétale",
+    "volumeInfo.subtitle": "Tome 1, Nutrition",
+    "volumeInfo.authors": ["René Heller", "Robert Esnault", "Claude Lance"],
+    "volumeInfo.publishedDate": "2004",
+    "volumeInfo.description": "Cette nouvelle édition a subi de profonds remaniements pour tenir compte des acquis les plus récents de la physiologie du développement des végétaux et de la génétique moléculaire, sans négliger les applications agronomiques et écologiques. Des compléments substantiels ont été apportés, notamment sur les phytohormones, les photorécepteurs, les relations plantes-pathogènes et la transgénèse. Deux chapitres entièrement nouveaux ont été introduits, sur la transduction du signal hormonal et sur le contrôle génétique du développement. Cet ouvrage s'adresse aux étudiants des établissements d'enseignement supérieur, universitaires (1er cycle/Licence) et agronomiques, ainsi qu'aux candidats aux concours (grandes écoles, CAPES, agrégation). Les professeurs de lycée et les chercheurs et agronomes en exercice pourront également consulter cet ouvrage qui se veut tout à la fois d'initiation et de référence.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2100487108"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782100487103"
+      }
+    ],
+    "volumeInfo.pageCount": 323,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=QFlHGQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=44&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=QFlHGQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Physiologie_v%C3%A9g%C3%A9tale.html?hl=&id=QFlHGQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Le monde mystérieux des plantes",
+    "volumeInfo.authors": ["Catherine Vadon"],
+    "volumeInfo.publisher": "Actes Sud",
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.description": "Diverses et merveilleuses, les plantes sont indispensables à la vie. Mais à chacune sa façon de grandir, de se nourrir, de se reproduire. De la minuscule lentille d'eau au gigantesque Arum titan, de la pâle anémone à l'éclatant hibiscus, de la rose parfumée au gros Rafflesia nauséabond, toutes les fantaisies sont permises ! Inventives, certaines se sont même adaptées aux milieux extrêmes, résistant à la pénombre humide de la forêt tropicale, au soleil ardent du désert ou au froid implacable du Grand Nord. Aliments, vêtements, colorants, matériaux de construction..., entre les plantes et les humains, c'est une longue histoire ! Sauvages ou cultivées, envahissantes ou protégées, guérisseuses ou diaboliques, les plantes constituent un monde mystérieux dont l'auteur nous livre quelques passionnants secrets.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2742751068"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782742751068"
+      }
+    ],
+    "volumeInfo.pageCount": 94,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=5CJoQgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=45&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=5CJoQgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_monde_myst%C3%A9rieux_des_plantes.html?hl=&id=5CJoQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "L'autobus magique fait du jardinage : découvre comment les plantes se reproduisent",
+    "volumeInfo.subtitle": "",
+    "volumeInfo.authors": ["Patricia Relf", "Joanna Cole"],
+    "volumeInfo.publisher": "Richmond Hill, Ont. : Éditions scholastic",
+    "volumeInfo.publishedDate": "1995-01-01",
+    "volumeInfo.description": "Ms. Frizzle's class is growing a beautiful garden. But, Phoebe's plot is empty. Her flowers are back at her old school! So, the class climbs aboard the Magic School Bus. And, of course, the kids don't only go back to Phoebe's school, but they go inside one of Phoebe's flowers! Follow the kids' adventure and learn how living things grow. From an episode of the animated TV series produced by Scholastic Productions, Inc. Based on The Magic School Bus books written by Joanna Cole and illustrated by Bruce Degen. Copyright © Libri GmbH. All rights reserved.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0590246569"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780590246569"
+      }
+    ],
+    "volumeInfo.pageCount": 32,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Fleurs - Ouvrages pour la jeunesse"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=NqdePgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=46&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=NqdePgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_autobus_magique_fait_du_jardinage_d%C3%A9c.html?hl=&id=NqdePgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Biologie végétale",
+    "volumeInfo.subtitle": "Volume 2, Croissance et développement",
+    "volumeInfo.authors": ["Jean-François Morot-Gaudry"],
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.description": "Intégrant les derniers acquis de la biologie cellulaire et de la génétique moléculaire, ce cours en deux volumes offre un panorama de l'ensemble de la biologie végétale enseignée dans les premières années d'études supérieures (licence, Pharmacie, classes préparatoires, IUT). Ce deuxième volume traite des aspects physiologiques et moléculaires de la croissance et du développement des végétaux supérieurs couvrant les phytohormones, la perception et la transduction des signaux abiotiques, les méristèmes, la paroi et l'élongation cellulaire, l'élaboration et la germination de la graine, la floraison. Les relations entre la plante et son environnement biotique et le métabolisme secondaire terminent l'ouvrage. Clair et concis, très illustré, le cours est enrichi par des encarts apportant quelques compléments techniques ou historiques. Des questions de révision en fin de chapitre, toutes corrigées, permettent de tester ses connaissances et de s'entraîner avant l'épreuve. Quelques compléments sont disponibles sur le site dunod.com",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2100519972"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782100519972"
+      }
+    ],
+    "volumeInfo.pageCount": 241,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=f5JgPgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=47&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=f5JgPgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Biologie_v%C3%A9g%C3%A9tale.html?hl=&id=f5JgPgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Voyages",
+    "volumeInfo.subtitle": "trois siècles d'explorations naturalistes",
+    "volumeInfo.authors": ["Tony Rice"],
+    "volumeInfo.publishedDate": "1999",
+    "volumeInfo.description": "Du Pacifique aux mers du Sud, de la Jamaïque à l'Australie, cet ouvrage propose un tour du monde à travers trois siècles d'explorations naturalistes. Chaque expédition fournissait de grandes quantités de spécimens et de connaissances scientifiques nouvelles et importantes. Les illustrations, peintures et gravures ont été sélectionnées, comptant parmi les plus rares en histoire naturelle ...",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2603011693"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782603011690"
+      }
+    ],
+    "volumeInfo.pageCount": 335,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animaux"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Z2WsPAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=48&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Z2WsPAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Voyages.html?hl=&id=Z2WsPAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Engrais verts et fertilité des sols",
+    "volumeInfo.authors": ["Joseph Pousset"],
+    "volumeInfo.publishedDate": "2011",
+    "volumeInfo.description": "Comment fonctionne un sol ? Qu’est-ce qui le rend plus fertile ? Comment favoriser la circulation de l’eau et de l’air permettant une agriculture optimale, qu’elle soit traditionnelle ou biologique ? Comment améliorer ses pratiques pour mieux protéger l’environnement et respecter les équilibres fondamentaux ? Comment maintenir une récolte rentable ? Cet ouvrage ouvre des perspectives pour les exploitants. Il explique les fondements scientifiques de l’agronomie et développe de façon très pédagogique le principe des systèmes radiculaires, responsable de l’aération et de l’hydratation des sols et des cultures. Le lecteur découvre pourquoi et comment les plantes contribuent à la fertilité des sols par l’action physique et chimique de leurs racines : Elles se comportent comme tout être vivant et cherchent à améliorer le milieu de vie à son profit... Et pour celui d’autres cultures qui se trouveront sur le même sol. L’auteur démontre combien une rotation culturale bien pensée permet, en utilisant les « compétences » de la nature, une fertilité importante tout en maîtrisant la flore adventice indésirable. Il offre également un inventaire exhaustif des espèces utilisables et de l’intérêt de chacune d’elles pour l’ensemble des types de culture. L’ouvrage se découpe en 3 grandes parties : la première partie répond aux besoins de connaissances essentielles en agronomie, la seconde expose l’impacte des engrais verts sur les sols et les cultures, la troisième, plus pratique, aide l’agriculture à choisir quel type de plante correspondra le mieux à son activité",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2855572002"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782855572000"
+      }
+    ],
+    "volumeInfo.pageCount": 397,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=qfEZuAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=49&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=qfEZuAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Engrais_verts_et_fertilit%C3%A9_des_sols.html?hl=&id=qfEZuAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "plante",
+    "volumeInfo.subtitle": "biologie végétale et amélioration des plantes",
+    "volumeInfo.authors": ["Dominique Soltner"],
+    "volumeInfo.publisher": "Sciences et Techniques Agricoles",
+    "volumeInfo.publishedDate": "1996",
+    "volumeInfo.description": "Manuel d'agronomie générale (on dit encore phytotechnie générale), ce livre étudie le principal hôte du sol : LA PLANTE. Une étude qui s'appuie sur une science voisine, et l'une des bases de l'agronomie, la biologie végétale, et qui est divisée en 5 chapitres.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2907710168"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782907710169"
+      }
+    ],
+    "volumeInfo.pageCount": 304,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Agriculture"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=CXG8PwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=50&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=CXG8PwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/plante.html?hl=&id=CXG8PwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Flore du Cambodge, du Laos et du Viêt-nam",
+    "volumeInfo.subtitle": "Solanaceae. 35",
+    "volumeInfo.authors": ["André Aubréville", "Sovanmoly Hul", "Pauline Dy Phon", "Mme Tardieu-Blot (Laure)", "Jean-F. Leroy", "Philippe Morat"],
+    "volumeInfo.publishedDate": "2014",
+    "volumeInfo.description": "Les Solanaceae comptent environ 92 genres et 2300 espèces ; elles sont cosmopolites avec une grande diversité dans la partie occidentale de l'Amérique du Sud où plusieurs genres sont endémiques. Le genre Solanum, avec environ 1500 espèces, est de loin le plus important de la famille. Dans le territoire couvert par cette Flore, 8 genres et 4 espèces sont répertoriés.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2856537502"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782856537503"
+      }
+    ],
+    "volumeInfo.pageCount": 93,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botany"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4M7BswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=51&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4M7BswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Flore_du_Cambodge_du_Laos_et_du_Vi%C3%AAt_na.html?hl=&id=4M7BswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Melon d'Eau",
+    "volumeInfo.subtitle": "Le Cycle de la Vie d'Une Plante",
+    "volumeInfo.authors": ["Pamela Hickman", "Heather Collins"],
+    "volumeInfo.publisher": "Richmond Hilll, Ont. : Éditions Scholastic",
+    "volumeInfo.publishedDate": "1998",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0439004276"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780439004275"
+      }
+    ],
+    "volumeInfo.pageCount": 16,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Livres-jeux"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4ucWPQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=52&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4ucWPQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Melon_d_Eau.html?hl=&id=4ucWPQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "LES SECRETS DE LA NATURE",
+    "volumeInfo.authors": ["Son Tyberg"],
+    "volumeInfo.publishedDate": "1996-01-01",
+    "volumeInfo.description": "Comment les plantes purifient-elles l'air ? Pourquoi certaines plantes ont-elles des épines ? Quelle plante grandit de 1 mètre par jour ? Pourquoi les feuilles changent-elles de couleur en automne ? Y a-t-il vraiment des plantes carnivores ? Tu aimerais connaître la réponse à ces questions et à beaucoup d'autres dans ce domaine ? Alors ce livre te conviendra parfaitement. Il contient des informations passionnantes sur la nature et il est écrit dans un style très clair. De superbes photos et des illustrations amusantes t'aideront à comprendre mieux encore les explications. Un livre qui ne décevra pas ta curiosité !",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2803428954"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782803428953"
+      }
+    ],
+    "volumeInfo.pageCount": 63,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=rivAOwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=53&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=rivAOwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LES_SECRETS_DE_LA_NATURE.html?hl=&id=rivAOwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Faune et flore de l'Amérique du Nord",
+    "volumeInfo.authors": ["Saint-Laurent, Agnès", "Sélection du Reader's digest (Canada) (Firme)"],
+    "volumeInfo.publisher": "Montréal : Sélection du Reader's Digest (Canada)",
+    "volumeInfo.publishedDate": "1995",
+    "volumeInfo.description": "Livre pratique traitant de plus de 2000 plantes et animaux, choisis parmi les plus répandus et les plus remarquables. Pour chaque espèce, on trouve: une notice explicative, une fiche d'identité (une fiche par famille dans le cas des poissons et des invertébrés), une illustration en couleurs et, si nécessaire, une carte de peuplement accompagnée de symboles d'habitat. Le premier chapitre présente une trentaine d'habitats caractéristiques.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0888503261"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780888503268"
+      }
+    ],
+    "volumeInfo.pageCount": 576,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animals"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=y1CtAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=54&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=y1CtAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Faune_et_flore_de_l_Am%C3%A9rique_du_Nord.html?hl=&id=y1CtAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La science agricole : climat, sols et productions végétales du Québec",
+    "volumeInfo.authors": ["Cégep Joliette-De Lanaudière", "Roger Doucet"],
+    "volumeInfo.publisher": "Eastman, Québec : Éditions Berger",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.description": "Un ouvrage important qui s'adresse d'abord aux étudiants en agriculture, notamment au niveau collégial, mais aussi aux agronomes, aux techniciens et à toutes les personnes oeuvrant dans le secteur agricole. En huit chapitres (Le climat - Les sols - La fertilité et la fertilisation des sols - Les plantes - Les maladies des plantes - Les mauvaises herbes - Les animaux utiles et ravageurs - La lutte contre les ennemis des plantes), il rassemble les connaissances de base qui régissent la production végétale au Québec.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2921416026"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782921416023"
+      }
+    ],
+    "volumeInfo.pageCount": 699,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Agriculture"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=LB6dcQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=55&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=LB6dcQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_science_agricole_climat_sols_et_produ.html?hl=&id=LB6dcQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les Petits lutins musiciens",
+    "volumeInfo.subtitle": "créé et ill. par Romu Nakamura. - Trad. du japonais",
+    "volumeInfo.authors": ["Tomu Nakamura"],
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.description": "Joyeux diablotins, curieux, malins, l'histoire de ces fantaisistes lutins est racontée en des scènes naïves et pleines de fraîcheur. Ils s'amusent, se balancent, culbutent, dansent, se baladent sur les fleurs dont ils découvrent les secrets. L'illustration, photographie de qualité, reproduit de façon expressive les activités des lutins roses, bleus, verts, etc. Pour chacune, l'auteur donne une brève information sur l'espèce de fleur.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2719204935"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782719204931"
+      }
+    ],
+    "volumeInfo.pageCount": 24,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Flowers"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=JquztgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=56&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=JquztgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_Petits_lutins_musiciens.html?hl=&id=JquztgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Plantes sauvages médicinales",
+    "volumeInfo.subtitle": "les reconnaître, les cueillir, les utiliser",
+    "volumeInfo.authors": ["Anny Schneider"],
+    "volumeInfo.publisher": "[Montréal] : Éditions de l'homme",
+    "volumeInfo.publishedDate": "1999",
+    "volumeInfo.description": "Saviez-vous que les vertus antirhumatismales du sureau ont été découvertes grâce à un marin américain qui s'était enivré au porto frelaté ? Saviez-vous que les Japonais vendent à prix fort le chiendent, cette plaie des agriculteurs, comme dépuratif sanguin et fortifiant ? Saviez-vous que durant l'Inquisition, l'angélique protégeait les femmes qui la cultivaient de l'accusation de sorcellerie ? De tout temps et en tout lieu, les plantes sauvages ont été utilisées pour traiter les blessures et les infections, calmer les douleurs, renforcer le système immunitaire. Cette médecine populaire, accessible et bienfaisante, connaît un renouveau fulgurant partout en Occident. Dans ce livre, l'herboriste Anny Schneider nous invite à découvrir les vertus médicinales des plantes qui poussent autour de chez nous. Elle nous apprend à les reconnaître, à les cueillir et à en confectionner des concentrés qui sauront conserver leurs principes actifs et en faire des remèdes naturels, efficaces et peu coûteux. Cet ouvrage comprend en outre une présentation des plantes sauvages les plus répandues et leurs indications préconisées par l'herboristerie moderne.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2761914740"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782761914741"
+      }
+    ],
+    "volumeInfo.pageCount": 302,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique médicale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=EtpMPQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=57&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=EtpMPQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Plantes_sauvages_m%C3%A9dicinales.html?hl=&id=EtpMPQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Tutu-Mauve au Jardin des Plantes",
+    "volumeInfo.authors": ["Lise Le Cœur"],
+    "volumeInfo.publisher": "L'Ecole des Loisirs",
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2211094074"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782211094078"
+      }
+    ],
+    "volumeInfo.pageCount": 28,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=t4PXAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=58&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=t4PXAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Tutu_Mauve_au_Jardin_des_Plantes.html?hl=&id=t4PXAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les plantes et les animaux",
+    "volumeInfo.authors": ["Claude Naudin"],
+    "volumeInfo.publishedDate": "1995-09-01",
+    "volumeInfo.description": "Des plus simples aux plus évolués, les êtres vivant sur notre planète apparaissent dans toute leur diversité au fil de ces pages : des algues aux orchidées, des éponges aux insectes, des poissons aux singes.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2036524044"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782036524040"
+      }
+    ],
+    "volumeInfo.pageCount": 103,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animals"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Uhz5GwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=59&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Uhz5GwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_plantes_et_les_animaux.html?hl=&id=Uhz5GwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Comment les animaux et les plantes croissent",
+    "volumeInfo.authors": ["Peter S. Seymour", "Etow, Carole"],
+    "volumeInfo.publisher": "[Saint-Lambert, Québec] : Héritage",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.description": "Une documentation agréable à consulter, présentée à l'aide d'un gadget. Une roue numérotée de un à cinq illustre le sujet, expliqué par un texte court.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2762548403"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782762548402"
+      }
+    ],
+    "volumeInfo.pageCount": 10,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animals"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=kcM8XwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=60&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=kcM8XwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Comment_les_animaux_et_les_plantes_crois.html?hl=&id=kcM8XwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Plante...",
+    "volumeInfo.authors": ["Stéphanie Bardy"],
+    "volumeInfo.publishedDate": "2001-11-06",
+    "volumeInfo.description": "Une histoire pour développer le goût de la lecture et son autonomie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2845262825"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782845262829"
+      }
+    ],
+    "volumeInfo.pageCount": 18,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Arbres"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ly1COQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=61&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ly1COQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Plante.html?hl=&id=ly1COQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Atlas de la flore patrimoniale de l'Aude",
+    "volumeInfo.authors": ["Barreau,"],
+    "volumeInfo.publishedDate": "2016-12-06",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2366621876"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782366621877"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=V3b-MAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=62&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=V3b-MAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Atlas_de_la_flore_patrimoniale_de_l_Aude.html?hl=&id=V3b-MAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Rusticite et Croissance de Plantes Ligneuses...",
+    "volumeInfo.authors": ["Claude Richer-Leclerc", "Richer", "Jacques C{circ}ot{acute}e", "Jacques Côté", "Rioux", "Jacques-Andr{acute}e Rioux", "Cote", "Conseil des productions v{acute}eg{acute}etales du Qu{acute}ebec. Atelier r{acute}eseau d'essais des plantes ligneuses ornementales du Qu{acute}ebec", "Conseil des productions végétales du Québec"],
+    "volumeInfo.publishedDate": "2000-05-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2894571291"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782894571293"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Ornamental woody plants"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=dzDDAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=63&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=dzDDAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Rusticite_et_Croissance_de_Plantes_Ligne.html?hl=&id=dzDDAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Flore du Sénégal",
+    "volumeInfo.authors": ["Jean Berhaut"],
+    "volumeInfo.publishedDate": "1967",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "CORNELL:31924001793631"
+      }
+    ],
+    "volumeInfo.pageCount": 487,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botany"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=w4M_AAAAYAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=64&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=w4M_AAAAYAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Flore_du_S%C3%A9n%C3%A9gal.html?hl=&id=w4M_AAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Plantes ornementales en santé : guide pratique d'intervention",
+    "volumeInfo.authors": ["Brisson, Jean Denis", "Côté, Isabelle"],
+    "volumeInfo.publisher": "Québec : Spécialités Terre à terre",
+    "volumeInfo.publishedDate": "1999*",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2921850451"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782921850452"
+      }
+    ],
+    "volumeInfo.pageCount": 100,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Arbres"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=NzQjAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=65&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=NzQjAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Plantes_ornementales_en_sant%C3%A9_guide_pra.html?hl=&id=NzQjAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "An Act Respecting the Protection of Certain Species of Wild Animals and Plants and the Regulation of International and Interprovincial Trade in Those Species",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015911977"
+      }
+    ],
+    "volumeInfo.pageCount": 14,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Canada"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=_PlIswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=66&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=_PlIswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/An_Act_Respecting_the_Protection_of_Cert.html?hl=&id=_PlIswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La vie cachée des plantes",
+    "volumeInfo.authors": ["Jaroslav Pazourek"],
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2700022017"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782700022018"
+      }
+    ],
+    "volumeInfo.pageCount": 151,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=nJEbAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=67&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=nJEbAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_vie_cach%C3%A9e_des_plantes.html?hl=&id=nJEbAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "LESPLANTES;PAR...ET BARBARA HEHNER. TRAD.PAR MARIE-CLAUDE DESORCY.",
+    "volumeInfo.authors": ["David T. Suzuki"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1016064031"
+      }
+    ],
+    "volumeInfo.pageCount": 96,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=73ZQswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=68&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=73ZQswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LESPLANTES_PAR_ET_BARBARA_HEHNER_TRAD_PA.html?hl=&id=73ZQswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "L'herbier de la Champagne et de la Lorraine",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1974",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:461515072"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Flore, Champagne"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wOACMQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=69&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wOACMQAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_herbier_de_la_Champagne_et_de_la_Lorra.html?hl=&id=wOACMQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Caractérisation de la biodiversité dans des emprises de lignes de transport d'énergie électrique situées en forêt boréale",
+    "volumeInfo.subtitle": "rapport d'ensemble 1998-2000",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "2000",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015937125"
+      }
+    ],
+    "volumeInfo.pageCount": 101,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Amphibiens"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=zzJkswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=70&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=zzJkswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Caract%C3%A9risation_de_la_biodiversit%C3%A9_dan.html?hl=&id=zzJkswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Cultures de cellules, tissus et organes végétaux",
+    "volumeInfo.subtitle": "fondements théoriques et utilisations pratiques",
+    "volumeInfo.authors": {},
+    "volumeInfo.publisher": "PPUR",
+    "volumeInfo.publishedDate": "1988",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2880741521"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782880741525"
+      }
+    ],
+    "volumeInfo.pageCount": 308,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cell nuclei"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=7S9xAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=71&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=7S9xAAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Cultures_de_cellules_tissus_et_organes_v.html?hl=&id=7S9xAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "FLORE LAURENTIENNE. 2E ED",
+    "volumeInfo.authors": ["frère Marie-Victorin (F.É.C.)"],
+    "volumeInfo.publishedDate": "1964",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015968367"
+      }
+    ],
+    "volumeInfo.pageCount": 925,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wXFsswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=72&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wXFsswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/FLORE_LAURENTIENNE_2E_ED.html?hl=&id=wXFsswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Edmonton Public Schools",
+    "volumeInfo.subtitle": "programme de sciences à l'élémentaire] : thème A.",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1997",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:745924102"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Air"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ARzoswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=73&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ARzoswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Edmonton_Public_Schools.html?hl=&id=ARzoswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Reproduction et biologie des végétaux supérieurs",
+    "volumeInfo.subtitle": "bryophytes, ptéridophytes, spermaphytes",
+    "volumeInfo.authors": ["Henri Camefort", "Henry Boué"],
+    "volumeInfo.publisher": "Doin Editions",
+    "volumeInfo.publishedDate": "1979",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2704003807"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782704003808"
+      }
+    ],
+    "volumeInfo.pageCount": 436,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botany"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=qGEVPAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=74&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=qGEVPAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Reproduction_et_biologie_des_v%C3%A9g%C3%A9taux.html?hl=&id=qGEVPAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "LA PLANETE PONGEPONGE",
+    "volumeInfo.authors": ["Marielle Richer"],
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015965910"
+      }
+    ],
+    "volumeInfo.pageCount": 45,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=doo9tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=75&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=doo9tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LA_PLANETE_PONGEPONGE.html?hl=&id=doo9tAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Le Rhus vernix dans le comté d'Huntingdon",
+    "volumeInfo.authors": ["Léo-Guy De Repentigny"],
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015935175"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wVPAswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=76&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wVPAswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_Rhus_vernix_dans_le_comt%C3%A9_d_Huntingd.html?hl=&id=wVPAswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "LESPLANTES DU MONDE",
+    "volumeInfo.authors": ["V. Garnaud-D'Ersu"],
+    "volumeInfo.publishedDate": "1991",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1016061116"
+      }
+    ],
+    "volumeInfo.pageCount": 39,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=szMyswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=77&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=szMyswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LESPLANTES_DU_MONDE.html?hl=&id=szMyswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Les plantes comestibles",
+    "volumeInfo.subtitle": "cueillette, culture, cuisine",
+    "volumeInfo.authors": ["Didier Magnan"],
+    "volumeInfo.publishedDate": "1989",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2268007650"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782268007656"
+      }
+    ],
+    "volumeInfo.pageCount": 159,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4rQ7swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=78&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4rQ7swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_plantes_comestibles.html?hl=&id=4rQ7swEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Les plantes messicoles et les plantes remarquables des cultures en Alsace",
+    "volumeInfo.subtitle": "atlas écologique et floristique",
+    "volumeInfo.authors": ["Guillaume Fried"],
+    "volumeInfo.publishedDate": "2009",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:494526814"
+      }
+    ],
+    "volumeInfo.pageCount": 172,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique agricole / Alsace"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=JOvDSAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=79&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=JOvDSAAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_plantes_messicoles_et_les_plantes_re.html?hl=&id=JOvDSAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Compendium des produits antiparasitaires homologués au Canada. Lois sur les produits antiparasitaires au Canada, volume PL",
+    "volumeInfo.authors": ["Association canadienne des préposés au contrôle des pesticides", "Davis, T. M", "Canada. Division des pesticides"],
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "066090831X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780660908311"
+      }
+    ],
+    "volumeInfo.pageCount": 59,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FHpVAgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=80&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FHpVAgAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Compendium_des_produits_antiparasitaires.html?hl=&id=FHpVAgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Production de substances naturelles par culture In vitro de tissus et de cellules de végétaux",
+    "volumeInfo.authors": ["Association pour la promotion industrie agriculture (APRIA)"],
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:629250643"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Culture in-vitro"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=0bFXtAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=81&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=0bFXtAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Production_de_substances_naturelles_par.html?hl=&id=0bFXtAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "DES GRAINES AUX PLANTES;PAR...& PHILIPPE CHANDELON.",
+    "volumeInfo.authors": ["Jeffrey Bates"],
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1016061354"
+      }
+    ],
+    "volumeInfo.pageCount": 32,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=I8UoswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=82&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=I8UoswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/DES_GRAINES_AUX_PLANTES_PAR_PHILIPPE_CHA.html?hl=&id=I8UoswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Wild Animal and Plant Protection and Regulation of International and Interprovincial Trade Act",
+    "volumeInfo.subtitle": "Regulatory Options",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1993",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015897779"
+      }
+    ],
+    "volumeInfo.pageCount": 26,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Faune"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=bOV4tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=83&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=bOV4tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Wild_Animal_and_Plant_Protection_and_Reg.html?hl=&id=bOV4tAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Comment reconnaître et combattre",
+    "volumeInfo.subtitle": "les ennemis du jardin",
+    "volumeInfo.authors": ["Patrick Mioulane"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:461960452"
+      }
+    ],
+    "volumeInfo.pageCount": 50,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Insectes nuisibles et utiles"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=E95PQwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=84&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=E95PQwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Comment_reconna%C3%AEtre_et_combattre.html?hl=&id=E95PQwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Biologie des plantes cultivées",
+    "volumeInfo.authors": ["Jean-Patrick Lafon", "Catherine Tharaud-Prayer", "Gilles Lévy"],
+    "volumeInfo.publishedDate": "1988",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2852064847"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782852064843"
+      }
+    ],
+    "volumeInfo.pageCount": 172,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UIi0OwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=85&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UIi0OwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Biologie_des_plantes_cultiv%C3%A9es.html?hl=&id=UIi0OwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La Multiplication des plantes",
+    "volumeInfo.authors": ["Nico Pidi"],
+    "volumeInfo.publishedDate": "1980",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2732808237"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782732808239"
+      }
+    ],
+    "volumeInfo.pageCount": 212,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=NfuUQwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=86&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=NfuUQwAACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Multiplication_des_plantes.html?hl=&id=NfuUQwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "LA FORET. PHOTOGRAPHIES DE JANE BURTON ET KIM TAYLOR.",
+    "volumeInfo.authors": ["Barbara Taylor"],
+    "volumeInfo.publishedDate": "1993",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015595949"
+      }
+    ],
+    "volumeInfo.pageCount": 29,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animaux"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=yjzAswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=87&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=yjzAswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LA_FORET_PHOTOGRAPHIES_DE_JANE_BURTON_ET.html?hl=&id=yjzAswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La sélection végétale",
+    "volumeInfo.authors": ["Robert Diehl (scientifique.)"],
+    "volumeInfo.publishedDate": "1965",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:636502973"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Amélioration génétique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=aoSatAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=88&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=aoSatAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_s%C3%A9lection_v%C3%A9g%C3%A9tale.html?hl=&id=aoSatAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "LE DESERT. PHOTOS DE FRANK GREENAWAY.",
+    "volumeInfo.authors": ["Barbara Taylor"],
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015608605"
+      }
+    ],
+    "volumeInfo.pageCount": 29,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animaux"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FZLSswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=89&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FZLSswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LE_DESERT_PHOTOS_DE_FRANK_GREENAWAY.html?hl=&id=FZLSswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "LES EXPERIENCES SUR LES PLANTES. SOUS LA DIRECTION D'ILLA PODENDORF.",
+    "volumeInfo.authors": ["Vera R. Webster"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015584737"
+      }
+    ],
+    "volumeInfo.pageCount": 45,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Botanique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=0xF7tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=90&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=0xF7tAEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LES_EXPERIENCES_SUR_LES_PLANTES_SOUS_LA.html?hl=&id=0xF7tAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "CLAIRE ET SON PAPA VONTA AU MARCHE;PAR...ET TING MORRIS.",
+    "volumeInfo.authors": ["Neil Morris"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015952377"
+      }
+    ],
+    "volumeInfo.pageCount": 23,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Marches"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UEpFswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=91&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UEpFswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/CLAIRE_ET_SON_PAPA_VONTA_AU_MARCHE_PAR_E.html?hl=&id=UEpFswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "AVANT LA FLEUR, IL Y A...TEXTE FRANCAIS DE CHRISTIANE DUCHESNE.",
+    "volumeInfo.authors": ["Ruth Heller"],
+    "volumeInfo.publishedDate": "1989",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015610749"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Fleurs"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Evi3swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=92&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Evi3swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/AVANT_LA_FLEUR_IL_Y_A_TEXTE_FRANCAIS_DE.html?hl=&id=Evi3swEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Catalogue des plantes vasculaires qui croissent spontanément dans le département du Calvados",
+    "volumeInfo.subtitle": "distribuées d'après le Synopsis Florae germanicae et helveticae de J. Koch, 2e édit. Un vol. in-8. Francfort-sur-le-Mein, 1843-44",
+    "volumeInfo.authors": ["Louis Hardouin", "Guillaume Félix Renou", "Eugène Alexandre Leclerc"],
+    "volumeInfo.publishedDate": "1848",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:406741631"
+      }
+    ],
+    "volumeInfo.pageCount": 439,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Plantes"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=wsA-swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=93&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=wsA-swEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Catalogue_des_plantes_vasculaires_qui_cr.html?hl=&id=wsA-swEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "LESFLEURS ET LES ARBRES. TRAD.PAR DOMINIQUE LABLANCHE.",
+    "volumeInfo.authors": ["Time-Life Jeunesse"],
+    "volumeInfo.publishedDate": "1989",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1016059592"
+      }
+    ],
+    "volumeInfo.pageCount": 87,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Arbres"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Yz-iswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=94&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Yz-iswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/LESFLEURS_ET_LES_ARBRES_TRAD_PAR_DOMINIQ.html?hl=&id=Yz-iswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "MILLE LIEUX NATUELS",
+    "volumeInfo.authors": ["Florence Verilhac"],
+    "volumeInfo.publishedDate": "1991",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:1015606482"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Animaux"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=-4VXswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=95&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=-4VXswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/MILLE_LIEUX_NATUELS.html?hl=&id=-4VXswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Les Cactées et les plantes grasses",
+    "volumeInfo.subtitle": "Traduction-adaptation de G. [Gérard] G. Aymonin",
+    "volumeInfo.authors": ["Edgar Lamb"],
+    "volumeInfo.publishedDate": "1971",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:462875612"
+      }
+    ],
+    "volumeInfo.pageCount": 234,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cactus"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=v-BiswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&cd=96&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=v-BiswEACAAJ&dq=subject:Plantes&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_Cact%C3%A9es_et_les_plantes_grasses.html?hl=&id=v-BiswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  }
+]

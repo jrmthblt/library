@@ -1,0 +1,1797 @@
+[
+  {
+    "volumeInfo.title": "Précis d'un cours élémentaire de philosophie",
+    "volumeInfo.subtitle": "1845",
+    "volumeInfo.authors": ["Charles Bénard"],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "L'enseignement du professeur de lycée Charles Bénard (1807-1898) s'appuie sur un programme divisé en 3 domaines : la logique, la morale et la psychologie avec comme complément l'histoire de la philosophie. Il définit la psychologie comme l'étude des facultés intellectuelles et morales de l'homme.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782296041967"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2296041965"
+      }
+    ],
+    "volumeInfo.pageCount": 439,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=SND1m0n8XngC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=1&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=SND1m0n8XngC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pr%C3%A9cis_d_un_cours_%C3%A9l%C3%A9mentaire_de_phil.html?hl=&id=SND1m0n8XngC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=SND1m0n8XngC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=SND1m0n8XngC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La naissance de la psychologie",
+    "volumeInfo.authors": ["Paul Mengal"],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.description": "La psychologie reste muette sur ses origines. Les histoires traditionnelles de cette discipline convoquent, pour en décrire les commencements, soit les grands discours philosophiques rationalistes ou empiristes sur l'âme (sa nature et sa destinée), soit, dans une perspective plus scientiste, la constitution d'une science expérimentale et positive du psychisme. Dans les deux cas, quelque chose échappe l'archéologie même de la psychologie, c'est-à-dire la manière dont le discours sur l'âme a pu prendre sens dans un contexte historique donné. a voie choisie pour écrire cette archéologie est d'abord de décrire comment le terme même de psuchologia apparaît et se répand, entre la fin du XVIe siècle et le début du XVIIe siècle, notamment dans les universités réformées de Leyde aux Pays-Bas et de Marbourg en Allemagne. Cette recherche met en évidence comment se construit dans ces centres intellectuels une conception dualiste âme/corps à laquelle répondent au même moment d'autres systèmes de distinctions sociales, religieuses, juridiques :1'Eglise et l'Etat, l'homme intérieur et l'homme extérieur, le for interne et le for externe, etc. Ce grand système d'opposition, on sait à quel point Descartes lui donnera une formulation décisive. Mais il s'agit ici d'interroger, à propos de ce thème philosophique, ce que Foucault appellerait son niveau d'énoncé: comment l'évidence de la psychologie dépend d'un projet politique.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782747582933"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2747582930"
+      }
+    ],
+    "volumeInfo.pageCount": 414,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Anthropologie philosophique"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WtAWrZYfE_oC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=2&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WtAWrZYfE_oC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_naissance_de_la_psychologie.html?hl=&id=WtAWrZYfE_oC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=WtAWrZYfE_oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=WtAWrZYfE_oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Manuel de psychologie du soin",
+    "volumeInfo.authors": ["Antoine Bioy", "Damien Fouques"],
+    "volumeInfo.publisher": "Editions Bréal",
+    "volumeInfo.publishedDate": "2002-01-01",
+    "volumeInfo.description": "La qualité d'un sain ne recouvre pas uniquement les capacités techniques du praticien, elle dépend également des compétences humaines qui accompagnent un geste, une parole, une écoute. En effet, les métiers du soin s'inscrivent par nature dans une relation d'aide. Ils ont pour cadre la rencontre entre deux personnes : l'une en souffrance et l'autre en position de l'épauler, autour d'un objectif commun : le mieux-être. Ainsi, le soin touche à ce qui existe de plus intime, l'intégrité physique et mentale, et la psychologie apporte aux métiers concernés par cette intimité un savoir essentiel : l'approche humaine de l'individu. Ce manuel de psychologie du soin s'adresse à la fois aux futurs soignants (infirmières, aides-soignants, kinésithérapeutes, orthophonistes, ergothérapeutes, psychomotriciens, aides médico-psychologiques), aux travailleurs sociaux, mais aussi aux professionnels qui souhaitent enrichir leur pratique quotidienne auprès des patients. Conscients des besoins des praticiens et des étudiants, les auteurs ont voulu proposer un ouvrage complet et opérationnel. Ce manuel se veut donc à la fois un recueil de connaissances théoriques illustrées d'exemples cliniques, un ouvrage de réflexion sur divers aspects de la relation d'aide et enfin un outil adapté pour mieux vivre la pratique soignante, tant du point de vue du soigné (gérer les relations, stimuler la dynamique de vie...) que du soignant (maîtriser son stress, ses émotions...).",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2842917766"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782842917760"
+      }
+    ],
+    "volumeInfo.pageCount": 317,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Ly5TAzOiov0C&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=3&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Ly5TAzOiov0C&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Manuel_de_psychologie_du_soin.html?hl=&id=Ly5TAzOiov0C",
+    "volumeInfo.averageRating": 4,
+    "volumeInfo.ratingsCount": 2,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Ly5TAzOiov0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Ly5TAzOiov0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La formation en psychologie",
+    "volumeInfo.subtitle": "filiation bâtarde, transmission troublée",
+    "volumeInfo.authors": ["Mercader"],
+    "volumeInfo.publisher": "Presses Universitaires Lyon",
+    "volumeInfo.publishedDate": "2004",
+    "volumeInfo.description": "Le propos de cet ouvrage est de théoriser d'abord en psychologues la formation universitaire en psychologie ; il est écrit par des enseignants qui traitent chacun à sa manière de ce qui, dans notre pratique, a pu faire énigme pour eux. La première partie du livre examine comment s'est construite la psychologie, sous deux angles complémentaires : une discipline universitaire relativement récente, à la filiation complexe, et un ensemble de pratiques professionnelles qui s'individualise et s'officialise progressivement. Ensuite, nous présentons et discutons certains dispositifs de formation des psychologues à Lyon. Ceci posé, l'accent est porté sur les relations imaginaires entre l'étudiant et l'enseignant et sur la dimension de renoncement ou de crise qu'implique toute acquisition de savoir nouveau (renoncement aux savoirs antérieurs, ou mise en crise de ces savoirs antérieurs), puis sur les relations entre le sujet en formation et la théorie elle-même. Enfin, nous proposons une mise en perspective de la psychologie, comme discipline et comme pratique, avec les demandes sociales qui ont présidé à son émergence et à son développement. Et c'est au nom de la différence que nous avons convié, pour terminer, des collègues d'ailleurs, autres disciplines, autres systèmes de référence, à nous lire et à nous répondre. La thèse essentielle qui traverse l'ouvrage est la suivante : dès lors qu'on admet que la formation en psychologie est un processus de transformation, il devient impossible de s'en tenir à un modèle d'enseignement classique, fondé sur la seule transmission d'un savoir nécessairement idéalisé, mais surtout livresque. D'une façon ou d'une autre, tous les dispositifs de formation à la psychologie doivent prendre en compte le modèle de la recherche, qui s'articule au contraire autour de l'énigme, de l'obstacle, de la perte, c'est-à-dire autour d'un non-savoir primordial (au double sens d'originaire et d'essentiel). Corrélativement, il doivent aussi s'ancrer sur des pratiques, dont la découverte et/ou l'analyse sont un pivot essentiel et de la formation et de la recherche. En travaillant sur la charnière entre engagement dans une pratique, d'une part, production et appropriation de connaissances, d'autre part, nous espérons avoir fait avancer une \" épistémologie de la recherche et de la formation impliquées \".",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2729707530"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782729707538"
+      }
+    ],
+    "volumeInfo.pageCount": 370,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Fmc9mynLzEkC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=4&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Fmc9mynLzEkC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_formation_en_psychologie.html?hl=&id=Fmc9mynLzEkC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=Fmc9mynLzEkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=Fmc9mynLzEkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie",
+    "volumeInfo.subtitle": "commencez avec les meilleurs professeurs",
+    "volumeInfo.authors": ["Jean-Pierre Chartier"],
+    "volumeInfo.publisher": "Editions Eyrolles",
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "Initiation à la psychologie, avec une présentation des grandes matières qui l'illustrent : histoire, psychanalyse, psychologie clinique, psychopathologie, psychologie du développement, etc.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782212538816"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2212538812"
+      }
+    ],
+    "volumeInfo.pageCount": 283,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.0.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=b8jbZKJeWb8C&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=5&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=b8jbZKJeWb8C&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie.html?hl=&id=b8jbZKJeWb8C",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=b8jbZKJeWb8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=b8jbZKJeWb8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les métiers de la psychologie",
+    "volumeInfo.authors": ["Sylvie Chéneau", "Brigitte Ourlin"],
+    "volumeInfo.publisher": "Editions l'Etudiant",
+    "volumeInfo.publishedDate": "2006",
+    "volumeInfo.description": "35 000. C'est le nombre approximatif de psychologues en France. Leur moyenne d'âge est de 44,8 ans. Trop ou pas assez de \" psy \" ? La question est au cœur du débat. Il semble que trop de jeunes psychologues diplômés débarquent chaque année sur le marché du travail. Pourtant l'Etat peine, par exemple, à recruter le nombre de psychologues scolaires nécessaire : 20 % des 3 250 postes restent vacants... 80 % des psychologues français sont des psychologues cliniciens. Les autres sont, pour l'essentiel, des psychologues du travail. C'est un domaine porteur : ils sont de plus en plus nombreux à faire carrière dans ce que l'on appelle les ressources humaines, où ils occupent les fonctions de recruteurs, responsables de la formation ou de la mobilité interne. Leurs revenus sont bien souvent supérieurs à ceux de leurs confrères de la santé et leurs chances de trouver un emploi stable, plus élevées... 2700 étudiants obtiennent chaque année leur master en psychologie et décrochent, de ce fait, le titre de psychologue. Ils sont pourtant près de 24 000 à s'inscrire en première année de licence, à chaque rentrée universitaire ; seuls 10 % d'entre eux iront donc au bout des cinq années d'études nécessaires à l'obtention du diplôme donnant le droit d'exercer en tant que psychologue. Toutefois, plusieurs professions sont ouvertes aux titulaires d'une licence en psychologie : psychologue scolaire, psychomotricien ou encore aide médico-psychologique.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2846244774"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782846244770"
+      }
+    ],
+    "volumeInfo.pageCount": 246,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=-U83ScvLVgMC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=6&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=-U83ScvLVgMC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_m%C3%A9tiers_de_la_psychologie.html?hl=&id=-U83ScvLVgMC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=-U83ScvLVgMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=-U83ScvLVgMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Manuel de psychologie à l'usage des soignants",
+    "volumeInfo.subtitle": "élèves des instituts de formation en soins infirmiers",
+    "volumeInfo.authors": ["Hélène Harel-Biraud"],
+    "volumeInfo.publisher": "(DEPRECIATED)",
+    "volumeInfo.publishedDate": "1994-01-01",
+    "volumeInfo.description": "Savoir repenser ses attitudes, discerner mieux l'essentiel de l'accessoire, sortir de soi-même pour aller vers les autres, prendre les moyens de ses relations professionnelles mais aussi personnelles, se situer sereinement par rapport à la vieillesse et à la mort, être authentique et aussi se protéger sont des éléments auxquels tous les soignants sont conviés. Ce manuel apporte les bases qui permettront d'aider autrui, celui qui souffre dans son corps, dans son existence matérielle et sociale et toujours aussi dans sa tête. Il aborde les problèmes psychologiques spécifiques aux différentes phases de la vie ou touchant à la vie affective et à la maladie ; du fait des souffrances spécifiques qu'il engendre, le sida y trouve une place à part. La dimension spirituelle de la personne, l'importance d'accompagner les malades jusqu'au terme de leur existence et de là l'intérêt accru pour les soins palliatifs nécessitent une écoute de ce qui touche au sens. Outre les élèves des instituts de formation en soins infirmiers, toutes les personnes qui pratiquent une relation d'aide auront à cœur de lire cet ouvrage : soignants, psychologues, travailleurs sociaux, kinésithérapeutes, futurs médecins et même les parents.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2225844372"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782225844379"
+      }
+    ],
+    "volumeInfo.pageCount": 169,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.3.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=IT6DsmIMZl4C&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=7&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=IT6DsmIMZl4C&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Manuel_de_psychologie_%C3%A0_l_usage_des_soi.html?hl=&id=IT6DsmIMZl4C",
+    "volumeInfo.averageRating": 4,
+    "volumeInfo.ratingsCount": 1,
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=IT6DsmIMZl4C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=IT6DsmIMZl4C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie du point de vue empirique",
+    "volumeInfo.authors": ["Franz Brentano", "Maurice de Gandillac"],
+    "volumeInfo.publisher": "Librairie Philosophique J Vrin",
+    "volumeInfo.publishedDate": "2008-01",
+    "volumeInfo.description": "Dans son ouvrage de 1874, repris et complete en 1911, puis augmente a nouveau par une serie d'appendices tardifs, dans l'edition procuree par Oscar Kraus, en 1924, Brentano n'est pas seulement celui qui ouvre le dossier tres complet des questions psychologiques debattues dans l'apres-Kant et jusqu'a la fin du XIXe siecle, dans l'espace intellectuel germanique, mais aussi et principalement anglophone; pas seulement celui qui, a la faveur de la redefinition, a la fois tres ancienne et novatrice, des phenomenes psychiques, caracterises par l'inexistence intentionnelle de leur objet immanent, ouvre la voie a un nouveau developpement de la psychologie, ni rationnelle, ni experimentale, mais proprement empirique, celle-la meme qui se transformera ensuite en psychologie descriptive, puis phenomenologie; par la diversite de son Ecole, dont on mesure mieux aujourd'hui (au-dela de Husserl) le rayonnement et la fecondite (Stumpf, Ehrenfels, Marty, Meinong), par la richesse et le rayonnement de sa propre pensee en philosophie morale, theorie de la connaissance, logique, ontologie, Brentano est enfin reconnu en France - comme c'est deja le cas depuis longtemps dans beaucoup de pays anglosaxons - comme une figure majeure, apres Bolzano, de l'histoire de la philosophie autrichienne et comme un puissant interlocuteur encore present dans les debats les plus contemporains en philosophie de l'esprit ou en ontologie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2711617971"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782711617975"
+      }
+    ],
+    "volumeInfo.pageCount": 495,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=maf7PQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=8&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=maf7PQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_du_point_de_vue_empirique.html?hl=&id=maf7PQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=maf7PQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=maf7PQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'homme cognitif",
+    "volumeInfo.authors": ["Annick Weil-Barais"],
+    "volumeInfo.publishedDate": "2011",
+    "volumeInfo.description": "Source de savoirs, offrant des pistes de réflexion et de travail très variées, ce manuel permet une confrontation des recherches sur les thèmes de la perception, de la communication, de la mémoire, de l'apprentissage, de la résolution de problème, de l'évaluation et du jugement. Ces développements sont accompagnés de très nombreux exemples et de références à des travaux reconnus qui aident à la compréhension des idées et donnent un aperçu des implications pratiques et sociales des connaissances acquises dans le champ de la psychologie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130588298"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130588290"
+      }
+    ],
+    "volumeInfo.pageCount": 600,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cognition"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=IJ36ZwEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=9&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=IJ36ZwEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_homme_cognitif.html?hl=&id=IJ36ZwEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "L'homme à la découverte de son âme",
+    "volumeInfo.subtitle": "structure et fonctionnement de l'inconscient",
+    "volumeInfo.authors": ["Carl Gustav Jung", "Roland Cahen"],
+    "volumeInfo.publisher": "Editions Albin Michel",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.description": "Enfin à la portée de tout \"honnête homme\" de tout être, de tout esprit curieux de lui-même, ce chef-d'œuvre capital, clair, sans jargon, simple et limpide dans sa langue, profond dans ses apports, ses découvertes, ses vérités, devenues aujourd'hui des évidences. A la fois nouveau bien que déjà classique, L'Homme à la découverte de son âme fut trop longtemps introuvable. Depuis toujours l'homme se débat, pour le meilleur comme pour le pire, avec ces plans vivants qu'il sent s'agiter et palpiter au tréfonds de lui-même et qu'il a épinglé du nom d'âme. Rendre accessible ce qui est de l'ordre de l'âme à l'approche expérimentale, tel fut, faits et preuves en main, le miracle paradoxalement réussi par Jung. C'est ce lien expérimental à l'inconscient : que le génie de Jung apporta en dot au génie de Freud dans la période de leur compagnonnage. Les complexes que Jung a mis en évidence, ces mélis-mélos, ignorés mais brûlants, de sensations et de besoins, ces nœuds, inconscients mais contraignants, d'idées, d'émotions et d'imaginations, sont à l'origine aussi bien du fameux complexe d'OEdipe que des enregistrements neurophysiologiques les plus modernes. lis révèlent, avec les rêves, attestés dans l'histoire sinon justement compris, la vie profonde, intense, bouleversante souvent, qui se déroule en tout être humain. Mais comme Einstein l'a souligné, il est, de nos jours, plus facile de faire exploser un atome que de se libérer d'un complexe ! L'Homme à la découverte de son âme ouvre de nouvelles portes aux déroulements intérieurs, à l'intériorité et l'élargit de l'expérimental au divin.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2226028218"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782226028211"
+      }
+    ],
+    "volumeInfo.pageCount": 352,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Science"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=XMnWAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=10&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=XMnWAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_homme_%C3%A0_la_d%C3%A9couverte_de_son_%C3%A2me.html?hl=&id=XMnWAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=XMnWAAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=XMnWAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Pourquoi les psychologues?",
+    "volumeInfo.authors": ["Marc Richelle"],
+    "volumeInfo.publisher": "Editions Mardaga",
+    "volumeInfo.publishedDate": "1968",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2870090072"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782870090077"
+      }
+    ],
+    "volumeInfo.pageCount": 200,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=RWw0KE_fStcC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=11&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=RWw0KE_fStcC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Pourquoi_les_psychologues.html?hl=&id=RWw0KE_fStcC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=RWw0KE_fStcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=RWw0KE_fStcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'invention de la psychologie moderne",
+    "volumeInfo.authors": ["Geneviève Paicheler"],
+    "volumeInfo.publisher": "Editions L'Harmattan",
+    "volumeInfo.publishedDate": "1992-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_13",
+        "identifier": "9782738411068"
+      },
+      {
+        "type": "ISBN_10",
+        "identifier": "2738411061"
+      }
+    ],
+    "volumeInfo.pageCount": 350,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.1",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=AIYA5MmJ02wC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=12&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=AIYA5MmJ02wC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_invention_de_la_psychologie_moderne.html?hl=&id=AIYA5MmJ02wC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=AIYA5MmJ02wC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=AIYA5MmJ02wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "L'enfant et le symbolique",
+    "volumeInfo.subtitle": "l'accès aux premières structures sémiotiques",
+    "volumeInfo.authors": ["Clairelise Bonnet"],
+    "volumeInfo.publisher": "Vrin",
+    "volumeInfo.publishedDate": "1980",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2711600785"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782711600786"
+      }
+    ],
+    "volumeInfo.pageCount": 246,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Philosophy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.1",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=lutOkPni-VcC&printsec=frontcover&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=13&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=lutOkPni-VcC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_enfant_et_le_symbolique.html?hl=&id=lutOkPni-VcC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": true,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=lutOkPni-VcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=lutOkPni-VcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie",
+    "volumeInfo.subtitle": "considérations sur des choses connues, essai de psychosynthèse",
+    "volumeInfo.authors": ["H. A. Glauser"],
+    "volumeInfo.publishedDate": "1950",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015082021364"
+      }
+    ],
+    "volumeInfo.pageCount": 212,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychanalyse"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=A47RAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=14&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=A47RAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie.html?hl=&id=A47RAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=A47RAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=A47RAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le mécanisme de l'esprit",
+    "volumeInfo.authors": ["André Cresson"],
+    "volumeInfo.publishedDate": "1950",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "NWU:35556001268291"
+      }
+    ],
+    "volumeInfo.pageCount": 216,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Intellect"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=LjcdAQAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=15&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=LjcdAQAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_m%C3%A9canisme_de_l_esprit.html?hl=&id=LjcdAQAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=LjcdAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=LjcdAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "L'évolutionnisme des idées-forces",
+    "volumeInfo.authors": ["Alfred Fouillée"],
+    "volumeInfo.publishedDate": "1890",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UVA:X030803006"
+      }
+    ],
+    "volumeInfo.pageCount": 303,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.2.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=-r9WAAAAYAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=16&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=-r9WAAAAYAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/L_%C3%A9volutionnisme_des_id%C3%A9es_forces.html?hl=&id=-r9WAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=-r9WAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=-r9WAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La psychologie descriptive selon Frantz Brentano",
+    "volumeInfo.authors": ["Lucie Gilson"],
+    "volumeInfo.publishedDate": "1955",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B3925755"
+      }
+    ],
+    "volumeInfo.pageCount": 210,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=i6kYAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=17&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=i6kYAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_psychologie_descriptive_selon_Frantz.html?hl=&id=i6kYAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=i6kYAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=i6kYAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La recherche en psychologie",
+    "volumeInfo.subtitle": "méthodologie et statistique",
+    "volumeInfo.authors": ["Benoit Dardenne", "Vincent Yzerbyt", "Alex Haslam (psychologue)", "Craig McGarty"],
+    "volumeInfo.publisher": "Editions Academia",
+    "volumeInfo.publishedDate": "2001",
+    "volumeInfo.description": "Pourquoi un livre sur la recherche en psychologie ? Parce que très peu d'ouvrages rendent justice au processus de la recherche qui constitue pourtant le cœur même du travail de psychologie. L'objectif de ce manuel est de faire comprendre les étapes essentielles de ce processus : définir les motivations et les objectifs de la recherche, analyser les données de base, mener les expériences et, enfin, évaluer les résultats obtenus. Un livre clair et efficace les aspects méthodologiques et conceptuels de la recherche en psychologie sont les points de passage obligés vers la statistique. Sans exiger du lecteur des connaissances mathématiques très poussées, les auteurs permettent d'appréhender et d'utiliser les modèles statistiques les plus fréquemment rencontrés en psychologie. Ils abordent également quelques-uns des principes éthiques fondamentaux qui doivent guider toute recherche scientifique. Un livre didactique tout au long de l'ouvrage, questions et corrigés facilitent l'assimilation des notions développées. Un glossaire de tous les termes techniques rencontrés vient compléter ce manuel. Un livre-ressource indispensable pour qui, étudiant, chercheur, praticien ou honnête homme, s'intéresse de près ou de loin à la psychologie.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2872096124"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782872096121"
+      }
+    ],
+    "volumeInfo.pageCount": 289,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=Ipi1PAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=18&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=Ipi1PAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_recherche_en_psychologie.html?hl=&id=Ipi1PAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Couple amical et socialisation chez les jeunes écoliers",
+    "volumeInfo.subtitle": "étude comparative entre deux niveaux d'âge, 5-6 ans et 8-9 ans",
+    "volumeInfo.authors": ["Claude Tous Saint-Marc"],
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "PSU:000008409737"
+      }
+    ],
+    "volumeInfo.pageCount": 205,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Affinite"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=zAvuAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=19&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=zAvuAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Couple_amical_et_socialisation_chez_les.html?hl=&id=zAvuAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=zAvuAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=zAvuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "La psychologie dans le monde moderne",
+    "volumeInfo.authors": ["Philippe Muller"],
+    "volumeInfo.publishedDate": "1964",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B4023943"
+      }
+    ],
+    "volumeInfo.pageCount": 224,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=4EhFAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=20&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=4EhFAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_psychologie_dans_le_monde_moderne.html?hl=&id=4EhFAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=4EhFAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=4EhFAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie et dialectique",
+    "volumeInfo.subtitle": "La spirale et le miroir, textes de 1926 à 1961",
+    "volumeInfo.authors": ["Henri Wallon"],
+    "volumeInfo.publisher": "Messidor",
+    "volumeInfo.publishedDate": "1990",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UVA:X002166958"
+      }
+    ],
+    "volumeInfo.pageCount": 241,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Child psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=f_4tAAAAYAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=21&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=f_4tAAAAYAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_et_dialectique.html?hl=&id=f_4tAAAAYAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=f_4tAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=f_4tAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie de l'esthétique",
+    "volumeInfo.authors": ["Robert Francès"],
+    "volumeInfo.publishedDate": "1968",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "STANFORD:36105041169157"
+      }
+    ],
+    "volumeInfo.pageCount": 204,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Aesthetics"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=CHgQAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=22&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=CHgQAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_de_l_esth%C3%A9tique.html?hl=&id=CHgQAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=CHgQAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=CHgQAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Étendue et psychologie chez Malebranche",
+    "volumeInfo.authors": ["Martial Guéroult"],
+    "volumeInfo.publishedDate": "1939",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015026298029"
+      }
+    ],
+    "volumeInfo.pageCount": 115,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=15kAAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=23&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=15kAAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/%C3%89tendue_et_psychologie_chez_Malebranche.html?hl=&id=15kAAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=15kAAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=15kAAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Les fonctions psychologiques et les œuvres",
+    "volumeInfo.authors": ["Ignace Meyerson"],
+    "volumeInfo.publishedDate": "1948",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015010863903"
+      }
+    ],
+    "volumeInfo.pageCount": 223,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Human beings"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.0.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=s_QMAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=24&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=s_QMAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_fonctions_psychologiques_et_les_%C5%93uv.html?hl=&id=s_QMAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=s_QMAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=s_QMAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie éducation",
+    "volumeInfo.subtitle": "essais et conférences ...",
+    "volumeInfo.authors": ["Albert Millot"],
+    "volumeInfo.publishedDate": "1931",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:$B72972"
+      }
+    ],
+    "volumeInfo.pageCount": 260,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Comportement humain"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "0.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=w79BAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=25&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=w79BAAAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_%C3%A9ducation.html?hl=&id=w79BAAAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=w79BAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=w79BAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Le beau voyage",
+    "volumeInfo.subtitle": "itinéraire de Paris aux frontières de Jérusalem",
+    "volumeInfo.authors": ["Maurice Pradines"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B3925096"
+      }
+    ],
+    "volumeInfo.pageCount": 149,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Morale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=_xGRBHTbYLEC&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=26&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=_xGRBHTbYLEC&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Le_beau_voyage.html?hl=&id=_xGRBHTbYLEC",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=_xGRBHTbYLEC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=_xGRBHTbYLEC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Psychologie physiologique",
+    "volumeInfo.authors": ["Clifford Thomas Morgan"],
+    "volumeInfo.publishedDate": "1949",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UCAL:B3123876"
+      }
+    ],
+    "volumeInfo.pageCount": 810,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "1.1.1.0.preview.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=0LYLAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=27&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=0LYLAQAAIAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_physiologique.html?hl=&id=0LYLAQAAIAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.imageLinks.smallThumbnail": "http://books.google.com/books/content?id=0LYLAQAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "volumeInfo.imageLinks.thumbnail": "http://books.google.com/books/content?id=0LYLAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+  },
+  {
+    "volumeInfo.title": "Manuel de psychologie pour l'enseignement",
+    "volumeInfo.authors": ["Daniel Gaonac'h", "Caroline Golder"],
+    "volumeInfo.publisher": "Hachette",
+    "volumeInfo.publishedDate": "1995",
+    "volumeInfo.description": "La psychologie de l'enfant et de l'adolescent pour les enseignants, de l'école primaire au baccalauréat, ou comment se rendre compte que l'enfant est une personne et en tenir compte dans son enseignement.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2011703603"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782011703606"
+      }
+    ],
+    "volumeInfo.pageCount": 576,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=PTPnHAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=28&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=PTPnHAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Manuel_de_psychologie_pour_l_enseignemen.html?hl=&id=PTPnHAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Dictionnaire de psychologie en trois langues",
+    "volumeInfo.subtitle": "Francais : Allemand : Anglais",
+    "volumeInfo.authors": ["Hubertus Carl Johannes Duijker", "Maria J. van Rijswijk", "International Union of Psychological Science"],
+    "volumeInfo.publisher": "Hogrefe & Huber Publishing",
+    "volumeInfo.publishedDate": "1975",
+    "volumeInfo.description": "Listing of equivalent psychological terms in English, French, and German. Also includes abbreviations, e.g., ACTH. Synonyms are indicated. Spelling is according to American usage. No definitions or pronunciations.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "UOM:39015072103537"
+      }
+    ],
+    "volumeInfo.pageCount": 342,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=N2dqAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=29&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=N2dqAAAAMAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Dictionnaire_de_psychologie_en_trois_lan.html?hl=&id=N2dqAAAAMAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "S'asseoir-- pour se regarder marcher",
+    "volumeInfo.subtitle": "fantasmes et formation des enseignants",
+    "volumeInfo.authors": ["Michel Lecointe"],
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.description": "Synthèse rédigée à partir d'une thèse de 3e cycle. Sous forme d'un itinéraire de recherche et en faisant état de son cheminement, l'auteur propose un essai critique sur la formation des enseignants. Trois parties: Approche théorique et pratique autour de deux pôles: l'inconscient ou l'affectif et l'institution; revue des théories, assaisonnée de récits -- Enquête -- Points de repères pédagogiques et propositions concernant la formation des enseignants.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2901968554"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782901968559"
+      }
+    ],
+    "volumeInfo.pageCount": 255,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Affectivite"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=UUBgHQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=30&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=UUBgHQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/S_asseoir_pour_se_regarder_marcher.html?hl=&id=UUBgHQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les voies étonnantes de la nouvelle psychologie",
+    "volumeInfo.authors": ["Pierre Daco"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.description": "Un passionnant voyage à travers une psychologie audacieuse. Les mutations actuelles du monde provoquent les nouvelles formes d'appel vers la psychologie, lui conférant une importance rarement connue. Les critères traditionnels sont en voie de disparition et chacun doit se situer face à d'autres valeurs. Tout porte à croire que l'humanité monte vers une spiritualisation progressive. Pierre Daco nous parle ici non seulement de psychologie et d'éducation nouvelles, mais également d'alchimie, de physique moderne, de matière, d'esprit.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2501001990"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782501001991"
+      }
+    ],
+    "volumeInfo.pageCount": 352,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=9Np1GwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=31&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=9Np1GwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_voies_%C3%A9tonnantes_de_la_nouvelle_psy.html?hl=&id=9Np1GwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Agir ensemble",
+    "volumeInfo.subtitle": "l'action didactique conjointe du professeur et des élèves",
+    "volumeInfo.authors": ["Gérard Sensevy", "Alain Mercier"],
+    "volumeInfo.publisher": "PU Rennes",
+    "volumeInfo.publishedDate": "2007",
+    "volumeInfo.description": "Comment décrire d'une manière rigoureuse et heuristique le travail du professeur avec les élèves ? Comment, donc, penser l'enseignement et l'apprentissage dans leur solidarité ? En quoi les savoirs dont le professeur veut instruire les élèves donnent-ils leurs formes aux transactions didactiques? Le livre entend traiter de ces questions, en offrant une vue d'ensemble d'une approche \" actionnelle \" de l'enseignement et de l'apprentissage dans les classes, et en proposant à la discussion à ta fois des positions épistémologiques, des outils théoriques, et des méthodes d'investigation empirique. Cet ouvrage s'adresse aux chercheurs: en didactique des disciplines - dont ceux qui s'intéressent aux approches comparatistes dans le champ didactique, en sciences de l'éducation, et plus généralement à tous ceux, qui, dans les sciences de l'homme et de la société, s'intéressent à l'étude de l'agir, en particulier dans les situations éducatives. Il concerne aussi les étudiants en didactique des disciplines et en sciences de l'éducation, plus particulièrement au niveau du master et du doctorat. Il leur offre une introduction à certains concepts fondamentaux de l'approche didactique et une initiation à ses problématiques actuelles.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2753503567"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782753503564"
+      }
+    ],
+    "volumeInfo.pageCount": 225,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Interaction en éducation"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=zCjbPAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=32&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=zCjbPAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Agir_ensemble.html?hl=&id=zCjbPAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Psychologie en Direct",
+    "volumeInfo.authors": ["Karen Huffman"],
+    "volumeInfo.publisher": "Modulo-Griffon",
+    "volumeInfo.publishedDate": "2014-04",
+    "volumeInfo.description": "Mise à jour adaptée à la réalité des étudiants du cours Initiation àla psychologie, cette 4e édition de Psychologie en direct s'adresse à toute personne s'intéressant àla psychologie. Illustré avec des exemples bien choisis, ce texte clair et concis favorise l'application des concepts à la réalité de tout les jours. Comprenant un glossaire, des autoévaluations ry frd cartes comceptuelles, l'ouvrage revient enrichi de nouvelles caractéristiques favorisant un apprentissage actif, uneconsolidation de la pensée critique et la réussite scolaire.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2896509828"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782896509829"
+      }
+    ],
+    "volumeInfo.pageCount": 364,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=MNXloAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=33&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=MNXloAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_en_Direct.html?hl=&id=MNXloAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Se guérir de la sottise",
+    "volumeInfo.authors": ["Lucien Auger"],
+    "volumeInfo.publisher": "Montréal : Centre interdisciplinaire de Montréal",
+    "volumeInfo.publishedDate": "1982-01-01",
+    "volumeInfo.description": "Un petit livre de sagesse, écrit simplement, à la portée d'un large public. Dans sa démarche vers le bonheur, chacun fait ses faux-pas, malgré les conseils des aînés. L'auteur analyse et dénonce une trentaine de \"sottises\", ce qui constitue autant de petits chapitres concrets et propices à la réflexion.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2761902491"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782761902496"
+      }
+    ],
+    "volumeInfo.pageCount": 111,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Attitude (Psychologie)"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=ZSqQAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=34&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=ZSqQAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Se_gu%C3%A9rir_de_la_sottise.html?hl=&id=ZSqQAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La pensée constructive et le bon sens",
+    "volumeInfo.authors": ["Raymond Vincent"],
+    "volumeInfo.publisher": "[Montréal] : Le Jour",
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.description": "L'auteur expose les principes et les techniques de la \"pensée constructive\". Il s'agit du potentiel, souvent ignoré et inexploité, qui existe dans le subconscient de chaque individu. Divers phénomènes basés sur le psychisme sont passés en revue: visualisation, autosuggestion, méditation créatrice, répétition, programmation des rêves, orientation du sommeil naturel, l'influence à distance, la télépathie. L'auteur parle de \"foi scientifique\" et de \"prière scientifique.\"",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2890440621"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782890440623"
+      }
+    ],
+    "volumeInfo.pageCount": 147,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Common sense"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=uwLjAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=35&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=uwLjAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_pens%C3%A9e_constructive_et_le_bon_sens.html?hl=&id=uwLjAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction à la psychologie",
+    "volumeInfo.authors": ["Rita L.. Atkinson", "David Bélanger"],
+    "volumeInfo.publisher": "Montréal : Études vivantes",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.description": "Très bon manuel présenté avec clarté et méthodologie. Nombreuses illustrations, résumé à la fin de chaque chapitre. C'est la traduction d'un manuel américain plusieurs fois réédité et amélioré depuis 1953. Cette édition a été l'objet d'une révision importante.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2760703738"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782760703735"
+      }
+    ],
+    "volumeInfo.pageCount": 788,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=rszpAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=36&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=rszpAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_%C3%A0_la_psychologie.html?hl=&id=rszpAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Gestalt thérapie: vers une théorie du Self: nouveauté, excitation et croissance",
+    "volumeInfo.authors": ["Frederick S. Perls", "Hefferline, Ralph E", "Paul Goodman"],
+    "volumeInfo.publisher": "[Montréal] : Stanké",
+    "volumeInfo.publishedDate": "1979",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0885661400"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780885661404"
+      }
+    ],
+    "volumeInfo.pageCount": 291,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Gestalt psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=omLnGwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=37&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=omLnGwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Gestalt_th%C3%A9rapie_vers_une_th%C3%A9orie_du_S.html?hl=&id=omLnGwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Nouveau traité de psychologie. 4. Les fonctions et les lois générales",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1934",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:369184556"
+      }
+    ],
+    "volumeInfo.pageCount": 528,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=v3tMMQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=38&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=v3tMMQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Nouveau_trait%C3%A9_de_psychologie_4_Les_fon.html?hl=&id=v3tMMQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Développements récents en droit de la santé mentale (1998)",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1998",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2894512384"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782894512388"
+      }
+    ],
+    "volumeInfo.pageCount": 299,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Insane, Criminal and dangerous"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=z4_otAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=39&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=z4_otAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/D%C3%A9veloppements_r%C3%A9cents_en_droit_de_la.html?hl=&id=z4_otAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La psychologie morale",
+    "volumeInfo.authors": ["Pierre Moessinger"],
+    "volumeInfo.publisher": "Presses Universitaires de France - PUF",
+    "volumeInfo.publishedDate": "1989-01-01",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2130423876"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782130423874"
+      }
+    ],
+    "volumeInfo.pageCount": 127,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Morale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=WLrwSQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=40&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=WLrwSQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_psychologie_morale.html?hl=&id=WLrwSQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction à la psychologie",
+    "volumeInfo.subtitle": "les grands thèmes",
+    "volumeInfo.authors": ["Carole Wade", "Jacques Shewchuck", "Carol Tavris"],
+    "volumeInfo.publisher": "Saint-Laurent, Québec : Éditions du Renouveau pédagogique",
+    "volumeInfo.publishedDate": "2002-01",
+    "volumeInfo.description": "Ce manuel présente les grands thèmes de la psychologie contemporaine. Tout au long des chapitres, les auteurs présentent les concepts de façon rigoureuse, en ayant pour but de développer chez les étudiants un mode de pensée critique. Le style d'écriture clair et accessible de même que les différentes rubriques pratiques interpellent les étudiants et favorisent leur compréhension. Les auteurs ont également pris soin d'actualiser certains thèmes à la lumière des dernières avancées de la recherche. L'approche pédagogique utilisée met l'accent sur l'implication des étudiants dans l'apprentissage de la matière afin de favoriser leur compréhension. Ainsi, les auteurs proposent : - des rubriques \"Soyez critique\" intégrées aux explications afin que les étudiants réfléchissent à ce qu'ils étudient ; - des rubriques \"Exploration\" proposant des expériences ou mini-cas qui favorisent la compréhension et l'assimilation des concepts ; - des rubriques \"La psychologie et vous\", en fin de chapitre, illustrant les implications pratiques des recherches en psychologie ; - des chapitres structurés. Au début de chacun des chapitres, on trouve des questions annonçant la matière qui sera à l'étude et un retour est fait à la fin du chapitre afin de valider les acquis des étudiants ; - Plusieurs outils pédagogiques tels : des graphiques conceptuels (les étudiants visualisent les concepts), des tableaux de révision (synthétisent et comparent les concepts), des mini-tests (vérifient la compréhension des étudiants), des définitions en marge, un glossaire, et des résumés de chapitre. - Un compagnon Web donne accès à des questions supplémentaires, des liens commentés et offre des exercices interactifs en ligne. www.erpi.com/wade",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2761312716"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782761312714"
+      }
+    ],
+    "volumeInfo.pageCount": 450,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychology"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=bUgWAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=41&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=bUgWAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_%C3%A0_la_psychologie.html?hl=&id=bUgWAQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction a la Psychologie",
+    "volumeInfo.subtitle": "Approches Contemporaines",
+    "volumeInfo.authors": ["Robert S. Feldman", "François Cauchy", "Sylvain Giroux"],
+    "volumeInfo.publisher": "Saint-Laurent, Québec : McGraw-Hill",
+    "volumeInfo.publishedDate": "1994",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0075517132"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780075517139"
+      }
+    ],
+    "volumeInfo.pageCount": 651,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=y7g4NAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=42&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=y7g4NAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_a_la_Psychologie.html?hl=&id=y7g4NAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "À la découverte de la psychologie",
+    "volumeInfo.authors": ["Dennis Coon", "Daniel Mimeault"],
+    "volumeInfo.publisher": "[Repentigny, Québec] : Éditions R. Goulet",
+    "volumeInfo.publishedDate": "2005",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2893773117"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782893773117"
+      }
+    ],
+    "volumeInfo.pageCount": 378,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=5OJfPgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=43&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=5OJfPgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/%C3%80_la_d%C3%A9couverte_de_la_psychologie.html?hl=&id=5OJfPgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Motivez les gens à agir",
+    "volumeInfo.authors": ["Conklin, Robert"],
+    "volumeInfo.publisher": "Saint-Hubert [Québec] : Éditions Un Monde différent",
+    "volumeInfo.publishedDate": "1984",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "289225051X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782892250510"
+      }
+    ],
+    "volumeInfo.pageCount": 298,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Emotions"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=bYhzAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=44&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=bYhzAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Motivez_les_gens_%C3%A0_agir.html?hl=&id=bYhzAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les fondements de la psychologie sociale",
+    "volumeInfo.authors": ["Robert J. Vallerand"],
+    "volumeInfo.publisher": "Boucherville, Québec : G. Morin",
+    "volumeInfo.publishedDate": "1994-01-01",
+    "volumeInfo.description": "Adoptant une demarche scientifique rigoureuse mais neanmoins accessible aux debutants, cet ouvrage original dresse un panorama de la psychologie sociale contemporaine et en expose les fondements. Outre qu'il decrit les resultats des dernieres recherches effectuees dans le domaine, l'ouvrage presente les principaux phenomenes et les theories de base de la psychologie sociale.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2891054865"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782891054867"
+      }
+    ],
+    "volumeInfo.pageCount": 888,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Comportement d'aide"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=pgrqAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=45&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=pgrqAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_fondements_de_la_psychologie_sociale.html?hl=&id=pgrqAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Psychologie générale",
+    "volumeInfo.authors": ["Spencer A. Rathus"],
+    "volumeInfo.publisher": "Laval, Québec : Éditions Études vivantes",
+    "volumeInfo.publishedDate": "2000",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2760706214"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782760706217"
+      }
+    ],
+    "volumeInfo.pageCount": 374,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=5xfLAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=46&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=5xfLAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_g%C3%A9n%C3%A9rale.html?hl=&id=5xfLAQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Une peau pour les pensées",
+    "volumeInfo.subtitle": "entretiens de Didier Anzieu avec Gilbert Tarrab sur la psychologie et la psychanalyse",
+    "volumeInfo.authors": ["Didier Anzieu", "Gilbert Tarrab"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2862150835"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782862150833"
+      }
+    ],
+    "volumeInfo.pageCount": 187,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychanalyse"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=jcRRGwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=47&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=jcRRGwAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Une_peau_pour_les_pens%C3%A9es.html?hl=&id=jcRRGwAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les gauchers",
+    "volumeInfo.subtitle": "prévalence manuelle et dominance cérébrale",
+    "volumeInfo.authors": ["Henry Hécaen", "Julián de Ajuriaguerra"],
+    "volumeInfo.publishedDate": "1963",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:11155916"
+      }
+    ],
+    "volumeInfo.pageCount": 171,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Cerveau - Localisation cérébrale"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=v3RxQgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=48&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=v3RxQgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_gauchers.html?hl=&id=v3RxQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Psychologie cognitive de la planification",
+    "volumeInfo.authors": ["Jean-Michel Hoc"],
+    "volumeInfo.publisher": "PUG",
+    "volumeInfo.publishedDate": "1987",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2706102802"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782706102806"
+      }
+    ],
+    "volumeInfo.pageCount": 197,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Artificial intelligence"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=5aogAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=49&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=5aogAAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_cognitive_de_la_planificatio.html?hl=&id=5aogAAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Introduction à la psychologie",
+    "volumeInfo.authors": ["Morgan, Clifford Thomas"],
+    "volumeInfo.publisher": "Montréal : McGraw-Hill",
+    "volumeInfo.publishedDate": "1976",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0070823456"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780070823457"
+      }
+    ],
+    "volumeInfo.pageCount": 452,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=g7LnZwEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=50&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=g7LnZwEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Introduction_%C3%A0_la_psychologie.html?hl=&id=g7LnZwEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Les trois matières",
+    "volumeInfo.authors": ["Stéphane Lupasco"],
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "290365705X"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782903657055"
+      }
+    ],
+    "volumeInfo.pageCount": 171,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Force and energy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=1cDpswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=51&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=1cDpswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Les_trois_mati%C3%A8res.html?hl=&id=1cDpswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Psychologie",
+    "volumeInfo.authors": ["Piaget"],
+    "volumeInfo.publishedDate": "1986",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0785938540"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780785938545"
+      }
+    ],
+    "volumeInfo.pageCount": 1960,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=TgPOMQEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=52&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=TgPOMQEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie.html?hl=&id=TgPOMQEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Temps de la reflexion 1982",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1982",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:159888712"
+      }
+    ],
+    "volumeInfo.pageCount": 497,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=47nbAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=53&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=47nbAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Temps_de_la_reflexion_1982.html?hl=&id=47nbAQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La Gestalt",
+    "volumeInfo.subtitle": "nouvelles perspectives théoriques et choix thérapeutiques et éducatifs",
+    "volumeInfo.authors": ["Erving Polster", "Miriam Polster"],
+    "volumeInfo.publisher": "[Montréal] : Le Jour",
+    "volumeInfo.publishedDate": "1983",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2890441377"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782890441378"
+      }
+    ],
+    "volumeInfo.pageCount": 326,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Gestalt therapy"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=eMDePAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=54&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=eMDePAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Gestalt.html?hl=&id=eMDePAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La Stimulation psychomotrice du nourrisson",
+    "volumeInfo.subtitle": "une contribution à l'éducation précoce",
+    "volumeInfo.authors": ["Henri Herren", "M. P. Herren"],
+    "volumeInfo.publishedDate": "1980",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2225670897"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782225670893"
+      }
+    ],
+    "volumeInfo.pageCount": 102,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Aptitude"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FAu1AAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=55&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FAu1AAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Stimulation_psychomotrice_du_nourriss.html?hl=&id=FAu1AAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Papier mâché",
+    "volumeInfo.authors": ["Cheryl Owen", "Steve Tanner"],
+    "volumeInfo.publishedDate": "1994-09-01",
+    "volumeInfo.description": "Plus de 70 créations aussi originales que faciles à réaliser. Des objets décoratifs charmants et... durables délicieux bougeoirs ornés de mosaïques, chaleureux tournesols en devant de cheminée, corne d'abondance garnie de fleurs séchées... Une foule d'idées de cadeaux pour ravir petits et grands : masques mystérieux, marionnettes et pantins, jardinières, bijoux, et même un jeu de tric-trac ! Des explications claires et précises, accompagnées d'illustrations détaillées étape par étape.",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2263001549"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782263001543"
+      }
+    ],
+    "volumeInfo.pageCount": 123,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Papier-mâché"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=daLNswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=56&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=daLNswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Papier_m%C3%A2ch%C3%A9.html?hl=&id=daLNswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La machine à faire des dieux",
+    "volumeInfo.subtitle": "sociologie et psychologie",
+    "volumeInfo.authors": ["Serge Moscovici"],
+    "volumeInfo.publishedDate": "1988",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2213020671"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782213020679"
+      }
+    ],
+    "volumeInfo.pageCount": 485,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "fr",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=mcNyQgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=57&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=mcNyQgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_machine_%C3%A0_faire_des_dieux.html?hl=&id=mcNyQgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Histoire de la psychologie",
+    "volumeInfo.subtitle": "4e ed. ent. rev. et augm",
+    "volumeInfo.authors": ["Fernand-Lucien Mueller"],
+    "volumeInfo.publishedDate": "1976",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:299666798"
+      }
+    ],
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=lrzcPgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=58&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=lrzcPgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Histoire_de_la_psychologie.html?hl=&id=lrzcPgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "Merveilles et secrets de l'esprit humain : psychologie de la vie quotidienne",
+    "volumeInfo.authors": {},
+    "volumeInfo.publisher": "Montréal : Sélection du Reader's digest",
+    "volumeInfo.publishedDate": "1992",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "0888501803"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9780888501806"
+      }
+    ],
+    "volumeInfo.pageCount": 336,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=YXT4AAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=59&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=YXT4AAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Merveilles_et_secrets_de_l_esprit_humain.html?hl=&id=YXT4AAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  },
+  {
+    "volumeInfo.title": "La Psychologie",
+    "volumeInfo.authors": ["Maurice Reuchlin"],
+    "volumeInfo.publishedDate": "1973",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:495366641"
+      }
+    ],
+    "volumeInfo.pageCount": 61,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FHDRAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=60&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FHDRAQAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Psychologie.html?hl=&id=FHDRAQAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Moi & Cie",
+    "volumeInfo.subtitle": "décembre 2009",
+    "volumeInfo.authors": {},
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:670390623"
+      }
+    ],
+    "volumeInfo.pageCount": 130,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": {},
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=xTg6vgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=61&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=xTg6vgAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Moi_Cie.html?hl=&id=xTg6vgAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "La Mort aujourd'hui",
+    "volumeInfo.authors": ["Louis-Vincent Thomas"],
+    "volumeInfo.publishedDate": "1977",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:299357943"
+      }
+    ],
+    "volumeInfo.pageCount": 274,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Anthropologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=dWRpswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=62&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=dWRpswEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/La_Mort_aujourd_hui.html?hl=&id=dWRpswEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Ecrits",
+    "volumeInfo.subtitle": "II.. Les fondements de la psychologie",
+    "volumeInfo.authors": ["Georges Politzer"],
+    "volumeInfo.publishedDate": "1981",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "ISBN_10",
+        "identifier": "2209054230"
+      },
+      {
+        "type": "ISBN_13",
+        "identifier": "9782209054237"
+      }
+    ],
+    "volumeInfo.pageCount": 302,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Psychologie"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=EfjstAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=63&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=EfjstAEACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Ecrits.html?hl=&id=EfjstAEACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false,
+    "volumeInfo.panelizationSummary.containsEpubBubbles": false,
+    "volumeInfo.panelizationSummary.containsImageBubbles": false
+  },
+  {
+    "volumeInfo.title": "Psychologie et marxisme",
+    "volumeInfo.authors": {},
+    "volumeInfo.publishedDate": "1971",
+    "volumeInfo.industryIdentifiers": [
+      {
+        "type": "OTHER",
+        "identifier": "OCLC:299789545"
+      }
+    ],
+    "volumeInfo.pageCount": 248,
+    "volumeInfo.printType": "BOOK",
+    "volumeInfo.categories": ["Communism"],
+    "volumeInfo.maturityRating": "NOT_MATURE",
+    "volumeInfo.allowAnonLogging": false,
+    "volumeInfo.contentVersion": "preview-1.0.0",
+    "volumeInfo.language": "en",
+    "volumeInfo.previewLink": "http://books.google.fr/books?id=FJ-cNAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&cd=64&source=gbs_api",
+    "volumeInfo.infoLink": "http://books.google.fr/books?id=FJ-cNAAACAAJ&dq=subject:Psychologie&hl=&as_pt=BOOKS&source=gbs_api",
+    "volumeInfo.canonicalVolumeLink": "https://books.google.com/books/about/Psychologie_et_marxisme.html?hl=&id=FJ-cNAAACAAJ",
+    "volumeInfo.readingModes.text": false,
+    "volumeInfo.readingModes.image": false
+  }
+]

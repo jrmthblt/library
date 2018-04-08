@@ -1,0 +1,3559 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 668,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "KwkT3W_sDqAC",
+   "etag": "WzJUyvPOj9c",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/KwkT3W_sDqAC",
+   "volumeInfo": {
+    "title": "L'écologie des autres",
+    "subtitle": "l'anthropologie et la question de la nature",
+    "authors": [
+     "Philippe Descola"
+    ],
+    "publisher": "Editions Quae",
+    "publishedDate": "2011",
+    "description": "La quatrième de couverture indique : \"Depuis la fin du XIXe siècle, l'anthropologie qui étudie l'unité de l'humanité dans la diversité de ses manifestations n'échappe pas au partage entre nature et culture. Elle est scindée entre une anthropologie physique qui établit l'unité par-delà les variations et une anthropologie culturelle ou sociale qui fait état des variations sur fond d'unité. Mais l'anthropologie culturelle est elle-même divisée entre deux explications : celle qui considère les diversités culturelles comme autant de réponses adaptatives aux contraintes du milieu naturel et celle qui insiste sur le traitement symbolique d'éléments naturels choisis dans le milieu environnant. Selon Philippe Descola, c'est en se libérant du dualisme et en recomposant une écologie des relations entre humains et non-humains que l'anthropologie, acceptant de renoncer à son anthropocentrisme, pourra sortir des débats entre déterminismes naturels et déterminismes culturels.\"",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782759209118"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2759209113"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 110,
+    "printType": "BOOK",
+    "categories": [
+     "Anthropology"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=KwkT3W_sDqAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=KwkT3W_sDqAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=KwkT3W_sDqAC&printsec=frontcover&dq=subject:Nature&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=KwkT3W_sDqAC&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/L_%C3%A9cologie_des_autres.html?hl=&id=KwkT3W_sDqAC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=KwkT3W_sDqAC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Q9KCObucuosC",
+   "etag": "G+B3WQsKujI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Q9KCObucuosC",
+   "volumeInfo": {
+    "title": "La pollution due au transport urbain et aéroportuaire",
+    "subtitle": "Caractéristiques et méthodes de réduction",
+    "authors": [
+     "Louis Tsague"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2009-11-01",
+    "description": "La réduction des émissions polluantes est devenue pour le XXIe siècle un défi majeur. Cet ouvrage dresse un état des lieux exhaustif des différents types d'émissions provenant de la combustion dans divers systèmes propulsifs terrestres et aériens. Il offre une vue complète allant de la formation des polluants dans les foyers jusqu'à leur dispersion dans les différentes couches de l'atmosphère.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296243125"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296243126"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 244,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Q9KCObucuosC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Q9KCObucuosC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Q9KCObucuosC&printsec=frontcover&dq=subject:Nature&hl=&cd=2&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=Q9KCObucuosC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-Q9KCObucuosC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 17.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 17.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=Q9KCObucuosC&rdid=book-Q9KCObucuosC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.799E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.799E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/La_pollution_due_au_transport_urbain_et-sample-pdf.acsm?id=Q9KCObucuosC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Q9KCObucuosC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "hXepciv1znEC",
+   "etag": "SpJ5vyO0iYg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hXepciv1znEC",
+   "volumeInfo": {
+    "title": "Ces bêtes qu'on abat",
+    "subtitle": "Journal d'un enquêteur dans les abattoirs français (1993-2008)",
+    "authors": [
+     "Jean-Luc Daub"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2009-05-01",
+    "description": "Ces enquêtes effectuées dans les abattoirs français durant une quinzaine d'années lèvent le voile sur le malheur de milliards d'animaux. La force de ce témoignage tient dans la description, d'une précision extrême, des opérations d'abattage intolérables tandis que les instances qui ont compétence pour faire appliquer la règlementation en matière de protection des animaux font preuve d'une passivité qui confine à la complicité.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296225350"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296225357"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.8.6.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=hXepciv1znEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=hXepciv1znEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=hXepciv1znEC&printsec=frontcover&dq=subject:Nature&hl=&cd=3&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=hXepciv1znEC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-hXepciv1znEC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 17.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 17.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=hXepciv1znEC&rdid=book-hXepciv1znEC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.799E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.799E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Ces_b%C3%AAtes_qu_on_abat-sample-epub.acsm?id=hXepciv1znEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Ces_b%C3%AAtes_qu_on_abat-sample-pdf.acsm?id=hXepciv1znEC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=hXepciv1znEC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "OPQ5CQAAQBAJ",
+   "etag": "8k1y3ZcBFhk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/OPQ5CQAAQBAJ",
+   "volumeInfo": {
+    "title": "Le cap des Trois Fourches",
+    "subtitle": "Un site de grande importance pour la conservation de la nature sur la côte méditerranéenne du Maroc",
+    "authors": [
+     "International Union for the Conservation of Nature (IUCN), Centre for Mediterranean Cooperation",
+     "Le Centre d'Activités Régionales pour les Aires Spécialement Protégées (CAR/ASP)"
+    ],
+    "publisher": "IUCN",
+    "publishedDate": "2015-05-01",
+    "description": "Le cap des Trois Fourches est un excellent 'candidat' à être érigé en Aire Protégée Marine (APM) en raison de sa grande qualité écologique, attestée par la présence de nombreuses espèces bio-indicatrices, par la diversité élevée d'espèces, aussi bien les espèces protégées que les espèces d'intérêt commericial, ainsi que par la diversité des habitats (prairies, grottes, substrat rocheux, etc.). La présente brochure est un document qui rassemble toute l'information disponible sur les valeurs biologiques et écologiques ainsi que socio-économiques et culturelles du cap des Trois Fourches. Il se veut être également un outil de communication qui ambitionne la sensibilisation des acteurs locaux sur l'importance des aires protégées marines.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782831716657"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2831716659"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 44,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.0.0.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=OPQ5CQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=OPQ5CQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=OPQ5CQAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=OPQ5CQAAQBAJ&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Le_cap_des_Trois_Fourches.html?hl=&id=OPQ5CQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Le_cap_des_Trois_Fourches-sample-pdf.acsm?id=OPQ5CQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=OPQ5CQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "m0g7DwAAQBAJ",
+   "etag": "ZqQdOFPkuyU",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/m0g7DwAAQBAJ",
+   "volumeInfo": {
+    "title": "Professeur Feuillage présente son écolo book - Comment devenir écolo sans devenir chiant",
+    "authors": [
+     "PROFESSEUR FEUILLAGE"
+    ],
+    "publisher": "First",
+    "publishedDate": "2017-11-16",
+    "description": "Le premier Youtuber 100 % écolo qui va vous faire kiffer l'écologie ! Les bons réflexes et les infos à connaître avec une bonne dose d'humour dans un almanach complètement déjanté à la sauce Feuillage ! \"Salut bande de petits chasseurs cueilleurs !\" Voilà comment le prof vous apostrophe au début de ses vidéos : et plus de 60 000 abonnés suivent ses tribulations bourrées d'humour et de provoc 100 % écolo ! Pour parler écologie et toucher un max de monde, il faut déculpabiliser les gens et les faire rire : c'est ce que le Professeur Feuillage et son assistante sexy Sophie ont bien compris : place à la déconne tout en restant ultra sérieux et précis sur les sujets importants ! Du remède contre la cuite du 31 décembre au pourquoi de l'exploitation du gaz de schiste, en passant par les petits gestes qui diviseront par deux votre conso d'énergie et les recettes bio pour vous régaler en laissant le Nutella au placard : découvrez les secrets de ces deux cinglés très attachants, mois après mois, tout au long de l'année et une bonne fois pour toutes : DEVENEZ ECOLO SANS DEVENIR CHIANT !",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782412035276"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "241203527X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 159,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=m0g7DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=m0g7DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=m0g7DwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=m0g7DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-m0g7DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 11.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 11.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=m0g7DwAAQBAJ&rdid=book-m0g7DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=m0g7DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "udZ6CgAAQBAJ",
+   "etag": "q5O8SfRg2KY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/udZ6CgAAQBAJ",
+   "volumeInfo": {
+    "title": "Transitions énergétiques : quelles dynamiques de changement ?",
+    "authors": [
+     "Divya Leducq et Anette Groux Sous la direction de Helga-Jane Scwarwell"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2015-09-01",
+    "description": "Que peut-on attendre de la transition énergétique ? L'actualité de ce concept traduit-elle une prise en compte renforcée de l'écologie ? En quoi la transition énergétique peut-elle être appréhendée comme une dynamique du changement qui ne se limiterait pas à sa dimension technique ? Quels seront les leviers du changement ? Comment repenser le collectif grâce à la transition ? Comment assurer le financement durable de la transition ?",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782336389806"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2336389800"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 610,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=udZ6CgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=udZ6CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=udZ6CgAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=6&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=udZ6CgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-udZ6CgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 31.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 31.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=udZ6CgAAQBAJ&rdid=book-udZ6CgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 3.199E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 3.199E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Transitions_%C3%A9nerg%C3%A9tiques_quelles_dynam-sample-epub.acsm?id=udZ6CgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Transitions_%C3%A9nerg%C3%A9tiques_quelles_dynam-sample-pdf.acsm?id=udZ6CgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=udZ6CgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "zJMcCq4OaIkC",
+   "etag": "ta4dUgEluvw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/zJMcCq4OaIkC",
+   "volumeInfo": {
+    "title": "L'intendance de la création",
+    "subtitle": "la vocation écologique de l'humain dans la théologie de Douglas J. Hall",
+    "authors": [
+     "Louis Vaillancourt"
+    ],
+    "publisher": "Médiaspaul",
+    "publishedDate": "2002",
+    "description": "Dans le contexte de l'actuelle crise écologique, comprise comme l'effondrement de l'image occidentale de l'humain \" maître de la nature \", l'auteur explore un concept anthropologique plus porteur de vie et plus fidèle à la tradition judéo-chrétienne. En effet, à cause des questions radicales que soulève la problématique écologique, la théologie chrétienne est invitée à un examen critique de sa doctrine, en particulier sa conception dualiste et triomphaliste de l'humain. Le thème de l'intendant, une richesse négligée de la tradition judéo-chrétienne, apparaît comme une clé pour identifier et exposer la contribution particulière du discours chrétien : celle de repenser les représentations cosmologiques et anthropologiques, présupposé fondamental à une éthique écologique. Car l'intendance n'est pas une action qu'il faut poser : c'est une manière de \" se poser \", une façon d'être dans le monde qui assume la structure écologique de l'être humain. L'étude du concept d'intendance dans l'œuvre de Douglas John Hall, un théologien anglo-canadien peu connu des milieux francophones, confirme sa pertinence comme axe central d'une théologie écologique. Cette étude fait aussi découvrir des possibilités d'enrichissement de la thématique grâce à l'apport des traditions juive, orthodoxe, et même amérindienne. Mais c'est finalement dans une interprétation christologique que le concept d'intendance trouve sa pleine mesure : un vivre-avec-les-créatures qui s'enracine dans la participation de l'humain à l'intendance du Christ, seule manière d'être avec la nature véritablement et chrétiennement \" écologique \".",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "2894205082"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9782894205082"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 286,
+    "printType": "BOOK",
+    "categories": [
+     "Christian stewardship"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=zJMcCq4OaIkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=zJMcCq4OaIkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=zJMcCq4OaIkC&printsec=frontcover&dq=subject:Nature&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=zJMcCq4OaIkC&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/L_intendance_de_la_cr%C3%A9ation.html?hl=&id=zJMcCq4OaIkC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=zJMcCq4OaIkC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "h_w4DwAAQBAJ",
+   "etag": "nuyCDQqZ4fs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/h_w4DwAAQBAJ",
+   "volumeInfo": {
+    "title": "Le Roundup face à ses juges",
+    "authors": [
+     "Marie-Monique ROBIN"
+    ],
+    "publisher": "La Découverte",
+    "publishedDate": "2017-10-19",
+    "description": "Le glyphosate, principe actif du Roundup, produit phare de la marque Monsanto, a été reconnu \" cancérogène probable \" pour l'homme en 2015. En octobre 2016, s'est tenu à La Haye le procès du puissant herbicide, ouvrant la voie juridique vers une reconnaissance du crime d'\" écocide \". Dans ce livre choc, Marie-Monique Robin retrace le déroulement du procès et donne à comprendre les ressorts de l'un des plus grands scandales sanitaires et environnementaux de l'histoire moderne. Depuis plusieurs années, l'inquiétude ne cesse de croître quant aux dangers du pesticide le plus utilisé au monde dans les champs et les jardins : le glyphosate. D'autant qu'en 2015, le Centre international de recherche sur le cancer l'a déclaré \" cancérigène probable \" pour l'homme, contredisant ainsi les agences de santé américaines ou européennes qui avaient assuré l'innocuité du Roundup de Monsanto, puissant herbicide dont le principe actif est le glyphosate. Prolongeant son enquête retentissante de 2008 sur les dangers des produits toxiques de la firme américaine ( Le Monde selon Monsanto, livre et film), Marie-Monique Robin montre dans ce livre (et le film associé) que la dangerosité du glyphosate est plus grande encore qu'on le craignait. Dans le monde entier, il rend malades ou tue sols, plantes, animaux et humains, car l'herbicide est partout : eau, air, pluie, sols et aliments. Le produit, cancérigène, est aussi un perturbateur endocrinien, un puissant antibiotique et un chélateur de métaux. D'où autant d'effets délétères documentés ici par des entretiens très forts avec des victimes aux États-Unis, en Argentine, en France et au Sri Lanka, ainsi qu'avec de nombreux scientifiques. Ce livre choc révèle l'un des plus grands scandales sanitaires et environnementaux de l'histoire moderne. Il montre que, face à l'impuissance ou l'absence de volonté des agences et des gouvernements pour y mettre fin, la société civile mondiale se mobilise : en octobre 2016, s'est tenu à La Haye le Tribunal international Monsanto, où juges et victimes ont instruit le procès du Roundup, en l'absence de Monsanto, qui a refusé d'y participer. Donnant son fil conducteur au livre, ce procès a conduit à un avis juridique très argumenté, qui pourrait faire reconnaître le crime d'\" écocide \", ce qui permettrait de poursuivre pénalement les dirigeants des firmes responsables.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782707198167"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2707198161"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 245,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=h_w4DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=h_w4DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=h_w4DwAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=8&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=h_w4DwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-h_w4DwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=h_w4DwAAQBAJ&rdid=book-h_w4DwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Le_Roundup_face_%C3%A0_ses_juges-sample-epub.acsm?id=h_w4DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Le_Roundup_face_%C3%A0_ses_juges-sample-pdf.acsm?id=h_w4DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=h_w4DwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UPkZCwAAQBAJ",
+   "etag": "hZMCLzotA4w",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UPkZCwAAQBAJ",
+   "volumeInfo": {
+    "title": "L'Arbre d'or",
+    "subtitle": "Vie et mort d'un géant canadien",
+    "authors": [
+     "John Vaillant"
+    ],
+    "publisher": "Les Éditions Noir sur Blanc",
+    "publishedDate": "2014-12-11",
+    "description": "« Le kayak et son propriétaire, Grant Hadwin, forestier expérimenté, étaient portés disparus depuis plusieurs mois. L’homme était un fugitif recherché pour un crime étrange et sans précédent. » Un soir de l’hiver 1997, dans les îles de la Reine-Charlotte, un bûcheron de Colombie-Britannique nommé Grant Hadwin commet un acte d’une violence inouïe. Sa victime est légendaire : un épicéa de Sitka vieux de 300 ans, haut de 50 mètres et entièrement couvert de lumineuses aiguilles dorées. Dans un geste paradoxal, qu’il conçoit comme une protestation contre les dommages causés par l’homme à la nature, Hadwin s’attaque à l’arbre avec une tronçonneuse. L’épicéa tombe deux jours plus tard, jetant la communauté locale dans la consternation. L’Arbre d’or était non seulement une curiosité scientifique, un miracle et une attraction touristique, mais il était sacré pour le peuple des Haïdas. Peu de temps après avoir confessé son crime, Hadwin disparaît dans de mystérieuses circonstances ; à ce jour, il n’a pas été retrouvé. En dénouant les fils de cette histoire vraie, John Vaillant donne à voir la beauté sauvage des côtes de l’Alaska ; il décrit les tensions historiques entre les Européens et les Indiens haïdas, la vie âpre et brutale des bûcherons, ainsi que l’histoire de l’abattage des arbres en Amérique du Nord et ses conséquences pour toute la civilisation occidentale. « Dans une prose riche et imagée, Vaillant évoque le luxuriant milieu naturel où l’épicéa d’or est apparu... Absolument captivant. » The New York Times John Vaillant collabore à divers journaux et revues, comme The New Yorker, The Atlantic, National Geographic. S’intéressant aux frictions entre l’homme et son milieu naturel, il a voyagé à travers les cinq continents. L’Arbre d’or est son premier livre, paru au Canada en 2005 et récompensé par le prestigieux prix du Gouverneur général. Le Tigre, paru en 2010, est un succès dans de nombreux pays ; il a reçu le prix Nicolas Bouvier en 2012. John Vaillant vit aujourd’hui à Vancouver. John Vaillant a reçu le prestigieux prix Windham Campbell 2014 pour l'ensemble de son œuvre.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782882503459"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2882503458"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 336,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UPkZCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UPkZCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=UPkZCwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=9&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UPkZCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-UPkZCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=UPkZCwAAQBAJ&rdid=book-UPkZCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/L_Arbre_d_or-sample-epub.acsm?id=UPkZCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/L_Arbre_d_or-sample-pdf.acsm?id=UPkZCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UPkZCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "ubAaCwAAQBAJ",
+   "etag": "XKl4Lt0wiK0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/ubAaCwAAQBAJ",
+   "volumeInfo": {
+    "title": "Voyage d’un naturaliste autour du monde fait à bord du navire le Beagle de 1831 à 1836 (avec Illustrations)",
+    "subtitle": "Edition intégrale",
+    "authors": [
+     "Charles Darwin"
+    ],
+    "publisher": "Ink book",
+    "publishedDate": "2013-03-01",
+    "description": "Première édition française, traduite sur la base de l'édition de Londres de 1860. Après l'ouvrage ‘L'origine de l'espèce’ le ‘Voyage d'un naturaliste’ c’est l'ouvrage de Darwin le plus souvent réimprimé, surtout connu sous le titre ‘ Le Voyage du Beagle’. Contenant : VIII pages de préfaces. Ouvrage orné de vignettes in-texte. Traduit de l'anglais par M. Ed. Barbier. San Iago. Iles du Cap Vert. Rochers de Saint Paul. Bahia Brésil. Rio de Janeiro. Maldonado. Oiseaux. Quadrupèdes. Lacs slés. Bahia Blanca. Hospitalité. Etat de la société. Buenos Ayres Santa Fè. Le Rhynchops Nigra.Le Banda oriental. Océan atlantique. Patagonie. Géologie. Manière de faire le feu. Le Santa Cruz. Les Iles Falkland. La Terre de Feu. Terrible tempête. Chili central. Chiloé. Excursion. Valdivia. Concepcion. Le Portillo. Politesse des habitants. Géologie de la Cordillère. Mendoza. Chili septentrional. Pluies et tremblements de terre. Archipel des Galapagos. Oiseaux. Reptiles. Amblyrhynchus marin. Coquillages. Taïti. Tempérance des indigènes. Nouvelle-Zélande. Le frottement des nez. Funérailles d'une indigène. Autralie. Extinction des indigènes. Van Diémen. Danse indigène. Détroit du Roi Georges. Danse indigène. Iles de corail. Ile Maurice. Sainte Hélène. Bahia Brésil. Coup d'oeil rétrospectif. Table alphabétique des Matières. Format professionnel électronique © Ink Book édition.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9791023203905"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.3.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=ubAaCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=ubAaCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=ubAaCwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=10&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=ubAaCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-ubAaCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=ubAaCwAAQBAJ&rdid=book-ubAaCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=ubAaCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Vn85lQvNB1oC",
+   "etag": "rqHd6zpzzUA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Vn85lQvNB1oC",
+   "volumeInfo": {
+    "title": "Pour sauver la planète, sortez du capitalisme",
+    "authors": [
+     "Hervé Kempf"
+    ],
+    "publisher": "Le Seuil",
+    "publishedDate": "2013-04-17T00:00:00+02:00",
+    "description": "Un autre monde est possible, il est indispensable, il est à notre portée. Le capitalisme, après un règne de deux cents ans, s’est métamorphosé en entrant dans une phase mortifère : il génère tout à la fois une crise économique majeure et une crise écologique d'ampleur historique. Pour sauver la planète, il faut sortir du capitalisme, en reconstruisant une société où l'économie n'est pas reine mais outil, où la coopération l'emporte sur la compétition, où le bien commun prévaut sur le profit.Dans un récit original, l’auteur explique comment le capitalisme a changé de régime depuis les années 1980 et a réussi à imposer son modèle individualiste de comportement, marginalisant les logiques collectives. Pour en sortir, il faut prioritairement se défaire de ce conditionnement psychique.L'oligarchie cherche à détourner l’attention d’un public de plus en plus conscient du désastre imminent en lui faisant croire que la technologie pourrait surmonter l’obstacle. Cette illusion ne vise qu’à perpétuer le système de domination en vigueur. Comme l’illustre la démonstration ancrée dans la réalité et animée de nombreux reportages, l’avenir n’est pas dans la technologie, mais dans un nouvel agencement des relations sociales. Ce qui fera pencher la balance, c’est la force et la vitesse avec lesquelles nous saurons retrouver l’exigence de la solidarité",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782021120257"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2021120252"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 155,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.32.31.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Vn85lQvNB1oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Vn85lQvNB1oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Vn85lQvNB1oC&printsec=frontcover&dq=subject:Nature&hl=&cd=11&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=Vn85lQvNB1oC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-Vn85lQvNB1oC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 6.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=Vn85lQvNB1oC&rdid=book-Vn85lQvNB1oC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 6990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Pour_sauver_la_plan%C3%A8te_sortez_du_capita-sample-epub.acsm?id=Vn85lQvNB1oC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Pour_sauver_la_plan%C3%A8te_sortez_du_capita-sample-pdf.acsm?id=Vn85lQvNB1oC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Vn85lQvNB1oC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "svQSBgAAQBAJ",
+   "etag": "KwxFimoGvHQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/svQSBgAAQBAJ",
+   "volumeInfo": {
+    "title": "Mauvais garçon",
+    "authors": [
+     "Michael Morpurgo"
+    ],
+    "publisher": "Gallimard Jeunesse",
+    "publishedDate": "2015-01-08T00:00:00+01:00",
+    "description": "Michael Morpurgo et son complice l'illustrateur Michael Foreman nous offrent une magnifique histoire d'amitié entre un jeune garçon et un cheval dans l'Angleterre d'après guerre.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782075047944"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2075047944"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 112,
+    "printType": "BOOK",
+    "categories": [
+     "Juvenile Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.6.4.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=svQSBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=svQSBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=svQSBgAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=12&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=svQSBgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-svQSBgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 5.49,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 5.49,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=svQSBgAAQBAJ&rdid=book-svQSBgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5490000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 5490000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Mauvais_gar%C3%A7on-sample-epub.acsm?id=svQSBgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Mauvais_gar%C3%A7on-sample-pdf.acsm?id=svQSBgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=svQSBgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "hYQwDwAAQBAJ",
+   "etag": "itcQF0gFJU8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/hYQwDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Histoire du chat",
+    "subtitle": "10 000 ans d'Histoire et de légendes",
+    "authors": [
+     "Michèle Ressi"
+    ],
+    "publisher": "Publishroom",
+    "publishedDate": "2017-08-10",
+    "description": "\u200bQuelle est l'évolution de ce félin devenu aujourd'hui un animal domestique ? Comme tous les animaux, le chat a une histoire, assortie de légendes noires ou dorées. Ce petit félin a également une préhistoire bien plus ancienne que celle de l’homme, et il en garde la mémoire. Enfin, les initiés prêtent sept vies au Chat, voire neuf. C’est dire la richesse du personnage ! Cet ouvrage richement illustré vous propose de parcourir l'histoire du chat, depuis la préhistoire jusqu'à l'époque contemporaine ! EXTRAIT Louis XIII affectionne les chats qui sont rois à sa cour, mais Richelieu, son principal ministre, les adore. Le cardinal reste dans l’Histoire comme le « sphinx à robe rouge » qui a « foudroyé plutôt que gouverné les humains » (Michelet) et tenu les femmes en piètre estime. Pour les chats, c’est un maître sans égal. Au Palais Cardinal (sa résidence parisienne donnant sur le jardin de l’actuel Palais-Royal), il y a deux domestiques au service des chats, nourris au blanc de poulet. Une vaste pièce leur est réservée, la chatterie attenante à sa chambre, et son médecin personnel veille sur leur santé. Malgré sa tâche épuisante, le cardinal joue chaque matin avec eux et dort avec ses favoris. Ce grand malade des nerfs invente la « ronron-thérapie » pratiquée de nos jours par les fans de chats. Il se détend en compagnie de ses amis fourrés, avec un faible pour les Angoras et les chatons cachés dans ses manches, au Conseil des ministres. À PROPOS DE L'AUTEUR Auteur et chercheur en sciences humaines (CNRS), historienne et fan de chats, Michèle Ressi lance le défi d’un petit livre-cadeau parfaitement illustré et documenté, histoire de nous dire (presque) tout sur notre animal favori. Pari tenu en 100 pages et 100 images.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9791023606881"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 106,
+    "printType": "BOOK",
+    "categories": [
+     "History"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.9.9.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=hYQwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=hYQwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=hYQwDwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=13&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=hYQwDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-hYQwDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 4.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 4.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=hYQwDwAAQBAJ&rdid=book-hYQwDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 4990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 4990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=hYQwDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "lW8khbDZe50C",
+   "etag": "hoYqJJ0UwIo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/lW8khbDZe50C",
+   "volumeInfo": {
+    "title": "Les illustrations entomologiques",
+    "authors": [
+     "Jacques d'. Aguilar"
+    ],
+    "publisher": "Editions Quae",
+    "publishedDate": "1996",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "273800668X"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9782738006684"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 153,
+    "printType": "BOOK",
+    "categories": [
+     "Insects"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=lW8khbDZe50C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=lW8khbDZe50C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=lW8khbDZe50C&printsec=frontcover&dq=subject:Nature&hl=&cd=14&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=lW8khbDZe50C&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Les_illustrations_entomologiques.html?hl=&id=lW8khbDZe50C"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=lW8khbDZe50C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "FugiCwAAQBAJ",
+   "etag": "J/VU6dr/o8A",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/FugiCwAAQBAJ",
+   "volumeInfo": {
+    "title": "Nos abeilles en péril",
+    "authors": [
+     "Yves Le Conte",
+     "Vincent Albouy"
+    ],
+    "publisher": "Quae",
+    "publishedDate": "2014-05-27",
+    "description": "Les médias se font largement l’écho des problèmes récurrents de mortalité qui touchent les abeilles depuis quelques années. Les informations spectaculaires se succèdent, apportant parfois plus de confusion que d’éclaircissement. Nos auteurs tentent ainsi de démêler quelle est la part des faits vérifiables et vérifiés, et celle des simples rumeurs ou des cas anecdotiques sans grande signification... La situation est-elle identique partout dans le monde ? Si les pesticides semblent des coupables tout désignés par beaucoup, d’autres facteurs sont étudiés : impact des maladies, parasites et prédateurs, changement des milieux et du climat, évolution des pratiques agricoles et apicoles, sans oublier l’effet de synergie quand plusieurs causes agissent en même temps, comme le cocktail détonnant pesticides/pathogènes. Au-delà des causes inquiétantes de surmortalité, les auteurs répondent aussi à toutes les questions que tout à chacun peut se poser sur les abeilles : quel est le rôle des abeilles domestiques et sauvages dans les milieux naturels et agricoles ? Comment vivent-elles ? Que représente aujourd’hui l’apiculture ? L’ouvrage se conclut par un tour d’horizon des solutions possibles pour rendre vivable pour les abeilles notre monde hyper technologique, certaines déjà expérimentées, d’autres encore dépendantes des résultats de recherches engagées ou à engager. Très accessible, ce livre s’adresse à tous et plus particulièrement aux jardiniers amateurs, apiculteurs ou même agriculteurs, universitaires, sensibles au rôle crucial de ces pollinisatrices hors pair et à ses répercussions sur l’agriculture, et qui se demandent si un monde sans abeilles serait possible.... En effet, si les besoins des abeilles ne sont plus satisfaits, les nôtres pourront-ils l’être encore longtemps ?",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782759221783"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2759221784"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 192,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=FugiCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=FugiCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=FugiCwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=15&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=FugiCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-FugiCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 13.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 13.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=FugiCwAAQBAJ&rdid=book-FugiCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Nos_abeilles_en_p%C3%A9ril-sample-epub.acsm?id=FugiCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Nos_abeilles_en_p%C3%A9ril-sample-pdf.acsm?id=FugiCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=FugiCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "dniPDgAAQBAJ",
+   "etag": "ORerqHLF5xg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/dniPDgAAQBAJ",
+   "volumeInfo": {
+    "title": "Manifeste pour une justice climatique",
+    "authors": [
+     "Ségolène ROYAL"
+    ],
+    "publisher": "Plon",
+    "publishedDate": "2017-04-06",
+    "description": "Le combat pour le climat, et ce qu'il porte en lui de mutations positives, est le combat du siècle. C'est celui de la paix, de la prospérité et de la justice climatique. Tel est l'objet du manifeste de Ségolène Royal car, à travers le combat climatique, c'est l'invention du présent qui s'écrit. \" L'année 2016 marque l'histoire de l'humanité avec l'entrée en vigueur de l'accord de Paris sur la lutte contre le dérèglement climatique. Il doit beaucoup aux scientifiques et aux chercheurs du monde entier qui ont prouvé la fragilité de notre planète et les destructions intolérables qu'elle subit. Il doit beaucoup aussi à toutes celles et ceux qui se sont mis en mouvement, citoyens, territoires, villes, entreprises, ONG et gouvernants et qui ont fait de cette année 2016 celle d'un aboutissement de plus de vingt ans de discussions et celle d'un nouveau départ. Pendant trois ans, j'ai vu ce monde nouveau qui s'écrit sous nos yeux et j'ai aidé de toutes mes forces à le faire émerger : des initiatives majeures, des pays qui luttent et inventent, des hommes et des femmes qui s'engagent. Partout, les citoyens transforment leurs vies, les gouvernements décident de modèles de développement sobres et durables. De nouvelles sources d'énergies sont domestiquées ; des peuples entiers se mobilisent ; la faune et la flore sont surveillées, protégées ; l'espace maritime enfin pris en considération. Contre le pessimisme, le cynisme, le relativisme, je voudrais dire que ce mouvement est réel, que sa force surprend chaque fois qu'on la rencontre dans n'importe lequel des continents. \" On n'arrête pas une idée dont l'heure est venue \" écrivait Victor Hugo. Aujourd'hui, cette idée poursuit sa course, et dans son sillage, une nouvelle réalité prend forme. Le scepticisme nous oblige à être plus clair et plus exigeant. Mais le combat pour le climat et ce qu'il porte en lui de mutations positives est le combat du siècle. C'est celui de la paix, de la prospérité et de la justice climatique. C'est surtout l'invention du présent qui s'écrit. \" Ségolène Royal",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782259259439"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "225925943X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 89,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=dniPDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=dniPDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=dniPDgAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=16&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=dniPDgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-dniPDgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 6.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=dniPDgAAQBAJ&rdid=book-dniPDgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 6990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Manifeste_pour_une_justice_climatique-sample-epub.acsm?id=dniPDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Manifeste_pour_une_justice_climatique-sample-pdf.acsm?id=dniPDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=dniPDgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "FGCEKxkXHVwC",
+   "etag": "SZDh4j1fSVA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/FGCEKxkXHVwC",
+   "volumeInfo": {
+    "title": "Leaping Ahead",
+    "subtitle": "Advances in Prosimian Biology",
+    "authors": [
+     "Judith Masters",
+     "Marco Gamba",
+     "Fabien Génin"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2012-10-19",
+    "description": "Leaping Ahead: Advances in Prosimian Biology presents a summary of the state of prosimian biology as we move into the second decade of the 21st century. The book covers a wide range of topics, from assessments of diversity and evolutionary scenarios, through ecophysiology, cognition, behavioral and sensory ecology, to the conservation and survival prospects of this extraordinary and diverse group of mammals. The collection was inspired by an international conference in Ithala, KwaZulu-Natal, South Africa in 2007, where prosimian biologists gathered from Canada, Finland, France, Germany, India, Italy, Japan, Madagascar, South Africa, Tanzania, the United Kingdom, and the United States of America. The meeting reverberated with the passion prosimian researchers feel for their study subjects and with their deep concern for the future of prosimians in the face of ongoing habitat destruction and the burgeoning threat of bushmeat hunting. Chapters for this volume were contributed by researchers from across the globe; they attest to the diversity, vibrancy and rapid growth of prosimian biology, and to the intellectual advances that have revolutionized this field in recent years. Since its earliest beginnings, prosimian research and its resultant literature have had a strong francophone component, and researchers in many prosimian habitat countries are more comfortable reading and writing in French rather than English. French summaries of all chapters have been included. The volume is targeted at researchers, both those entering the field and established scientists, who have an interest in the biology of primates and small mammals. It is also aimed at conservation biologists seeking a deeper understanding of the faunas and conservation developments in Africa, Madagascar and Southeast Asia, and anyone who has an interest in discovering the true diversity of our order, the Primates.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781461445111"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1461445116"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 410,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "2.6.6.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=FGCEKxkXHVwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=FGCEKxkXHVwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fr/books?id=FGCEKxkXHVwC&printsec=frontcover&dq=subject:Nature&hl=&cd=17&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=FGCEKxkXHVwC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-FGCEKxkXHVwC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 137.14,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 96.0,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=FGCEKxkXHVwC&rdid=book-FGCEKxkXHVwC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.3714E8,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9.6E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Leaping_Ahead-sample-epub.acsm?id=FGCEKxkXHVwC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Leaping_Ahead-sample-pdf.acsm?id=FGCEKxkXHVwC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=FGCEKxkXHVwC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "sqyaCgAAQBAJ",
+   "etag": "bGT+cesD/yo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/sqyaCgAAQBAJ",
+   "volumeInfo": {
+    "title": "Intoxication",
+    "subtitle": "Perturbateurs endocriniens, lobbyistes et eurocrates : une bataille d'influence contre la santé",
+    "authors": [
+     "Stéphane HOREL"
+    ],
+    "publisher": "La Découverte",
+    "publishedDate": "2015-10-08",
+    "description": "Omniprésents, les perturbateurs endocriniens se nichent dans les pesticides ou les peintures, les tongs ou le shampoing, les lasagnes ... et dans l'organisme. Suspectés de participer à l'augmentation de maladies comme l'infertilité, les cancers du sein et de la prostate, le diabète ou l'obésité, ils font partie des plus grands défis de santé publique aujourd'hui. Mais les enjeux économiques sont colossaux et les industriels toujours aux aguets. Enquête saisissante sur la puissance des lobbies. C'est l'histoire d'une lutte d'influence qui a un impact sur votre vie, votre petit déjeuner, les testicules de votre fils, le cerveau de votre nièce. En 2009, l'Europe a lancé un compte à rebours : elle a décidé de réglementer les perturbateurs endocriniens et même d'en interdire certains. Omniprésents, ces produits chimiques se nichent dans les pesticides ou les peintures, les tongs ou le shampoing, les lasagnes et votre organisme. Suspectés de participer à l'augmentation des maladies \" modernes \" comme l'infertilité, les cancers du sein et de la prostate, le diabète ou l'obésité, ils font partie des plus grands défis de santé publique aujourd'hui. Mais les enjeux économiques sont colossaux et les industriels toujours aux aguets. À Bruxelles, leurs puissants lobbies s'activent dans les coulisses des institutions européennes pour influencer cette décision qui menace leurs affaires. Après trois ans d'enquête et le dépouillement de milliers de pages de documents confidentiels, Stéphane Horel lève le voile dans ce livre sur ces stratégies employées par les lobbies de la chimie, des pesticides et du plastique et leurs alliés pour court-circuiter la réglementation. Ces documents permettent une incroyable plongée dans l'intimité de la correspondance entre lobbyistes et fonctionnaires de la Commission européenne. En direct de la \" bulle bruxelloise \" où la complaisance à l'égard de l'industrie semble la norme, cette enquête en forme de thriller raconte aussi le combat de ceux qui résistent à l'influence pour défendre une certaine idée de l'intérêt général et de la démocratie.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782707188694"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2707188697"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 334,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.3.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=sqyaCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=sqyaCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=sqyaCgAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=18&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=sqyaCgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-sqyaCgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=sqyaCgAAQBAJ&rdid=book-sqyaCgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Intoxication-sample-epub.acsm?id=sqyaCgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Intoxication-sample-pdf.acsm?id=sqyaCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=sqyaCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "vs_GDQAAQBAJ",
+   "etag": "Y3A431DQ8NE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/vs_GDQAAQBAJ",
+   "volumeInfo": {
+    "title": "Gestion, maîtrise et aménagement des ressources naturelles en Afrique de l'Ouest et du Centre",
+    "authors": [
+     "Lambert Mossoa"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2017-01-01",
+    "description": "Voici plusieurs exemples de stratégies traditionnelles concernant la gestion des ressources naturelles. Ils sont pris dans l'ensemble géographique de l'Afrique occidentale et centrale, la zone sahélo-nord-soudanienne, la zone sud-soudanienne, la zone forestière et pré-forestière. Dans l'Afrique moderne, comme dans l'Afrique traditionnelle, les exemples sont nombreux de groupes qui s'entremêlent sur le terrain et appliquent chacun sa stratégie propre. Celles-ci peuvent alors se trouver en compétition ou être complémentaires.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782140026676"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2140026675"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 148,
+    "printType": "BOOK",
+    "categories": [
+     "Social Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=vs_GDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=vs_GDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=vs_GDQAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=19&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=vs_GDQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-vs_GDQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 11.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 11.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=vs_GDQAAQBAJ&rdid=book-vs_GDQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.199E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Gestion_ma%C3%AEtrise_et_am%C3%A9nagement_des_re-sample-pdf.acsm?id=vs_GDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=vs_GDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "_Ss1DgAAQBAJ",
+   "etag": "AgSVpAQNpmc",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/_Ss1DgAAQBAJ",
+   "volumeInfo": {
+    "title": "La société écologique et ses ennemis",
+    "subtitle": "Pour une histoire alternative de l'émancipation",
+    "authors": [
+     "Serge AUDIER"
+    ],
+    "publisher": "La Découverte",
+    "publishedDate": "2017-03-16",
+    "description": "Si les \" ennemis \" de la \" société écologique \" se trouvent assurément du côté des forces du capitalisme et du néolibéralisme, il ne faut pas oublier que la défense de l'environnement a par la suite été marginalisée, voire combattue par les courants dominants de la gauche, qui ont souvent vu dans les \" amis de la nature \" des réactionnaires romantiques et des adversaires du progrès social. Un livre essentiel pour comprendre et dénouer les blocages intellectuels qui caractérisent notre époque. Alors que monte la prise de conscience du péril environnemental, les obstacles à une véritable mutation écologique des sociétés contemporaines restent massifs et les modèles alternatifs peinent à s'imposer. Les traditions intellectuelles de la gauche semblent souvent impuissantes à apporter des réponses. Pire, n'ont-elles pas contribué, par leur culte des \" forces productives \", à l'impasse actuelle ? La généalogie intellectuelle proposée par Serge Audier revient sur des évidences trompeuses, notamment celle qui voudrait que les mouvements émancipateurs n'aient abordé que très tardivement les enjeux écologiques. On redécouvre certes peu à peu des voix minoritaires qui, de Henry D. Thoreau à William Morris, avaient manifesté très tôt un souci inédit de la nature. Mais en les érigeant en héros solitaires, on contribue à occulter une nébuleuse beaucoup plus large et méconnue qui, entre socialisme et anarchisme, a esquissé les traits d'une \" société écologique \". L'objectif de ce livre est d'exhumer et de reconstituer une pensée sociale de la nature et de l'émancipation, construite aux marges du \" grand récit \" socialiste et républicain. De fait, cette tendance dissidente a été ignorée, marginalisée, voire combattue par les courants hégémoniques, qui ont souvent vu dans l'écologie un conservatisme traditionaliste ou un romantisme réactionnaire... Si les \" ennemis \" de la \" société écologique \" se trouvent bien entendu du côté des forces du capitalisme, il serait faux et dangereux d'oublier qu'ils font aussi partie de l'histoire même de la gauche et du socialisme dans ses orientations majoritaires, encore prégnantes.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782707194862"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2707194867"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 802,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=_Ss1DgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=_Ss1DgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=_Ss1DgAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=20&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=_Ss1DgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-_Ss1DgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 16.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 16.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=_Ss1DgAAQBAJ&rdid=book-_Ss1DgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.699E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.699E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/La_soci%C3%A9t%C3%A9_%C3%A9cologique_et_ses_ennemis-sample-epub.acsm?id=_Ss1DgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/La_soci%C3%A9t%C3%A9_%C3%A9cologique_et_ses_ennemis-sample-pdf.acsm?id=_Ss1DgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=_Ss1DgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "f8Ns_j5KAPgC",
+   "etag": "7wjUrM8S5xA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/f8Ns_j5KAPgC",
+   "volumeInfo": {
+    "title": "L'imagerie des animaux",
+    "authors": [
+     "Émilie Beaumont"
+    ],
+    "publisher": "Fleurus",
+    "publishedDate": "2013-01-13T00:00:00+01:00",
+    "description": "Cette imagerie permettra à l'enfant de découvrir la plupart des animaux de notre monde, qu'ils soient sur terre ou dans l'eau, à l'aide de magnifiques illustrations accompagnées de textes courts. Cette collection vendue à plus de 20 000 000 d'exemplaires dans le monde comprend 40 titres sur des thèmes aussi différents que la mer, la musique, la nature, les princesses... Dès 6 ans.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782215113584"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2215113588"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 124,
+    "printType": "BOOK",
+    "categories": [
+     "Juvenile Nonfiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.5.6.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=f8Ns_j5KAPgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=f8Ns_j5KAPgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=f8Ns_j5KAPgC&printsec=frontcover&dq=subject:Nature&hl=&cd=21&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=f8Ns_j5KAPgC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-f8Ns_j5KAPgC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 5.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 5.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=f8Ns_j5KAPgC&rdid=book-f8Ns_j5KAPgC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 5990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 5990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=f8Ns_j5KAPgC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Q5wdAwAAQBAJ",
+   "etag": "ldc8Z0pZJq4",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Q5wdAwAAQBAJ",
+   "volumeInfo": {
+    "title": "La nature est un champ de bataille",
+    "subtitle": "Essai d'écologie politique",
+    "authors": [
+     "Razmig KEUCHEYAN"
+    ],
+    "publisher": "Zones",
+    "publishedDate": "2014-03-27",
+    "description": "Face à la catastrophe annoncée, les bonnes âmes appellent l'humanité à \" dépasser ses divisions \" pour s'unir dans un \" pacte écologique \". Cet essai polémique s'attaque à cette idée reçue. Il n'y aura pas de consensus environnemental. L'unanimisme ne saurait en la matière être que de façade. Loin d'effacer les antagonismes existants, la crise écologique se greffe au contraire à eux pour les porter à incandescence. La nature devient un champ de bataille. Face à la catastrophe écologique annoncée, les bonnes âmes appellent l'humanité à \" dépasser ses divisions \" pour s'unir dans un \" pacte écologique \". Cet essai s'attaque à cette idée reçue. Il n'y aura pas de consensus environnemental. Loin d'effacer les antagonismes existants, la crise écologique se greffe au contraire à eux pour les porter à incandescence. Soit la localisation des décharges toxiques aux États-Unis : si vous voulez savoir où un stock de déchets donné a le plus de chances d'être enfoui, demandez-vous où vivent les Noirs, les Hispaniques, les Amérindiens et autres minorités raciales. Interrogez-vous par la même occasion sur le lieu où se trouvent les quartiers pauvres... Ce \" racisme environnemental \" qui joue à l'échelle d'un pays vaut aussi à celle du monde. \" Marchés carbone \", \" droits à polluer \", \" dérivés climatiques \", \" obligations catastrophe \" : on assiste à une prolifération des produits financiers \" branchés \" sur la nature. Faute de s'attaquer à la racine du problème, la stratégie néolibérale choisit de financiariser l'assurance des risques climatiques. C'est l'essor de la \" finance environnementale \" comme réponse capitaliste à la crise. Surcroît de catastrophes naturelles, raréfaction de certaines ressources, crises alimentaires, déstabilisation des pôles et des océans, \" réfugiés climatiques \" par dizaine de millions à l'horizon 2050... Autant de facteurs qui annoncent des conflits armés d'un nouveau genre, auxquels se préparent aujourd'hui les militaires occidentaux. Fini la guerre froide, bienvenue aux \" guerres vertes \". De La Nouvelle-Orléans au glacier Siachen en passant par la banquise de l'Arctique, l'auteur explore les lieux marquants de cette nouvelle \" géostratégie du climat \". Cet essai novateur de théorie politique fournit une grille de lecture originale et critique, indispensable pour saisir les enjeux de la crise écologique actuelle. À travers l'exposition édifiante des scénarios capitalistes face au désastre environnemental, il fait œuvre – salutaire – de futurologie critique.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782355220760"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "235522076X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 179,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.3.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Q5wdAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Q5wdAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Q5wdAwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=22&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=Q5wdAwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-Q5wdAwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 10.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=Q5wdAwAAQBAJ&rdid=book-Q5wdAwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/La_nature_est_un_champ_de_bataille-sample-epub.acsm?id=Q5wdAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/La_nature_est_un_champ_de_bataille-sample-pdf.acsm?id=Q5wdAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Q5wdAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "FbRcEavj5uIC",
+   "etag": "EEzYUzrYuSQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/FbRcEavj5uIC",
+   "volumeInfo": {
+    "title": "Encyclopedic Dictionary of Landscape and Urban Planning",
+    "subtitle": "Multilingual Reference Book in English, Spanish, French and German",
+    "authors": [
+     "Klaus-Jürgen Evert"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2010-05-21",
+    "description": "The revised and expanded edition of this one-of-a-kind dictionary offers a multilingual, practice-oriented resource for a worldwide readership of professionals working in landscape architecture and planning, landscape design and conservation.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9783540764557"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "3540764550"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 1518,
+    "printType": "BOOK",
+    "categories": [
+     "Architecture"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=FbRcEavj5uIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=FbRcEavj5uIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fr/books?id=FbRcEavj5uIC&printsec=frontcover&dq=subject:Nature&hl=&cd=23&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=FbRcEavj5uIC&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Encyclopedic_Dictionary_of_Landscape_and.html?hl=&id=FbRcEavj5uIC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Encyclopedic_Dictionary_of_Landscape_and-sample-pdf.acsm?id=FbRcEavj5uIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=FbRcEavj5uIC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "8itEDwAAQBAJ",
+   "etag": "zmmoGqkCbqw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/8itEDwAAQBAJ",
+   "volumeInfo": {
+    "title": "Le Sale discours ou Géographie des déchets pour tenter de distinguer au mieux ce qui est propre de c",
+    "authors": [
+     "David Wahl"
+    ],
+    "publisher": "Premier Parallèle",
+    "publishedDate": "2018-01-04T00:00:00+01:00",
+    "description": "Le Sale discours, c'est un récit qui parle d'un environnement façonné par nos ordures, nos excréments et nos déchets. C'est un récit qui parle de notre instinct de survie, de nos rêves d'éternité, de la peur de la mort. C'est le récit de l'homme, qui envisage sa survie au prix de son environnement. Et du cycle de plus en plus vertigineux dans lequel cette lutte l'entraîne. Qu'est-ce qui est propre ? Qu'est-ce qui est sale ? Au début du XIIe siècle, le roi Louis VI ordonna qu'aucun cochon n'entrât plus dans la ville sans être tenu en laisse – une loi de salubrité publique. Ce faisant, il mit fin, du même coup et bien malgré lui, à la meilleure escorte de nettoyage de l'époque. Car les porcs, dévorant les immondices, nettoyaient les rues. Et c'est ainsi qu'en l'espace de quelques semaines, la ville se transforma en... porcherie . Qu'est-ce qui est propre ? Qu'est-ce qui est sale ? Inodores, incolores, et, par-dessus tout, imputrescibles, les déchets nucléaires sont impeccables, d'aspect le plus propre possible. Mais mortellement radioactifs durant des dizaines, voire des centaines de milliers d'années. Le Sale discours, c'est un récit qui parle d'environnement. D'un environnement façonné par nos ordures, nos excréments et nos déchets. C'est un récit qui parle de notre instinct de survie, de nos rêves d'éternité, de la peur de la mort. C'est le récit de l'homme, qui envisage sa survie au prix de son environnement. Et du cycle de plus en plus vertigineux dans lequel cette lutte l'entraîne. Où l'on croise un cochon, des atomes, Marie Curie, la Voie lactée, des fantômes et bien d'autres choses encore.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9791094841471"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=8itEDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=8itEDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=8itEDwAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=24&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=8itEDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-8itEDwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 4.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 4.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=8itEDwAAQBAJ&rdid=book-8itEDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 4990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 4990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Le_Sale_discours_ou_G%C3%A9ographie_des_d%C3%A9c-sample-epub.acsm?id=8itEDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Le_Sale_discours_ou_G%C3%A9ographie_des_d%C3%A9c-sample-pdf.acsm?id=8itEDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=8itEDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "tTVlAQAAQBAJ",
+   "etag": "Da1uGzspeJs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/tTVlAQAAQBAJ",
+   "volumeInfo": {
+    "title": "Ras-le-bol des écolos",
+    "subtitle": "Pour qu'écologie rime avec économie",
+    "authors": [
+     "Maud FONTENOY"
+    ],
+    "publisher": "Plon",
+    "publishedDate": "2013-10-24",
+    "description": "La célèbre navigatrice et porte-parole de l'Unesco pour les océans prend la plume pour prouver qu'écologie peut rimer avec économie ! Un livre d'engagement pragmatique et pensé au regard de la crise, qui rompt avec un discours écolo souvent trop sclérosé. \" Trop longtemps, on a pensé que le développement durable était réservé à la gauche, comme si penser au bien-être des hommes en se préoccupant de préserver les ressources naturelles de notre planète était l'affaire d'un seul parti ! Et si, au contraire, il ne devait pas y avoir d'écologie politique, mais de l'écologie partout en politique ? Si rentable pouvait rimer avec durable ? Economie avec écologie ? Et si le développement durable était LA solution pour sortir de la crise ? \" Depuis plus de quinze ans, après avoir longtemps vécu au coeur de la nature et en particulier sur les océans, Maud Fontenoy s'engage pour une écologie raisonnable et modérée. Dans cet ouvrage galvanisant, à rebours des discours écolos paralysants, elle prend son portevoix pour témoigner et pousser à l'action : les jeunes, les futurs décideurs, les hommes politiques, les chefs d'entreprise, mais aussi chacun d'entre nous ! L'auteur dresse ici un bilan santé de notre planète mais surtout des initiatives prises pour sa préservation, en France comme dans le monde. Refusant le fatalisme ambiant, elle donne des pistes pour réconcilier préoccupations environnementales et économiques. Un coup de fouet salvateur à un discours écolo trop souvent déconnecté de la réalité.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782259222716"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2259222714"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 141,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=tTVlAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=tTVlAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=tTVlAQAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=25&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=tTVlAQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-tTVlAQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=tTVlAQAAQBAJ&rdid=book-tTVlAQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Ras_le_bol_des_%C3%A9colos-sample-epub.acsm?id=tTVlAQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Ras_le_bol_des_%C3%A9colos-sample-pdf.acsm?id=tTVlAQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=tTVlAQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "QVnakKiUxg0C",
+   "etag": "9A6tRxPn7s4",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/QVnakKiUxg0C",
+   "volumeInfo": {
+    "title": "L'EFFET DE SERRE",
+    "subtitle": "Un changement climatique annoncé",
+    "authors": [
+     "Pierre De Félice"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2001-01-01",
+    "description": "L'auteur définit l'effet de serre et il en explique les causes. Il décrit les conséquences pour le milieu, de son accroissement dû à une augmentation des émissions de certains gaz dans l'atmosphère, telles que l'on peut les prévoir aujourd'hui.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296163867"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296163866"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=QVnakKiUxg0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=QVnakKiUxg0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=QVnakKiUxg0C&printsec=frontcover&dq=subject:Nature&hl=&cd=26&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=QVnakKiUxg0C&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-QVnakKiUxg0C"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 13.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 13.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=QVnakKiUxg0C&rdid=book-QVnakKiUxg0C&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.399E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/L_EFFET_DE_SERRE-sample-pdf.acsm?id=QVnakKiUxg0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=QVnakKiUxg0C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "4J4WS_g_H_UC",
+   "etag": "9qGGDHek0xc",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/4J4WS_g_H_UC",
+   "volumeInfo": {
+    "title": "Quelle gouvernance au service de la mobilité durable?",
+    "authors": [
+     "ABDELHAMID ABIDI ET JACQUES FIALAIRE"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2011-04-01",
+    "description": "Au regard des enjeux environnementaux, économiques et sociaux, la mobilité urbaine est désormais, plus que jamais, le centre des politiques publiques, que ce soit à l'échelle locale, régionale, nationale ou internationale. De plus en plus d'acteurs de la société civile se mobilisent pour participer à l'élaboration des choix qui devraient répondre au mieux aux attentes des différentes catégories sociales, mais aussi au regard du principe de respect de l'environnement physique et des droits des générations futures.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296458758"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296458750"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 450,
+    "printType": "BOOK",
+    "categories": [
+     "Business & Economics"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.10.8.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=4J4WS_g_H_UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=4J4WS_g_H_UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=4J4WS_g_H_UC&pg=PA1&dq=subject:Nature&hl=&cd=27&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=4J4WS_g_H_UC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-4J4WS_g_H_UC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 16.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 16.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=4J4WS_g_H_UC&rdid=book-4J4WS_g_H_UC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.699E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.699E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Quelle_gouvernance_au_service_de_la_mobi-sample-epub.acsm?id=4J4WS_g_H_UC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Quelle_gouvernance_au_service_de_la_mobi-sample-pdf.acsm?id=4J4WS_g_H_UC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=4J4WS_g_H_UC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "9N9NDgAAQBAJ",
+   "etag": "HBH7gFmdd+8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/9N9NDgAAQBAJ",
+   "volumeInfo": {
+    "title": "J'ai vu une fleur sauvage - L'Herbier de Malicorne",
+    "authors": [
+     "Hubert Reeves"
+    ],
+    "publisher": "Le Seuil",
+    "publishedDate": "2017-03-08T00:00:00+01:00",
+    "description": "\" Le but de ces pages est de faire connaître un des domaines les plus admirables de la nature : celui des fleurs sauvages dans nos campagnes. Des splendeurs à portée de chacun, mais que l'on peut piétiner toute sa vie sans jamais se pencher pour les admirer. On passe ainsi à côté de joies, à coup sûr renouvelables chaque année. Ce plaisir intense exige un apprentissage : savoir reconnaître ces fleurs demande un peu de patience mais se révèle gratifiant au possible, tant est grande la diversité des fleurs sauvages et leurs variations selon les moments de leur vie – et de la nôtre. Pour faciliter cette initiation, j'ai souhaité livrer mon rapport personnel à chacune de ces fleurs. \" H. R. Chaque fleur est illustrée par de superbes photos couleur de Patricia Aubertin, prises dans la campagne de Malicorne. Un site compagnon www.herbier-hubert-reeves.fr enrichit ces présentations avec plus de 600 photos originales à toutes les saisons et sous tous les angles. Hubert Reeves, astrophysicien, a enseigné la cosmologie à Montréal et à Paris. Il a publié au Seuil de nombreux ouvrages dont Patience dans l'azur, Poussières d'étoiles, L'Univers expliqué à mes petits-enfants, qui ont rencontré la faveur d'un très large public. Il est président d'honneur de l'association Humanité et Biodiversité et de la nouvelle Agence française pour la biodiversité.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782021290905"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2021290905"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.1.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=9N9NDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=9N9NDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=9N9NDgAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=28&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=9N9NDgAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-9N9NDgAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 12.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=9N9NDgAAQBAJ&rdid=book-9N9NDgAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.299E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/J_ai_vu_une_fleur_sauvage_L_Herbier_de_M-sample-epub.acsm?id=9N9NDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/J_ai_vu_une_fleur_sauvage_L_Herbier_de_M-sample-pdf.acsm?id=9N9NDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=9N9NDgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "lZiBOXhYblsC",
+   "etag": "7OaP2nIdMEA",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/lZiBOXhYblsC",
+   "volumeInfo": {
+    "title": "Reconnaître et décoder les traces d'animaux",
+    "subtitle": "manuel d'ichnologie",
+    "authors": [
+     "Muriel Chazel",
+     "Luc Chazel"
+    ],
+    "publisher": "Editions Quae",
+    "publishedDate": "2011",
+    "description": "Jadis pratique populaire, à présent discipline utilisée en paléontologie, l'ichnologie est l'ensemble des techniques permettant l'identification des espèces à partir des traces qu'elles laissent. Véritable manuel d'initiation, ce guide se propose de mettre ce savoir-faire au service du promeneur par une approche didactique établissant une typologie des empreintes : séquences des membres antérieurs et postérieurs en fonction de l'allure, aspects des empreintes selon le substrat... II permettra au naturaliste amateur de \" lire \" la nature à partir des empreintes laissées par les animaux dans le sol, mais aussi de leurs excréments et déjections, jusqu'aux traces laissées sur les végétaux en passant par les cadavres pour ce qui est des grands carnivores. Outre les passionnés de faune sauvage, cet ouvrage intéressera les professionnels en charge des inventaires et du suivi des animaux en milieu naturel.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782759209156"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2759209156"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 190,
+    "printType": "BOOK",
+    "categories": [
+     "Ichnology"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=lZiBOXhYblsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=lZiBOXhYblsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=lZiBOXhYblsC&printsec=frontcover&dq=subject:Nature&hl=&cd=29&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=lZiBOXhYblsC&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Reconna%C3%AEtre_et_d%C3%A9coder_les_traces_d_an.html?hl=&id=lZiBOXhYblsC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=lZiBOXhYblsC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "gEvMBAAAQBAJ",
+   "etag": "3LPXcQyYZ+g",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/gEvMBAAAQBAJ",
+   "volumeInfo": {
+    "title": "Bioraffinerie 2030. Une question d'avenir",
+    "authors": [
+     "Barbara Clément-Larosière",
+     "Honorine Lescieux-Katir",
+     "Pierre-Alain Schieb",
+     "Maryline Thénot"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2014-10-01",
+    "description": "Cette étude de la bioraffinerie intégrée de Bazancourt-Pomacle, en Champagne près de Reims, met en exergue le potentiel de la bioéconomie industrielle à réaliser une substitution de ressources fossiles (charbon, pétrole, gaz naturels) par des ressources tirées de la biomasse (agro-ressources principalement) dans des conditions plus durables tout en étant performantes sur le plan économique et social. Un enjeu majeur du XXIe siècle.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782336358161"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2336358166"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 256,
+    "printType": "BOOK",
+    "categories": [
+     "Social Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.2.0.preview.3",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=gEvMBAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=gEvMBAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=gEvMBAAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=30&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=gEvMBAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-gEvMBAAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 20.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 20.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=gEvMBAAAQBAJ&rdid=book-gEvMBAAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2.099E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 2.099E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Bioraffinerie_2030_Une_question_d_avenir-sample-epub.acsm?id=gEvMBAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Bioraffinerie_2030_Une_question_d_avenir-sample-pdf.acsm?id=gEvMBAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=gEvMBAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Lq1iUGnMLCgC",
+   "etag": "GAUH2oQ04vk",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Lq1iUGnMLCgC",
+   "volumeInfo": {
+    "title": "Photonique des Morphos",
+    "authors": [
+     "Serge Berthier"
+    ],
+    "publisher": "Springer Science & Business Media",
+    "publishedDate": "2010-09-08",
+    "description": "Cet ouvrage richement illustré étudie les structures optiques et colorimétriques des ailes d un genre de papillons: les Morphos. Il expose de très nombreuses méthodes expérimentales et des modèles théoriques développés pour la modélisation de ces structures multi-échelles complexes. Il s applique ainsi à mieux faire connaître aux physiciens les structures photoniques naturelles et met en outre à disposition des entomologistes et éthologistes une base de données unique pour leurs travaux.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782287094088"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2287094083"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 300,
+    "printType": "BOOK",
+    "categories": [
+     "NATURE"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Lq1iUGnMLCgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Lq1iUGnMLCgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=Lq1iUGnMLCgC&printsec=frontcover&dq=subject:Nature&hl=&cd=31&source=gbs_api",
+    "infoLink": "http://books.google.fr/books?id=Lq1iUGnMLCgC&dq=subject:Nature&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Photonique_des_Morphos.html?hl=&id=Lq1iUGnMLCgC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Photonique_des_Morphos-sample-pdf.acsm?id=Lq1iUGnMLCgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Lq1iUGnMLCgC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "DwGdDQAAQBAJ",
+   "etag": "6tkvnIwm7yM",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/DwGdDQAAQBAJ",
+   "volumeInfo": {
+    "title": "Politiques de la nature",
+    "subtitle": "Comment faire entrer les sciences en démocratie",
+    "authors": [
+     "Bruno LATOUR"
+    ],
+    "publisher": "La Découverte",
+    "publishedDate": "2016-12-08",
+    "description": "Un essai novateur sur les relations entre science et politique. Comment combler le fossé apparemment infranchissable séparant la science (chargée de comprendre la nature) et la politique (chargée de régler la vie sociale), séparation dont les conséquences - affaires du sang, de l'amiante, de la vache folle... - deviennent de plus en plus catastrophiques ? L'écologie politique a prétendu apporter une réponse à ce défi. Mais après de fracassants débuts, elle peine à renouveler la vie publique... Dans ce livre qui fait suite à Nous n'avons jamais été modernes (La Découverte, 1991), Bruno Latour propose une nouvelle façon de considérer l'écologie politique. La nature a toujours constitué l'une des deux moitiés de la vie publique, celle qui rassemble le monde commun que nous partageons tous, l'autre moitié formant ce qu'on appelle la politique, c'est-à-dire le jeu des intérêts et des passions. D'un côté ce qui nous unit, la nature, de l'autre ce qui nous divise, la politique. Et c'est pourquoi il est faux de prétendre que le souci de la nature caractériserait l'écologie politique : car à cause des controverses scientifiques qu'elle suscite, à cause de l'incertitude sur les valeurs qu'elle provoque, elle oblige à abandonner la nature comme mode d'organisation publique. La question devient donc : comment penser enfin la politique sans la nature ? Pour Bruno Latour, la solution repose sur une profonde redéfinition à la fois de l'activité scientifique (à réintégrer dans le jeu normal de la société) et de l'activité politique (comprise comme l'élaboration progressive d'un monde commun). Ce sont les conditions et les contraintes de telles redéfinitions qu'il explore avec une grande rigueur dans cet essai novateur.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782707194930"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "270719493X"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 314,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.5.4.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=DwGdDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=DwGdDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=DwGdDQAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=32&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=DwGdDQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-DwGdDQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=DwGdDQAAQBAJ&rdid=book-DwGdDQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Politiques_de_la_nature-sample-epub.acsm?id=DwGdDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Politiques_de_la_nature-sample-pdf.acsm?id=DwGdDQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=DwGdDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "nvgQCwAAQBAJ",
+   "etag": "u5jpUWCMB9Y",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/nvgQCwAAQBAJ",
+   "volumeInfo": {
+    "title": "Miser (vraiment) sur la transition écologique",
+    "authors": [
+     "Hélène Le Teno",
+     "Alain Grandjean"
+    ],
+    "publisher": "Éditions de l'Atelier",
+    "publishedDate": "2014-03-13",
+    "description": "Plutôt silencieuse, la transition écologique est néanmoins déjà en marche. De multiples initiatives font leurs preuves, en France ou à l’international, démontrant par là même que le grand virage de la transition est possible, à condition de porter haut et fort un projet de société qui ose replacer le citoyen et l’intérêt général au centre de l’action. Devant l’urgence, comment faire mieux avec moins pour se nourrir, se déplacer... ? Que faire de son temps et de son argent ? Quelles orientations politiques privilégier ? Ce livre présente de nombreuses pistes pratiques pour éclairer les choix de chacun et passer ainsi du vivre-ensemble au faire-ensemble. Parce qu’elle est un grand projet ouvert à tous, la transition écologique peut constituer un défi enthousiasmant. Alain Grandjean est diplômé de l’École polytechnique et de l’ENSAE. Cofondateur et associé du cabinet de conseil Carbone 4, il est membre du Comité scientifique de la fondation Nicolas Hulot. Hélène Le Teno est diplômée de l’École nationale des Ponts etChaussées. Elle a travaillé dans l’industrie, la recherche et les métiers de services en France et en Chine. Elle est manager chez Carbone 4.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782708244320"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2708244329"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 192,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.4.4.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=nvgQCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=nvgQCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=nvgQCwAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=33&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=nvgQCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-nvgQCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=nvgQCwAAQBAJ&rdid=book-nvgQCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Miser_vraiment_sur_la_transition_%C3%A9colog-sample-epub.acsm?id=nvgQCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Miser_vraiment_sur_la_transition_%C3%A9colog-sample-pdf.acsm?id=nvgQCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=nvgQCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "nWsBAQAAQBAJ",
+   "etag": "77DRW6bVTLI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/nWsBAQAAQBAJ",
+   "volumeInfo": {
+    "title": "Biodiversité et évolution du monde vivant",
+    "authors": [
+     "David Garon",
+     "Jean-Christophe Guéguen",
+     "Jean-Philippe Rioult"
+    ],
+    "publisher": "EDP Sciences",
+    "publishedDate": "2013-09-01T00:00:00+02:00",
+    "description": "L’objectif de ce livre est de présenter un panorama général des êtres vivants qui constituent la biodiversité. Notre connaissance du monde vivant est récente, elle s’est forgée il y a 150 ans avec la découverte que les espèces se sont transformées au cours des temps géologiques. En rompant avec des croyances fixistes, force a été de constater que le « livre de la vie » avait une histoire presque aussi longue que celle de notre planète Terre. Après de brefs rappels sur les origines de la vie et la répartition du vivant, l’ouvrage fait le point sur les grandes étapes des classifications scientifiques. La place de l’homme, une espèce comme les autres dans le processus de l’évolution, y est redéfinie à travers les découvertes les plus récentes de la biologie évolutive. Un chapitre entier est consacré à l’étude de la biodiversité, depuis une approche globale, jusqu’à ses différents niveaux (gènes, espèces, écosystèmes). Un accent est mis sur les enjeux stratégiques que représente la préservation de la biodiversité pour l’avenir de l’humanité. David Garon et Jean-Philippe Rioult sont docteurs en pharmacie et maîtres de conférences en botanique, mycologie et biotechnologies à l’Université de Caen Basse-Normandie. Jean-Christophe Guéguen est docteur en pharmacie, pharmacien industriel et consultant en ressources végétales.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782759810864"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2759810860"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 220,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.10.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=nWsBAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=nWsBAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=nWsBAQAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=34&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=nWsBAQAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-nWsBAQAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 19.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 19.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=nWsBAQAAQBAJ&rdid=book-nWsBAQAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.999E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.999E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Biodiversit%C3%A9_et_%C3%A9volution_du_monde_viv-sample-pdf.acsm?id=nWsBAQAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=nWsBAQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "d09cVzv0b8MC",
+   "etag": "fkJ07SayO3s",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/d09cVzv0b8MC",
+   "volumeInfo": {
+    "title": "Une histoire d'amour africaine",
+    "authors": [
+     "Daphné Sheldrick",
+     "Johan Frédérik Hel-Guedj"
+    ],
+    "publisher": "Flammarion",
+    "publishedDate": "2013-04-24T00:00:00+02:00",
+    "description": "Daphné Sheldrick, celle qu’on surnommera « la mère des éléphants », voit le jour en juin 1934 dans une ferme de colons britanniques, au Kenya. Tout la prédestine à vivre au plus près de la nature, surtout son extraordinaire empathie envers les animaux. Mais rien n’annonce qu’elle se lancera à corps perdu dans la guerre contre les chasseurs d’ivoire, ni qu’elle consacrera sa vie aux bébés orphelins victimes du braconnage. Le récit de cette femme d’exception traverse le XXe siècle et rend compte des soubresauts de l’histoire : les guerres mondiales, la révolte mau-mau, l’indépendance kényane... Il nous fait surtout partager les secrets de sa relation privilégiée avec le monde sauvage, son amour des safaris, des nuits à la belle étoile, des longs affûts dans la savane, des expéditions au cœur de la vallée du Rift, et aussi ses sentiments pour un certain David Sheldrick, pionnier de la protection de la faune africaine. La vie de Daphné Sheldrick est un roman plein de chair, de passions et de violences, tel que Hollywood les affectionne. On murmure que Nicole Kidman s’emparera prochainement du rôle dans une adaptation du réalisateur Philip Noyce... Création Studio Flammarion En couverture : Daphné Sheldrick avec Aisha (Shmetty) © Daphné Sheldrick",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782081304314"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2081304317"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 431,
+    "printType": "BOOK",
+    "categories": [
+     "Biography & Autobiography"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.20.21.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=d09cVzv0b8MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=d09cVzv0b8MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=d09cVzv0b8MC&printsec=frontcover&dq=subject:Nature&hl=&cd=35&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=d09cVzv0b8MC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-d09cVzv0b8MC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 14.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 14.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=d09cVzv0b8MC&rdid=book-d09cVzv0b8MC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Une_histoire_d_amour_africaine-sample-epub.acsm?id=d09cVzv0b8MC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Une_histoire_d_amour_africaine-sample-pdf.acsm?id=d09cVzv0b8MC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=d09cVzv0b8MC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "v_P1CwAAQBAJ",
+   "etag": "1T1DtOH32Jw",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/v_P1CwAAQBAJ",
+   "volumeInfo": {
+    "title": "Urgence ! Si l'océan meurt nous mourrons",
+    "authors": [
+     "Paul Watson"
+    ],
+    "publisher": "Glénat Livres",
+    "publishedDate": "2016-04-13",
+    "description": "Il existe des solutions au dérèglement climatique, mais personne ne semble vouloir les entendre. Fidèle à ses méthodes d'activiste, Paul Watson dégaine un manifeste. Cet opuscule uppercut remit aux différents gouvernants participant à la COP 21 s'adresse à chacun d'entre nous. Objectif de la Conférence des Nations unies sur les changements climatiques à Paris : maintenir la hausse des températures en deçà de 2 degrés. Percutant, dramatiquement réaliste, Urgence ! Si l'océan meurt nous mourrons est un appel au monde à se mobiliser pendant qu'il en est encore temps. Le « capitaine » Watson s'appuie sur ce qu'il définit comme les trois grands piliers de l'écologie la diversité, l'interdépendance et les ressources limitées et affirme que les germes, les vers de terre, les abeilles et les arbres sont plus importants que l'humanité. Provocation ? Conviction. « Nous avons besoin d'eux, l'inverse n'est pas vrai. » Avec un credo : « l'eau est le sang de la planète », l'océan est à la base de tout. Quand on agite les océans et les esprits depuis plus de quarante ans, on ne baisse pas les bras. Au-delà du constat brut, Urgence ! Si l'océan meurt nous mourrons propose des solutions concrètes à mettre en place par gouvernants et citoyens. On ressort de la lecture de ces pages sinon convaincu au moins ébranlé dans ses certitudes. Avec cette phrase en tête : « L'humanité a franchi le seuil de tolérance écologique (...). La COP 21 est sa dernière chance. »",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782823300703"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2823300708"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 48,
+    "printType": "BOOK",
+    "categories": [
+     "Literary Criticism"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.6.5.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=v_P1CwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=v_P1CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=v_P1CwAAQBAJ&pg=PP1&dq=subject:Nature&hl=&cd=36&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=v_P1CwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-v_P1CwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=v_P1CwAAQBAJ&rdid=book-v_P1CwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Urgence_Si_l_oc%C3%A9an_meurt_nous_mourrons-sample-epub.acsm?id=v_P1CwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Urgence_Si_l_oc%C3%A9an_meurt_nous_mourrons-sample-pdf.acsm?id=v_P1CwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=v_P1CwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "baou8nJ8yVUC",
+   "etag": "jxPDQUmIy0w",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/baou8nJ8yVUC",
+   "volumeInfo": {
+    "title": "De la réparation",
+    "subtitle": "Analyse comprative et transversale : - Psychologie et écologie",
+    "authors": [
+     "Christophe Schaeffer"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2011-01-01",
+    "description": "L'approche pluridisciplinaire ou transversale d'un ouvrage portant sur la notion de \"réparation\" aurait pour objectif de montrer que certaines réponses aux questions les plus urgentes que soulèvent la complexité du monde sont à trouver dans l'interaction productive entre l'écologie et la psychologie. Réfléchir à la réparation, c'est en effet tenter de définir les enjeux d'un futur commun pour la planète et l'individu, penser une responsabilité conjointe et indissociable.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296449305"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296449301"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 212,
+    "printType": "BOOK",
+    "categories": [
+     "Psychology"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.7.0.0.preview.1",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=baou8nJ8yVUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=baou8nJ8yVUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=baou8nJ8yVUC&printsec=frontcover&dq=subject:Nature&hl=&cd=37&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=baou8nJ8yVUC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-baou8nJ8yVUC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 14.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 14.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=baou8nJ8yVUC&rdid=book-baou8nJ8yVUC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.499E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/De_la_r%C3%A9paration-sample-pdf.acsm?id=baou8nJ8yVUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=baou8nJ8yVUC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "HjqvDMPWEgkC",
+   "etag": "JLlSsmO3GnI",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/HjqvDMPWEgkC",
+   "volumeInfo": {
+    "title": "Environnement-Inde : vers une deuxième révolution verte ?",
+    "authors": [
+     "Yannick Escatha",
+     "Harish Hande",
+     "Sophie Lehideux",
+     "Sunita Narain",
+     "R.K Pachauri",
+     "Martine Quentric",
+     "Frank Vogel",
+     "Kiran Vyas"
+    ],
+    "publisher": "Editions L'Harmattan",
+    "publishedDate": "2013-05-01",
+    "description": "Les Indiens font face à d'énormes problèmes écologiques : chaque année l'Inde perd des milliers d'hectares de forêt au profit d'un développement sauvage ; ses grandes rivières, telle le Gange, sont polluées au-delà de toute mesure ; et sa population de tigres a pratiquement disparu. Mais ce sont ces soldats de la démocratie qui veillent et qui patiemment s'attaquent aux problèmes de l'eau, du recyclage ou de l'agriculture bio. L'Inde va-t-elle vers une deuxième Révolution verte ?",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782296537705"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2296537707"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 172,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+     "containsEpubBubbles": false,
+     "containsImageBubbles": false
+    },
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=HjqvDMPWEgkC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=HjqvDMPWEgkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=HjqvDMPWEgkC&pg=PP1&dq=subject:Nature&hl=&cd=38&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=HjqvDMPWEgkC&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-HjqvDMPWEgkC"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 10.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 10.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=HjqvDMPWEgkC&rdid=book-HjqvDMPWEgkC&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.099E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Environnement_Inde_vers_une_deuxi%C3%A8me_r-sample-pdf.acsm?id=HjqvDMPWEgkC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=HjqvDMPWEgkC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "3osSCwAAQBAJ",
+   "etag": "2WHSWPL0Gp8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/3osSCwAAQBAJ",
+   "volumeInfo": {
+    "title": "Les Amphibiens de France, Belgique et Luxembourg",
+    "authors": [
+     "Acemav Association",
+     "Rémi Duguet",
+     "Frédéric Melki"
+    ],
+    "publisher": "BIOTOPE",
+    "publishedDate": "2003-06-15",
+    "description": "Rédigé par un collectif des meilleurs batrachologues français, belges et luxembourgeois, ce livre sur les amphibiens de France, Belgique et Luxembourg (accompagné de son CD sonore) fait la synthèse des connaissances les plus récentes sur les amphibiens. Toutes les espèces et sous-espèces de la région sont présentées de façon très complète. On retrouve les éléments faisant le succès de la Collection Parthénope des éditions Biotope : actualité du propos, exhaustivité, approche à la fois scientifique et pédagogique, iconographie de grande qualité, mise en page et fabrication très soignées. Les innovations de ce livre sur les amphibiens en font le précurseur d'une nouvelle génération de guides naturalistes : - large place accordée aux développements récents de disciplines telles que l'écologie du paysage, la biologie des populations, la biogéographie, le génie écologique, la gestion des espaces naturels et le droit de l'environnement; - mise en place de la notion de cortèges d'amphibiens, et définition de 37 cortèges pour la région étudiée; - cartographie faisant apparaître des indices d'abondance permettant de se faire une idée plus précise du statut local de chaque espèce; - remplacement des classiques clés dichotomiques par un cahier d'identification de 55 pages. Cet ouvrage comblera ainsi les attentes de tous ceux (simples curieux de nature, naturalistes,... mais aussi scientifiques, professionnels de l’environnement ou herpétologistes\ufeff) qui recherchent des informations complètes et actualisées sur ces animaux fascinants, et suscitera des vocations chez les plus jeunes d’entre nous.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782366620382"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2366620381"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 480,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=3osSCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=3osSCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=3osSCwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=39&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=3osSCwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-3osSCwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 22.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 22.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=3osSCwAAQBAJ&rdid=book-3osSCwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2.299E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 2.299E7,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Les_Amphibiens_de_France_Belgique_et_Lux-sample-epub.acsm?id=3osSCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Les_Amphibiens_de_France_Belgique_et_Lux-sample-pdf.acsm?id=3osSCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=3osSCwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "KGeWAwAAQBAJ",
+   "etag": "WvagMe0l3+Q",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/KGeWAwAAQBAJ",
+   "volumeInfo": {
+    "title": "Nourrir l'humanité",
+    "subtitle": "Les grands problèmes de l'agriculture mondiale au XXIe siècle",
+    "authors": [
+     "Bruno PARMENTIER"
+    ],
+    "publisher": "La Découverte",
+    "publishedDate": "2014-05-22",
+    "description": "\" Une analyse et une anticipation que devra consulter toute personne préoccupée par l'avenir du monde... Le livre le plus méthodique, le plus honnête, le plus alerte de \"vulgarisation' de tous les livres consacrés au problème. \" Extrait de la préface d'Edgard Pisani Nourrir les Français ? La tâche est relativement facile depuis qu'a disparu la malédiction millénaire qui rendait chacun inquiet de sa subsistance quotidienne. Nourrir l'humanité ? Un défi bien plus complexe face au scandale des 850 millions de personnes qui ne peuvent manger à leur faim et aux trois milliards d'humains supplémentaires qu'il faudra nourrir en 2050. Cela frise l'impossible, alors que la planète va manquer d'eau, de terre et d'énergie et que nous devrons affronter les effets de nos inconséquences actuelles : réchauffement de la planète, pollution, érosion, perte de la biodiversité... Dans ce livre sont présentés tous les aspects de ce gigantesque défi, sans doute le plus important du XXIe siècle et pour lequel l'agriculture sera à nouveau appelée à occuper le devant de la scène. Sont ainsi exposées très pédagogiquement les questions de l'avenir des subventions agricoles au sein d'un commerce \" mondialisé \", des rapports de l'agriculture avec l'agro-industrie et la grande distribution, du risque de crises sanitaires de grande ampleur, de l'extension de la production OGM, mais aussi de l'émergence de nouveaux pays exportateurs (Chine, Brésil), etc. Un ouvrage aussi complet qu'accessible, qui passionnera agriculteurs et urbains, citoyens et décideurs.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9782707163417"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "2707163414"
+     }
+    ],
+    "readingModes": {
+     "text": true,
+     "image": true
+    },
+    "pageCount": 294,
+    "printType": "BOOK",
+    "categories": [
+     "Nature"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.3.2.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=KGeWAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=KGeWAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "fr",
+    "previewLink": "http://books.google.fr/books?id=KGeWAwAAQBAJ&printsec=frontcover&dq=subject:Nature&hl=&cd=40&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=KGeWAwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://market.android.com/details?id=book-KGeWAwAAQBAJ"
+   },
+   "saleInfo": {
+    "country": "FR",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=KGeWAwAAQBAJ&rdid=book-KGeWAwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9990000.0,
+       "currencyCode": "EUR"
+      },
+      "giftable": true
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FR",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Nourrir_l_humanit%C3%A9-sample-epub.acsm?id=KGeWAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fr/books/download/Nourrir_l_humanit%C3%A9-sample-pdf.acsm?id=KGeWAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=KGeWAwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  }
+ ]
+}
