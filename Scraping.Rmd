@@ -7,7 +7,8 @@ output: html_notebook
 
 This R script scrapes data from Livre de Poche website. It retrieves all summaries of books of genre "Fantastique" and "Science-Fiction".
 
-First of all, we install the dependencies we need (the project is managed by Packrat).
+
+First, we install the dependencies we need (the project is managed by Packrat).
 ```{r install dependencies}
 # packrat::clean()
 # install.packages("rvest")
@@ -24,7 +25,7 @@ library(testthat)
 ```
 
 
-Then, we try a simple scraping of one book to make sure it is properly working :
+Then, we try a simple scraping of one book to make sure it is working properly :
 ```{r one book scraping}
 
 oneBook <- read_html("http://www.livredepoche.com/rainbows-end-vernor-vinge-9782253159933")
@@ -73,7 +74,7 @@ bookSummaries <- list()
 
 # Scraping "Fantastique" books
 for (i in 0:15) {
-  ftSummarie <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[1,2]), function(bookURL) {
+  ftSummaries <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[1,2]), function(bookURL) {
     book <- read_html(paste(rootUrl, bookURL, sep=""))
     Sys.sleep(scraperDelay)
     return(retrieveBookSummary(book))
@@ -94,5 +95,5 @@ for (i in 0:15) {
 dfBookSummaries <- data_frame(line = 1:length(bookSummaries), text = unlist(bookSummaries),genre=c(rep("Fantastique",160),rep("Science-Fiction",160)))
 
 # Write the result to ensure we will not need to scrap every time we run the project
-write_csv(dfBookSummaries, file="books.csv")
+write_csv(dfBookSummaries, file="bookSummaries.csv")
 ```
