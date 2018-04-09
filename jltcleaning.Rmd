@@ -1,0 +1,467 @@
+---
+title: "Cleaning text data"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+This R script clean the data scraped from Livre de Poche website.
+
+First of all, we install the dependencies we need (the project is managed by Packrat).
+```{r install dependencies}
+# FIXME : does packrat scan all R source files of the project before removing the unused packages ?
+# packrat::clean()
+# install.packages("rvest")
+# install.packages("testthat")
+# install.packages("tidyverse")
+```
+
+Then we load them :
+```{r}
+library(rvest)
+library(tidyverse)
+library(testthat)
+# Installer
+# install.packages("tm")  # pour le text mining
+# install.packages("SnowballC") # pour le text stemming
+# install.packages("wordcloud") # g√©n√©rateur de word-cloud 
+# install.packages("RColorBrewer") # Palettes de couleurs
+library("tm")
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
+```
+
+Now we perform some text cleanup on the dataframe we saved as a CSV file :
+
+```{r tm cleanup}
+# TODO : 1 livre n'a pas de r√©sum√© (L'anniversaire du monde) . 1 doublon # de r√©sum√© d√©tect√©
+# en stats tu supposes qu'il y a une loi
+# en ML tu cherches √† minimiser le co˘t
+
+dfBookSummaries <- read.csv("books.csv")
+
+```
+
+```{r}
+#dfBookSummaries$textwords <- iconv(dfBookSummaries$text, "ASCII", "UTF-8", sub="byte")
+docs <- Corpus(VectorSource(dfBookSummaries$text))
+```
+
+```{r}
+# Convertir le texte en minuscule
+docs <- tm_map(docs, content_transformer(tolower))
+```
+
+```{r}
+docs = tm_map(docs, PlainTextDocument)
+
+# Supprimer une liste de mots "non support√©s par le dictionnaire de stop words fr"implicites"
+docs <- tm_map(docs, removeWords, c("rÈsumÈ","science-fiction","plus"))
+# Remplacer les points par des espaces
+toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
+docs <- tm_map(docs, toSpace, "\\.")
+docs <- tm_map(docs, toSpace, "'")
+docs <- tm_map(docs, toSpace, "'")
+docs <- tm_map(docs, toSpace, "´")
+docs <- tm_map(docs, toSpace, "ª")
+
+toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
+docs <- tm_map(docs, toA, "‡")
+
+toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
+docs <- tm_map(docs, toE, "È")
+docs <- tm_map(docs, toE, "Ë")
+docs <- tm_map(docs, toE, "Í")
+docs <- tm_map(docs, toE, "Î")
+
+
+
+# Supprimer le texte en gras r√©cup√©r√© par erreur par le scraper (et difficile √† automatiser)
+docs <- tm_map(docs, toSpace, "collection dirigÈe par gÈrard klein")
+
+# Supprimer les nombres
+docs <- tm_map(docs, removeNumbers)
+
+
+# Supprimer les mots vides fran√ßais
+mySW = read.csv("myStopwords.txt",  sep = "", stringsAsFactors = FALSE,                                              header = FALSE)
+
+
+```
+Èliminer Stopwords franÁais 
+```{r}
+
+docs <- tm_map(docs, removeWords, mySW$V1)
+```
+
+```{r}
+
+#docs <- tm_map(docs, removeWords, stopwords("french"))
+# Supprimer les ponctuations
+docs <- tm_map(docs, removePunctuation)
+# Supprimer les espaces vides suppl√©mentaires
+docs <- tm_map(docs, stripWhitespace)
+# FIXME : Text stemming. Donne de dr√¥les de r√©sultats !!
+# docs <- tm_map(docs, stemDocument)
+
+#docs = tm_map(docs, stemDocument, language = "french")
+
+
+
+# TODO : voir s'il faut √©liminer les mots de moins de 3 lettres
+# TODO : r√©cup√©rer les couvertures ?
+
+
+
+dtm <- TermDocumentMatrix(docs)
+
+
+m <- as.matrix(dtm)
+# "Fantastique"
+v <- sort(rowSums(m[,1:160]),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+#head(d, 10)
+#head(v, 10)
+#head(m,10)
+#head(as.data.frame(t(m)), 50)
+
+```
+
+Fantastique
+
+```{r}
+set.seed(1234)
+
+wordcloud(words = d$word, freq = d$freq, min.freq = 15,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+
+# "Science-fition"
+v <- sort(rowSums(m[,161:320]),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+#head(d, 10)
+#head(v, 10)
+#head(m,10)
+#head(as.data.frame(t(m)), 50)
+```
+
+Science-fiction 
+
+```{r}
+
+set.seed(1234)
+
+wordcloud(words = d$word, freq = d$freq, min.freq = 5,
+          max.words=50, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+##### JLT
+
+dtm = DocumentTermMatrix(docs)
+dtm.matrix <- as.matrix(dtm)
+wordcount <- colSums(dtm.matrix)
+topten <- head(sort(wordcount, decreasing=TRUE), 10)
+
+library(reshape2)
+library(ggplot2)
+
+dfplot <- as.data.frame(melt(topten))
+dfplot$word <- dimnames(dfplot)[[1]]
+dfplot$word <- factor(dfplot$word,
+                      levels=dfplot$word[order(dfplot$value,
+                                               decreasing=TRUE)])
+
+fig <- ggplot(dfplot, aes(x=word, y=value)) + geom_bar(stat="identity")
+fig <- fig + xlab("Word in Corpus")
+fig <- fig + ylab("Count")
+
+
+```
+---
+GÈnÈral
+---
+```{r}
+print(fig)
+
+
+
+dtm = DocumentTermMatrix(docs)
+
+
+# Remove sparse terms
+dtm = removeSparseTerms(dtm, 0.90)
+
+
+# Create data frame
+labeledTerms = as.data.frame(as.matrix(dtm))
+
+# Add in the outcome variable (my_genre de dfBookSummaries en l'occurence)
+labeledTerms$my_genre = dfBookSummaries$genre
+
+#str(labeledTerms)
+
+
+
+
+
+# Split the data train/test
+
+library(caTools)
+
+set.seed(144)
+
+spl = sample.split(labeledTerms$my_genre, SplitRatio = 2/3)
+
+train = subset(labeledTerms, spl == TRUE)
+test = subset(labeledTerms, spl == FALSE)
+
+
+#train$my_genre = as.factor(train$my_genre)
+#test$my_genre = as.factor(test$my_genre)
+
+
+table(test$my_genre)
+Acc_BASE = 53/(106)
+
+
+BookGLM = glm(my_genre~., data = train, family = "binomial")
+
+
+pred = predict(BookGLM, newdata = test, type = "response")
+
+
+ConfusMatrix = table(test$my_genre, pred>= 0.5)
+#ConfusMatrix
+
+```
+ACCURACY GLM
+```{r}
+Acc_GLM = (ConfusMatrix[1,1]+ConfusMatrix[2,2])/nrow(test)
+Acc_GLM                   
+
+
+
+
+
+# Build a CART model
+
+library(rpart)
+#install.packages("rpart.plot")
+library(rpart.plot)
+
+BookCART = rpart(my_genre~., data=train, method="class")
+
+prp(BookCART)
+
+
+
+
+# Make predictions on the test set
+
+pred = predict(BookCART, newdata=test)
+
+
+
+# Compute accuracy
+
+ConfusMatrix = table(test$my_genre, pred[,2] >= 0.5)
+
+```
+ACCURACY CART
+```{r}
+Acc_CART = (ConfusMatrix[1,1]+ConfusMatrix[2,2])/nrow(test)
+Acc_CART                       
+
+
+# Baseline model accuracy
+
+
+```
+Random Forest
+
+```{r}
+# Random forest model
+#install.packages("randomForest")
+library(randomForest)
+set.seed(123)
+```
+RF
+```{r}
+BookGenreRF = randomForest(my_genre ~ ., data=train)
+```
+PrÈdict
+
+```{r}
+# Make predictions:
+predictRF = predict(BookGenreRF, newdata=test)
+
+ConfusMatrix = table(test$my_genre, predictRF)
+Acc_RF = (ConfusMatrix[1,1]+ConfusMatrix[2,2])/nrow(test)
+Acc_RF
+```
+ACCURACY RF
+```{r}
+
+```
+
+
+#Cross validation 
+```{r}
+# Install cross-validation packages
+#install.packages("caret")
+library(caret)
+#install.packages("e1071")
+library(e1071)
+
+# Define cross-validation experiment
+
+numFolds <- trainControl(method="cv", number=10)
+cpGrid = expand.grid( .cp = seq(0.01,0.5,0.005)) 
+
+
+#train$my_genre = as.factor(train$my_genre)
+#test$my_genre = as.factor(test$my_genre)
+# Perform the cross validation
+```
+
+
+
+
+
+#Cross validation V2
+```{r}
+
+
+cpGrid = expand.grid( .cp = seq(0.01,0.5,0.005)) 
+
+```
+
+
+#Cross validation V2
+#numFolds <- trainControl(method="cv", number=10)
+
+```{r}
+
+library(doParallel)
+library(parallel)
+
+cl <- makeCluster(detectCores() - 1) # convention to leave 1 core for OS
+registerDoParallel(cl)
+
+control <- trainControl(method="repeatedcv", number=10, repeats=5,allowParallel=TRUE)
+
+BestParam = train(as.factor(my_genre)~., data = train, method = "rpart",
+                   trControl=control,
+                     tuneGrid=cpGrid)
+
+
+
+
+```
+
+
+#Stop Cluster
+```{r}
+stopCluster(cl)
+
+prp(BestParam$finalModel)
+plot(BestParam)
+
+
+PredictCV = predict(BestParam$finalModel, newdata=test)
+
+
+
+
+```
+
+
+#Cross validation Confusion Matrix
+```{r}
+
+
+ConfusMatrix = table(test$my_genre,PredictCV[,2]>=0.5)
+
+
+
+```
+ACCURACY Best Tree (CV) 
+```{r}
+Acc_CV_Cart = (ConfusMatrix[1,1]+ConfusMatrix[2,2])/nrow(test)
+Acc_CV_Cart
+```
+ROC curve 
+```{r}
+#install.packages("ROCR")
+library("ROCR")
+
+
+```
+ROC Perf CV Rpart
+```{r}
+
+
+pred_ROCR = prediction(PredictCV[,2], test$my_genre)
+perf_ROCR = performance(pred_ROCR, "tpr", "fpr")
+```
+ROC plot 
+```{r}
+plot(perf_ROCR, colorize=TRUE)
+
+# Compute AUC
+
+performance(pred_ROCR, "auc")@y.values
+
+
+
+```
+SVM
+```{r}
+#install.packages("doParallel")
+#install.packages("parallel")
+
+
+cl <- makeCluster(3)
+registerDoParallel(cl)
+paramgrid <- data.frame(C=seq(0.5,6,by=0.5))
+svm.lin.opt <- train(my_genre~.,data=train,method="svmLinear",
+                     trControl=trainControl(method="cv",number=10,search="grid"),
+                     tuneGrid=paramgrid,allowParallel=TRUE)
+stopCluster(cl)
+plot(svm.lin.opt)
+
+
+
+PredictSVM <- predict(svm.lin.opt, newdata = test)
+
+
+
+ConfusMatrix = table(test$my_genre,PredictSVM)
+
+Acc_CV_SVM = (ConfusMatrix[1,1]+ConfusMatrix[2,2])/nrow(test)
+Acc_CV_SVM
+
+
+
+
+
+```
+RECAP GÈnÈrale 
+```{r}
+
+Recap_type = c("Base","glm","Cart","RF","Cart*","SVM*")
+Recap_Val = c(Acc_BASE,Acc_GLM,Acc_CART,Acc_RF,Acc_CV_Cart,Acc_CV_SVM)
+
+Tri_val = order(Recap_Val)
+
+
+Recap = data.frame(list(Recap_type,Recap_Val))
+Recap[Tri_val,2]
+Recap[Tri_val,1]
+barplot(Recap[Tri_val,2], names.arg = Recap[Tri_val,1], beside = TRUE,
+              space=c(0.2,0.8),args.legend = list(x = "bottom", bty = "n", inset=c(0.1, 0.1)),
+              xlim = range(0:1),col = brewer.pal(8, "Dark2"), main="comparaison Accuracy ", horiz=TRUE)
+
+
