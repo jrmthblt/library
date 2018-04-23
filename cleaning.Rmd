@@ -1,0 +1,164 @@
+---
+title: "Cleaning text data"
+author: "Jérôme THIBAULT"
+date: "07/04/2018"
+output: html_notebook
+---
+
+This R script cleans the data scraped from Livre de Poche website.
+
+First of all, we install the dependencies we need (the project is managed by Packrat).
+```{r install dependencies}
+# WARN : does packrat scan all R source files of the project before removing the unused packages ?
+# packrat::clean()
+# install.packages("rvest")
+# install.packages("testthat")
+# install.packages("tidyverse")
+```
+
+Then we load them :
+```{r}
+library(rvest)
+library(tidyverse)
+library(testthat)
+# Installer
+# install.packages("tm")  # pour le text mining
+# install.packages("SnowballC") # pour le text stemming
+# install.packages("wordcloud") # générateur de word-cloud
+# install.packages("RColorBrewer") # Palettes de couleurs
+library(tm)
+library(SnowballC)
+library(wordcloud)
+library(RColorBrewer)
+```
+
+Now we perform some text cleanup on the dataframe we saved as a CSV file :
+
+```{r tm cleanup}
+
+# TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
+# en stats tu supposes qu'il y a une loi
+# en ML tu cherches à minimiser le coût
+
+dfBookSummaries <- read_csv("dfBookSummaries.csv")
+
+docs <- Corpus(VectorSource(dfBookSummaries$text))
+# Convertir le texte en minuscule
+docs <- tm_map(docs, content_transformer(tolower))
+# Remplacer les points par des espaces
+toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
+docs <- tm_map(docs, toSpace, "\\.")
+
+# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
+docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
+
+# Supprimer les nombres
+docs <- tm_map(docs, removeNumbers)
+# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
+docs <- tm_map(docs, removeWords, c("d'", "l'", "résumé", "où"))
+# Supprimer les mots vides français
+docs <- tm_map(docs, removeWords, stopwords("french"))
+# Supprimer les ponctuations
+docs <- tm_map(docs, removePunctuation)
+# Supprimer les espaces vides supplémentaires
+docs <- tm_map(docs, stripWhitespace)
+# FIXME : Text stemming. Donne de drôles de résultats !!
+# docs <- tm_map(docs, stemDocument)
+inspect(docs[1])
+
+# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+# TODO : récupérer les couvertures ?
+
+DocumentTermMatrix(docs)
+# <<DocumentTermMatrix (documents: 320, terms: 8006)>>
+# Non-/sparse entries: 20578/2541342
+# Sparsity           : 99%
+# Maximal term length: 26
+# Weighting          : term frequency (tf)
+
+dtm <- TermDocumentMatrix(docs)
+
+review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
+review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.8) # Conserve 7 termes uniquement, dont 2 (' et roman qu'il faudrait supprimer)
+reviews = cbind(dfBookSummaries$genre, as.matrix(review_dtm_tfidf))
+dfReviews <- as.data.frame(reviews)
+dfReviews$V1 <- as.factor(dfReviews$V1)
+dfReviews$monde <- as.double(dfReviews$monde)
+dfReviews$vie <- as.double(dfReviews$vie)
+dfReviews$tout <- as.double(dfReviews$tout)
+dfReviews$plus <- as.double(dfReviews$plus)
+typeof(dfReviews)
+typeof(dfReviews$plus)
+
+reg <- glm(V1 ~ monde + vie + tout + plus, data = dfReviews, family = binomial(logit))
+summary(reg)
+
+# Deviance Residuals: 
+#    Min      1Q  Median      3Q     Max  
+# -1.658  -1.223   0.146   1.132   1.787  
+# 
+# Coefficients:
+#               Estimate Std. Error z value Pr(>|z|)   
+# (Intercept)  0.1479004  0.1848415   0.800  0.42363   
+# monde        0.0150190  0.0065008   2.310  0.02087 * 
+# vie         -0.0255924  0.0132930  -1.925  0.05420 . 
+# tout        -0.0311295  0.0101704  -3.061  0.00221 **
+# plus         0.0003061  0.0038964   0.079  0.93739   
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# 
+# (Dispersion parameter for binomial family taken to be 1)
+# 
+#     Null deviance: 443.61  on 319  degrees of freedom
+# Residual deviance: 426.65  on 315  degrees of freedom
+# AIC: 436.65
+# 
+# Number of Fisher Scoring iterations: 4
+
+
+install.packages("randomForest")
+library(randomForest)
+fit <- randomForest(V1 ~ monde + vie + tout + plus, data=dfReviews, importance=TRUE, ntree=2000)
+varImpPlot(fit)
+
+freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
+wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
+# 
+
+# id_train <- sample(nrow(reviews),nrow(reviews)*0.70)
+# reviews.train = reviews[id_train,]
+# reviews.test = reviews[-id_train,]
+# 
+# install.packages(c('rpart', 'rpart.plot', 'e1071', 'nnet'))
+# 
+# library(rpart)
+# library(rpart.plot)
+# library(e1071)
+# library(nnet)
+# 
+# 
+# reviews.tree = rpart(genre~.,  method = "class", data = as.data.frame(reviews.train));
+# prp(reviews.tree)
+# 
+# # https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# m <- as.matrix(dtm)
+# v <- sort(rowSums(m),decreasing=TRUE)
+# d <- data.frame(word = names(v),freq=v)
+# head(d, 10)
+# head(v, 10)
+# head(m,10)
+# head(as.data.frame(t(m)), 50)
+# 
+# 
+# set.seed(1234)
+# wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+#           max.words=200, random.order=FALSE, rot.per=0.35, 
+#           colors=brewer.pal(8, "Dark2"))
+```

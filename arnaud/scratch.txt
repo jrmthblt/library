@@ -1,0 +1,22 @@
+Slack: https://ensai-ds-2018.slack.com
+
+http://physicallychemist.blogspot.fr/2015/09/using-google-books-api-and-r-to.html
+http://vincent-lecomte.blogspot.fr/2014/04/web-recherche-dun-livre-avec-google.html
+
+
+API Google book
+
+https://developers.google.com/books/docs/v1/reference/volumes/list
+https://developers.google.com/books/docs/v1/using#PerformingSearch
+https://developers.google.com/books/docs/v1/using#api_params
+
+
+Exemples:
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Science
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Fiction
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Architecture
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Nature
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Plantes
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:agriculture
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:Psychologie
+https://www.googleapis.com/books/v1/volumes?langRestrict=fr&maxResults=40&startIndex=0&q=subject:sociologie
