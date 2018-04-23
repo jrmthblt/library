@@ -68,6 +68,7 @@ inspect(docs[1])
 
 # TODO : voir s'il faut éliminer les mots de moins de 3 lettres
 # TODO : récupérer les couvertures ?
+# TODO : topic modeling pour adresser les synonymes ?
 
 DocumentTermMatrix(docs)
 # <<DocumentTermMatrix (documents: 320, terms: 8006)>>
@@ -79,19 +80,24 @@ DocumentTermMatrix(docs)
 dtm <- TermDocumentMatrix(docs)
 
 review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
-review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.8) # Conserve 7 termes uniquement, dont 2 (' et roman qu'il faudrait supprimer)
-reviews = cbind(dfBookSummaries$genre, as.matrix(review_dtm_tfidf))
-dfReviews <- as.data.frame(reviews)
-dfReviews$V1 <- as.factor(dfReviews$V1)
-dfReviews$monde <- as.double(dfReviews$monde)
-dfReviews$vie <- as.double(dfReviews$vie)
-dfReviews$tout <- as.double(dfReviews$tout)
-dfReviews$plus <- as.double(dfReviews$plus)
-typeof(dfReviews)
-typeof(dfReviews$plus)
+review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.9) # Conserve 7 termes uniquement, dont 2 (' et roman qu'il faudrait supprimer)
 
-reg <- glm(V1 ~ monde + vie + tout + plus, data = dfReviews, family = binomial(logit))
+dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
+dfReviews$genre <- as.factor(dfBookSummaries$genre)
+dfReviews[10] <- NULL
+str(dfReviews)
+
+# install.packages("caTools")
+library(caTools)
+spl = sample.split(dfReviews$genre, SplitRatio = 2/3)
+train = subset(dfReviews, spl == TRUE)
+test = subset(dfReviews, spl == FALSE)
+
+
+reg <- glm(genre ~ ., data = train, family = binomial(logit))
 summary(reg)
+predictReg <- predict(reg, test, type="response")
+table(test$genre, predictReg >= 0.5)
 
 # Deviance Residuals: 
 #    Min      1Q  Median      3Q     Max  
@@ -116,37 +122,37 @@ summary(reg)
 # Number of Fisher Scoring iterations: 4
 
 
-install.packages("randomForest")
+# install.packages("randomForest")
 library(randomForest)
-fit <- randomForest(V1 ~ monde + vie + tout + plus, data=dfReviews, importance=TRUE, ntree=2000)
+fit <- randomForest(genre ~ ., data=train, importance=TRUE, ntree=2000)
 varImpPlot(fit)
+table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
 
 freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
 wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
 # 
 
-# id_train <- sample(nrow(reviews),nrow(reviews)*0.70)
-# reviews.train = reviews[id_train,]
-# reviews.test = reviews[-id_train,]
-# 
 # install.packages(c('rpart', 'rpart.plot', 'e1071', 'nnet'))
-# 
-# library(rpart)
-# library(rpart.plot)
-# library(e1071)
-# library(nnet)
-# 
-# 
-# reviews.tree = rpart(genre~.,  method = "class", data = as.data.frame(reviews.train));
-# prp(reviews.tree)
+library(rpart)
+library(rpart.plot)
+library(e1071)
+library(nnet)
+
+# Pourquoi sort-il des règles avec des valeurs absolues et non entre 0 et 1 ?
+reviewsTree = rpart(genre ~ .,  method = "class", data = train);
+prp(reviewsTree)
+plotcp(reviewsTree)
+# reviewsTreeSimplified <- prune(reviewsTree,cp=0.021)
+# prp(reviewsTreeSimplified)
+# table(test$genre, predict(reviewsTreeSimplified, test, type="class"))
+table(test$genre, predict(reviewsTree, test, type="class"))
+
+
+# Commencer par les méthodes les plus simples : kmeans et régression linéaire.
 # 
 # # https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
 # 
-# 
-# 
-# 
-# 
-# 
+
 # 
 # m <- as.matrix(dtm)
 # v <- sort(rowSums(m),decreasing=TRUE)
