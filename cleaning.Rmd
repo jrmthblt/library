@@ -75,7 +75,7 @@ docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
 # Supprimer les nombres
 docs <- tm_map(docs, removeNumbers)
 # Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
-docs <- tm_map(docs, removeWords, c("d'", "l'", "résumé", "science-fiction", "où", "plus"))
+docs <- tm_map(docs, removeWords, c("...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix"))
 # Supprimer les mots outils français
 mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
 docs <- tm_map(docs, removeWords, mySW$V1)
@@ -139,12 +139,72 @@ for (i in 1:length(categories)){
 
 ```{r classification}
 review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
-review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.9) # Conserve 7 termes uniquement, dont 2 (' et roman qu'il faudrait supprimer)
+review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.95)
 
 dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
 dfReviews$genre <- as.factor(dfBookSummaries$genre)
 dfReviews[10] <- NULL
 str(dfReviews)
+dfReviews$genre <- as.character(dfReviews$genre)
+dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
+dfReviews$genre <- as.factor(dfReviews$genre)
+dfReviews$genre
+
+# install.packages("caret")
+library(caret)
+set.seed(1234)
+splitIndex <- createDataPartition(dfReviews$genre, p = .80, list = FALSE, times = 1)
+data.train <- data.frame(dfReviews[ splitIndex,])
+data.test  <- data.frame(dfReviews[-splitIndex,])
+
+ytrain <- dfReviews$genre[splitIndex]
+ytest  <- dfReviews$genre[-splitIndex]
+table(ytrain)/sum(table(ytrain))
+
+table(ytest)/sum(table(ytest))
+
+data.train$genre <- NULL
+data.test$genre <- NULL
+
+library(parallel)
+# install.packages("doParallel")
+library(doParallel)
+
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+seeds <- list(1:4,1:4,1:4,3)
+objControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction=twoClassSummary, allowParallel = TRUE, seeds = seeds)
+
+
+gridsearch <- expand.grid(cp=seq(0, 0.05, 0.001))
+tune <- train(data.train,ytrain,method = "rpart",tuneGrid=gridsearch, trControl =objControl,metric='ROC')
+plot(tune)
+
+pred <- predict(object=tune$finalModel, data.test,type='class')
+head(pred)
+conf.mat <- confusionMatrix(pred, ytest)
+
+library(reshape2)
+library(ggplot2)
+cm.plot <- function(table_cm){
+tablecm <- round(t(t(table_cm) / colSums(as.matrix(table_cm))*100)) # crée les pourcentages
+tablemelt <- melt(tablecm)
+ggplot(tablemelt, aes(Reference, Prediction)) +
+geom_point(aes(size = value, color=value), alpha=0.8, show.legend=FALSE) +
+geom_text(aes(label = value), color="white") +
+scale_size(range = c(5,25)) +
+scale_y_discrete(limits = rev(levels(tablemelt$Prediction)))+
+theme_bw()
+}
+cm.plot(conf.mat$table)
+
+rpart.plot(tune$finalModel)
+
+
+
+# stephanie.combes@gmail.com pour des questions
+
 
 # install.packages("caTools")
 library(caTools)
