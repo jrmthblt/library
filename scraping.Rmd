@@ -63,6 +63,16 @@ retrieveBookSummary <- function(book) {
 }
 
 
+# Extension to any LdP URL
+retrieveAnyGenreCurrentPageBooksURLs <- function(completeUrl, pageIndex) {
+  pageNumberParameter <- "pageNumber"
+  rootSearchUrl <- paste(completeUrl, pageNumberParameter, sep="")
+  genreCurrentPageURL <- paste(gsub(pageNumberParameter, as.character(pageIndex), rootSearchUrl), sep="")
+  genreCurrentPage <- read_html(genreCurrentPageURL)
+  return(genreCurrentPage %>% html_nodes(".book-title a") %>% html_attr("href"))
+}
+
+
 # Main Code
 literaryGenres <- tribble(
   ~label, ~code,
@@ -72,28 +82,53 @@ literaryGenres <- tribble(
 
 bookSummaries <- list()
 
-# Scraping "Fantastique" books
-for (i in 0:15) {
-  ftSummaries <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[1,2]), function(bookURL) {
-    book <- read_html(paste(rootUrl, bookURL, sep=""))
+# # Scraping "Fantastique" books
+# for (i in 0:15) {
+#   ftSummaries <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[1,2]), function(bookURL) {
+#     book <- read_html(paste(rootUrl, bookURL, sep=""), encoding = "UTF-8")
+#     Sys.sleep(scraperDelay)
+#     return(retrieveBookSummary(book))
+#   })
+#   bookSummaries <- c(bookSummaries, ftSummaries)
+# }
+# 
+# # Scraping "Science-Fiction" books
+# for (i in 0:15) {
+#   sfSummaries <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[2,2]), function(bookURL) {
+#     book <- read_html(paste(rootUrl, bookURL, sep=""), encoding = "UTF-8")
+#     Sys.sleep(scraperDelay)
+#     return(retrieveBookSummary(book))
+#   })
+#   bookSummaries <- c(bookSummaries, sfSummaries)
+# }
+
+
+# # Scraping "Romans historiques" books
+# for (i in 0:12) {
+#   histoSummaries <- sapply(retrieveAnyGenreCurrentPageBooksURLs("http://www.livredepoche.com/collection-litterature?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5721&f[1]=field_tags%3A76&page=", i), function(bookURL) {
+#     book <- read_html(paste(rootUrl, bookURL, sep=""), encoding = "UTF-8")
+#     Sys.sleep(scraperDelay)
+#     return(retrieveBookSummary(book))
+#   })
+#   bookSummaries <- c(bookSummaries, histoSummaries)
+# }
+
+
+# Scraping "Littérature" books (20 are also included in imaginaire)
+for (i in 0:127) {
+  litSummaries <- sapply(retrieveAnyGenreCurrentPageBooksURLs("http://www.livredepoche.com/collection-litterature?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5721&f[1]=field_tags%3A31&page=", i), function(bookURL) {
+    book <- read_html(paste(rootUrl, bookURL, sep=""), encoding = "UTF-8")
     Sys.sleep(scraperDelay)
     return(retrieveBookSummary(book))
   })
-  bookSummaries <- c(bookSummaries, ftSummaries)
+  bookSummaries <- c(bookSummaries, litSummaries)
 }
 
-# Scraping "Science-Fiction" books
-for (i in 0:15) {
-  sfSummaries <- sapply(retrieveGenreCurrentPageBooksURLs(rootUrl, i, literaryGenres[2,2]), function(bookURL) {
-    book <- read_html(paste(rootUrl, bookURL, sep=""))
-    Sys.sleep(scraperDelay)
-    return(retrieveBookSummary(book))
-  })
-  bookSummaries <- c(bookSummaries, sfSummaries)
-}
 
-dfBookSummaries <- data_frame(line = 1:length(bookSummaries), text = unlist(bookSummaries),genre=c(rep("Fantastique",160),rep("Science-Fiction",160)))
+dfBookSummaries <- data_frame(line = 1:length(bookSummaries), text = unlist(bookSummaries),genre=c(rep("Littérature",1279)))
+
+# dfBookSummaries <- data_frame(line = 1:length(bookSummaries), text = unlist(bookSummaries),genre=c(rep("Fantastique",160),rep("Science-Fiction",160)))
 
 # Write the result to ensure we will not need to scrap every time we run the project
-write_csv(dfBookSummaries, file="bookSummaries.csv")
+write.csv(dfBookSummaries, file="/Users/jeromethibault/Documents/R/library/bookSummariesHisto.csv")
 ```

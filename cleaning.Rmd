@@ -36,11 +36,11 @@ Now we perform some text cleanup on the dataframe we saved as a CSV file :
 
 ```{r tm cleanup}
 
+dfBookSummaries <- read_csv("dfBookSummaries.csv")
+
 # TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
 # en stats tu supposes qu'il y a une loi
 # en ML tu cherches à minimiser le coût
-
-dfBookSummaries <- read_csv("dfBookSummaries.csv")
 
 docs <- Corpus(VectorSource(dfBookSummaries$text))
 # Convertir le texte en minuscule
@@ -48,6 +48,26 @@ docs <- tm_map(docs, content_transformer(tolower))
 # Remplacer les points par des espaces
 toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
 docs <- tm_map(docs, toSpace, "\\.")
+# Remplacer les apostrophes par des espaces
+docs <- tm_map(docs, toSpace, "'")
+docs <- tm_map(docs, toSpace, "’")
+docs <- tm_map(docs, toSpace, "«")
+docs <- tm_map(docs, toSpace, "»")
+
+toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
+docs <- tm_map(docs, toA, "à")
+docs <- tm_map(docs, toA, "á")
+
+
+toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
+docs <- tm_map(docs, toE, "é")
+docs <- tm_map(docs, toE, "è")
+docs <- tm_map(docs, toE, "ê")
+docs <- tm_map(docs, toE, "ë")
+
+toI <- content_transformer(function (x , pattern) { gsub(pattern, "i", x)})
+docs <- tm_map(docs, toE, "ï")
+docs <- tm_map(docs, toE, "î")
 
 # Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
 docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
@@ -55,15 +75,24 @@ docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
 # Supprimer les nombres
 docs <- tm_map(docs, removeNumbers)
 # Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
-docs <- tm_map(docs, removeWords, c("d'", "l'", "résumé", "où"))
-# Supprimer les mots vides français
-docs <- tm_map(docs, removeWords, stopwords("french"))
+docs <- tm_map(docs, removeWords, c("d'", "l'", "résumé", "science-fiction", "où", "plus"))
+# Supprimer les mots outils français
+mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
+docs <- tm_map(docs, removeWords, mySW$V1)
+# docs <- tm_map(docs, removeWords, stopwords("french"))
 # Supprimer les ponctuations
 docs <- tm_map(docs, removePunctuation)
 # Supprimer les espaces vides supplémentaires
 docs <- tm_map(docs, stripWhitespace)
 # FIXME : Text stemming. Donne de drôles de résultats !!
 # docs <- tm_map(docs, stemDocument)
+
+# Suppression des accents
+library(stringi)
+library(stringr)
+# accent <- function(x) stri_trans_general(x, "UTF8-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
+# docs <- tm_map(docs, content_transformer(accent))
+
 inspect(docs[1])
 
 # TODO : voir s'il faut éliminer les mots de moins de 3 lettres
@@ -77,8 +106,38 @@ DocumentTermMatrix(docs)
 # Maximal term length: 26
 # Weighting          : term frequency (tf)
 
-dtm <- TermDocumentMatrix(docs)
+dtm <- DocumentTermMatrix(docs)
+```
 
+Next, we describe the dataset :
+```{r descriptive analysis}
+table(dfBookSummaries$genre)
+
+table(dfBookSummaries$genre)/sum(table(dfBookSummaries$genre))
+
+# install.packages("devtools")
+# require(devtools) #decommenter pour installer wordcloud2
+# install_github("lchiffon/wordcloud2")
+library(tm)
+library(wordcloud2)
+
+
+dtm_m <- as.matrix(dtm)
+categories <- levels(as.factor(dfBookSummaries$genre))
+for (i in 1:length(categories)){
+  m <- dtm_m[dfBookSummaries$genre == categories[i],]
+  wordsFreq <- sort(colSums(m),decreasing = TRUE)
+  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
+  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+  }
+
+
+# sfWords <- paste(dfBookSummaries[dfBookSummaries$genre=='Science-Fiction','text'],collapse=' ') # on concatene tout le texte
+# wordsFreq <- data.frame(sort(table(strsplit(sfWords,"\\s+")),decreasing=TRUE)) # on compte chaque mot, le motif entre guillemet veut dire qu'on coupe la chaine de caractère quelque soit le nombre d'espaces entre les mots
+# head(wordsFreq)
+```
+
+```{r classification}
 review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
 review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.9) # Conserve 7 termes uniquement, dont 2 (' et roman qu'il faudrait supprimer)
 
@@ -152,19 +211,5 @@ table(test$genre, predict(reviewsTree, test, type="class"))
 # 
 # # https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
 # 
-
-# 
-# m <- as.matrix(dtm)
-# v <- sort(rowSums(m),decreasing=TRUE)
-# d <- data.frame(word = names(v),freq=v)
-# head(d, 10)
-# head(v, 10)
-# head(m,10)
-# head(as.data.frame(t(m)), 50)
-# 
-# 
-# set.seed(1234)
-# wordcloud(words = d$word, freq = d$freq, min.freq = 1,
-#           max.words=200, random.order=FALSE, rot.per=0.35, 
-#           colors=brewer.pal(8, "Dark2"))
 ```
+
