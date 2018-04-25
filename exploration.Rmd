@@ -47,7 +47,7 @@ inspect(dtm)
 dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
 rowSums <- rowSums(dtmMatrix)
 
-ggplot(data = rowSums) + geom_bar(mapping = aes(x = genre, colour = genre))
+# ggplot(data = rowSums) + geom_bar(mapping = aes(x = genre, colour = as.factor(genre)))
 
 
 # 2 résumés "vides" :
@@ -62,11 +62,15 @@ plot(rowSums, col = as.factor(dfBookSummaries$genre))
 hist(rowSums)
 dfBookSummaries[which(rowSums<10),2]
 
-findMostFreqTerms(dtm, n = 30L, INDEX = rep(1 : 2, each = 160L))
+findMostFreqTerms(dtm, n = 100L, INDEX = rep(1 : 2, each = 160L))
 
 # Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
 
 plot(colSums(dtmFantastique))
+# source("http://bioconductor.org/biocLite.R")
+# biocLite("Rgraphviz")
+# library(Rgraphviz)
+# plot(dtm, corThreshold = 0.2, weighting = TRUE)
 
 ```
 
@@ -130,5 +134,46 @@ library(stringr)
 # TODO : topic modeling pour adresser les synonymes ?
 
 dtm <- DocumentTermMatrix(docs)
+```
+
+
+```{r contrôle descriptif}
+# TODO : Liste des mots les plus fréquents et wordclouds
+```
+
+```{r topic modeling}
+dtmCleanMatrix <- as.matrix(dtm)
+rowTotals <- apply(dtmCleanMatrix , 1, sum) # calcule la somme des termes dans chaque document
+dtmCleanMatrix   <- dtmCleanMatrix[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+
+# install.packages("topicmodels")
+library(topicmodels)
+# Paramètres du Gibbs sampling
+burnin <- 500
+iter <- 500
+thin <- 100
+seed <- list(2003,5,63,100001,765) # arbitraire
+nstart <- 5
+best <- TRUE
+
+# Nombre de thèmes
+k <- 2 # arbitraire à ce stade, nécessiterait d'être optimisé
+
+# Estimation de la LDA
+ldaOut <-LDA(dtmCleanMatrix,k, method="Gibbs", control=list(nstart=nstart, seed = seed, best=best, burnin = burnin, iter = iter, thin=thin))
+
+
+ldaOut.topics <- as.matrix(topics(ldaOut))
+table(ldaOut.topics)
+
+ldaOut.terms <- as.matrix(terms(ldaOut,10))
+ldaOut.terms
+
+topicProbabilities <- as.data.frame(ldaOut@gamma)
+names(topicProbabilities) <- apply(data.frame(ldaOut.terms),2,function(x) paste(x,collapse=' '))
+topicProbabilities[1:100,]  #pour les dix premiers documents arbitrairement, on voit que la plupart du temps un topic est prépondérant.
+
+# TODO : tester la précision des catégories vs. les Y de sortie du premier dataframe (for JL : "accuracy").
+# TODO : kmeans et CAH (sur matrice nettoyée)
 ```
 
