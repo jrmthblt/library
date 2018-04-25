@@ -88,7 +88,7 @@ retrieveGenreBooks <- function (completeUrl, maxPageIndex, genreName) {
     Sys.sleep(scraperDelay)
     return(retrieveBookSummary(book))
   })
-    dfBookSummaries <- rbind(dfBookSummaries, data_frame(text = unlist(genreSummaries),genre=c(rep(genreName, length(genreSummaries)))))
+    dfBookSummaries <- rbind(dfBookSummaries, data_frame(text = unlist(genreSummaries),genre=genreName))
   }
   return(dfBookSummaries)
 }
@@ -104,15 +104,15 @@ literaryGenres <- tribble(
 bookSummaries <- list()
 
 # Scraping "Policier" books (70 pages)
-dfPolBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-policiers?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5722&page=", 70, "Policier")
+# dfPolBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-policiers?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5722&page=", 69, "Policier")
 
 
-# # Scraping "Fantastique" books
+# Scraping "Imaginaire" books (49 pages)
+dfImagBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5726&page=", 48, "Imaginaire")
 
-# # Scraping "Science-Fiction" books
-
-# # Scraping "Romans historiques" books
 
 # Write the result to ensure we will not need to scrap every time we run the project
-write.csv(dfPolBooks, file="/Users/jeromethibault/Documents/R/library/dfPolBooks.csv")
+# write.csv(dfPolBooks, file="/Users/jeromethibault/Documents/R/library/dfPolBooks.csv")
+
+write.csv(dfImagBooks, file="/Users/jeromethibault/Documents/R/library/dfImagBooks.csv")
 ```

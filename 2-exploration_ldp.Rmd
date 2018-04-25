@@ -34,7 +34,8 @@ ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genr
 docs <- Corpus(VectorSource(dfBookSummaries$text))
 # Nombre de documents, nombre de termes
 dtm <- DocumentTermMatrix(docs)
-inspect(dtm)
+inspect(docs[1])
+dtm$dimnames[2]
 # <<DocumentTermMatrix (documents: 320, terms: 8006)>>
 # Non-/sparse entries: 20578/2541342
 # Sparsity           : 99%
