@@ -1,0 +1,146 @@
+---
+title: "Classification Livre de Poche"
+author: "Jérôme THIBAULT"
+date: "25/04/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r classification}
+review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
+review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.95)
+
+dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
+dfReviews$genre <- as.factor(dfBookSummaries$genre)
+dfReviews[10] <- NULL
+str(dfReviews)
+dfReviews$genre <- as.character(dfReviews$genre)
+dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
+dfReviews$genre <- as.factor(dfReviews$genre)
+dfReviews$genre
+
+# install.packages("caret")
+library(caret)
+set.seed(1234)
+splitIndex <- createDataPartition(dfReviews$genre, p = .80, list = FALSE, times = 1)
+data.train <- data.frame(dfReviews[ splitIndex,])
+data.test  <- data.frame(dfReviews[-splitIndex,])
+
+ytrain <- dfReviews$genre[splitIndex]
+ytest  <- dfReviews$genre[-splitIndex]
+table(ytrain)/sum(table(ytrain))
+
+table(ytest)/sum(table(ytest))
+
+data.train$genre <- NULL
+data.test$genre <- NULL
+
+library(parallel)
+# install.packages("doParallel")
+library(doParallel)
+
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+seeds <- list(1:4,1:4,1:4,3)
+objControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction=twoClassSummary, allowParallel = TRUE, seeds = seeds)
+
+
+gridsearch <- expand.grid(cp=seq(0, 0.05, 0.001))
+tune <- train(data.train,ytrain,method = "rpart",tuneGrid=gridsearch, trControl =objControl,metric='ROC')
+plot(tune)
+
+pred <- predict(object=tune$finalModel, data.test,type='class')
+head(pred)
+conf.mat <- confusionMatrix(pred, ytest)
+
+library(reshape2)
+library(ggplot2)
+cm.plot <- function(table_cm){
+tablecm <- round(t(t(table_cm) / colSums(as.matrix(table_cm))*100)) # crée les pourcentages
+tablemelt <- melt(tablecm)
+ggplot(tablemelt, aes(Reference, Prediction)) +
+geom_point(aes(size = value, color=value), alpha=0.8, show.legend=FALSE) +
+geom_text(aes(label = value), color="white") +
+scale_size(range = c(5,25)) +
+scale_y_discrete(limits = rev(levels(tablemelt$Prediction)))+
+theme_bw()
+}
+cm.plot(conf.mat$table)
+
+rpart.plot(tune$finalModel)
+
+
+
+# stephanie.combes@gmail.com pour des questions
+
+
+# install.packages("caTools")
+library(caTools)
+spl = sample.split(dfReviews$genre, SplitRatio = 2/3)
+train = subset(dfReviews, spl == TRUE)
+test = subset(dfReviews, spl == FALSE)
+
+
+reg <- glm(genre ~ ., data = train, family = binomial(logit))
+summary(reg)
+predictReg <- predict(reg, test, type="response")
+table(test$genre, predictReg >= 0.5)
+
+# Deviance Residuals: 
+#    Min      1Q  Median      3Q     Max  
+# -1.658  -1.223   0.146   1.132   1.787  
+# 
+# Coefficients:
+#               Estimate Std. Error z value Pr(>|z|)   
+# (Intercept)  0.1479004  0.1848415   0.800  0.42363   
+# monde        0.0150190  0.0065008   2.310  0.02087 * 
+# vie         -0.0255924  0.0132930  -1.925  0.05420 . 
+# tout        -0.0311295  0.0101704  -3.061  0.00221 **
+# plus         0.0003061  0.0038964   0.079  0.93739   
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# 
+# (Dispersion parameter for binomial family taken to be 1)
+# 
+#     Null deviance: 443.61  on 319  degrees of freedom
+# Residual deviance: 426.65  on 315  degrees of freedom
+# AIC: 436.65
+# 
+# Number of Fisher Scoring iterations: 4
+
+
+# install.packages("randomForest")
+library(randomForest)
+fit <- randomForest(genre ~ ., data=train, importance=TRUE, ntree=2000)
+varImpPlot(fit)
+table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
+
+freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
+wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
+# 
+
+# install.packages(c('rpart', 'rpart.plot', 'e1071', 'nnet'))
+library(rpart)
+library(rpart.plot)
+library(e1071)
+library(nnet)
+
+# Pourquoi sort-il des règles avec des valeurs absolues et non entre 0 et 1 ?
+reviewsTree = rpart(genre ~ .,  method = "class", data = train);
+prp(reviewsTree)
+plotcp(reviewsTree)
+# reviewsTreeSimplified <- prune(reviewsTree,cp=0.021)
+# prp(reviewsTreeSimplified)
+# table(test$genre, predict(reviewsTreeSimplified, test, type="class"))
+table(test$genre, predict(reviewsTree, test, type="class"))
+
+
+# Commencer par les méthodes les plus simples : kmeans et régression linéaire.
+# 
+# # https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
+# 
+```

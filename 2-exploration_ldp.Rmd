@@ -1,0 +1,193 @@
+---
+title: "Exploration Livre de Poche"
+author: "Jérôme THIBAULT"
+date: "25/04/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r chargement des packages}
+library(tidyverse)
+library(testthat)
+# Installer
+# install.packages("tm")  # pour le text mining
+# install.packages("SnowballC") # pour le text stemming
+# install.packages("wordcloud") # générateur de word-cloud
+# install.packages("RColorBrewer") # Palettes de couleurs
+library(tm)
+library(SnowballC)
+library(wordcloud)
+library(RColorBrewer)
+```
+
+```{r description sommaire}
+dfBookSummaries <- read_csv("dfBookSummaries.csv")
+library(ggplot2)
+table(dfBookSummaries$genre)
+table(dfBookSummaries$genre)/sum(table(dfBookSummaries$genre))
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre))
+
+
+docs <- Corpus(VectorSource(dfBookSummaries$text))
+# Nombre de documents, nombre de termes
+dtm <- DocumentTermMatrix(docs)
+inspect(dtm)
+# <<DocumentTermMatrix (documents: 320, terms: 8006)>>
+# Non-/sparse entries: 20578/2541342
+# Sparsity           : 99%
+# Maximal term length: 26
+# Weighting          : term frequency (tf)
+
+
+# distribution de la longueur d'un terme, distribution du nombre de mots par document
+dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
+rowSums <- rowSums(dtmMatrix)
+
+# ggplot(data = rowSums) + geom_bar(mapping = aes(x = genre, colour = as.factor(genre)))
+
+
+# 2 résumés "vides" :
+summary(rowSums)
+tapply(rowSums, dfBookSummaries$genre, min)
+tapply(rowSums, dfBookSummaries$genre, mean)
+tapply(rowSums, dfBookSummaries$genre, max)
+tapply(rowSums, dfBookSummaries$genre, sd)
+# barplot(tapply(rowSums, dfBookSummaries$genre, mean))
+# tapply(rowSums, dfBookSummaries$genre, function(x) {list(mean(x), sd(x), max(x))})
+plot(rowSums, col = as.factor(dfBookSummaries$genre))
+hist(rowSums)
+dfBookSummaries[which(rowSums<10),2]
+
+findMostFreqTerms(dtm, n = 100L, INDEX = rep(1 : 2, each = 160L))
+
+# Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
+
+# TODO : contrôler l'unicité des résumés, et 1 résumé = 1 seul genre.
+
+plot(colSums(dtmFantastique))
+# source("http://bioconductor.org/biocLite.R")
+# biocLite("Rgraphviz")
+# library(Rgraphviz)
+# plot(dtm, corThreshold = 0.2, weighting = TRUE)
+
+```
+
+
+```{r nettoyage}
+# TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
+
+
+# Convertir le texte en minuscule
+docs <- tm_map(docs, content_transformer(tolower))
+# Remplacer les points par des espaces
+toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
+docs <- tm_map(docs, toSpace, "\\.")
+# Remplacer les apostrophes par des espaces
+docs <- tm_map(docs, toSpace, "'")
+docs <- tm_map(docs, toSpace, "’")
+docs <- tm_map(docs, toSpace, "«")
+docs <- tm_map(docs, toSpace, "»")
+
+toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
+docs <- tm_map(docs, toA, "à")
+docs <- tm_map(docs, toA, "á")
+
+
+toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
+docs <- tm_map(docs, toE, "é")
+docs <- tm_map(docs, toE, "è")
+docs <- tm_map(docs, toE, "ê")
+docs <- tm_map(docs, toE, "ë")
+
+toI <- content_transformer(function (x , pattern) { gsub(pattern, "i", x)})
+docs <- tm_map(docs, toE, "ï")
+docs <- tm_map(docs, toE, "î")
+
+# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
+docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
+
+# Supprimer les nombres
+docs <- tm_map(docs, removeNumbers)
+# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
+docs <- tm_map(docs, removeWords, c("...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
+# Supprimer les mots outils français
+mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
+docs <- tm_map(docs, removeWords, mySW$V1)
+# docs <- tm_map(docs, removeWords, stopwords("french"))
+# Supprimer les ponctuations
+docs <- tm_map(docs, removePunctuation)
+# Supprimer les espaces vides supplémentaires
+docs <- tm_map(docs, stripWhitespace)
+# FIXME : Text stemming. Donne de drôles de résultats !!
+# docs <- tm_map(docs, stemDocument)
+
+# Suppression des accents
+library(stringi)
+library(stringr)
+# accent <- function(x) stri_trans_general(x, "UTF8-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
+# docs <- tm_map(docs, content_transformer(accent))
+
+# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+# TODO : récupérer les couvertures ?
+# TODO : topic modeling pour adresser les synonymes ?
+
+dtm <- DocumentTermMatrix(docs)
+```
+
+
+```{r contrôle descriptif}
+# TODO : Liste des mots les plus fréquents et wordclouds
+
+library(tm)
+library(wordcloud2)
+
+
+dtm_m <- as.matrix(dtm)
+categories <- levels(as.factor(dfBookSummaries$genre))
+for (i in 1:length(categories)){
+  m <- dtm_m[dfBookSummaries$genre == categories[i],]
+  wordsFreq <- sort(colSums(m),decreasing = TRUE)
+  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
+  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+  }
+```
+
+```{r topic modeling}
+dtmCleanMatrix <- as.matrix(dtm)
+rowTotals <- apply(dtmCleanMatrix , 1, sum) # calcule la somme des termes dans chaque document
+dtmCleanMatrix   <- dtmCleanMatrix[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+
+# install.packages("topicmodels")
+library(topicmodels)
+# Paramètres du Gibbs sampling
+burnin <- 500
+iter <- 500
+thin <- 100
+seed <- list(2003,5,63,100001,765) # arbitraire
+nstart <- 5
+best <- TRUE
+
+# Nombre de thèmes
+k <- 2 # arbitraire à ce stade, nécessiterait d'être optimisé
+
+# Estimation de la LDA
+ldaOut <-LDA(dtmCleanMatrix,k, method="Gibbs", control=list(nstart=nstart, seed = seed, best=best, burnin = burnin, iter = iter, thin=thin))
+
+
+ldaOut.topics <- as.matrix(topics(ldaOut))
+table(ldaOut.topics)
+
+ldaOut.terms <- as.matrix(terms(ldaOut,10))
+ldaOut.terms
+
+topicProbabilities <- as.data.frame(ldaOut@gamma)
+names(topicProbabilities) <- apply(data.frame(ldaOut.terms),2,function(x) paste(x,collapse=' '))
+topicProbabilities[1:100,]  #pour les dix premiers documents arbitrairement, on voit que la plupart du temps un topic est prépondérant.
+
+# TODO : tester la précision des catégories vs. les Y de sortie du premier dataframe (for JL : "accuracy").
+# TODO : kmeans et CAH (sur matrice nettoyée)
+```
+
