@@ -1,0 +1,121 @@
+---
+title: "Scraping Livre de Poche"
+author: "Jérôme THIBAULT"
+date: "25/04/2018"
+output: html_document
+---
+
+## Introduction
+Ce premier script scrape les 4ème de couverture des livres de différentes collections (pour l'instant, on s'est limité aux genre "Fantastique" et "Science-Fiction").
+
+Il récupère le titre du livre, le genre et son résumé.
+
+
+## Installation des dépendances
+Le projet est géré sous Packrat, les dépendances restent donc locales au projet.
+
+```{r install dependencies}
+# packrat::clean()
+# install.packages("rvest")
+# install.packages("testthat")
+# install.packages("tidyverse")
+```
+
+
+## Chargement des librairies
+
+```{r}
+library(rvest)
+library(tidyverse)
+# TODO : assert the title and summary
+library(testthat)
+```
+
+
+## Extraction d'un livre
+On teste l'extraction d'un livre pour vérifier que nos méthodes fonctionnent bien :
+
+```{r one book scraping}
+
+oneBook <- read_html("http://www.livredepoche.com/rainbows-end-vernor-vinge-9782253159933")
+
+title <- oneBook %>% html_nodes(".book-title") %>% html_text()
+summary <- oneBook %>% html_nodes(".view-content p") %>% html_text()
+
+print(title)
+print(summary)
+
+```
+
+
+## Extraction des livres d'un genre
+
+```{r multiple book scraping}
+scraperDelay <- 0.25
+rootUrl <- "http://www.livredepoche.com"
+
+
+# Given a genre code and a page index, returns all books URLs of the current page
+retrieveGenreCurrentPageBooksURLs <- function(rootUrl, pageIndex, genreCode) {
+  pageNumberParameter <- "pageNumber"
+  rootSearchUrl <- paste(rootUrl, "/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&page=", pageNumberParameter, "&f[0]=field_book_collection%3A10489&f[1]=field_tags%", sep="")
+  genreCurrentPageURL <- paste(gsub(pageNumberParameter, as.character(pageIndex), rootSearchUrl), genreCode, sep="")
+  genreCurrentPage <- read_html(genreCurrentPageURL)
+  return(genreCurrentPage %>% html_nodes(".book-title a") %>% html_attr("href"))
+}
+
+
+# Takes an HTML node list and extracts the book summary
+retrieveBookSummary <- function(book) {
+  return(book %>% html_nodes(".book-resume-block") %>% html_text())
+  # FIXME : le p n'est pas toujours présent après le block resume
+  # return(book %>% html_nodes(".book-resume-block p") %>% html_text())
+}
+
+
+# Extension to any LdP URL
+retrieveAnyGenreCurrentPageBooksURLs <- function(completeUrl, pageIndex) {
+  pageNumberParameter <- "pageNumber"
+  rootSearchUrl <- paste(completeUrl, pageNumberParameter, sep="")
+  genreCurrentPageURL <- paste(gsub(pageNumberParameter, as.character(pageIndex), rootSearchUrl), sep="")
+  genreCurrentPage <- read_html(genreCurrentPageURL)
+  return(genreCurrentPage %>% html_nodes(".book-title a") %>% html_attr("href"))
+}
+
+# Loop utility function
+retrieveGenreBooks <- function (completeUrl, maxPageIndex, genreName) {
+  dfBookSummaries <- data_frame()
+  for (i in 0:maxPageIndex) {
+    genreSummaries <- sapply(retrieveAnyGenreCurrentPageBooksURLs(completeUrl, i), function(bookURL) {
+    book <- read_html(paste(rootUrl, bookURL, sep=""), encoding = "UTF-8")
+    Sys.sleep(scraperDelay)
+    return(retrieveBookSummary(book))
+  })
+    dfBookSummaries <- rbind(dfBookSummaries, data_frame(text = unlist(genreSummaries),genre=genreName))
+  }
+  return(dfBookSummaries)
+}
+
+
+# Main Code
+literaryGenres <- tribble(
+  ~label, ~code,
+  "Fantastique", "3A297",
+  "Science-fiction", "3A7141"
+)
+
+bookSummaries <- list()
+
+# Scraping "Policier" books (70 pages)
+# dfPolBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-policiers?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5722&page=", 69, "Policier")
+
+
+# Scraping "Imaginaire" books (49 pages)
+# dfImagBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5726&page=", 48, "Imaginaire")
+
+
+# Write the result to ensure we will not need to scrap every time we run the project
+# write.csv(dfPolBooks, file="/Users/jeromethibault/Documents/R/library/dfPolBooks.csv")
+
+# write.csv(dfImagBooks, file="/Users/jeromethibault/Documents/R/library/dfImagBooks.csv")
+```
