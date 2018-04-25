@@ -21,6 +21,7 @@ Le projet est géré sous Packrat, les dépendances restent donc locales au proj
 # install.packages("tidyverse")
 ```
 
+
 ## Chargement des librairies
 
 ```{r}
@@ -30,8 +31,10 @@ library(tidyverse)
 library(testthat)
 ```
 
+
 ## Extraction d'un livre
 On teste l'extraction d'un livre pour vérifier que nos méthodes fonctionnent bien :
+
 ```{r one book scraping}
 
 oneBook <- read_html("http://www.livredepoche.com/rainbows-end-vernor-vinge-9782253159933")
@@ -108,11 +111,11 @@ bookSummaries <- list()
 
 
 # Scraping "Imaginaire" books (49 pages)
-dfImagBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5726&page=", 48, "Imaginaire")
+# dfImagBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5726&page=", 48, "Imaginaire")
 
 
 # Write the result to ensure we will not need to scrap every time we run the project
 # write.csv(dfPolBooks, file="/Users/jeromethibault/Documents/R/library/dfPolBooks.csv")
 
-write.csv(dfImagBooks, file="/Users/jeromethibault/Documents/R/library/dfImagBooks.csv")
+# write.csv(dfImagBooks, file="/Users/jeromethibault/Documents/R/library/dfImagBooks.csv")
 ```

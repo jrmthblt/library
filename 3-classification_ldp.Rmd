@@ -9,18 +9,28 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r classification}
+
+## Conversion DTM
+
+```{r ultime preparation}
 review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
 review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.95)
 
 dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
 dfReviews$genre <- as.factor(dfBookSummaries$genre)
-dfReviews[10] <- NULL
+
 str(dfReviews)
-dfReviews$genre <- as.character(dfReviews$genre)
-dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
-dfReviews$genre <- as.factor(dfReviews$genre)
-dfReviews$genre
+
+# Plus besoin, on a désormais les genres Policier et Imaginaire :
+# dfReviews$genre <- as.character(dfReviews$genre)
+# dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
+# dfReviews$genre <- as.factor(dfReviews$genre)
+```
+
+
+## Arbre de décision CART
+
+```{r rpart}
 
 # install.packages("caret")
 library(caret)
@@ -72,12 +82,13 @@ theme_bw()
 cm.plot(conf.mat$table)
 
 rpart.plot(tune$finalModel)
+stopCluster(cluster)
+```
 
 
+## Régression logistique
 
-# stephanie.combes@gmail.com pour des questions
-
-
+```{r glm}
 # install.packages("caTools")
 library(caTools)
 spl = sample.split(dfReviews$genre, SplitRatio = 2/3)
@@ -89,30 +100,13 @@ reg <- glm(genre ~ ., data = train, family = binomial(logit))
 summary(reg)
 predictReg <- predict(reg, test, type="response")
 table(test$genre, predictReg >= 0.5)
-
-# Deviance Residuals: 
-#    Min      1Q  Median      3Q     Max  
-# -1.658  -1.223   0.146   1.132   1.787  
-# 
-# Coefficients:
-#               Estimate Std. Error z value Pr(>|z|)   
-# (Intercept)  0.1479004  0.1848415   0.800  0.42363   
-# monde        0.0150190  0.0065008   2.310  0.02087 * 
-# vie         -0.0255924  0.0132930  -1.925  0.05420 . 
-# tout        -0.0311295  0.0101704  -3.061  0.00221 **
-# plus         0.0003061  0.0038964   0.079  0.93739   
-# ---
-# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-# 
-# (Dispersion parameter for binomial family taken to be 1)
-# 
-#     Null deviance: 443.61  on 319  degrees of freedom
-# Residual deviance: 426.65  on 315  degrees of freedom
-# AIC: 436.65
-# 
-# Number of Fisher Scoring iterations: 4
+```
 
 
+## Forêts aléatoires
+
+```{r random forest}
+# stephanie.combes@gmail.com pour des questions
 # install.packages("randomForest")
 library(randomForest)
 fit <- randomForest(genre ~ ., data=train, importance=TRUE, ntree=2000)

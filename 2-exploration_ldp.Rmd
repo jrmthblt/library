@@ -9,6 +9,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+## Chargement des packages
+
 ```{r chargement des packages}
 library(tidyverse)
 library(testthat)
@@ -23,23 +26,40 @@ library(wordcloud)
 library(RColorBrewer)
 ```
 
+
+## Import des données
+
+```{r concaténation imaginaire et policier}
+dfImagBooks <- read_csv("dfImagBooks.csv")
+dfPolBooks <- read_csv("dfPolBooks.csv")
+
+# 1180 documents
+dfBookSummaries <- rbind(dfImagBooks, dfPolBooks)
+
+# OU :
+# dfBookSummaries <- read_csv("dfBookSummaries.csv")
+```
+
+
+## Description du jeu de données
+
 ```{r description sommaire}
-dfBookSummaries <- read_csv("dfBookSummaries.csv")
 library(ggplot2)
 table(dfBookSummaries$genre)
-table(dfBookSummaries$genre)/sum(table(dfBookSummaries$genre))
-ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre))
+table(dfBookSummaries$genre) / sum(table(dfBookSummaries$genre))
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre)) # pour l'instant pas très utile avec 2 genres
 
+# TODO : On mélange les documents. Attention, impact sur l'ordre attendu dans différentes fonctions
 
 docs <- Corpus(VectorSource(dfBookSummaries$text))
 # Nombre de documents, nombre de termes
 dtm <- DocumentTermMatrix(docs)
 inspect(docs[1])
-dtm$dimnames[2]
-# <<DocumentTermMatrix (documents: 320, terms: 8006)>>
-# Non-/sparse entries: 20578/2541342
-# Sparsity           : 99%
-# Maximal term length: 26
+dtm
+# <<DocumentTermMatrix (documents: 1180, terms: 20166)>>
+# Non-/sparse entries: 94573/23701307
+# Sparsity           : 100%
+# Maximal term length: 30
 # Weighting          : term frequency (tf)
 
 
@@ -47,10 +67,10 @@ dtm$dimnames[2]
 dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
 rowSums <- rowSums(dtmMatrix)
 
-# ggplot(data = rowSums) + geom_bar(mapping = aes(x = genre, colour = as.factor(genre)))
+# FIXME : Erreur : ggplot2 doesn't know how to deal with data of class numeric
+# ggplot(data = rowSums) + geom_bar(mapping = aes(x = dfBookSummaries$genre, colour = as.factor(dfBookSummaries$genre)))
 
 
-# 2 résumés "vides" :
 summary(rowSums)
 tapply(rowSums, dfBookSummaries$genre, min)
 tapply(rowSums, dfBookSummaries$genre, mean)
@@ -60,15 +80,17 @@ tapply(rowSums, dfBookSummaries$genre, sd)
 # tapply(rowSums, dfBookSummaries$genre, function(x) {list(mean(x), sd(x), max(x))})
 plot(rowSums, col = as.factor(dfBookSummaries$genre))
 hist(rowSums)
+
+# 18 résumés vides ou quasi-vides
 dfBookSummaries[which(rowSums<10),2]
 
-findMostFreqTerms(dtm, n = 100L, INDEX = rep(1 : 2, each = 160L))
+findMostFreqTerms(dtm, n = 30L, INDEX = rep(1 : 2, times = c(481, 699)))
 
 # Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
 
 # TODO : contrôler l'unicité des résumés, et 1 résumé = 1 seul genre.
 
-plot(colSums(dtmFantastique))
+# plot(colSums(dtmFantastique))
 # source("http://bioconductor.org/biocLite.R")
 # biocLite("Rgraphviz")
 # library(Rgraphviz)
@@ -76,6 +98,8 @@ plot(colSums(dtmFantastique))
 
 ```
 
+
+## Nettoyage des données
 
 ```{r nettoyage}
 # TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
@@ -134,30 +158,33 @@ library(stringr)
 # TODO : voir s'il faut éliminer les mots de moins de 3 lettres
 # TODO : récupérer les couvertures ?
 # TODO : topic modeling pour adresser les synonymes ?
-
 dtm <- DocumentTermMatrix(docs)
+dtmCleanMatrix <- as.data.frame(as.matrix(dtm))
+# Normalement on peut faire cette manip, car n'influence pas le TF-IDF :
+dtmCleanMatrix$maigret <- NULL
+dtmCleanMatrix$nouvelle <- NULL
 ```
 
 
-```{r contrôle descriptif}
-# TODO : Liste des mots les plus fréquents et wordclouds
+## Contrôle après nettoyage
 
+```{r contrôle descriptif}
 library(tm)
 library(wordcloud2)
 
-
-dtm_m <- as.matrix(dtm)
 categories <- levels(as.factor(dfBookSummaries$genre))
 for (i in 1:length(categories)){
-  m <- dtm_m[dfBookSummaries$genre == categories[i],]
+  m <- dtmCleanMatrix[dfBookSummaries$genre == categories[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
   }
 ```
 
+
+## Classification non supervisée LDA (Topic Modeling)
+
 ```{r topic modeling}
-dtmCleanMatrix <- as.matrix(dtm)
 rowTotals <- apply(dtmCleanMatrix , 1, sum) # calcule la somme des termes dans chaque document
 dtmCleanMatrix   <- dtmCleanMatrix[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
 
