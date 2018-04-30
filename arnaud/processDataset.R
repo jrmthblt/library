@@ -167,6 +167,9 @@ plot(prcomp(m_norm)$x, col=cl2$cluster)
 
 
 ## Self organizing map (som) - Kohonen map
+# https://www.r-bloggers.com/self-organising-maps-for-customer-segmentation-using-r/
+# https://www.shanelynn.ie/self-organising-maps-for-customer-segmentation-using-r/
+# https://clarkdatalabs.github.io/soms/SOM_Shakespeare_Part_1
 #install.packages('kohonen')
 library(kohonen)
 
