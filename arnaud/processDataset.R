@@ -50,7 +50,8 @@ stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendr
                  'peut','doit','mieux',"un","deux","trois","quatre","cinq","six","sept","huit","neuf","dix",
                  'tant','ainsi','livre','oeuvre','ouvrage','aussi','autre','fait','entre','plus','tout',
                  'toute','auteur','bien','dont','roman','comment','petit','petite','grand','grande',
-                 'etc','annee'
+                 'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','dont','donc',
+                 'donne','sous','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais'
                  )
 stopwords_fr2 = setdiff(stopwords_fr2, c("pas")) # 'pas' est inclus dans les stopword, on trouve que c'est un peu dommage alors on le retire de la liste
 documents <- tm_map(documents, removeWords, stopwords_fr2)
@@ -84,10 +85,11 @@ dtm2 <- removeSparseTerms(
   0.88)
 
 
+## Statistiques
 #inspect(dtm)
 #dim(dtm)
 #documents[1]$content
-#documents_nonstem[1231]$content
+#documents_nonstem[904]$content
 
 
 rowTotals <- apply(dtm , 1, sum) #Find the sum of words in each Document
@@ -95,6 +97,8 @@ dtm.new   <- dtm[rowTotals> 0, ] #remove all docs without words
 
 rowTotals2 <- apply(dtm2 , 1, sum) #Find the sum of words in each Document
 dtm.new2   <- dtm2[rowTotals> 0, ] #remove all docs without words
+
+findMostFreqTerms(dtm.new, n=10L)
 
 
 ### Clustering
@@ -153,14 +157,14 @@ abline(v = which.max(sil2), lty = 2)
 
 
 # cluster into x (optimal) clusters - skmeans
-cl <- skmeans(dtm.new, 16)
+cl <- skmeans(dtm.new, 11)
 table(cl$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl$cluster)
 
 
 # cluster into x (optimal) clusters - kmeans
-cl2 <- kmeans(m_norm, 16)
+cl2 <- kmeans(m_norm, 11)
 table(cl2$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl2$cluster)
@@ -188,7 +192,7 @@ som_model <- som(data_train_matrix,
 
 plot(som_model, type="changes")
 plot(som_model, type="count", main="Node Counts")
-plot(som_model, type="dist.neighbours", main = "SOM neighbour distances")
+#plot(som_model, type="dist.neighbours", main = "SOM neighbour distances")
 
 
 ### it seems the optimal number of cluster is more or less the number of remaining words in DTM... ###
