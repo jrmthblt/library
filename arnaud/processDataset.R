@@ -23,9 +23,11 @@ dataset_df <- dataset_df[-c(29,32,37,39,171,1158,1182,1597,1623),] # Nettoyage d
 #install.packages('tm')
 #install.packages('stringi')
 #install.packages('stringr')
+#install.packages('wordcloud')
 library(tm)
 library(stringi)
 library(stringr)
+library(wordcloud)
 
 #Initial corpus
 documents <- Corpus(VectorSource(dataset_df$volumeInfo.description))
@@ -51,13 +53,14 @@ stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendr
                  'tant','ainsi','livre','oeuvre','ouvrage','aussi','autre','fait','entre','plus','tout',
                  'toute','auteur','bien','dont','roman','comment','petit','petite','grand','grande',
                  'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','dont','donc',
-                 'donne','sous','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais'
+                 'donne','sous','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                 'grands','grandes','question','fois','france','travers','jour'
                  )
 stopwords_fr2 = setdiff(stopwords_fr2, c("pas")) # 'pas' est inclus dans les stopword, on trouve que c'est un peu dommage alors on le retire de la liste
 documents <- tm_map(documents, removeWords, stopwords_fr2)
 
 
-#Lemmatisation
+#Stemming
 #install.packages('SnowballC')
 library('SnowballC')
 documents_nonstem <- documents
@@ -77,19 +80,19 @@ length(minfreq)
 dtm <- removeSparseTerms(
   DocumentTermMatrix(documents, control=list(dictionary= minfreq, weighting = function(x) weightTfIdf(x, normalize = TRUE)))
   ,
-  0.88)
+  0.89)
 
 dtm2 <- removeSparseTerms(
   DocumentTermMatrix(documents, control=list(dictionary= minfreq, weighting = function(x) weightTf(x)))
   ,
-  0.88)
+  0.89)
 
 
-## Statistiques
+### Statistics
 #inspect(dtm)
 #dim(dtm)
 #documents[1]$content
-#documents_nonstem[904]$content
+#documents_nonstem[942]$content
 
 
 rowTotals <- apply(dtm , 1, sum) #Find the sum of words in each Document
@@ -98,7 +101,18 @@ dtm.new   <- dtm[rowTotals> 0, ] #remove all docs without words
 rowTotals2 <- apply(dtm2 , 1, sum) #Find the sum of words in each Document
 dtm.new2   <- dtm2[rowTotals> 0, ] #remove all docs without words
 
-findMostFreqTerms(dtm.new, n=10L)
+
+findMostFreqTerms(dtm.new, n=20L)
+
+m <- as.matrix(as.TermDocumentMatrix(dtm.new))
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 30)
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE,  
+          colors=brewer.pal(8, "Dark2"))
+
 
 
 ### Clustering
@@ -121,7 +135,6 @@ m_norm <- norm_eucl(as.matrix(dtm.new))
 
 set.seed(123)
 
-
 #Silouhette method for finding the optimal number of clusters
 
 # Compute the average silhouette width for 
@@ -129,6 +142,7 @@ set.seed(123)
 k.max <- 20
 sil <- rep(0,k.max)
 for(i in 2:k.max){
+  set.seed(123)
   k.res <- skmeans(dtm.new, i)
   ss <- silhouette(k.res$cluster, proxy::dist(as.matrix(dtm.new), method="cosine"))
   sil[i] <- mean(ss[, 3])
@@ -145,6 +159,7 @@ abline(v = which.max(sil), lty = 2)
 k.max <- 20
 sil2 <- rep(0,k.max)
 for(i in 2:k.max){
+  set.seed(123)
   k.res2 <- kmeans(m_norm, i, nstart=50,iter.max = 15)
   ss2 <- silhouette(k.res2$cluster, dist(m_norm))
   sil2[i] <- mean(ss2[, 3])
@@ -157,14 +172,16 @@ abline(v = which.max(sil2), lty = 2)
 
 
 # cluster into x (optimal) clusters - skmeans
-cl <- skmeans(dtm.new, 11)
+set.seed(123)
+cl <- skmeans(dtm.new, 13)
 table(cl$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl$cluster)
 
 
 # cluster into x (optimal) clusters - kmeans
-cl2 <- kmeans(m_norm, 11)
+set.seed(123)
+cl2 <- kmeans(m_norm, 13)
 table(cl2$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl2$cluster)
@@ -177,6 +194,7 @@ plot(prcomp(m_norm)$x, col=cl2$cluster)
 #install.packages('kohonen')
 library(kohonen)
 
+set.seed(123)
 data_train_matrix <- as.matrix(scale(m_norm))
 # Create the SOM Grid - you generally have to specify the size of the 
 # training grid prior to training the SOM. Hexagonal and Circular 
