@@ -223,6 +223,8 @@ plot(som_model, type="count", main="Node Counts")
 #install.packages('caret')
 library(caret)
 
+# https://datascience.stackexchange.com/questions/15670/which-classifier-should-i-use-for-sparse-boolean-features
+# Will try lasso logistic regression and random forest...
 
 
 ## Write final dataset csv
