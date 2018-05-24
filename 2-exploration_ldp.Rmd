@@ -30,14 +30,9 @@ library(RColorBrewer)
 ## Import des données
 
 ```{r concaténation imaginaire et policier}
-dfImagBooks <- read_csv("dfImagBooks.csv")
-dfPolBooks <- read_csv("dfPolBooks.csv")
+dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv")
 
-# 1180 documents
-dfBookSummaries <- rbind(dfImagBooks, dfPolBooks)
 
-# OU :
-# dfBookSummaries <- read_csv("dfBookSummaries.csv")
 ```
 
 
@@ -48,6 +43,16 @@ library(ggplot2)
 table(dfBookSummaries$genre)
 table(dfBookSummaries$genre) / sum(table(dfBookSummaries$genre))
 ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre)) # pour l'instant pas très utile avec 2 genres
+
+# Compter le nombre de doublons
+length(which(duplicated(dfBookSummaries$text) == TRUE))
+
+dfBookSummaries[which(duplicated(dfBookSummaries$text)),]
+
+library(dplyr)
+dfBookSummaries %>%
+  group_by(text) %>%
+  summarise(n = n())
 
 # TODO : On mélange les documents. Attention, impact sur l'ordre attendu dans différentes fonctions
 
