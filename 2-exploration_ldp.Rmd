@@ -48,11 +48,8 @@ library(dplyr)
 # On les supprime
 dfBookSummaries <- dfBookSummaries %>% distinct()
 
-# 12 résumés presque vides, à supprimer
-dfBookSummaries <- dfBookSummaries[which(rowSums>=10),]
-
-# On mélange les documents
-dfBookSummaries <- dfBookSummaries[sample(nrow(dfBookSummaries)),]
+# On mélange les documents : ou pas car pose problème dans le 3-
+# dfBookSummaries <- dfBookSummaries[sample(nrow(dfBookSummaries)),]
 
 docs <- Corpus(VectorSource(dfBookSummaries$text))
 dtm <- DocumentTermMatrix(docs)
@@ -71,13 +68,15 @@ rowSums <- rowSums(dtmMatrix)
 # FIXME : Erreur : ggplot2 doesn't know how to deal with data of class numeric
 # ggplot(data = rowSums) + geom_bar(mapping = aes(x = dfBookSummaries$genre, colour = as.factor(dfBookSummaries$genre)))
 
+# 12 résumés presque vides, à supprimer
+dfBookSummaries <- dfBookSummaries[which(rowSums>=10),]
+docs <- Corpus(VectorSource(dfBookSummaries$text))
+dtm <- DocumentTermMatrix(docs)
+dtmMatrix <- as.matrix(dtm)
+rowSums <- rowSums(dtmMatrix)
 
 # Distribution du nombre de mots par genre
 summary(rowSums)
-tapply(rowSums, dfBookSummaries$genre, min)
-tapply(rowSums, dfBookSummaries$genre, mean)
-tapply(rowSums, dfBookSummaries$genre, max)
-tapply(rowSums, dfBookSummaries$genre, sd)
 
 plot(rowSums, col = as.factor(dfBookSummaries$genre))
 abline(h=median(rowSums), col = "green")
@@ -166,9 +165,11 @@ dtm <- DocumentTermMatrix(docs)
 minfreq <- findFreqTerms(dtm, 10)
 dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weight=weightTfIdf))
 dtmCleanMatrix <- as.data.frame(as.matrix(dtm))
+
+# TODO : on pourrait encore supprimer quelques mots (en regardant les noms des colonnes de la DTM). Voir s'ils sont associés souvent à d'autres mots ? Type saga la plus vendue
 # Normalement on peut faire cette manip, car n'influence pas le TF-IDF :
-dtmCleanMatrix$maigret <- NULL
-dtmCleanMatrix$nouvelle <- NULL
+# dtmCleanMatrix$maigret <- NULL
+# dtmCleanMatrix$nouvelle <- NULL
 
 
 library(wordcloud2)
@@ -187,6 +188,14 @@ rowSums <- rowSums(dtmCleanMatrix)
 plot(rowSums, col = as.factor(dfBookSummaries$genre))
 abline(h=median(rowSums), col = "green")
 hist(rowSums, breaks = 100)
+
+
+# Similarité entre mots
+# TODO : findAssocs(dtm, terms = "monde", corlimit = 0.3)
+
+# TODO : Word2Vec : mais pour faire quoi exactement dans notre cas ?
+
+# TODO : Classification non supervisée : SKmeans / CAH / LDA
 ```
 
 

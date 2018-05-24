@@ -13,41 +13,71 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Conversion DTM
 
 ```{r ultime preparation}
-review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
-review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.95)
 
-dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
-dfReviews$genre <- as.factor(dfBookSummaries$genre)
+# PRE-REQUIS : avoir chargé dtm du script précédent (5036 observations, 4823 variables)
 
+# SOIT ON FAIT CA :
+review_dtm_tfidf <- removeSparseTerms(dtm, 0.99)
+
+# Peut-être n'est-ce pas utile en supervisé de supprimer les documents
+rowTotals <- apply(review_dtm_tfidf , 1, sum) # calcule la somme des termes dans chaque document
+review_dtm_tfidf   <- review_dtm_tfidf[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+
+dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf)) # En ayant retiré des documents vides, comment leur faire désormais correspondre leur genre pour le ML ???
+
+# SOIT CA :
+dfReviews <- as.data.frame(as.matrix(dtm)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
+dfReviews$Y <- as.factor(dfBookSummaries$genre) # On peut ainsi renseigner la variable Y
 str(dfReviews)
-
-# Plus besoin, on a désormais les genres Policier et Imaginaire :
-# dfReviews$genre <- as.character(dfReviews$genre)
-# dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
-# dfReviews$genre <- as.factor(dfReviews$genre)
 ```
+
+
+## Préparation CARET
+
+```{r caret}
+# install.packages("caret")
+library(caret)
+set.seed(1234)
+splitIndex <- createDataPartition(dfReviews$Y, p = .80, list = FALSE, times = 1)
+data.train <- data.frame(dfReviews[ splitIndex,])
+data.test  <- data.frame(dfReviews[-splitIndex,])
+
+ytrain <- dfReviews$Y[splitIndex]
+ytest  <- dfReviews$Y[-splitIndex]
+table(ytrain)/sum(table(ytrain))
+
+table(ytest)/sum(table(ytest))
+
+data.train$Y <- NULL
+data.test$Y <- NULL
+```
+
+
+## Forêts aléatoires pour démarrer
+
+```{r random forest}
+# stephanie.combes@gmail.com pour des questions
+# install.packages("randomForest")
+library(randomForest)
+fit <- randomForest(ytrain ~ ., data=data.train, importance=TRUE, ntree=300, mtry=7)
+varImpPlot(fit)
+table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
+
+table(train$genre, predict(fit, train, type="class")) # 80% de données bien classées
+
+freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
+wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
+
+
+
+
+```
+
 
 
 ## Arbre de décision CART
 
 ```{r rpart}
-
-# install.packages("caret")
-library(caret)
-set.seed(1234)
-splitIndex <- createDataPartition(dfReviews$genre, p = .80, list = FALSE, times = 1)
-data.train <- data.frame(dfReviews[ splitIndex,])
-data.test  <- data.frame(dfReviews[-splitIndex,])
-
-ytrain <- dfReviews$genre[splitIndex]
-ytest  <- dfReviews$genre[-splitIndex]
-table(ytrain)/sum(table(ytrain))
-
-table(ytest)/sum(table(ytest))
-
-data.train$genre <- NULL
-data.test$genre <- NULL
-
 library(parallel)
 # install.packages("doParallel")
 library(doParallel)
@@ -56,7 +86,10 @@ cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur po
 registerDoParallel(cluster)
 
 seeds <- list(1:4,1:4,1:4,3)
-objControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction=twoClassSummary, allowParallel = TRUE, seeds = seeds)
+
+# Your outcome has 6 levels. The twoClassSummary() function isn't appropriate. On n'est plus en logistique ici.
+# On va donc se baser sur une des métriques proposées par l'outil, adapté aux classes étant faiblement représentées :
+objControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, allowParallel = TRUE, seeds = seeds)
 
 
 gridsearch <- expand.grid(cp=seq(0, 0.05, 0.001))
@@ -82,18 +115,25 @@ theme_bw()
 cm.plot(conf.mat$table)
 
 rpart.plot(tune$finalModel)
-stopCluster(cluster)
 ```
 
 
-## Régression logistique
+## Régression logistique binaire (obsolète)
 
 ```{r glm}
 # install.packages("caTools")
 library(caTools)
+
+
+# Test de suppression de la collection Littérature
+dfReviews <- subset(dfReviews, dfReviews$genre != "Littérature")
+
 spl = sample.split(dfReviews$genre, SplitRatio = 2/3)
 train = subset(dfReviews, spl == TRUE)
 test = subset(dfReviews, spl == FALSE)
+
+train$genre <- droplevels(train$genre)
+test$genre <- droplevels(test$genre)
 
 
 reg <- glm(genre ~ ., data = train, family = binomial(logit))
@@ -103,18 +143,21 @@ table(test$genre, predictReg >= 0.5)
 ```
 
 
-## Forêts aléatoires
+## Régression logistique multinomiale
 
-```{r random forest}
-# stephanie.combes@gmail.com pour des questions
-# install.packages("randomForest")
-library(randomForest)
-fit <- randomForest(genre ~ ., data=train, importance=TRUE, ntree=2000)
-varImpPlot(fit)
-table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
+```{r nnet}
+# install.packages("nnet")
+library(nnet)
+regm <- multinom(genre ~ ., data = train)
+summary(regm)
+table(predict(regm, newdata = test))
+table(predict(regm, newdata = test), test$genre)
+```
 
-freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
-wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
+
+## Forêts aléatoires (obsolète)
+
+```{r random rpart plot}
 # 
 
 # install.packages(c('rpart', 'rpart.plot', 'e1071', 'nnet'))
