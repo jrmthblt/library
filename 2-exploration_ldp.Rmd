@@ -13,8 +13,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Chargement des packages
 
 ```{r chargement des packages}
-library(tidyverse)
-library(testthat)
 # Installer
 # install.packages("tm")  # pour le text mining
 # install.packages("SnowballC") # pour le text stemming
@@ -27,46 +25,44 @@ library(RColorBrewer)
 ```
 
 
-## Import des données
-
-```{r concaténation imaginaire et policier}
-dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv")
-
-
-```
-
-
-## Description du jeu de données
+## Import et première description du jeu de données
 
 ```{r description sommaire}
+dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv")
+dfBookSummaries$X1 <- NULL
+dfBookSummaries$X1_1 <- NULL
+
 library(ggplot2)
 table(dfBookSummaries$genre)
 table(dfBookSummaries$genre) / sum(table(dfBookSummaries$genre))
-ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre)) # pour l'instant pas très utile avec 2 genres
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre))
 
 # Compter le nombre de doublons
 length(which(duplicated(dfBookSummaries$text) == TRUE))
-
 dfBookSummaries[which(duplicated(dfBookSummaries$text)),]
 
 library(dplyr)
-dfBookSummaries %>%
-  group_by(text) %>%
-  summarise(n = n())
 
-# TODO : On mélange les documents. Attention, impact sur l'ordre attendu dans différentes fonctions
+
+# 48 doublons de résumés trouvés, intra-collection (bcp de résumés vides car livres pas encore parus)
+# On les supprime
+dfBookSummaries <- dfBookSummaries %>% distinct()
+
+# 12 résumés presque vides, à supprimer
+dfBookSummaries <- dfBookSummaries[which(rowSums>=10),]
+
+# On mélange les documents
+dfBookSummaries <- dfBookSummaries[sample(nrow(dfBookSummaries)),]
 
 docs <- Corpus(VectorSource(dfBookSummaries$text))
-# Nombre de documents, nombre de termes
 dtm <- DocumentTermMatrix(docs)
 inspect(docs[1])
 dtm
-# <<DocumentTermMatrix (documents: 1180, terms: 20166)>>
-# Non-/sparse entries: 94573/23701307
+# <<DocumentTermMatrix (documents: 5048, terms: 48614)>>
+# Non-/sparse entries: 436450/244967022
 # Sparsity           : 100%
-# Maximal term length: 30
+# Maximal term length: 35
 # Weighting          : term frequency (tf)
-
 
 # distribution de la longueur d'un terme, distribution du nombre de mots par document
 dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
@@ -76,30 +72,22 @@ rowSums <- rowSums(dtmMatrix)
 # ggplot(data = rowSums) + geom_bar(mapping = aes(x = dfBookSummaries$genre, colour = as.factor(dfBookSummaries$genre)))
 
 
+# Distribution du nombre de mots par genre
 summary(rowSums)
 tapply(rowSums, dfBookSummaries$genre, min)
 tapply(rowSums, dfBookSummaries$genre, mean)
 tapply(rowSums, dfBookSummaries$genre, max)
 tapply(rowSums, dfBookSummaries$genre, sd)
-# barplot(tapply(rowSums, dfBookSummaries$genre, mean))
-# tapply(rowSums, dfBookSummaries$genre, function(x) {list(mean(x), sd(x), max(x))})
+
 plot(rowSums, col = as.factor(dfBookSummaries$genre))
-hist(rowSums)
+abline(h=median(rowSums), col = "green")
+hist(rowSums, breaks = 100)
+boxplot(rowSums~dfBookSummaries$genre, col = as.factor(dfBookSummaries$genre))
 
-# 18 résumés vides ou quasi-vides
-dfBookSummaries[which(rowSums<10),2]
+dtmMatrix <- NULL
 
-findMostFreqTerms(dtm, n = 30L, INDEX = rep(1 : 2, times = c(481, 699)))
+# TODO : Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
 
-# Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
-
-# TODO : contrôler l'unicité des résumés, et 1 résumé = 1 seul genre.
-
-# plot(colSums(dtmFantastique))
-# source("http://bioconductor.org/biocLite.R")
-# biocLite("Rgraphviz")
-# library(Rgraphviz)
-# plot(dtm, corThreshold = 0.2, weighting = TRUE)
 
 ```
 
@@ -107,8 +95,6 @@ findMostFreqTerms(dtm, n = 30L, INDEX = rep(1 : 2, times = c(481, 699)))
 ## Nettoyage des données
 
 ```{r nettoyage}
-# TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
-
 
 # Convertir le texte en minuscule
 docs <- tm_map(docs, content_transformer(tolower))
@@ -124,7 +110,6 @@ docs <- tm_map(docs, toSpace, "»")
 toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
 docs <- tm_map(docs, toA, "à")
 docs <- tm_map(docs, toA, "á")
-
 
 toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
 docs <- tm_map(docs, toE, "é")
@@ -142,15 +127,17 @@ docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
 # Supprimer les nombres
 docs <- tm_map(docs, removeNumbers)
 # Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
-docs <- tm_map(docs, removeWords, c("...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
+docs <- tm_map(docs, removeWords, c("plus", "les", "...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
 # Supprimer les mots outils français
 mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
 docs <- tm_map(docs, removeWords, mySW$V1)
-# docs <- tm_map(docs, removeWords, stopwords("french"))
+docs <- tm_map(docs, removeWords, stopwords("french"))
 # Supprimer les ponctuations
 docs <- tm_map(docs, removePunctuation)
 # Supprimer les espaces vides supplémentaires
 docs <- tm_map(docs, stripWhitespace)
+
+
 # FIXME : Text stemming. Donne de drôles de résultats !!
 # docs <- tm_map(docs, stemDocument)
 
@@ -161,20 +148,29 @@ library(stringr)
 # docs <- tm_map(docs, content_transformer(accent))
 
 # TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+
+
+# On vectorise le corpus après nettoyage
+dtm <- DocumentTermMatrix(docs)
+```
+
+
+## Description plus complète après nettoyage
+
+```{r contrôle descriptif}
 # TODO : récupérer les couvertures ?
 # TODO : topic modeling pour adresser les synonymes ?
-dtm <- DocumentTermMatrix(docs)
+
+
+
+minfreq <- findFreqTerms(dtm, 10)
+dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weight=weightTfIdf))
 dtmCleanMatrix <- as.data.frame(as.matrix(dtm))
 # Normalement on peut faire cette manip, car n'influence pas le TF-IDF :
 dtmCleanMatrix$maigret <- NULL
 dtmCleanMatrix$nouvelle <- NULL
-```
 
 
-## Contrôle après nettoyage
-
-```{r contrôle descriptif}
-library(tm)
 library(wordcloud2)
 
 categories <- levels(as.factor(dfBookSummaries$genre))
@@ -183,7 +179,14 @@ for (i in 1:length(categories)){
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
-  }
+}
+
+
+# Après nettoyage, on descend de plus de 100 mots par résumé à moins de 40
+rowSums <- rowSums(dtmCleanMatrix)
+plot(rowSums, col = as.factor(dfBookSummaries$genre))
+abline(h=median(rowSums), col = "green")
+hist(rowSums, breaks = 100)
 ```
 
 
