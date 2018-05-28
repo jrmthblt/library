@@ -13,11 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Chargement des packages
 
 ```{r chargement des packages}
+
 # Installer
 # install.packages("tm")  # pour le text mining
 # install.packages("SnowballC") # pour le text stemming
 # install.packages("wordcloud") # générateur de word-cloud
 # install.packages("RColorBrewer") # Palettes de couleurs
+library(tidyverse)
 library(tm)
 library(SnowballC)
 library(wordcloud)
@@ -43,22 +45,71 @@ dfBookSummaries[which(duplicated(dfBookSummaries$text)),]
 
 library(dplyr)
 
-
 # 48 doublons de résumés trouvés, intra-collection (bcp de résumés vides car livres pas encore parus)
 # On les supprime
 dfBookSummaries <- dfBookSummaries %>% distinct()
+```
 
-# On mélange les documents : ou pas car pose problème dans le 3-
-# dfBookSummaries <- dfBookSummaries[sample(nrow(dfBookSummaries)),]
 
+
+```{r corpus et dtm}
 docs <- Corpus(VectorSource(dfBookSummaries$text))
-dtm <- DocumentTermMatrix(docs)
+
 inspect(docs[1])
+
+# Suppression des accents : OK
+library(stringi)
+library(stringr)
+
+nfdRemoveAccents <- function(x) {
+  nfdX <- stri_trans_nfd(x)
+  return(stri_replace_all_regex(nfdX, "\\p{Mn}+", ""))
+}
+docs <- tm_map(docs, content_transformer(nfdRemoveAccents))
+
+# Convertir le texte en minuscule : OK
+docs <- tm_map(docs, content_transformer(tolower))
+
+# Remplacer toute la ponctuation par des espaces : OK
+# FIXME : attention les stopwords pourraient ne plus fonctionner (l' remplacé par l)
+removePonctuation <- function(x) {
+  return(stri_replace_all_regex(x, "\\p{P}+", " "))
+}
+docs <- tm_map(docs, content_transformer(removePonctuation))
+
+# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
+# docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
+
+# Supprimer les nombres
+docs <- tm_map(docs, removeNumbers)
+# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
+docs <- tm_map(docs, removeWords, c("plus", "les", "d", "l", "c", "d", "resume", "science-fiction", "ou", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
+
+# Supprimer les mots outils français
+ # FIXME : corriger les problèmes d'accent
+# mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE)
+# docs <- tm_map(docs, removeWords, mySW$V1)
+
+docs <- tm_map(docs, removeWords, stopwords("french"))
+# Supprimer les ponctuations
+docs <- tm_map(docs, removePunctuation)
+# Supprimer les espaces vides supplémentaires
+docs <- tm_map(docs, stripWhitespace)
+
+
+# FIXME : Text stemming. Donne de drôles de résultats !!
+# docs <- tm_map(docs, stemDocument)
+
+
+# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+
+
+dtm <- DocumentTermMatrix(docs)
 dtm
-# <<DocumentTermMatrix (documents: 5048, terms: 48614)>>
-# Non-/sparse entries: 436450/244967022
+# <<DocumentTermMatrix (documents: 5048, terms: 39573)>>
+# Non-/sparse entries: 347222/199417282
 # Sparsity           : 100%
-# Maximal term length: 35
+# Maximal term length: 30
 # Weighting          : term frequency (tf)
 
 # distribution de la longueur d'un terme, distribution du nombre de mots par document
@@ -95,58 +146,6 @@ dtmMatrix <- NULL
 
 ```{r nettoyage}
 
-# Convertir le texte en minuscule
-docs <- tm_map(docs, content_transformer(tolower))
-# Remplacer les points par des espaces
-toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
-docs <- tm_map(docs, toSpace, "\\.")
-# Remplacer les apostrophes par des espaces
-docs <- tm_map(docs, toSpace, "'")
-docs <- tm_map(docs, toSpace, "’")
-docs <- tm_map(docs, toSpace, "«")
-docs <- tm_map(docs, toSpace, "»")
-
-toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
-docs <- tm_map(docs, toA, "à")
-docs <- tm_map(docs, toA, "á")
-
-toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
-docs <- tm_map(docs, toE, "é")
-docs <- tm_map(docs, toE, "è")
-docs <- tm_map(docs, toE, "ê")
-docs <- tm_map(docs, toE, "ë")
-
-toI <- content_transformer(function (x , pattern) { gsub(pattern, "i", x)})
-docs <- tm_map(docs, toE, "ï")
-docs <- tm_map(docs, toE, "î")
-
-# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
-docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
-
-# Supprimer les nombres
-docs <- tm_map(docs, removeNumbers)
-# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
-docs <- tm_map(docs, removeWords, c("plus", "les", "...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
-# Supprimer les mots outils français
-mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
-docs <- tm_map(docs, removeWords, mySW$V1)
-docs <- tm_map(docs, removeWords, stopwords("french"))
-# Supprimer les ponctuations
-docs <- tm_map(docs, removePunctuation)
-# Supprimer les espaces vides supplémentaires
-docs <- tm_map(docs, stripWhitespace)
-
-
-# FIXME : Text stemming. Donne de drôles de résultats !!
-# docs <- tm_map(docs, stemDocument)
-
-# Suppression des accents
-library(stringi)
-library(stringr)
-# accent <- function(x) stri_trans_general(x, "UTF8-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
-# docs <- tm_map(docs, content_transformer(accent))
-
-# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
 
 
 # On vectorise le corpus après nettoyage
@@ -157,6 +156,10 @@ dtm <- DocumentTermMatrix(docs)
 ## Description plus complète après nettoyage
 
 ```{r contrôle descriptif}
+dfDTM <- as.data.frame(as.matrix(dtm))
+
+
+
 # TODO : récupérer les couvertures ?
 # TODO : topic modeling pour adresser les synonymes ?
 
