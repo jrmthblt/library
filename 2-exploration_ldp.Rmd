@@ -9,16 +9,29 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Introduction
+Ce notebook explore l'ensemble des résumés de livres scrapés depuis le site du Livre de Poche, toutes collections confondues. Il se décompose de la manière suivante :
+- import et description succincte du jeu de données
+- nettoyage du texte
+- analyse descriptive
+- classification non supervisée
+
+Ces différentes étapes doivent permettre de mieux appréhender le jeu de données, avant de s'engager dans une classification supervisée.
+
+
+# Déroulement de la procédure
 
 ## Chargement des packages
+On commence par charger les packages nécessaires :
+- tm, stringi, stringr, SnowballC : nettoyage de texte (normalisation, regexp, unicode, stemming)
+- tidyverse (dont dplyr et ggplot2) : librairies-outils plus modernes, proposées par Hadley Wickham (notamment grammaire proche du SQL)
+- wordcloud, RColorBrewer : générateur de nuages de mots, palettes de couleurs
 
 ```{r chargement des packages}
-
-# Installer
-# install.packages("tm")  # pour le text mining
-# install.packages("SnowballC") # pour le text stemming
-# install.packages("wordcloud") # générateur de word-cloud
-# install.packages("RColorBrewer") # Palettes de couleurs
+# install.packages("tm")
+# install.packages("SnowballC")
+# install.packages("wordcloud")
+# install.packages("RColorBrewer")
 library(tidyverse)
 library(tm)
 library(SnowballC)
@@ -27,28 +40,76 @@ library(RColorBrewer)
 ```
 
 
-## Import et première description du jeu de données
+## Import des données
+On importe ensuite les données via readr (tidyverse).
+On en profite pour supprimer les colonnes inutiles :
 
-```{r description sommaire}
-dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv")
-dfBookSummaries$X1 <- NULL
-dfBookSummaries$X1_1 <- NULL
-
-library(ggplot2)
-table(dfBookSummaries$genre)
-table(dfBookSummaries$genre) / sum(table(dfBookSummaries$genre))
-ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre))
-
-# Compter le nombre de doublons
-length(which(duplicated(dfBookSummaries$text) == TRUE))
-dfBookSummaries[which(duplicated(dfBookSummaries$text)),]
-
-library(dplyr)
-
-# 48 doublons de résumés trouvés, intra-collection (bcp de résumés vides car livres pas encore parus)
-# On les supprime
-dfBookSummaries <- dfBookSummaries %>% distinct()
+```{r import csv}
+dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv", col_types = cols(X1 = col_skip(), X2 = col_skip(), text = col_character(), collection = col_factor(levels = c("Classiques", "Documents", "Imaginaire", "Littérature", "Policier", "Thriller"))))
 ```
+
+
+## Description succincte des données
+On résume le jeu de données importé : combien de collections et de résumés contient-il ?
+
+```{r résumé}
+summary(dfBookSummaries)
+```
+
+On dénombre 5096 résumés, répartis dans 6 collections. La collection littérature est sur-exprimée :
+
+```{r résumé graphique}
+library(ggplot2)
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = collection, colour = collection))
+```
+
+En effet cette collection représente plus de 40% du jeu de données :
+
+```{r résumé fréquence collection}
+plot(table(dfBookSummaries$collection) / sum(table(dfBookSummaries$collection)))
+```
+
+
+## Recherche de doublons
+On s'intéresse maintenant à la présence éventuelle de doublons. En effet on ne peut pas préjuger de la qualité intrinsèque du catalogue de la maison d'édition. On va donc compter les doublons de résumés de livres :
+
+```{r recherche de doublons}
+dfBookSummaries %>% count() - dfBookSummaries %>% select(text) %>% distinct() %>% count()
+```
+
+La requête a détecté 53 doublons. Apparaissent-ils entre plusieurs collections, auquel cas ces dernières ne sont peut-être pas pures ? Ou au contraire les doublons d'un même résumé restent-ils associés à la même collection ?
+
+```{r doublons intra inter collection}
+dfBookSummaries %>% group_by(text) %>% summarise(nbDoublons = n(), nbCollections = n_distinct(collection)) %>% filter(nbDoublons > 1 | nbCollections > 1)
+```
+
+Seuls les résumés "vides" sont dispersés sur les 6 collections. Les autres résumés représentent effectivement des doublons, mais restent dans leur collection. Les collections du Livre de Poche sont donc "pures".
+
+
+## Suppression des doublons et des résumés vides
+On veut supprimer les doublons de résumés renseignés (on conservera donc le premier par exemple).
+
+Pour supprimer tous les résumés vides, on opère un filter sur le dataframe.
+
+```{r suppression doublons}
+dfBookSummaries <- dfBookSummaries %>% distinct()
+
+emptySummary <- dfBookSummaries %>% group_by(text) %>% summarise(nbDoublons = n(), nbCollections = n_distinct(collection)) %>% filter(nbDoublons > 1 | nbCollections > 1) %>% select(text)
+
+keepOnlyLetters <- function (str) {
+  result <- str
+  result <- stri_replace_all_regex(str, "\\p{C}+", "")
+  result <- stri_replace_all_regex(str, "\\p{Z}+", "")
+  return(result)
+}
+
+dfBookSummaries <- dfBookSummaries %>% filter(keepOnlyLetters(text) != keepOnlyLetters(emptySummary))
+```
+
+On a donc supprimé 54 lignes du jeu de données (6 résumés vides et 48 doublons de résumés).
+
+
+## Nettoyage du corpus de documents
 
 
 
@@ -101,7 +162,7 @@ docs <- tm_map(docs, stripWhitespace)
 # docs <- tm_map(docs, stemDocument)
 
 
-# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
+# TODO : voir s'il faut éliminer les mots de moins de 2/3 lettres
 
 
 dtm <- DocumentTermMatrix(docs)
@@ -113,18 +174,15 @@ dtm
 # Weighting          : term frequency (tf)
 
 # distribution de la longueur d'un terme, distribution du nombre de mots par document
-dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
-rowSums <- rowSums(dtmMatrix)
+dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+
+rowSums <- rowSums(dtmMatrix) # index des documents en ligne et termes en colonne
+dtmMatrix <- dtmMatrix[which(rowSums >= 10),]
+dtmTibble <- as_tibble(dtmMatrix) # 18 documents supprimés car contenant moins de 10 termes (uniques ou répétés)
+rowSums <- rowSums(dtmMatrix) # index des documents en ligne et termes en colonne
 
 # FIXME : Erreur : ggplot2 doesn't know how to deal with data of class numeric
 # ggplot(data = rowSums) + geom_bar(mapping = aes(x = dfBookSummaries$genre, colour = as.factor(dfBookSummaries$genre)))
-
-# 12 résumés presque vides, à supprimer
-dfBookSummaries <- dfBookSummaries[which(rowSums>=10),]
-docs <- Corpus(VectorSource(dfBookSummaries$text))
-dtm <- DocumentTermMatrix(docs)
-dtmMatrix <- as.matrix(dtm)
-rowSums <- rowSums(dtmMatrix)
 
 # Distribution du nombre de mots par genre
 summary(rowSums)
@@ -142,22 +200,21 @@ dtmMatrix <- NULL
 ```
 
 
-## Nettoyage des données
-
-```{r nettoyage}
-
-
-
-# On vectorise le corpus après nettoyage
-dtm <- DocumentTermMatrix(docs)
-```
-
-
 ## Description plus complète après nettoyage
 
 ```{r contrôle descriptif}
+dtm <- DocumentTermMatrix(docs)
 dfDTM <- as.data.frame(as.matrix(dtm))
 
+library(wordcloud2)
+
+categories <- levels(as.factor(dfBookSummaries$genre))
+for (i in 1:length(categories)){
+  m <- dfDTM[dfBookSummaries$genre == categories[i],]
+  wordsFreq <- sort(colSums(m),decreasing = TRUE)
+  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
+  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+}
 
 
 # TODO : récupérer les couvertures ?
