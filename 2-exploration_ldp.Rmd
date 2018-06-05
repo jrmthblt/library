@@ -2,219 +2,361 @@
 title: "Exploration Livre de Poche"
 author: "Jérôme THIBAULT"
 date: "25/04/2018"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Introduction
+Ce notebook explore l'ensemble des résumés de livres scrapés depuis le site du Livre de Poche, toutes collections confondues. Il se décompose de la manière suivante :
+- import et description succincte du jeu de données
+- nettoyage du texte
+- analyse descriptive
+- classification non supervisée
+
+Ces différentes étapes doivent permettre de mieux appréhender le jeu de données, avant de s'engager dans une classification supervisée.
+
+
+# Déroulement de la procédure
 
 ## Chargement des packages
+On commence par charger les packages nécessaires :
+- tm, stringi, stringr, SnowballC : nettoyage de texte (normalisation, regexp, unicode, stemming)
+- tidyverse (dont dplyr et ggplot2) : librairies-outils plus modernes, proposées par Hadley Wickham (notamment grammaire proche du SQL)
+- wordcloud, RColorBrewer : générateur de nuages de mots, palettes de couleurs
 
 ```{r chargement des packages}
+# install.packages("tm")
+# install.packages("SnowballC")
+# install.packages("wordcloud")
+# install.packages("RColorBrewer")
 library(tidyverse)
-library(testthat)
-# Installer
-# install.packages("tm")  # pour le text mining
-# install.packages("SnowballC") # pour le text stemming
-# install.packages("wordcloud") # générateur de word-cloud
-# install.packages("RColorBrewer") # Palettes de couleurs
 library(tm)
+library(stringi)
+library(stringr)
 library(SnowballC)
 library(wordcloud)
+library(wordcloud2)
 library(RColorBrewer)
 ```
 
 
 ## Import des données
+On importe ensuite les données via readr (tidyverse).
+On en profite pour supprimer les colonnes inutiles :
 
-```{r concaténation imaginaire et policier}
-dfImagBooks <- read_csv("dfImagBooks.csv")
-dfPolBooks <- read_csv("dfPolBooks.csv")
-
-# 1180 documents
-dfBookSummaries <- rbind(dfImagBooks, dfPolBooks)
-
-# OU :
-# dfBookSummaries <- read_csv("dfBookSummaries.csv")
+```{r import csv}
+dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv", col_types = cols(X1 = col_skip(), X2 = col_skip(), text = col_character(), collection = col_factor(levels = c("Classiques", "Documents", "Imaginaire", "Littérature", "Policier", "Thriller"))))
 ```
 
 
-## Description du jeu de données
+## Description succincte des données
+On résume le jeu de données importé : combien de collections et de résumés contient-il ?
 
-```{r description sommaire}
+```{r résumé}
+summary(dfBookSummaries)
+```
+
+On dénombre 5096 résumés, répartis dans 6 collections. La collection littérature est sur-exprimée :
+
+```{r résumé graphique}
 library(ggplot2)
-table(dfBookSummaries$genre)
-table(dfBookSummaries$genre) / sum(table(dfBookSummaries$genre))
-ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = genre, colour = genre)) # pour l'instant pas très utile avec 2 genres
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = collection, colour = collection))
+```
 
-# TODO : On mélange les documents. Attention, impact sur l'ordre attendu dans différentes fonctions
+En effet cette collection représente plus de 40% du jeu de données :
 
+```{r résumé fréquence collection}
+plot(table(dfBookSummaries$collection) / sum(table(dfBookSummaries$collection)))
+```
+
+
+## Recherche de doublons
+On s'intéresse maintenant à la présence éventuelle de doublons. En effet on ne peut pas préjuger de la qualité intrinsèque du catalogue de la maison d'édition. On va donc compter les doublons de résumés de livres :
+
+```{r recherche de doublons}
+dfBookSummaries %>% count() - dfBookSummaries %>% select(text) %>% distinct() %>% count()
+```
+
+La requête a détecté 53 doublons. Apparaissent-ils entre plusieurs collections, auquel cas ces dernières ne sont peut-être pas pures ? Ou au contraire les doublons d'un même résumé restent-ils associés à la même collection ?
+
+```{r doublons intra inter collection}
+dfBookSummaries %>% group_by(text) %>% summarise(nbDoublons = n(), nbCollections = n_distinct(collection)) %>% filter(nbDoublons > 1 | nbCollections > 1)
+```
+
+Seuls les résumés "vides" sont dispersés sur les 6 collections. Les autres résumés représentent effectivement des doublons, mais restent dans leur collection. Les collections du Livre de Poche sont donc "pures".
+
+
+## Suppression des doublons et des résumés vides
+On veut supprimer les doublons de résumés renseignés (on conservera donc le premier par exemple).
+
+Pour supprimer tous les résumés vides, on opère un filter sur le dataframe.
+
+```{r suppression doublons}
+dfBookSummaries <- dfBookSummaries %>% distinct()
+
+emptySummary <- dfBookSummaries %>% group_by(text) %>% summarise(nbDoublons = n(), nbCollections = n_distinct(collection)) %>% filter(nbDoublons > 1 | nbCollections > 1) %>% select(text)
+
+keepOnlyLetters <- function (str) {
+  result <- stri_replace_all_regex(str, "\\p{C}+", "")
+  result <- stri_replace_all_regex(result, "\\p{Z}+", "")
+  return(result)
+}
+
+dfBookSummaries <- dfBookSummaries %>% filter(keepOnlyLetters(text) != keepOnlyLetters(emptySummary))
+```
+
+On a donc supprimé 54 lignes du jeu de données (6 résumés vides et 48 doublons de résumés).
+
+
+## Nettoyage du corpus de documents
+Maintenant que nous avons supprimé les doublons et validé le jeu de données, nous pouvons normaliser le texte pour pouvoir ensuite l'analyser.
+
+On se base sur le package tm, qui automatise une partie significative des traitements, et on le complète par le package stringi stringr qui gère très bien l'unicode et les regexps.
+
+On créé d'abord le corpus :
+
+```{r corpus et dtm}
 docs <- Corpus(VectorSource(dfBookSummaries$text))
-# Nombre de documents, nombre de termes
 dtm <- DocumentTermMatrix(docs)
-inspect(docs[1])
 dtm
-# <<DocumentTermMatrix (documents: 1180, terms: 20166)>>
-# Non-/sparse entries: 94573/23701307
-# Sparsity           : 100%
-# Maximal term length: 30
-# Weighting          : term frequency (tf)
-
-
-# distribution de la longueur d'un terme, distribution du nombre de mots par document
-dtmMatrix <- as.matrix(dtm) # renvoie pour chaque document/terme, le nombre de fois
-rowSums <- rowSums(dtmMatrix)
-
-# FIXME : Erreur : ggplot2 doesn't know how to deal with data of class numeric
-# ggplot(data = rowSums) + geom_bar(mapping = aes(x = dfBookSummaries$genre, colour = as.factor(dfBookSummaries$genre)))
-
-
-summary(rowSums)
-tapply(rowSums, dfBookSummaries$genre, min)
-tapply(rowSums, dfBookSummaries$genre, mean)
-tapply(rowSums, dfBookSummaries$genre, max)
-tapply(rowSums, dfBookSummaries$genre, sd)
-# barplot(tapply(rowSums, dfBookSummaries$genre, mean))
-# tapply(rowSums, dfBookSummaries$genre, function(x) {list(mean(x), sd(x), max(x))})
-plot(rowSums, col = as.factor(dfBookSummaries$genre))
-hist(rowSums)
-
-# 18 résumés vides ou quasi-vides
-dfBookSummaries[which(rowSums<10),2]
-
-findMostFreqTerms(dtm, n = 30L, INDEX = rep(1 : 2, times = c(481, 699)))
-
-# Est-ce que dans le résumé, on trouve le nom du genre ? Tf-IDF donnera moins d'importance à "Science" s'il est très répandu dans tout le corpus.
-
-# TODO : contrôler l'unicité des résumés, et 1 résumé = 1 seul genre.
-
-# plot(colSums(dtmFantastique))
-# source("http://bioconductor.org/biocLite.R")
-# biocLite("Rgraphviz")
-# library(Rgraphviz)
-# plot(dtm, corThreshold = 0.2, weighting = TRUE)
-
+inspect(docs[1])
 ```
 
+Sans traitement notre DTM intègre 48614 termes (autant qu'un dictionnaire !). Sa sparsity (nombre de colonnes à 0) approche donc les 100% puisque nous disposons uniquement de 5042 documents.
 
-## Nettoyage des données
+Comme on peut le constater, le premier résumé contient un grand nombre de mots-outils (le la les). Le texte est aussi parsemé d'accents, de ponctuations, de caractères de fin de ligne, de majuscules, d'espaces...
 
-```{r nettoyage}
-# TODO : 1 livre n'a pas de résumé (L'anniversaire du monde) . 1 doublon de résumé détecté
+On va donc retirer toutes ces exceptions pour que notre future matrice se compose de mots normalisés. On réduira ainsi la dimension et l'analyse en sera forcément plus pertinente.
 
+On supprime d'abord les accents, car notre corpus est en français. Le texte étant encodé en UTF-8, nous allons exploiter une possibilité de l'Unicode pour supprimer les accents : la décomposition NFD. Celle-ci permet de transformer chaque caractère Unicode dans sa forme canonique, et de séparer les accents des lettres. Ensuite nous appliquons une regexp qui supprime spécifiquement les accents encodés UTF-8 de cette manière : 
 
-# Convertir le texte en minuscule
+```{r suppression accents}
+nfdRemoveAccents <- function(x) {
+  nfdX <- stri_trans_nfd(x)
+  return(stri_replace_all_regex(nfdX, "\\p{Mn}+", ""))
+}
+
+docs <- tm_map(docs, content_transformer(nfdRemoveAccents))
+inspect(docs[1])
+```
+
+Les accents ont tous disparu. On poursuit avec la normalisation de la casse via la fonction de tm :
+
+```{r passage en minuscule}
 docs <- tm_map(docs, content_transformer(tolower))
-# Remplacer les points par des espaces
-toSpace <- content_transformer(function (x , pattern) { gsub(pattern, " ", x)})
-docs <- tm_map(docs, toSpace, "\\.")
-# Remplacer les apostrophes par des espaces
-docs <- tm_map(docs, toSpace, "'")
-docs <- tm_map(docs, toSpace, "’")
-docs <- tm_map(docs, toSpace, "«")
-docs <- tm_map(docs, toSpace, "»")
+inspect(docs[1])
+```
 
-toA <- content_transformer(function (x , pattern) { gsub(pattern, "a", x)})
-docs <- tm_map(docs, toA, "à")
-docs <- tm_map(docs, toA, "á")
+On retire désormais la ponctuation et les caractères invisibles (dont les retours à la ligne, mais PAS encore les espaces). Pour ce faire, on recoure à plusieurs regexps sur les classes de caractères UTF-8 associées :
 
+```{r suppression ponctuation}
+removePonctuation <- function(x) {
+  result <- x
+  result <- stri_replace_all_regex(result, "\\p{Zl}+", " ")
+  result <- stri_replace_all_regex(result, "\\p{Zp}+", " ")
+  result <- stri_replace_all_regex(result, "\\p{S}+", " ")
+  result <- stri_replace_all_regex(result, "\\p{N}+", " ")
+  result <- stri_replace_all_regex(result, "\\p{C}+", " ")
+  result <- stri_replace_all_regex(result, "\\p{P}+", " ") 
+  return(result)
+}
+docs <- tm_map(docs, content_transformer(removePonctuation))
+inspect(docs[1])
+```
 
-toE <- content_transformer(function (x , pattern) { gsub(pattern, "e", x)})
-docs <- tm_map(docs, toE, "é")
-docs <- tm_map(docs, toE, "è")
-docs <- tm_map(docs, toE, "ê")
-docs <- tm_map(docs, toE, "ë")
+Toutes les classes de caractère parasites sont désormais retirées, excepté les espaces. Pour les nombres, on aurait pu utiliser la fonction removeNumbers de tm, mais la regexp fonctionne aussi bien.
 
-toI <- content_transformer(function (x , pattern) { gsub(pattern, "i", x)})
-docs <- tm_map(docs, toE, "ï")
-docs <- tm_map(docs, toE, "î")
+On s'attaque à présent à la suppression des stopwords, qui n'apportent aucune signification au texte et augmente la dimension inutilement. Le package tm propose une liste pour le français, que nous allons compléter par la suite.
 
-# Supprimer le texte en gras récupéré par erreur par le scraper (et difficile à automatiser)
-docs <- tm_map(docs, toSpace, "collection dirigée par gérard klein")
+```{r suppression des stopwords}
+docs <- tm_map(docs, removeWords, stopwords("french"))
+inspect(docs[1])
 
-# Supprimer les nombres
-docs <- tm_map(docs, removeNumbers)
-# Supprimer une liste de mots non supportés par le dictionnaire de stop words fr
-docs <- tm_map(docs, removeWords, c("...", "d'", "l'", "resume", "science-fiction", "où", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen"))
-# Supprimer les mots outils français
-mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE) # TODO : corriger les problèmes d'accent
-docs <- tm_map(docs, removeWords, mySW$V1)
-# docs <- tm_map(docs, removeWords, stopwords("french"))
-# Supprimer les ponctuations
-docs <- tm_map(docs, removePunctuation)
-# Supprimer les espaces vides supplémentaires
-docs <- tm_map(docs, stripWhitespace)
-# FIXME : Text stemming. Donne de drôles de résultats !!
-# docs <- tm_map(docs, stemDocument)
+# docs <- tm_map(docs, removeWords, c("a", "plus", "les", "d", "l", "c", "d", "resume", "science-fiction", "ou", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen", "alors", "aussi", "comme", "deux", "dont", "trois", "histoire", "jusqu", "encore", "etait", "etre", "meme", "recueil", "hugo", "quinze"))
 
-# Suppression des accents
-library(stringi)
-library(stringr)
-# accent <- function(x) stri_trans_general(x, "UTF8-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
-# docs <- tm_map(docs, content_transformer(accent))
+# TODO : charger le fichier des stopwords de JL, et le nettoyer comme le corpus pour pour ensuite l'utiliser comme dictionnaire normalisé (minuscule, pas d'accents, pas de ponctuation)
+# mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE)
+# docs <- tm_map(docs, removeWords, mySW$V1)
+```
 
-# TODO : voir s'il faut éliminer les mots de moins de 3 lettres
-# TODO : récupérer les couvertures ?
-# TODO : topic modeling pour adresser les synonymes ?
-dtm <- DocumentTermMatrix(docs)
-dtmCleanMatrix <- as.data.frame(as.matrix(dtm))
-# Normalement on peut faire cette manip, car n'influence pas le TF-IDF :
-dtmCleanMatrix$maigret <- NULL
-dtmCleanMatrix$nouvelle <- NULL
+TODO : On veut pouvoir s'assurer que la grande majorité des stopwords a été supprimée. On va donc extraire les mots les plus fréquents dans le corpus et retirer ceux qui sont des mots-outils :
+
+```{r termes fréquents}
+# TODO : en cours
+dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
+dtmTf
+# minfreq <- findFreqTerms(dtmTf, 80,100)
+```
+
+TODO : Essai sur la racinisation du texte, ...
+
+```{r racinisation}
+# docs <- nonStemmedDocs
+# nonStemmedDocs <- docs
+# docs <- tm_map(docs, stemDocument, "french")
+# docs[1]$content
+# stemCompletion('resum',dictionary=nonStemmedDocs)  #remarque le stemming fait perdre la lisibilite, on peut la retrouver avec stemCompletion 
+# 
+# dtm <- DocumentTermMatrix(docs)
+# dtm
+# TODO : voir s'il faut éliminer les mots de moins de 2/3 lettres
 ```
 
 
-## Contrôle après nettoyage
+```{r réduction des séquences espaces}
+docs <- tm_map(docs, stripWhitespace)
+inspect(docs[1])
 
-```{r contrôle descriptif}
-library(tm)
-library(wordcloud2)
+dtm <- DocumentTermMatrix(docs)
+dtm
+```
 
-categories <- levels(as.factor(dfBookSummaries$genre))
-for (i in 1:length(categories)){
-  m <- dtmCleanMatrix[dfBookSummaries$genre == categories[i],]
+
+## Statistiques descriptives
+On souhaite désormais décrire un peu mieux notre DTM. Pour ce faire, en génère une nouvelle avec une pondération TF qui va nous permettre de calculer la distribution du nombre de mots dans les résumés, par collection, ...
+
+On descend ainsi de plus de 100 mots par résumé (avant nettoyage), à environ 70 :
+
+```{r distribution du nombre de mots dans les résumés}
+dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
+dtmTf_m <- as.matrix(dtmTf)
+rowSums <- rowSums(dtmTf_m)
+dtmTf_m <- NULL
+hist(rowSums,breaks=25)
+```
+
+Intéressons nous ensuite à la distribution du nombre de mots par collection :
+
+```{r distribution du nombre de mots par collection}
+summary(rowSums)
+plot(rowSums, col = dfBookSummaries$collection)
+abline(h=median(rowSums), col = "green")
+
+boxplot(rowSums~dfBookSummaries$collection, col = dfBookSummaries$collection)
+
+```
+
+
+## Réduction de la dimension
+Bien que nous ayons normalisé le texte, retiré les stopwords et tous les caractères parasites, notre matrice possède encore presque 40k colonnes !
+
+On va réduire le vocabulaire :  au lieu de prendre les mots apparaissant au moins une fois, on prend le nombre de mots apparaissant au moins 5 fois afin de limiter un peu le nombre de colonnes avant même de calculer la matrice. Ce nombre est choisi arbitrairement : le vocabulaire du corpus représentant 40k mots sur 5k articles, 5 semble légitimement faible.
+
+Au moment de créer la matrice, on en profite aussi pour calculer les pondérations `tfidf` qui sont des pondérations classiques pour le texte (pondère beaucoup les mots qui apparaissent souvent dans un document mais rarement dans le corpus pris globalement, a particulièrement du sens pour les documents longs, pas pour des tweets typiquement). Les résumés de livres se situant entre les 2 extrêmes, nous avons choisi TF-IDF car .... TODO
+
+TODO : On pourrait aussi réduire la dimension avec la fonction removeSparseTerms de tm.
+
+```{r préparation de la dtm}
+# TODO : bounds ?
+minfreq <- findFreqTerms(dtmTf, 5) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
+dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
+dtm
+dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+
+```
+
+Grâce à ce paramètre on descend à un nombre de variables plus gérable (11k vs. 30k). La sparsity a légèrement diminué. En revanche le nombre d'entrée non vides a aussi diminué, en passant de 358k à 308k. A-t-on été trop gourmand sur le nettoyage ? En choisissant 25 comme fréquence de coupure, on tombe à 2706 variables.
+
+La sparsity étant encore très elevée, on retire les mots les plus rares pour réduire un peu la dimension, ie. ceux qui apparaissent dans moins d'1% des documents. Cela semble beaucoup plus efficace qu'en conservant les mots assez fréquents.
+
+```{r suppression sparse}
+
+dtm <- removeSparseTerms(dtm, 0.99)
+dtm
+dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+
+finalDTM <- dtm # On sauvegarde notre DTM pour la classification supervisée.
+```
+
+
+TODO : On tente ensuite une ACP sur la matrice (trop long, code commenté)
+
+Voir : https://www.usna.edu/Users/cs/lmcdowel/pubs/UnderhillIRI2007Final.pdf
+Et :
+https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
+
+
+```{r acp}
+# install.packages("FactoMineR")
+# library(FactoMineR)
+# PCAResult <- PCA(dtm_m, scale.unit = FALSE, ncp = 10)
+```
+
+
+## Nuages de mots
+A présent que nous disposons d'une matrice relativement propre, nous allons générer un nuage de mots par collection pour tenter de faire émerger quelques thèmes :
+
+```{r nuages de mots par collection}
+collections <- levels(dfBookSummaries$collection)
+
+for (i in 1:length(collections)) {
+  m <- dtm_m[dfBookSummaries$collection == collections[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
   }
 ```
 
+On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique est sur-représenté par son auteur emblématique "King" et la Littérature aborde à peu très tous les thèmes (amour, argent, voyage, ...). Bref c'est encore assez confus.
 
-## Classification non supervisée LDA (Topic Modeling)
 
+## TODO : Classification non supervisée LDA (Topic Modeling) / SKmeans / CAH / ACP / ...
+
+### SKmeans
+
+
+```{r skmeans}
+# install.packages("skmeans")
+library(skmeans)
+tdm <-TermDocumentMatrix(docs)
+dim(tdm)
+tdmss <- removeSparseTerms(tdm, 0.99)   
+dim(tdmss)
+sk <- skmeans(x=tdmss, 6) # on a choisi de voir ce qui ressortait pour 6 classes (pour voir si on retrouve les 6 collections utilisées pour classer les articles)
+
+## proportion par classe:
+table(sk$cluster)/sum(table(sk$cluster))
+for (i in 1:6){
+  print(paste('cluster ',i,sep=' '))
+  print(names(sk$cluster)[sk$cluster==i][1:50])
+  print('---------------')
+}
+
+
+
+## On partitionne en 6 clusters.
+dtm <-DocumentTermMatrix(docs)
+dim(dtm)
+dtmss <- removeSparseTerms(dtm, 0.99)
+dim(dtmss)
+sk <- skmeans(x=dtmss, 6)
+## On regarde la r?partition dans les clusters
+table(sk$cluster)/sum(table(sk$cluster))
+
+dtmss_m <- as.matrix(dtmss)
+for (i in 1:6){
+  m <- dtmss_m[sk$cluster==i,]
+  wordsFreq <- sort(colSums(m),decreasing = TRUE)
+  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
+  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))}
+```
+
+
+
+On va regarder à présent les résultats d'une LDA, l'intérêt c'est que l'on regroupe les documents et les mots simultanément cette fois et que cela permet une exploration de résultats beaucoup plus aisée. La première chose à faire est de vérifier que l'on a pas de documents sans mot (notamment après avoir filtré sur la sparsité/parcimonie).
+
+La LDA s'applique sur une matrice documents termes sans pond?ration (nombre d'occurrences).
 ```{r topic modeling}
-rowTotals <- apply(dtmCleanMatrix , 1, sum) # calcule la somme des termes dans chaque document
-dtmCleanMatrix   <- dtmCleanMatrix[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
-
-# install.packages("topicmodels")
-library(topicmodels)
-# Paramètres du Gibbs sampling
-burnin <- 500
-iter <- 500
-thin <- 100
-seed <- list(2003,5,63,100001,765) # arbitraire
-nstart <- 5
-best <- TRUE
-
-# Nombre de thèmes
-k <- 2 # arbitraire à ce stade, nécessiterait d'être optimisé
-
-# Estimation de la LDA
-ldaOut <-LDA(dtmCleanMatrix,k, method="Gibbs", control=list(nstart=nstart, seed = seed, best=best, burnin = burnin, iter = iter, thin=thin))
-
-
-ldaOut.topics <- as.matrix(topics(ldaOut))
-table(ldaOut.topics)
-
-ldaOut.terms <- as.matrix(terms(ldaOut,10))
-ldaOut.terms
-
-topicProbabilities <- as.data.frame(ldaOut@gamma)
-names(topicProbabilities) <- apply(data.frame(ldaOut.terms),2,function(x) paste(x,collapse=' '))
-topicProbabilities[1:100,]  #pour les dix premiers documents arbitrairement, on voit que la plupart du temps un topic est prépondérant.
-
+# TODO : topic modeling pour adresser les synonymes ?
+# Similarité entre mots
+# TODO : findAssocs(dtm, terms = "monde", corlimit = 0.3)
+# TODO : Word2Vec : mais pour faire quoi exactement dans notre cas ?
+# TODO : Classification non supervisée : SKmeans / CAH / LDA
 # TODO : tester la précision des catégories vs. les Y de sortie du premier dataframe (for JL : "accuracy").
 # TODO : kmeans et CAH (sur matrice nettoyée)
 ```

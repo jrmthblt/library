@@ -10,131 +10,283 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Conversion DTM
+## Ajout de la variable à expliquer (collection)
 
-```{r ultime preparation}
-review_dtm_tfidf <- DocumentTermMatrix(docs, control = list(weighting = weightTfIdf))
-review_dtm_tfidf = removeSparseTerms(review_dtm_tfidf, 0.95)
+Nous avons fini de préparer notre DTM. Nous la transformons en data frame, et lui ajoutons la variable à expliquer. Ainsi nous pourrons tester différents modèles pour prédire la collection d'appartenance d'un résumé.
 
-dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf))
-dfReviews$genre <- as.factor(dfBookSummaries$genre)
+```{r ajout variable Y}
 
-str(dfReviews)
-
-# Plus besoin, on a désormais les genres Policier et Imaginaire :
-# dfReviews$genre <- as.character(dfReviews$genre)
-# dfReviews$genre[dfReviews$genre == "Science-Fiction"] <- "SF"
-# dfReviews$genre <- as.factor(dfReviews$genre)
+# finalDTM <- removeSparseTerms(finalDTM, 0.97)
+finalDTM
+dfReviews <- as.data.frame(as.matrix(finalDTM)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
+dfReviews$Y <- as.factor(dfBookSummaries$collection) # On peut ainsi renseigner la variable Y
+head(dfReviews) # 1185 variables car on a ajouté Y
 ```
+
+
+## Préparation CARET
+
+Pour tout le protocole de machine learning on utilise la librairie `caret` qui fournit les fonctions pour tout le workflow : construire les échantillons, le prétraitement, les différentes options de validations croisées et un très grand nombre de modèles (https://topepo.github.io/caret/available-models.html)
+
+```{r préparation caret multiclasse}
+# install.packages("caret")
+library(caret)
+library(parallel)
+library(doParallel)
+
+splitIndex <- createDataPartition(dfReviews$Y, p = .80, list = FALSE, times = 1)
+data.train <- data.frame(dfReviews[ splitIndex,])
+data.test  <- data.frame(dfReviews[-splitIndex,])
+
+ytrain <- dfReviews$Y[splitIndex]
+ytest  <- dfReviews$Y[-splitIndex]
+table(ytrain)/sum(table(ytrain))
+
+table(ytest)/sum(table(ytest))
+
+data.train$Y <- NULL
+data.test$Y <- NULL
+```
+
+
+ANCIEN CODE MULTICLASSE, QUI ENCOURAGE A TESTER EN BINAIRE SUR CHACUNE DES CLASSES CAR LITTERATURE VAMPIRISE LA PREDICTION.
+stephanie.combes@gmail.com pour des questions
+
+TODO : voir à enlever les documents de la collection Littérature et refaire les modèles. Catégorie fourre-tout.
+
+```{r ancien code multiclasse}
+# # install.packages("randomForest")
+# library(randomForest)
+# fit <- randomForest(ytrain ~ ., data=data.train, importance=TRUE, ntree=500, mtry=17)
+# importance(fit)
+# varImpPlot(fit) # Graphe d'importance des variables de la RF
+# table(ytest, predict(fit, data.test, type="class")) # En récupérant la somme de la diagonale, on arrive à peu près à 60% de bien classés (défavorisé par la collection Littérature)
+
+# ytest         Classiques Documents Imaginaire Littérature Policier Thriller
+#   Classiques          21         1          2          46        2        0
+#   Documents            1        16          1          92        6        3
+#   Imaginaire           1         2         33          54        4        5
+#   Littérature          2         0          3         411        6       11
+#   Policier             1         0          2          65       44       24
+#   Thriller             0         1          0          57       20       68
+```
+
+
+
+La plupart des modèles choisissent comme classe de positifs, la classe correspondant au premier label, or ici "Imaginaire" arrive en second (ordre alphabétique). Afin que la lecture des différents scores (précision, rappel, spécificicité, sensibilité) soit cohérente avec la détection des positifs (ici les articles liés à l'imaginaire), on inverse les labels. On créé aussi notre split binaire :
+
+```{r préparation classification binaire sur imaginaire}
+dfReviewsImaginaireBinaire <- dfReviews %>% mutate(YImaginaire = ifelse(Y == "Imaginaire", "Imaginaire", "Autre")) %>% mutate(Y = NULL)
+
+dfReviewsImaginaireBinaire$YImaginaire <- as.factor(dfReviewsImaginaireBinaire$YImaginaire)
+
+
+head(dfReviewsImaginaireBinaire$YImaginaire)
+levels(dfReviewsImaginaireBinaire$YImaginaire)
+dfReviewsImaginaireBinaire$YImaginaire <- relevel(dfReviewsImaginaireBinaire$YImaginaire, "Imaginaire")
+head(dfReviewsImaginaireBinaire$YImaginaire)
+levels(dfReviewsImaginaireBinaire$YImaginaire)
+
+splitIndex <- createDataPartition(dfReviewsImaginaireBinaire$YImaginaire, p = .80, list = FALSE, times = 1)
+data.trainImaginaire <- data.frame(dfReviewsImaginaireBinaire[ splitIndex,])
+data.testImaginaire  <- data.frame(dfReviewsImaginaireBinaire[-splitIndex,])
+
+ytrainImaginaire <- dfReviewsImaginaireBinaire$YImaginaire[splitIndex]
+ytestImaginaire  <- dfReviewsImaginaireBinaire$YImaginaire[-splitIndex]
+table(ytrainImaginaire)/sum(table(ytrainImaginaire))
+
+table(ytestImaginaire)/sum(table(ytestImaginaire))
+
+data.trainImaginaire$YImaginaire <- NULL
+data.testImaginaire$YImaginaire <- NULL
+
+
+seeds <- list(1:4,1:4,1:4,3)
+
+fitControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction = twoClassSummary, allowParallel = TRUE, seeds = seeds)
+
+library(pROC)
+```
+
+
+```{r cm plot utility function}
+library(reshape2)
+library(ggplot2)
+
+cm.plot <- function(table_cm) {
+  tablecm <- round(t(t(table_cm) / colSums(as.matrix(table_cm))*100)) # crée les pourcentages
+  tablemelt <- melt(tablecm)
+  ggplot(tablemelt, aes(Reference, Prediction)) +
+    geom_point(aes(size = value, color=value), alpha=0.8, show.legend=FALSE) +
+    geom_text(aes(label = value), color="white") +
+    scale_size(range = c(5,25)) +
+    scale_y_discrete(limits = rev(levels(tablemelt$Prediction)))+
+    theme_bw()
+}
+```
+
 
 
 ## Arbre de décision CART
 
 ```{r rpart}
-
-# install.packages("caret")
-library(caret)
-set.seed(1234)
-splitIndex <- createDataPartition(dfReviews$genre, p = .80, list = FALSE, times = 1)
-data.train <- data.frame(dfReviews[ splitIndex,])
-data.test  <- data.frame(dfReviews[-splitIndex,])
-
-ytrain <- dfReviews$genre[splitIndex]
-ytest  <- dfReviews$genre[-splitIndex]
-table(ytrain)/sum(table(ytrain))
-
-table(ytest)/sum(table(ytest))
-
-data.train$genre <- NULL
-data.test$genre <- NULL
-
-library(parallel)
-# install.packages("doParallel")
-library(doParallel)
+library(rpart.plot)
 
 cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
 registerDoParallel(cluster)
 
-seeds <- list(1:4,1:4,1:4,3)
-objControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction=twoClassSummary, allowParallel = TRUE, seeds = seeds)
 
+rpartGridSearch <- expand.grid(cp = seq(0, 0.05, 0.001))
+rpartModel <- train(data.trainImaginaire, ytrainImaginaire, method = "rpart", tuneGrid = rpartGridSearch, trControl = fitControl, metric = 'ROC')
+plot(rpartModel)
 
-gridsearch <- expand.grid(cp=seq(0, 0.05, 0.001))
-tune <- train(data.train,ytrain,method = "rpart",tuneGrid=gridsearch, trControl =objControl,metric='ROC')
-plot(tune)
+rpartPrediction <- predict(object = rpartModel$finalModel, data.testImaginaire, type='class')
+head(rpartPrediction)
+rpartConfusionMatrix <- confusionMatrix(rpartPrediction, ytestImaginaire)
 
-pred <- predict(object=tune$finalModel, data.test,type='class')
-head(pred)
-conf.mat <- confusionMatrix(pred, ytest)
+cm.plot(rpartConfusionMatrix$table)
 
-library(reshape2)
-library(ggplot2)
-cm.plot <- function(table_cm){
-tablecm <- round(t(t(table_cm) / colSums(as.matrix(table_cm))*100)) # crée les pourcentages
-tablemelt <- melt(tablecm)
-ggplot(tablemelt, aes(Reference, Prediction)) +
-geom_point(aes(size = value, color=value), alpha=0.8, show.legend=FALSE) +
-geom_text(aes(label = value), color="white") +
-scale_size(range = c(5,25)) +
-scale_y_discrete(limits = rev(levels(tablemelt$Prediction)))+
-theme_bw()
-}
-cm.plot(conf.mat$table)
+rpartVariableImportance <- varImp(rpartModel$finalModel)
+rpartVariableImportanceDf <- data.frame(names = row.names(rpartVariableImportance), imp = rpartVariableImportance[,1])
+rpartVariableImportanceDf <- rpartVariableImportanceDf[order(rpartVariableImportanceDf$imp, decreasing = TRUE),]
+names(rpartVariableImportanceDf)[2]<-colnames(rpartVariableImportance)[1]
+rpartVariableImportanceDf[1:30,]
 
-rpart.plot(tune$finalModel)
+rpart.plot(rpartModel$finalModel)
+
+rpartConfusionMatrix$overall
+rpartConfusionMatrix$byClass
+
+rpartPredictionProbability <- predict(object = rpartModel$finalModel, data.testImaginaire, type = 'prob')
+rpartRocCurve <- roc(response = ytestImaginaire, predictor = rpartPredictionProbability[, "Imaginaire"], levels = rev(levels(ytestImaginaire)))
+plot(rpartRocCurve, print.thres = "best")
+
+rpartRocCurve$auc
+
 stopCluster(cluster)
+registerDoSEQ()
 ```
 
-
-## Régression logistique
-
-```{r glm}
-# install.packages("caTools")
-library(caTools)
-spl = sample.split(dfReviews$genre, SplitRatio = 2/3)
-train = subset(dfReviews, spl == TRUE)
-test = subset(dfReviews, spl == FALSE)
-
-
-reg <- glm(genre ~ ., data = train, family = binomial(logit))
-summary(reg)
-predictReg <- predict(reg, test, type="response")
-table(test$genre, predictReg >= 0.5)
-```
 
 
 ## Forêts aléatoires
 
 ```{r random forest}
-# stephanie.combes@gmail.com pour des questions
-# install.packages("randomForest")
-library(randomForest)
-fit <- randomForest(genre ~ ., data=train, importance=TRUE, ntree=2000)
-varImpPlot(fit)
-table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
 
-freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
-wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
+gridSearch <- expand.grid(mtry = 17)
+
+rfModel <- train(data.trainImaginaire, ytrainImaginaire, method = "rf", tuneGrid = gridSearch, trControl = fitControl, metric = 'ROC')
+
+# A peu près 30min pour le faire tourner !
+rfModel
+# Random Forest 
 # 
+# 4034 samples
+# 1184 predictors
+#    2 classes: 'Autre', 'Imaginaire' 
+# 
+# No pre-processing
+# Resampling: Cross-Validated (3 fold) 
+# Summary of sample sizes: 2689, 2689, 2690 
+# Resampling results:
+# 
+#   ROC        Sens  Spec     
+#   0.8623885  1     0.1510974
+# 
+# Tuning parameter 'mtry' was held constant at a value of 17
 
-# install.packages(c('rpart', 'rpart.plot', 'e1071', 'nnet'))
-library(rpart)
-library(rpart.plot)
-library(e1071)
+plot(rfModel) # There are no tuning parameters with more than 1 value : logique on a précisé 1 seul mtry
+
+pred <- predict(object=rfModel$finalModel, data.testImaginaire,type = 'class')
+conf.mat <- confusionMatrix(pred, ytestImaginaire)
+cm.plot(conf.mat$table)
+conf.mat$overall
+conf.mat$byClass
+
+imp <- varImp(rfModel$finalModel)
+impdf <- data.frame(names = row.names(imp), imp = imp[,1])
+impdf <- impdf[order(impdf$imp, decreasing = TRUE),]
+names(impdf)[2]<-colnames(imp)[1]
+impdf[1:30,]
+
+pred.rf <- predict(object=rfModel$finalModel, data.testImaginaire,type='prob')
+rocCurve.rf <- roc(response = ytestImaginaire, predictor = pred.rf[, "Imaginaire"])
+rocCurve.rf$auc
+
+stopCluster(cluster)
+registerDoSEQ()
+```
+
+
+## Régression logistique pénalisée
+
+On la pénalise car la DTM est de grande dimension et on veut pouvoir sélectionner les variables les plus importantes.
+
+```{r glm pénalisée}
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+gridSearch <- expand.grid(alpha=c(0, .5, 1), lambda=c(.1, 1, 10))
+
+glmModel <- train(as.matrix(data.trainImaginaire), ytrainImaginaire, method = "glmnet", tuneGrid = gridSearch, trControl = fitControl, metric = 'ROC', family='binomial')
+
+plot(glmModel)
+glmModel$bestTune
+glmPrediction <- predict(object = glmModel, as.matrix(data.testImaginaire),type = 'raw')
+glmConfusionMatrix <- confusionMatrix(glmPrediction, ytestImaginaire)
+cm.plot(glmConfusionMatrix$table)
+glmConfusionMatrix$overall
+glmConfusionMatrix$byClass
+
+glmVariableImportance <- abs(coef(glmModel$finalModel,glmModel$bestTune$lambda))
+glmVariableImportanceDf <- data.frame(names = row.names(glmVariableImportance), imp = glmVariableImportance[,1])
+glmVariableImportanceDf <- glmVariableImportanceDf[order(glmVariableImportanceDf$imp, decreasing = TRUE),]
+glmVariableImportanceDf[1:30,]
+
+glmPredictionProbability <- predict(object = glmModel, as.matrix(data.testImaginaire),type = 'prob')
+glmRocCurve  <- roc(response = ytestImaginaire, predictor = glmPredictionProbability[, "Imaginaire"])
+glmRocCurve$auc
+
+stopCluster(cluster)
+registerDoSEQ()
+```
+
+
+## SVM linéaire (TODO)
+
+```{r svm svr}
+
+```
+
+
+## Analyse des courbes ROC des modèles testés
+
+GLM est le meilleur :
+
+```{r analyse courbes ROC}
+plot(rpartRocCurve, col = 1)
+abline(v = 1)
+plot(rocCurve.rf, col = 2, add = TRUE)
+plot(glmRocCurve, col = 3, add = TRUE)
+legend(0, 0.7, c('rpart','forest','glm'), 1:3)
+```
+
+
+
+## Régression logistique multinomiale (à réécrire)
+
+```{r nnet}
+# install.packages("nnet")
 library(nnet)
-
-# Pourquoi sort-il des règles avec des valeurs absolues et non entre 0 et 1 ?
-reviewsTree = rpart(genre ~ .,  method = "class", data = train);
-prp(reviewsTree)
-plotcp(reviewsTree)
-# reviewsTreeSimplified <- prune(reviewsTree,cp=0.021)
-# prp(reviewsTreeSimplified)
-# table(test$genre, predict(reviewsTreeSimplified, test, type="class"))
-table(test$genre, predict(reviewsTree, test, type="class"))
+regm <- multinom(genre ~ ., data = train)
+summary(regm)
+table(predict(regm, newdata = test))
+table(predict(regm, newdata = test), test$genre)
+```
 
 
-# Commencer par les méthodes les plus simples : kmeans et régression linéaire.
-# 
-# # https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
-# 
+https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
+
 ```

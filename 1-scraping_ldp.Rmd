@@ -55,16 +55,6 @@ scraperDelay <- 0.25
 rootUrl <- "http://www.livredepoche.com"
 
 
-# Given a genre code and a page index, returns all books URLs of the current page
-retrieveGenreCurrentPageBooksURLs <- function(rootUrl, pageIndex, genreCode) {
-  pageNumberParameter <- "pageNumber"
-  rootSearchUrl <- paste(rootUrl, "/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&page=", pageNumberParameter, "&f[0]=field_book_collection%3A10489&f[1]=field_tags%", sep="")
-  genreCurrentPageURL <- paste(gsub(pageNumberParameter, as.character(pageIndex), rootSearchUrl), genreCode, sep="")
-  genreCurrentPage <- read_html(genreCurrentPageURL)
-  return(genreCurrentPage %>% html_nodes(".book-title a") %>% html_attr("href"))
-}
-
-
 # Takes an HTML node list and extracts the book summary
 retrieveBookSummary <- function(book) {
   return(book %>% html_nodes(".book-resume-block") %>% html_text())
@@ -91,7 +81,13 @@ retrieveGenreBooks <- function (completeUrl, maxPageIndex, genreName) {
     Sys.sleep(scraperDelay)
     return(retrieveBookSummary(book))
   })
-    dfBookSummaries <- rbind(dfBookSummaries, data_frame(text = unlist(genreSummaries),genre=genreName))
+    if (length(genreSummaries) == 0) {
+      print(paste("No more books in the genre :", genreName, "at index :", i));
+      break;
+    }
+    else {
+      dfBookSummaries <- rbind(dfBookSummaries, data_frame(text = unlist(genreSummaries),genre=genreName)) 
+    }
   }
   return(dfBookSummaries)
 }
@@ -99,23 +95,22 @@ retrieveGenreBooks <- function (completeUrl, maxPageIndex, genreName) {
 
 # Main Code
 literaryGenres <- tribble(
-  ~label, ~code,
-  "Fantastique", "3A297",
-  "Science-fiction", "3A7141"
+  ~label, ~url,
+  "Classiques", "http://www.livredepoche.com/collection-classiques?sort_by=field_book_publication_date&sort_order=DESC&page=",
+  "Documents", "http://www.livredepoche.com/collection-documents?sort_by=field_book_publication_date&sort_order=DESC&page=",
+  "Imaginaire", "http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&page=",
+  "Littérature", "http://www.livredepoche.com/collection-litterature?sort_by=field_book_publication_date&sort_order=DESC&page=",
+  "Policier", "http://www.livredepoche.com/collection-policiers?sort_by=field_book_publication_date&sort_order=DESC&page=",
+  "Thriller", "http://www.livredepoche.com/collection-thrillers?sort_by=field_book_publication_date&sort_order=DESC&page="
 )
 
-bookSummaries <- list()
+dfAllBooks <- data_frame()
 
-# Scraping "Policier" books (70 pages)
-# dfPolBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-policiers?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5722&page=", 69, "Policier")
-
-
-# Scraping "Imaginaire" books (49 pages)
-# dfImagBooks <- retrieveGenreBooks("http://www.livredepoche.com/collection-imaginaire?sort_by=field_book_publication_date&sort_order=DESC&f[0]=field_tags%3A5726&page=", 48, "Imaginaire")
-
+for (i in 1:nrow(literaryGenres)) {
+  dfCurrentBooks <- retrieveGenreBooks(literaryGenres[i,]$url, 300, literaryGenres[i,]$label)
+  dfAllBooks <- rbind(dfAllBooks, dfCurrentBooks)
+}
 
 # Write the result to ensure we will not need to scrap every time we run the project
-# write.csv(dfPolBooks, file="/Users/jeromethibault/Documents/R/library/dfPolBooks.csv")
-
-# write.csv(dfImagBooks, file="/Users/jeromethibault/Documents/R/library/dfImagBooks.csv")
+write.csv(dfAllBooks, file="/Users/jeromethibault/Documents/R/library/dfAllBooks.csv")
 ```
