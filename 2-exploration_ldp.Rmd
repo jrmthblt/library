@@ -2,7 +2,9 @@
 title: "Exploration Livre de Poche"
 author: "Jérôme THIBAULT"
 date: "25/04/2018"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -186,14 +188,15 @@ TODO : On veut pouvoir s'assurer que la grande majorité des stopwords a été s
 
 ```{r termes fréquents}
 # TODO : en cours
-dtm <- DocumentTermMatrix(docs)
-minfreq <- findFreqTerms(dtm, 80,100)
+dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
+dtmTf
+# minfreq <- findFreqTerms(dtmTf, 80,100)
 ```
 
 TODO : Essai sur la racinisation du texte, ...
 
 ```{r racinisation}
-docs <- nonStemmedDocs
+# docs <- nonStemmedDocs
 # nonStemmedDocs <- docs
 # docs <- tm_map(docs, stemDocument, "french")
 # docs[1]$content
@@ -223,7 +226,6 @@ On descend ainsi de plus de 100 mots par résumé (avant nettoyage), à environ 
 dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
 dtmTf_m <- as.matrix(dtmTf)
 rowSums <- rowSums(dtmTf_m)
-dtmTf <- NULL
 dtmTf_m <- NULL
 hist(rowSums,breaks=25)
 ```
@@ -243,14 +245,15 @@ boxplot(rowSums~dfBookSummaries$collection, col = dfBookSummaries$collection)
 ## Réduction de la dimension
 Bien que nous ayons normalisé le texte, retiré les stopwords et tous les caractères parasites, notre matrice possède encore presque 40k colonnes !
 
-On va réduire le vocabulaire :  au lieu de prendre les mots apparaissant au moins une fois, on prend le nombre de mots apparaissant au moins 5 fois afin de limiter un peu le nombre de colonnes avant meme de calculer la matrice. Ce nombre est choisi arbitrairement : le vocabulaire du corpus représentant 40k mots sur 5k articles, 5 semble légitimement faible.
+On va réduire le vocabulaire :  au lieu de prendre les mots apparaissant au moins une fois, on prend le nombre de mots apparaissant au moins 5 fois afin de limiter un peu le nombre de colonnes avant même de calculer la matrice. Ce nombre est choisi arbitrairement : le vocabulaire du corpus représentant 40k mots sur 5k articles, 5 semble légitimement faible.
 
 Au moment de créer la matrice, on en profite aussi pour calculer les pondérations `tfidf` qui sont des pondérations classiques pour le texte (pondère beaucoup les mots qui apparaissent souvent dans un document mais rarement dans le corpus pris globalement, a particulièrement du sens pour les documents longs, pas pour des tweets typiquement). Les résumés de livres se situant entre les 2 extrêmes, nous avons choisi TF-IDF car .... TODO
 
 TODO : On pourrait aussi réduire la dimension avec la fonction removeSparseTerms de tm.
 
 ```{r préparation de la dtm}
-minfreq <- findFreqTerms(dtm, 5)
+# TODO : bounds ?
+minfreq <- findFreqTerms(dtmTf, 5) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
 dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
 dtm
 dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
@@ -263,10 +266,11 @@ La sparsity étant encore très elevée, on retire les mots les plus rares pour 
 
 ```{r suppression sparse}
 
-dtm <- DocumentTermMatrix(docs, control=list(weighting=weightTfIdf))
 dtm <- removeSparseTerms(dtm, 0.99)
 dtm
 dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+
+finalDTM <- dtm # On sauvegarde notre DTM pour la classification supervisée.
 ```
 
 
@@ -303,7 +307,8 @@ On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique 
 
 ## TODO : Classification non supervisée LDA (Topic Modeling) / SKmeans / CAH / ACP / ...
 
-TODO TODO TODO
+### SKmeans
+
 
 ```{r skmeans}
 # install.packages("skmeans")
@@ -347,43 +352,11 @@ On va regarder à présent les résultats d'une LDA, l'intérêt c'est que l'on 
 
 La LDA s'applique sur une matrice documents termes sans pond?ration (nombre d'occurrences).
 ```{r topic modeling}
-
 # TODO : topic modeling pour adresser les synonymes ?
 # Similarité entre mots
 # TODO : findAssocs(dtm, terms = "monde", corlimit = 0.3)
 # TODO : Word2Vec : mais pour faire quoi exactement dans notre cas ?
 # TODO : Classification non supervisée : SKmeans / CAH / LDA
-
-rowTotals <- apply(dtm_m , 1, sum) # calcule la somme des termes dans chaque document
-dtmCleanMatrix   <- dtmCleanMatrix[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
-
-# install.packages("topicmodels")
-library(topicmodels)
-# Paramètres du Gibbs sampling
-burnin <- 500
-iter <- 500
-thin <- 100
-seed <- list(2003,5,63,100001,765) # arbitraire
-nstart <- 5
-best <- TRUE
-
-# Nombre de thèmes
-k <- 2 # arbitraire à ce stade, nécessiterait d'être optimisé
-
-# Estimation de la LDA
-ldaOut <-LDA(dtmCleanMatrix,k, method="Gibbs", control=list(nstart=nstart, seed = seed, best=best, burnin = burnin, iter = iter, thin=thin))
-
-
-ldaOut.topics <- as.matrix(topics(ldaOut))
-table(ldaOut.topics)
-
-ldaOut.terms <- as.matrix(terms(ldaOut,10))
-ldaOut.terms
-
-topicProbabilities <- as.data.frame(ldaOut@gamma)
-names(topicProbabilities) <- apply(data.frame(ldaOut.terms),2,function(x) paste(x,collapse=' '))
-topicProbabilities[1:100,]  #pour les dix premiers documents arbitrairement, on voit que la plupart du temps un topic est prépondérant.
-
 # TODO : tester la précision des catégories vs. les Y de sortie du premier dataframe (for JL : "accuracy").
 # TODO : kmeans et CAH (sur matrice nettoyée)
 ```

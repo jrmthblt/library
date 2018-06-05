@@ -10,34 +10,30 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Conversion DTM
+## Ajout de la variable à expliquer (collection)
 
-```{r ultime preparation}
+Nous avons fini de préparer notre DTM. Nous la transformons en data frame, et lui ajoutons la variable à expliquer. Ainsi nous pourrons ensuite tester différents modèles pour prédire la collection d'appartenance d'un résumé.
 
-# PRE-REQUIS : avoir chargé dtm du script précédent (5036 observations, 4823 variables)
+```{r ajout variable Y}
 
-# SOIT ON FAIT CA :
-review_dtm_tfidf <- removeSparseTerms(dtm, 0.99)
-
-# Peut-être n'est-ce pas utile en supervisé de supprimer les documents
-rowTotals <- apply(review_dtm_tfidf , 1, sum) # calcule la somme des termes dans chaque document
-review_dtm_tfidf   <- review_dtm_tfidf[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
-
-dfReviews <- as.data.frame(as.matrix(review_dtm_tfidf)) # En ayant retiré des documents vides, comment leur faire désormais correspondre leur genre pour le ML ???
-
-# SOIT CA :
-dfReviews <- as.data.frame(as.matrix(dtm)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
-dfReviews$Y <- as.factor(dfBookSummaries$genre) # On peut ainsi renseigner la variable Y
-str(dfReviews)
+# finalDTM <- removeSparseTerms(finalDTM, 0.97)
+finalDTM
+dfReviews <- as.data.frame(as.matrix(finalDTM)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
+dfReviews$Y <- as.factor(dfBookSummaries$collection) # On peut ainsi renseigner la variable Y
+head(dfReviews) # 1185 variables car on a ajouté Y
 ```
 
 
 ## Préparation CARET
 
-```{r caret}
+Pour tout le protocole de machine learning on utilise la librairie `caret` qui fournit les fonctions pour tout le workflow : construire les échantillons, le prétraitement, les différentes options de validations croisées et un très grand nombre de modèles (https://topepo.github.io/caret/available-models.html)
+
+```{r préparation caret}
 # install.packages("caret")
 library(caret)
-set.seed(1234)
+library(parallel)
+library(doParallel)
+
 splitIndex <- createDataPartition(dfReviews$Y, p = .80, list = FALSE, times = 1)
 data.train <- data.frame(dfReviews[ splitIndex,])
 data.test  <- data.frame(dfReviews[-splitIndex,])
@@ -53,22 +49,127 @@ data.test$Y <- NULL
 ```
 
 
-## Forêts aléatoires pour démarrer
+La plupart des modèles choisissent comme classe de positifs, la classe correspondant au premier label, or ici "Imaginaire" arrive en second (ordre alphabétique). Afin que la lecture des différents scores (précision, rappel, spécificicité, sensibilité) soit cohérente avec la détection des positifs (ici les articles liés à l'imaginaire), on inverse les labels. On créé aussi notre split binaire :
+
+```{r préparation classification binaire sur imaginaire}
+dfReviewsImaginaireBinaire <- dfReviews %>% mutate(YImaginaire = ifelse(Y == "Imaginaire", "Imaginaire", "Autre")) %>% mutate(Y = NULL)
+
+dfReviewsImaginaireBinaire$YImaginaire <- as.factor(dfReviewsImaginaireBinaire$YImaginaire)
+
+
+head(dfReviewsImaginaireBinaire$YImaginaire)
+levels(dfReviewsImaginaireBinaire$YImaginaire)
+dfReviewsImaginaireBinaire$YImaginaire <- relevel(dfReviewsImaginaireBinaire$YImaginaire, "Imaginaire")
+head(dfReviewsImaginaireBinaire$YImaginaire)
+levels(dfReviewsImaginaireBinaire$YImaginaire)
+
+splitIndex <- createDataPartition(dfReviewsImaginaireBinaire$YImaginaire, p = .80, list = FALSE, times = 1)
+data.trainImaginaire <- data.frame(dfReviewsImaginaireBinaire[ splitIndex,])
+data.testImaginaire  <- data.frame(dfReviewsImaginaireBinaire[-splitIndex,])
+
+ytrainImaginaire <- dfReviewsImaginaireBinaire$YImaginaire[splitIndex]
+ytestImaginaire  <- dfReviewsImaginaireBinaire$YImaginaire[-splitIndex]
+table(ytrainImaginaire)/sum(table(ytrainImaginaire))
+
+table(ytestImaginaire)/sum(table(ytestImaginaire))
+
+data.trainImaginaire$YImaginaire <- NULL
+data.testImaginaire$YImaginaire <- NULL
+```
+
+
+
+## Forêts aléatoires
 
 ```{r random forest}
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+seeds <- list(1:4,1:4,1:4,3)
+
+fitControl <- trainControl(method='cv', number=3, returnResamp='none', classProbs = TRUE, summaryFunction = twoClassSummary, allowParallel = TRUE, seeds = seeds)
+
+gridSearch <- expand.grid(mtry = 17)
+
+rfModel <- train(data.trainImaginaire, ytrainImaginaire, method = "rf", tuneGrid = gridSearch, trControl = fitControl, metric = 'ROC')
+
+stopCluster(cluster)
+registerDoSEQ()
+
+# A peu près 30min pour le faire tourner !
+rfModel
+# Random Forest 
+# 
+# 4034 samples
+# 1184 predictors
+#    2 classes: 'Autre', 'Imaginaire' 
+# 
+# No pre-processing
+# Resampling: Cross-Validated (3 fold) 
+# Summary of sample sizes: 2689, 2689, 2690 
+# Resampling results:
+# 
+#   ROC        Sens  Spec     
+#   0.8623885  1     0.1510974
+# 
+# Tuning parameter 'mtry' was held constant at a value of 17
+
+plot(rfModel) # There are no tuning parameters with more than 1 value : logique on a précisé 1 seul mtry
+
+library(reshape2)
+library(ggplot2)
+cm.plot <- function(table_cm) {
+  tablecm <- round(t(t(table_cm) / colSums(as.matrix(table_cm))*100)) # Crée les pourcentages
+  tablemelt <- melt(tablecm)
+  ggplot(tablemelt, aes(Reference, Prediction)) +
+    geom_point(aes(size = value, color=value), alpha=0.8, show.legend=FALSE) +
+    geom_text(aes(label = value), color="white") +
+    scale_size(range = c(5,25)) +
+    scale_y_discrete(limits = rev(levels(tablemelt$Prediction)))+
+    theme_bw()
+}
+
+
+
+pred <- predict(object=rfModel$finalModel, data.testImaginaire,type = 'class')
+conf.mat <- confusionMatrix(pred, ytestImaginaire)
+cm.plot(conf.mat$table)
+conf.mat$overall
+conf.mat$byClass
+
+imp <- varImp(rfModel$finalModel)
+impdf <- data.frame(names = row.names(imp), imp = imp[,1])
+impdf <- impdf[order(impdf$imp, decreasing = TRUE),]
+names(impdf)[2]<-colnames(imp)[1]
+impdf[1:30,]
+
+pred.rf <- predict(object=rfModel$finalModel, data.test,type='prob')
+rocCurve.rf <- roc(response = ytest, predictor = pred.rf[, "economie"])
+rocCurve.rf$auc
+
+
+
+
+
+
 # stephanie.combes@gmail.com pour des questions
 # install.packages("randomForest")
 library(randomForest)
-fit <- randomForest(ytrain ~ ., data=data.train, importance=TRUE, ntree=300, mtry=7)
-varImpPlot(fit)
-table(test$genre, predict(fit, test, type="class")) # 80% de données bien classées
+fit <- randomForest(ytrain ~ ., data=data.train, importance=TRUE, ntree=500, mtry=17)
+importance(fit)
+varImpPlot(fit) # Graphe d'importance des variables de la RF
+table(ytest, predict(fit, data.test, type="class")) # En récupérant la somme de la diagonale, on arrive à peu près à 60% de bien classés (défavorisé par la collection Littérature)
 
-table(train$genre, predict(fit, train, type="class")) # 80% de données bien classées
+# ytest         Classiques Documents Imaginaire Littérature Policier Thriller
+#   Classiques          21         1          2          46        2        0
+#   Documents            1        16          1          92        6        3
+#   Imaginaire           1         2         33          54        4        5
+#   Littérature          2         0          3         411        6       11
+#   Policier             1         0          2          65       44       24
+#   Thriller             0         1          0          57       20       68
 
-freq = data.frame(sort(colSums(as.matrix(review_dtm_tfidf)), decreasing=TRUE))
-wordcloud(rownames(freq), freq[,1], max.words=100, colors=brewer.pal(3, "Dark2"))
 
-
+# On va donc prédire une collection par rapport à toutes les autres. On commence avec Imaginaire :
 
 
 ```
