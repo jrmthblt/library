@@ -177,6 +177,28 @@ On s'attaque à présent à la suppression des stopwords, qui n'apportent aucune
 docs <- tm_map(docs, removeWords, stopwords("french"))
 inspect(docs[1])
 
+# Dictionnaire mot à retirer - Arnaud + ceux ci-dessous (peu importe si quelques doublons)
+stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+                 'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
+                 'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
+                 'tant','ainsi','livre','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                 'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux',
+                 'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
+                 'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                 'car','grands','grandes','question','fois','france','travers','jour','avant','apres','il','elle',
+                 'ils','elles','tel','tels','telle','telles','quelque','quelques','toujours','souvent','chez',
+                 'celui','chaque','mis','mise','texte','moindre','peu','ouvrage','rien','pourtant','texte',
+                 'the','certains','certaines','lecteur','vers','parfois','grace','aime','aimer','enfin',
+                 'chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre','mais','faut',
+                 'puis','notre','votre','seule','seules','seulement','note','noter','edition','les','d',
+                 'l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
+                 'livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                 'recueil','hugo','quinze'
+                 )
+
+docs <- tm_map(documents, removeWords, stopwords_fr2)
+
+
 # docs <- tm_map(docs, removeWords, c("a", "plus", "les", "d", "l", "c", "d", "resume", "science-fiction", "ou", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen", "alors", "aussi", "comme", "deux", "dont", "trois", "histoire", "jusqu", "encore", "etait", "etre", "meme", "recueil", "hugo", "quinze"))
 
 # TODO : charger le fichier des stopwords de JL, et le nettoyer comme le corpus pour pour ensuite l'utiliser comme dictionnaire normalisé (minuscule, pas d'accents, pas de ponctuation)
@@ -192,6 +214,23 @@ dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
 dtmTf
 # minfreq <- findFreqTerms(dtmTf, 80,100)
 ```
+
+La liste des mots les plus/moins fréquents dans le corpus peut être donnée selon l'approche suivante : 
+```{r top/bottom}
+#Terms frequency statistics
+freqr <- slam::col_sums(dtmTf)
+#length should be total number of terms
+length(freqr)
+#length should be total number of terms
+ord <- order(freqr,decreasing=TRUE)
+#inspect most frequently occurring terms
+freqr[head(ord,200L)]
+#inspect least frequently occurring terms
+freqr[tail(ord,100L)]
+#View(freqr)
+
+```
+
 
 TODO : Essai sur la racinisation du texte, ...
 
@@ -305,7 +344,42 @@ for (i in 1:length(collections)) {
 On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique est sur-représenté par son auteur emblématique "King" et la Littérature aborde à peu très tous les thèmes (amour, argent, voyage, ...). Bref c'est encore assez confus.
 
 
-## TODO : Classification non supervisée LDA (Topic Modeling) / SKmeans / CAH / ACP / ...
+## TODO : Classification non supervisée LDA (Topic Modeling) / KMeans / SKmeans / CAH / ACP / ...
+
+### Kmeans
+```{r kmeans}
+#http://michael.hahsler.net/SMU/CSE7337/ et http://michael.hahsler.net/SMU/CSE7337/install/tm.R
+
+### Normalize the vectors so Euclidean makes sense with kmeans
+norm_eucl <- function(m) m/apply(m, MARGIN=1, FUN=function(x) sum(x^2)^.5)
+dtm_norm <- norm_eucl(as.matrix(dtm_m))
+
+
+# Finding the optimal number of clusters
+
+# Compute the WSS for 
+# k = 2 to k.max (kmeans)
+k.max <- 50
+swss <- (nrow(dtm_norm)-1)*sum(apply(dtm_norm,2,var))
+for(i in 2:k.max){
+  set.seed(123)
+  swss[i] <- sum(kmeans(dtm_norm, centers = i, iter.max = 20)$withinss)
+}
+
+# Plot the elbow (kmeans)
+plot(1:k.max, swss, type = "b", pch = 19, 
+     frame = FALSE, xlab = "Number of clusters k")
+#abline(v = which.min(swss), lty = 2)
+
+
+# cluster into x (optimal) clusters - kmeans
+set.seed(123)
+cl2 <- kmeans(dtm_norm, centers = 8, iter.max = 20) # Remplacer 'centers' par nombre optimal trouvé
+table(cl2$cluster)
+# show clusters using the first 2 principal components
+plot(prcomp(dtm_norm)$x, col=cl2$cluster)
+
+```
 
 ### SKmeans
 
