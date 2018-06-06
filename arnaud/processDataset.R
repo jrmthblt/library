@@ -66,19 +66,23 @@ stopwords_fr <- sapply(stopwords("french"),accent)
 documents <- tm_map(documents, removeWords, stopwords_fr)
 
 stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
-                 'oui','non','etre','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
-                 'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
-                 'tant','ainsi','livre','oeuvre','aussi','autre','fait','entre','plus','moins','toute','donc',
-                 'toutes','auteur','bien','dont','roman','comment','petit','petite','grand','grande','ceux',
-                 'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','dont','donc',
-                 'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
-                 'car','grands','grandes','question','fois','france','travers','jour','avant','apres','il','elle',
-                 'ils','elles','tel','tels','telle','telles','quelque','quelques','toujours','souvent','chez',
-                 'celui','chaque','mis','mise','texte','moindre','peu','ouvrage','rien','pourtant','texte',
-                 'the','certains','certaines','lecteur','vers','parfois','grace','aime','aimer','enfin',
-                 'chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','autre','contre','mais',
-                 'faut','puis','notre','votre','seule','seules','seulement','note','noter','edition'
-                 )
+                  'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
+                  'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
+                  'tant','ainsi','livre','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                  'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux',
+                  'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
+                  'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                  'car','grands','grandes','question','fois','france','travers','jour','avant','apres',
+                  'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
+                  'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','rien',
+                  'pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
+                  'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
+                  'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
+                  'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
+                  'livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                  'recueil','hugo','quinze'
+)
+
 
 stopwords_fr2 = setdiff(stopwords_fr2, c("pas")) # 'pas' est inclus dans les stopword, on trouve que c'est un peu dommage alors on le retire de la liste
 documents <- tm_map(documents, removeWords, stopwords_fr2)
@@ -95,10 +99,12 @@ documents <- tm_map(documents, content_transformer(gsub), pattern = "^\\s+", rep
 
 #DTM
 dtm.prev <- DocumentTermMatrix(documents)
-clength <- apply(dtm.prev, 1, sum) #Find the sum of words in each Document
-#length(which(clength < 15))
-#inspect(dtm.prev)
-dtm.prev <- dtm.prev[clength >= 15, ] #remove all docs with less than x words
+clength <- apply(dtm.prev, 1, sum) # somme des mots dans chaque document
+
+row2keep <- dtm.prev[clength >= 15, ]$dimnames[1][[1]] # on cible les lignes à garder dans le corpus (plus de 15 mots par document)
+dtm.prev <- dtm.prev[clength >= 15, ] # on supprime les lignes dans dtm.prev pour ne pas fausser les stats
+
+documents2 <- documents[as.numeric(row2keep)] # puis on supprime les mêmes enregistrements dans le Corpus
 
 
 #Terms frequency statistics
@@ -114,26 +120,19 @@ freqr[tail(ord,100L)]
 #View(freqr)
 
 
-#Elagage (minimum 20 mots identiques dans tous le corpus)
-minfreq <- findFreqTerms(dtm.prev, 20)
-length(minfreq)
+# On travaille maintenant sur le Corpus réduit
+# 'Bounds' (limites haute et basse) sur la répétition des mots
+# Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
 
-#Bounds on words
-#Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
-
-#dtm <- DocumentTermMatrix(documents, control=list(bounds = list(global = c(1,100)), dictionary = minfreq, weighting = function(x) weightTfIdf(x, normalize = TRUE)))
-#dtm2 <- DocumentTermMatrix(documents, control=list(bounds = list(global = c(1,100)), dictionary = minfreq, weighting = function(x) weightTf(x)))
-
-dtm <- DocumentTermMatrix(documents, control=list(bounds = list(global = c(1,200)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
-dtm2 <- DocumentTermMatrix(documents, control=list(bounds = list(global = c(1,200)), weighting = function(x) weightTf(x)))
+dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,200)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
+dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,200)), weighting = function(x) weightTf(x)))
 
 
-dtm.nosparse <- removeSparseTerms(dtm, 0.98)
-dtm2.nosparse <- removeSparseTerms(dtm2, 0.98)
+dtm.tfidf.nosparse <- removeSparseTerms(dtm.tfidf, 0.98)
+dtm.tf.nosparse <- removeSparseTerms(dtm.tf, 0.98)
 
 
 ### DTM statistics
-
 
 #inspect(dtm)
 #inspect(dtm.nosparse)
@@ -147,18 +146,24 @@ dtm2.nosparse <- removeSparseTerms(dtm2, 0.98)
 #documents_nonstem[14]$content
 
 
+rowTotals <- apply(dtm.tfidf.nosparse , 1, sum) #Find the sum of words in each Document
+if (length(rowTotals) >0 ) {
+  dtm.new <- dtm.tfidf.nosparse[rowTotals> 0, ] #remove all docs with less than x words
+  print(sprintf("dtm tfidf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",length(dtm.tfidf.nosparse[rowTotals == 0, ])))
+}else{
+  dtm.new <- dtm.tfidf.nosparse
+}
 
-rowTotals <- apply(dtm.nosparse , 1, sum) #Find the sum of words in each Document
-dtm.new   <- dtm.nosparse[rowTotals> 0, ] #remove all docs with less than x words
-
-rowTotals2 <- apply(dtm2.nosparse , 1, sum) #Find the sum of words in each Document
-dtm.new2   <- dtm2.nosparse[rowTotals2> 0, ] #remove all docs with less than x words
+rowTotals2 <- apply(dtm.tf.nosparse , 1, sum) #Find the sum of words in each Document
+if (length(rowTotals2) > 0) {
+  dtm.new2   <- dtm.tf.nosparse[rowTotals2> 0, ] #remove all docs with less than x words
+  print(sprintf("dtm tf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",length(dtm.tf.nosparse[rowTotals == 0, ])))
+}else{
+  dtm.new2 <- dtm.tf.nosparse
+}
 
 dtm.used <- dtm.new
 
-
-
-#findMostFreqTerms(dtm.used, n=20L)
 
 # wordcloud
 m <- as.matrix(as.TermDocumentMatrix(dtm.used))
@@ -213,6 +218,9 @@ table(cl2$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl2$cluster)
 
+# palette() - Liste des couleurs (Modulo 8 par défaut) - pour correspondance avec les clusters
+# 1-black, 2-red, 3-green3, 4-blue, 5-cyan, 6-magenta, 7-yellow, 8-gray, 9-black, ...   
+
 
 ## Self organizing map (som) - Kohonen map
 # https://www.r-bloggers.com/self-organising-maps-for-customer-segmentation-using-r/
@@ -260,6 +268,8 @@ library(caret)
 
 # https://datascience.stackexchange.com/questions/15670/which-classifier-should-i-use-for-sparse-boolean-features
 # Will try lasso logistic regression and random forest...
+
+# TODO : ajout classe à la dtm
 
 
 ## Write final dataset csv
