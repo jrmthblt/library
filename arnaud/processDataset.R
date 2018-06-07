@@ -38,17 +38,16 @@ infile <- "dataset.csv"
 dataset_df <- read.csv2(infile, header=TRUE, sep=";", stringsAsFactors = FALSE)
 
 dataset_df <- dataset_df[-c(29,32,37,39,171,1158,1182,1597,1623),] # suppression de certains enregistrements de mauvaise qualité
-dataset_df <- dataset_df[-c(1139,116,1179,1181,14,1577,1651,206,23,86)] # suppression des enregistrements contenant des mots anglais
-#dataset_df2 <- dataset_df[,c(1,4)]
-#names(dataset_df2)[1]<-"doc_id"
-#names(dataset_df2)[2]<-"text"
+dataset_df <- dataset_df[-c(1139,116,1179,1181,14,1577,1651,206,23,86),] # suppression des enregistrements contenant des mots anglais
+dataset_df2 <- dataset_df[,c(1,4)]
+names(dataset_df2)[1]<-"doc_id"
+names(dataset_df2)[2]<-"text"
 
 ## Prepare DTM
 
 #Initial corpus
-documents <- Corpus(VectorSource(dataset_df$volumeInfo.description))
-#documents <- Corpus(DataframeSource(dataset_df2))
-
+#documents <- Corpus(VectorSource(dataset_df$volumeInfo.description))
+documents <- Corpus(DataframeSource(dataset_df2))
 
 #Remove chars with accents
 accent <- function(x) stri_trans_general(x, "Latin-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
@@ -68,7 +67,7 @@ documents <- tm_map(documents, removeWords, stopwords_fr)
 stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
                   'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
                   'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
-                  'tant','ainsi','livre','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                  'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
                   'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux',
                   'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
                   'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
@@ -79,8 +78,8 @@ stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendr
                   'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
                   'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
                   'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
-                  'livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                  'recueil','hugo','quinze'
+                  'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                  'recueil','hugo','quinze','nombreux','chose'
 )
 
 
@@ -139,7 +138,7 @@ dtm.tf.nosparse <- removeSparseTerms(dtm.tf, 0.98)
 #inspect(dtm2)
 #inspect(dtm2.nosparse)
 #inspect(dtm.used)
-#inspect(dtm.used[,'withdrawal'])
+#inspect(dtm.used[1:10,])
 #dim(dtm)
 #dim(dtm2)
 #dataset_df[965,]
@@ -149,7 +148,7 @@ dtm.tf.nosparse <- removeSparseTerms(dtm.tf, 0.98)
 rowTotals <- apply(dtm.tfidf.nosparse , 1, sum) #Find the sum of words in each Document
 if (length(rowTotals) >0 ) {
   dtm.new <- dtm.tfidf.nosparse[rowTotals> 0, ] #remove all docs with less than x words
-  print(sprintf("dtm tfidf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",length(dtm.tfidf.nosparse[rowTotals == 0, ])))
+  print(sprintf("dtm tfidf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",nrow(as.matrix(dtm.tfidf.nosparse[rowTotals == 0, ]))))
 }else{
   dtm.new <- dtm.tfidf.nosparse
 }
@@ -157,7 +156,7 @@ if (length(rowTotals) >0 ) {
 rowTotals2 <- apply(dtm.tf.nosparse , 1, sum) #Find the sum of words in each Document
 if (length(rowTotals2) > 0) {
   dtm.new2   <- dtm.tf.nosparse[rowTotals2> 0, ] #remove all docs with less than x words
-  print(sprintf("dtm tf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",length(dtm.tf.nosparse[rowTotals == 0, ])))
+  print(sprintf("dtm tf - Nombre de ligne(s) supprimée(s) après removeSparseTerms : %s",nrow(as.matrix(dtm.tf.nosparse[rowTotals2 == 0, ]))))
 }else{
   dtm.new2 <- dtm.tf.nosparse
 }
@@ -165,7 +164,21 @@ if (length(rowTotals2) > 0) {
 dtm.used <- dtm.new
 
 
-# wordcloud
+# Preparation de la dtm en vue de la classification supervisée
+# Obtention de la catégorie présumée pour chaque enregistrement present dans la DTM 
+
+row2keep2 <- dtm.tf.nosparse[rowTotals2 > 0, ]$dimnames[1][[1]]
+documents3 <- documents2[as.numeric(row2keep2)]
+ids <- as.numeric(meta(documents3,'id'))
+
+length(ids)
+tail(ids)
+attrClass <- dataset_df[dataset_df$X %in% ids,5]
+length(attrClass)
+#View(attrClass)
+
+
+### Wordcloud
 m <- as.matrix(as.TermDocumentMatrix(dtm.used))
 v <- sort(rowSums(m),decreasing=TRUE)
 d <- data.frame(word = names(v),freq=v)
@@ -176,7 +189,6 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
           colors=brewer.pal(8, "Dark2"))
 
 
-set.seed(1234)
 ### Clustering
 
 #http://michael.hahsler.net/SMU/CSE7337/ et http://michael.hahsler.net/SMU/CSE7337/install/tm.R
@@ -218,7 +230,7 @@ table(cl2$cluster)
 # show clusters using the first 2 principal components
 plot(prcomp(m_norm)$x, col=cl2$cluster)
 
-# palette() - Liste des couleurs (Modulo 8 par défaut) - pour correspondance avec les clusters
+# palette() - Liste des couleurs (modulo 8 par défaut) - pour correspondance avec les clusters
 # 1-black, 2-red, 3-green3, 4-blue, 5-cyan, 6-magenta, 7-yellow, 8-gray, 9-black, ...   
 
 
@@ -261,15 +273,133 @@ plot(som_model,
 
 
 
-### Classification
+### Classification supervisée
 
 #install.packages('caret')
+#install.packages('randomForest')
+#install.packages('nnet')
+#install.packages('doParallel')
+
 library(caret)
+library(randomForest)
+library(nnet)
+library(parallel)
+library(doParallel)
+
 
 # https://datascience.stackexchange.com/questions/15670/which-classifier-should-i-use-for-sparse-boolean-features
 # Will try lasso logistic regression and random forest...
 
-# TODO : ajout classe à la dtm
+# Ajout classe à la dtm
+df_used <- as.data.frame(as.matrix(dtm.used))
+df_used_class <- cbind(attrClass,df_used)
+dim(df_used_class)
+names(df_used_class)[1] <- "CLASS"
+
+
+# Initialize parallel things
+cl <- makeCluster(detectCores()-1)
+registerDoParallel(cl)
+
+#create a list of seed, here change the seed for each resampling
+#https://stackoverflow.com/questions/13403427/fully-reproducible-parallel-models-using-caret
+#https://stackoverflow.com/questions/27944558/set-seed-parallel-random-forest-in-caret-for-reproducible-result
+#http://jaehyeon-kim.github.io/2015/05/Setup-Random-Seeds-on-Caret-Package.html
+set.seed(123)
+#length is = (n_repeats*nfolds)+1
+#CST_SEED_LENGTH <- 31
+#nb_model_used is = nfolds + length of tune grid
+#CST_NBMDL_USED <- 11
+seeds <- vector(mode = "list", length = 31)
+for(i in 1:30) seeds[[i]]<- sample.int(n=1000, 11)
+#for the last model
+seeds[[31]]<-sample.int(1000, 1)
+
+
+## Random Forest
+## https://machinelearningmastery.com/tune-machine-learning-algorithms-in-r/
+
+
+# BASELINE : Create model with default parameters - mtry <- sqrt(ncol(x))
+control <- trainControl(method="repeatedcv",
+                        number=10,
+                        repeats=3,
+                        seeds=seeds,
+                        summaryFunction = multiClassSummary,
+                        allowParallel = TRUE,
+                        verboseIter = TRUE
+                        )
+#seed <- 7
+metric <- "Accuracy"
+#set.seed(seed)
+mtry <- sqrt(ncol(df_used_class))
+tunegrid <- expand.grid(.mtry=mtry)
+rf_default <- train(CLASS~., data=df_used_class, method="rf", metric=metric, tuneGrid=tunegrid, trControl=control)
+print(rf_default)
+
+
+# Variation mtry de 1 à 15
+set.seed(123)
+seeds2 <- vector(mode = "list", length = 31)
+for(i in 1:30) seeds2[[i]]<- sample.int(n=1000, 25)
+#for the last model
+seeds2[[31]]<-sample.int(1000, 1)
+
+
+control <- trainControl(method="repeatedcv",
+                        number=10,
+                        repeats=3,
+                        search="grid",
+                        seeds=seeds2,
+                        summaryFunction = multiClassSummary,
+                        allowParallel = TRUE,
+                        verboseIter = TRUE
+)
+tunegrid <- expand.grid(.mtry=c(1:15))
+rf_gridsearch <- train(CLASS~., data=df_used_class, method="rf", metric=metric, tuneGrid=tunegrid, trControl=control)
+print(rf_gridsearch)
+plot(rf_gridsearch)
+
+
+
+## NNET
+## TODO
+## https://stackoverflow.com/questions/42417948/how-to-use-size-and-decay-in-nnet
+
+
+# fitControl <- trainControl(method = "repeatedcv", 
+#                            number = 10, 
+#                            repeats = 3,
+#                            seeds = seeds,
+#                            classProbs = TRUE, 
+#                            summaryFunction = multiClassSummary,
+#                            allowParallel = TRUE,
+#                            verboseIter = TRUE,
+#                            verbose = TRUE
+#                            )
+# 
+# nnetGrid <-  expand.grid(size = seq(from = 1, to = 10, by = 1),
+#                          decay = seq(from = 0.1, to = 0.5, by = 0.1))
+# 
+# nnetFit <- train(CLASS~ ., 
+#                  data = df_used_class,
+#                  method = "nnet",
+#                  metric = "ROC",
+#                  trControl = fitControl,
+#                  tuneGrid = nnetGrid,
+#                  verbose = FALSE)
+
+
+###
+### Stop the cluster
+
+stopCluster(cl)
+
+
+### Predictions
+# rf: https://stackoverflow.com/questions/47521841/r-randomforest-caret-seeing-predictions
+# rf: http://rstudio-pubs-static.s3.amazonaws.com/27155_519e7e23601048d08eb8a74d2a01ad2f.html
+# nnet : 
 
 
 ## Write final dataset csv
