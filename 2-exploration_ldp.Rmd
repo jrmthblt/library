@@ -318,7 +318,6 @@ dim(dtmTf_m)
 nzv <- nearZeroVar(dtmTf_m)
 dtmTf_m_filtered <- dtmTf_m[, -nzv]
 dim(dtmTf_m_filtered) # Caret a conservé 134 variables sur les 39584 ! Et on voit qu'il a conservé beaucoup de stop words... il faut refaire une passe complète.
-# Vraiment se poser sur la pondération à choisir pour la matrice.
 
 
 dtm <- removeSparseTerms(dtm, 0.8)
