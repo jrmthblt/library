@@ -314,7 +314,7 @@ Grâce à ce paramètre on descend à un nombre de variables plus gérable (11k 
 La sparsity étant encore très elevée, on retire les mots les plus rares pour réduire un peu la dimension, ie. ceux qui apparaissent dans moins d'1% des documents. Cela semble beaucoup plus efficace qu'en conservant les mots assez fréquents.
 
 ```{r suppression sparse}
-
+library(caret)
 # TODO : il faut tenter caret en near zero variance. Faut-il le faire sur la dtm Tf ou TF-IDF ?
 dtmTf_m <- as.matrix(dtmTf)
 dim(dtmTf_m)
@@ -323,21 +323,21 @@ dim(dtmTf_m)
 # nzv[nzv$nzv,][1:100,]
 nzv <- nearZeroVar(dtmTf_m)
 dtmTf_m_filtered <- dtmTf_m[, -nzv]
-dim(dtmTf_m_filtered) # Caret a conservé 134 variables sur les 39584 ! Et on voit qu'il a conservé beaucoup de stop words... il faut refaire une passe complète.
+dim(dtmTf_m_filtered) # Caret a conservé 55 variables sur les 39584 ! Et on voit qu'il a conservé beaucoup de stop words... il faut refaire une passe complète.
 
 
 dtm <- removeSparseTerms(dtm, 0.8)
 dtm
-dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+dtm_m <- as.matrix(dtm)
 
 # NOUVEAUTE :
 finalDTM <- dtm # On sauvegarde notre DTM pour la classification supervisée.
 # OU :
-dtmTf_m_filtered <- dtmTf_m_filtered[-c(68, 1210, 2570, 3923, 4926),]
+dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
 dtmTf_m_filtered[68,] # fait manuellement depuis l'avertissement : empty document(s): 68 1210 2570 3923 4926
 finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
 dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
-dfBookSummaries <- dfBookSummaries[-c(68, 1210, 2570, 3923, 4926),]
+dfBookSummaries <- dfBookSummaries[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
 ```
 
 
