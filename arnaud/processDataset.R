@@ -88,7 +88,7 @@ stopwords_fr2 = union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi',
                                      'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
                                      'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
                                      'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent'
+                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots','lorsqu'
 ))
 
 documents <- tm_map(documents, content_transformer(removeWords), stopwords_fr2)
@@ -140,8 +140,8 @@ freqr[tail(ord,100L)]
 # 'Bounds' (limites haute et basse) sur la répétition des mots
 # Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
 
-dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,300)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
-dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,300)), weighting = function(x) weightTf(x)))
+dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
+dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTf(x)))
 
 
 dtm.tfidf.nosparse <- removeSparseTerms(dtm.tfidf, 0.98)
@@ -392,6 +392,7 @@ control <- trainControl(method="repeatedcv",
                         allowParallel = TRUE,
                         verboseIter = TRUE
 )
+
 tunegrid <- expand.grid(.mtry=c(1:15))
 
 tic()
@@ -408,9 +409,7 @@ print(rf_gridsearch)
 plot(rf_gridsearch)
 
 
-
-## NNET (neural network)
-## TODO
+## Multinomial logistic regression w/ nnet (neural network)
 ## https://stackoverflow.com/questions/42417948/how-to-use-size-and-decay-in-nnet
 
 set.seed(123)
@@ -432,7 +431,7 @@ fitControl <- trainControl(method = "repeatedcv",
                            verboseIter = TRUE
                            )
 
-nnetGrid <- expand.grid(.decay = c(0.5, 0.3, 0,2, 0.1, 1e-2, 1e-3, 1e-4, 1e-5)) #, size = c(3, 5, 10, 20))
+nnetGrid <- expand.grid(.decay = c(0.5, 0.3, 0.2, 0.1, 1e-2, 1e-3, 1e-4, 1e-5)) #, size = c(3, 5, 10, 20))
 
 tic()
 nnetFit <- train(CLASS~ ., 
