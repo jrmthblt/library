@@ -178,7 +178,7 @@ docs <- tm_map(docs, removeWords, stopwords("french"))
 inspect(docs[1])
 
 # Dictionnaire mot à retirer - Arnaud + ceux ci-dessous (peu importe si quelques doublons)
-stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+stopwords_fr2 = c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
                  'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
                  'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
                  'tant','ainsi','livre','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
@@ -196,14 +196,20 @@ stopwords_fr2 = c(stopwords_fr,'a','h','lundi','mardi','mercredi','jeudi','vendr
                  'recueil','hugo','quinze'
                  )
 
-docs <- tm_map(documents, removeWords, stopwords_fr2)
+docs <- tm_map(docs, removeWords, stopwords_fr2)
 
 
 # docs <- tm_map(docs, removeWords, c("a", "plus", "les", "d", "l", "c", "d", "resume", "science-fiction", "ou", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen", "alors", "aussi", "comme", "deux", "dont", "trois", "histoire", "jusqu", "encore", "etait", "etre", "meme", "recueil", "hugo", "quinze"))
 
-# TODO : charger le fichier des stopwords de JL, et le nettoyer comme le corpus pour pour ensuite l'utiliser comme dictionnaire normalisé (minuscule, pas d'accents, pas de ponctuation)
-# mySW = read.csv("jltStopwords.txt", sep = "", stringsAsFactors = FALSE, header = FALSE)
-# docs <- tm_map(docs, removeWords, mySW$V1)
+
+# Stopwords de Jean-Luc
+mySW = read.csv("jltStopwords_UTF8.txt", sep = "", stringsAsFactors = FALSE, header = FALSE, fileEncoding = "UTF-8")
+#on élimine les accents du fichier jltStopwords avec la fonction nfdRemoveAccents
+mySW$V1 = unlist(lapply(list(mySW$V1), nfdRemoveAccents))
+
+docs <- tm_map(docs, removeWords, mySW$V1)
+inspect(docs[1])
+
 ```
 
 TODO : On veut pouvoir s'assurer que la grande majorité des stopwords a été supprimée. On va donc extraire les mots les plus fréquents dans le corpus et retirer ceux qui sont des mots-outils :
