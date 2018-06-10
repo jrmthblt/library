@@ -253,10 +253,14 @@ TODO : On pourrait aussi réduire la dimension avec la fonction removeSparseTerm
 
 ```{r préparation de la dtm}
 # TODO : bounds ?
-minfreq <- findFreqTerms(dtmTf, 5) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
+inspect(dtmTf)
+as.matrix(dtmTf[1,1:20]) # on retrouve bien le nombre d'occurrences de chaque terme. Bizarre que ca s'appelle TF. Matrice ultra-sparse. sur le doc 1, cesar = 2 ; alors = 1. Bien le nombre d'occurrences
+
+minfreq <- findFreqTerms(dtmTf, 1) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
 dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
 dtm
-dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
+dtm_m <- as.matrix(dtm) # renvoie pour chaque document sa fréquence tf-idf : cesar sur doc 1 = 0.2086247 ; alors = 0.03171596
+dtm_m[1,1:20]
 
 ```
 
@@ -266,11 +270,30 @@ La sparsity étant encore très elevée, on retire les mots les plus rares pour 
 
 ```{r suppression sparse}
 
-dtm <- removeSparseTerms(dtm, 0.99)
+# TODO : il faut tenter caret en near zero variance. Faut-il le faire sur la dtm Tf ou TF-IDF ?
+dtmTf_m <- as.matrix(dtmTf)
+dim(dtmTf_m)
+# nzv <- nearZeroVar(dtmTf_m, saveMetrics= TRUE)
+# nzv$nzv
+# nzv[nzv$nzv,][1:100,]
+nzv <- nearZeroVar(dtmTf_m)
+dtmTf_m_filtered <- dtmTf_m[, -nzv]
+dim(dtmTf_m_filtered) # Caret a conservé 134 variables sur les 39584 ! Et on voit qu'il a conservé beaucoup de stop words... il faut refaire une passe complète.
+# Vraiment se poser sur la pondération à choisir pour la matrice.
+
+
+dtm <- removeSparseTerms(dtm, 0.8)
 dtm
 dtm_m <- as.matrix(dtm) # renvoie pour chaque document le nombre d'occurrences de chaque terme y figurant
 
+# NOUVEAUTE :
 finalDTM <- dtm # On sauvegarde notre DTM pour la classification supervisée.
+# OU :
+dtmTf_m_filtered <- dtmTf_m_filtered[-c(68, 1210, 2570, 3923, 4926),]
+dtmTf_m_filtered[68,] # fait manuellement depuis l'avertissement : empty document(s): 68 1210 2570 3923 4926
+finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
+dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
+dfBookSummaries <- dfBookSummaries[-c(68, 1210, 2570, 3923, 4926),]
 ```
 
 
