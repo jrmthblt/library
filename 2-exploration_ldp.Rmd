@@ -383,6 +383,7 @@ dtmTfIdf <- removeSparseTerms(dtm, 0.99)
 dtmTfIdf
 dtmTfIdf_m <- as.matrix(dtmTfIdf)
 dim(dtmTfIdf_m)
+colnames(dtmTfIdf_m)
 ```
 
 On conserve ici 941 variables.
@@ -393,17 +394,19 @@ Enfin on construit notre DTM finale :
 ```{r construction finale de la DTM}
 # Soit on s'appuie sur la matrice nettoyée avec removeSparseTerms :
 finalDTM <- dtmTfIdf # On sauvegarde notre DTM pour la classification supervisée.
+finalDTM_m <- dtmTfIdf_m
 
-# Soit on reprend la matrice filtrée avec caret :
-dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
-
-finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
-dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
-dfBookSummaries <- dfBookSummaries[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
+# # Soit on reprend la matrice filtrée avec caret :
+# dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
+# 
+# finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
+# dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
+# dfBookSummaries <- dfBookSummaries[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
 ```
 
 
-TODO : On tente ensuite une ACP sur la matrice (trop long, code commenté)
+
+TODO : On tente ensuite une ACP sur la matrice (trop long, code commenté) :
 
 Voir : https://www.usna.edu/Users/cs/lmcdowel/pubs/UnderhillIRI2007Final.pdf
 Et :
@@ -412,8 +415,9 @@ https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
 
 ```{r acp}
 # install.packages("FactoMineR")
+# Ou via caret ?
 # library(FactoMineR)
-# PCAResult <- PCA(dtmTfIdf_m, scale.unit = FALSE, ncp = 10)
+# PCAResult <- PCA(finalDTM_m, scale.unit = FALSE, ncp = 10)
 ```
 
 
@@ -424,14 +428,14 @@ A présent que nous disposons d'une matrice relativement propre, nous allons gé
 collections <- levels(dfBookSummaries$collection)
 
 for (i in 1:length(collections)) {
-  m <- dtmTfIdf_m[dfBookSummaries$collection == collections[i],]
+  m <- finalDTM_m[dfBookSummaries$collection == collections[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
   }
 ```
 
-On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique est sur-représenté par son auteur emblématique "King" et la Littérature aborde à peu très tous les thèmes (amour, argent, voyage, ...). Bref c'est encore assez confus.
+TODO : A réécrire : on voit quelques mots typiques du genre Thriller comme "menace", le Fantastique est sur-représenté par son auteur emblématique "King" et la Littérature aborde à peu très tous les thèmes (amour, argent, voyage, ...). Bref c'est encore assez confus.
 
 
 ## TODO : Classification non supervisée LDA (Topic Modeling) / KMeans / SKmeans / CAH / ACP / ...
@@ -440,9 +444,13 @@ On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique 
 ```{r kmeans}
 #http://michael.hahsler.net/SMU/CSE7337/ et http://michael.hahsler.net/SMU/CSE7337/install/tm.R
 
+rowTotals <- apply(finalDTM_m , 1, sum) # calcule la somme des termes dans chaque document
+finalDTM_m   <- finalDTM_m[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+dim(finalDTM_m)
+
 ### Normalize the vectors so Euclidean makes sense with kmeans
 norm_eucl <- function(m) m/apply(m, MARGIN=1, FUN=function(x) sum(x^2)^.5)
-dtm_norm <- norm_eucl(as.matrix(dtmTfIdf_m))
+dtm_norm <- norm_eucl(as.matrix(finalDTM_m))
 
 
 # Finding the optimal number of clusters
@@ -473,7 +481,6 @@ plot(prcomp(dtm_norm)$x, col=cl2$cluster)
 
 ### SKmeans
 
-
 ```{r skmeans}
 # install.packages("skmeans")
 library(skmeans)
@@ -494,17 +501,16 @@ for (i in 1:6){
 
 
 ## On partitionne en 6 clusters.
-dtm <-DocumentTermMatrix(docs)
-dim(dtm)
-dtmss <- removeSparseTerms(dtm, 0.99)
-dim(dtmss)
-sk <- skmeans(x=dtmss, 6)
+# dtm <-DocumentTermMatrix(docs)
+# dim(dtm)
+# dtmss <- removeSparseTerms(dtm, 0.99)
+dim(finalDTM_m)
+sk <- skmeans(x=finalDTM_m, 6)
 ## On regarde la r?partition dans les clusters
 table(sk$cluster)/sum(table(sk$cluster))
 
-dtmss_m <- as.matrix(dtmss)
 for (i in 1:6){
-  m <- dtmss_m[sk$cluster==i,]
+  m <- finalDTM_m[sk$cluster==i,]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))}
