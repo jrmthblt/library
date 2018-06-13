@@ -65,13 +65,13 @@ On dénombre 5096 résumés, répartis dans 6 collections. La collection littér
 
 ```{r résumé graphique}
 library(ggplot2)
-ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = collection, colour = collection))
+ggplot(data = dfBookSummaries) + geom_bar(mapping = aes(x = collection, fill = collection)) + scale_fill_manual(values = palette()) + ylab("nombre de livres")
 ```
 
 En effet cette collection représente plus de 40% du jeu de données :
 
 ```{r résumé fréquence collection}
-plot(table(dfBookSummaries$collection) / sum(table(dfBookSummaries$collection)))
+plot(100*table(dfBookSummaries$collection) / sum(table(dfBookSummaries$collection)), col = palette(), ylab="pourcentage de livres de la collection")
 ```
 
 
@@ -174,11 +174,15 @@ Toutes les classes de caractère parasites sont désormais retirées, excepté l
 On s'attaque à présent à la suppression des stopwords, qui n'apportent aucune signification au texte et augmente la dimension inutilement. Le package tm propose une liste pour le français, que nous allons compléter par la suite.
 
 ```{r suppression des stopwords}
-docs <- tm_map(docs, removeWords, stopwords("french"))
-inspect(docs[1])
+stopwordsFr <- unlist(lapply(list(stopwords("french")), nfdRemoveAccents))
+
+# Stopwords de Jean-Luc
+mySW = read.csv("jltStopwords_UTF8.txt", sep = "", stringsAsFactors = FALSE, header = FALSE, fileEncoding = "UTF-8")
+#on élimine les accents du fichier jltStopwords avec la fonction nfdRemoveAccents
+mySW$V1 <- unlist(lapply(list(mySW$V1), nfdRemoveAccents))
 
 # Dictionnaire mot à retirer - Arnaud + ceux ci-dessous (peu importe si quelques doublons)
-stopwords_fr2 = c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+stopwordsFrCustom <- union(mySW$V1, c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
                  'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
                  'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
                  'tant','ainsi','livre','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
@@ -191,23 +195,15 @@ stopwords_fr2 = c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi'
                  'the','certains','certaines','lecteur','vers','parfois','grace','aime','aimer','enfin',
                  'chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre','mais','faut',
                  'puis','notre','votre','seule','seules','seulement','note','noter','edition','les','d',
-                 'l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
-                 'livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                 'recueil','hugo','quinze'
-                 )
+                 'l','c','resume','ou','tome','serie','roman','romans','collection',
+                 'livre', 'dirigee','prix','auteur','histoire','etait','meme',
+                 'recueil','quinze', 'science-fiction'))
 
-docs <- tm_map(docs, removeWords, stopwords_fr2)
+stopwords <- union(stopwordsFr, stopwordsFrCustom)
 
+# FIXME : peut-être faut-il conserver le nom des auteurs qui apparaissent dans les résumés ? On remet 'gerard', 'king', 'stephen', 'hugo'
 
-# docs <- tm_map(docs, removeWords, c("a", "plus", "les", "d", "l", "c", "d", "resume", "science-fiction", "ou", "plus", "tome", "serie", "roman", "romans", "collection", "livre", "gerard", "dirigee", "prix", "king", "auteur", "stephen", "alors", "aussi", "comme", "deux", "dont", "trois", "histoire", "jusqu", "encore", "etait", "etre", "meme", "recueil", "hugo", "quinze"))
-
-
-# Stopwords de Jean-Luc
-mySW = read.csv("jltStopwords_UTF8.txt", sep = "", stringsAsFactors = FALSE, header = FALSE, fileEncoding = "UTF-8")
-#on élimine les accents du fichier jltStopwords avec la fonction nfdRemoveAccents
-mySW$V1 = unlist(lapply(list(mySW$V1), nfdRemoveAccents))
-
-docs <- tm_map(docs, removeWords, mySW$V1)
+docs <- tm_map(docs, removeWords, stopwords)
 inspect(docs[1])
 
 ```
@@ -215,13 +211,27 @@ inspect(docs[1])
 TODO : On veut pouvoir s'assurer que la grande majorité des stopwords a été supprimée. On va donc extraire les mots les plus fréquents dans le corpus et retirer ceux qui sont des mots-outils :
 
 ```{r termes fréquents}
-# TODO : en cours
+# FIXME : ne devrait-on pas nettoyer uniquement le jeu d'entrainement et pas celui de test ?
+# FIXME 2 : on veut prédire la collection d'appartenance pour un nouveau résumé saisi par l'utilisateur
 dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
 dtmTf
+dtmTf_m <- as.matrix(DocumentTermMatrix(docs))
+v <- sort(colSums(dtmTf_m),decreasing=TRUE)
+TopWords <- data.frame(word = names(v),freq = v)
+head(TopWords, 50)
 # minfreq <- findFreqTerms(dtmTf, 80,100)
+
+#puis à la main on enlève ceux qui paraissent "creux" dans notre contexte
+docs <- tm_map(docs, removeWords, c("resume", "roman", "ans", "histoire", "livre", "faire", "auteur", "nouvelle"))
+
+# puis on vérifie
+dtmTf_m <- as.matrix(DocumentTermMatrix(docs))
+v <- sort(colSums(dtmTf_m),decreasing=TRUE)
+TopWords <- data.frame(word = names(v),freq = v)
+head(TopWords, 50)
 ```
 
-La liste des mots les plus/moins fréquents dans le corpus peut être donnée selon l'approche suivante : 
+La liste des mots les plus/moins fréquents dans le corpus peut aussi être donnée selon l'approche suivante : 
 ```{r top/bottom}
 #Terms frequency statistics
 freqr <- slam::col_sums(dtmTf)
@@ -238,19 +248,25 @@ freqr[tail(ord,100L)]
 ```
 
 
-TODO : Essai sur la racinisation du texte, ...
+Après suppression des stopwords, on remarque des mots proches les uns des autres : homme/hommes, femme/femmes, ... On va raciniser le texte pour résoudre ce problème :
 
 ```{r racinisation}
-# docs <- nonStemmedDocs
 # nonStemmedDocs <- docs
 # docs <- tm_map(docs, stemDocument, "french")
 # docs[1]$content
-# stemCompletion('resum',dictionary=nonStemmedDocs)  #remarque le stemming fait perdre la lisibilite, on peut la retrouver avec stemCompletion 
 # 
-# dtm <- DocumentTermMatrix(docs)
-# dtm
+# dtmTf <- DocumentTermMatrix(docs)
+# dtmTf
+# dtmTf <- NULL
+# 
+# # FIXME : 
+# stemCompletion('homm',dictionary = nonStemmedDocs, c("first"))  #remarque le stemming fait perdre la lisibilite, on peut la retrouver avec stemCompletion => Renvoie hommage ?? Et femm renvoie femme mais pas femmes ??
+
+
 # TODO : voir s'il faut éliminer les mots de moins de 2/3 lettres
 ```
+
+Les résultats ne sont pas probants : homm renvoie hommage et homme par exemple.
 
 
 ```{r réduction des séquences espaces}
@@ -271,20 +287,45 @@ On descend ainsi de plus de 100 mots par résumé (avant nettoyage), à environ 
 dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
 dtmTf_m <- as.matrix(dtmTf)
 rowSums <- rowSums(dtmTf_m)
-dtmTf_m <- NULL
-hist(rowSums,breaks=25)
+hist(rowSums,breaks=25, main="histogramme des nombres de mots par résumé (épuré)",
+        xlab = "nombre de mots du résumé", ylab = "nombre de livres")
+abline(v=mean(rowSums), col="red",lwd = 2)
+legend(90, 700, legend="moyenne tous livres confondus",
+       col="red", lty=1, cex=0.8, lwd = 2)
+
+
 ```
 
 Intéressons nous ensuite à la distribution du nombre de mots par collection :
 
 ```{r distribution du nombre de mots par collection}
+# FIXME : on devrait faire le plot / boxplot sur la DTM et non le CSV de départ.
 summary(rowSums)
-plot(rowSums, col = dfBookSummaries$collection)
-abline(h=median(rowSums), col = "green")
+plot(rowSums, col = dfBookSummaries$collection) # Pas très utile
+abline(h=mean(rowSums), col = "red", lwd = 2)
 
-boxplot(rowSums~dfBookSummaries$collection, col = dfBookSummaries$collection)
+boxplot(rowSums~dfBookSummaries$collection, col = palette(), border="brown")
 
 ```
+
+
+Puis aux mots les plus fréquents par collection :
+
+```{r mots fréquents par collection}
+collections <- levels(dfBookSummaries$collection)
+dtmTf_m <- as.matrix(dtmTf)
+
+for (i in 1:length(collections)) {
+  m <- dtmTf_m[dfBookSummaries$collection == collections[i],]
+  wordsFreq <- sort(colSums(m),decreasing = TRUE)
+  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
+  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+}
+
+# TODO : peut-être faut-il supprimer les mots qui apparaissent sur toutes les collections ? Par exemple "vie"
+# Requêtes SQL : 
+```
+
 
 
 ## Réduction de la dimension
@@ -296,45 +337,66 @@ Au moment de créer la matrice, on en profite aussi pour calculer les pondérati
 
 TODO : On pourrait aussi réduire la dimension avec la fonction removeSparseTerms de tm.
 
-```{r préparation de la dtm}
+```{r réduction en conservant les mots plus fréquents}
 # TODO : bounds ?
 inspect(dtmTf)
 as.matrix(dtmTf[1,1:20]) # on retrouve bien le nombre d'occurrences de chaque terme. Bizarre que ca s'appelle TF. Matrice ultra-sparse. sur le doc 1, cesar = 2 ; alors = 1. Bien le nombre d'occurrences
 
 minfreq <- findFreqTerms(dtmTf, 1) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
-dtm <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
-dtm
-dtm_m <- as.matrix(dtm) # renvoie pour chaque document sa fréquence tf-idf : cesar sur doc 1 = 0.2086247 ; alors = 0.03171596
-dtm_m[1,1:20]
+dtmTfIdf <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
+dtmTfIdf
+dtmTfIdf_m <- as.matrix(dtmTfIdf) # renvoie pour chaque document sa fréquence tf-idf : cesar sur doc 1 = 0.2086247 ; alors = 0.03171596
+dtmTfIdf_m[1,1:20]
 
 ```
 
 Grâce à ce paramètre on descend à un nombre de variables plus gérable (11k vs. 30k). La sparsity a légèrement diminué. En revanche le nombre d'entrée non vides a aussi diminué, en passant de 358k à 308k. A-t-on été trop gourmand sur le nettoyage ? En choisissant 25 comme fréquence de coupure, on tombe à 2706 variables.
 
-La sparsity étant encore très elevée, on retire les mots les plus rares pour réduire un peu la dimension, ie. ceux qui apparaissent dans moins d'1% des documents. Cela semble beaucoup plus efficace qu'en conservant les mots assez fréquents.
 
-```{r suppression sparse}
+Autre méthode, en identifiant puis supprimant les variables ayant très peu de variance :
+
+```{r réduction par suppression des variables portant peu d'informations}
 library(caret)
-# TODO : il faut tenter caret en near zero variance. Faut-il le faire sur la dtm Tf ou TF-IDF ?
+# Faut-il le faire sur la dtm Tf ou TF-IDF ? On fait les 2...
 dtmTf_m <- as.matrix(dtmTf)
 dim(dtmTf_m)
-# nzv <- nearZeroVar(dtmTf_m, saveMetrics= TRUE)
-# nzv$nzv
-# nzv[nzv$nzv,][1:100,]
 nzv <- nearZeroVar(dtmTf_m)
 dtmTf_m_filtered <- dtmTf_m[, -nzv]
-dim(dtmTf_m_filtered) # Caret a conservé 55 variables sur les 39584 ! Et on voit qu'il a conservé beaucoup de stop words... il faut refaire une passe complète.
+dim(dtmTf_m_filtered)
 
 
-dtm <- removeSparseTerms(dtm, 0.8)
-dtm
-dtm_m <- as.matrix(dtm)
+dim(dtmTfIdf_m)
+nzvTfIdf <- nearZeroVar(dtmTfIdf_m)
+dtmTfIdf_m_filtered <- dtmTfIdf_m[, -nzv]
+dim(dtmTfIdf_m_filtered)
 
-# NOUVEAUTE :
-finalDTM <- dtm # On sauvegarde notre DTM pour la classification supervisée.
-# OU :
+colnames(dtmTf_m_filtered)
+```
+
+Cette fonction conserve seulement 53 variables sur les 39k, que ce soit sur la matrice TF ou TF-IDF.
+
+
+Dernière méthode pour réduire la dimension : on retire les mots les plus rares ie. ceux qui apparaissent dans moins d'1% des documents. Cela semble beaucoup plus efficace qu'en conservant les mots assez fréquents :
+
+```{r réduction de la dimension par suppression des termes sparse}
+dtmTfIdf <- removeSparseTerms(dtm, 0.99)
+dtmTfIdf
+dtmTfIdf_m <- as.matrix(dtmTfIdf)
+dim(dtmTfIdf_m)
+```
+
+On conserve ici 941 variables.
+
+
+Enfin on construit notre DTM finale :
+
+```{r construction finale de la DTM}
+# Soit on s'appuie sur la matrice nettoyée avec removeSparseTerms :
+finalDTM <- dtmTfIdf # On sauvegarde notre DTM pour la classification supervisée.
+
+# Soit on reprend la matrice filtrée avec caret :
 dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
-dtmTf_m_filtered[68,] # fait manuellement depuis l'avertissement : empty document(s): 68 1210 2570 3923 4926
+
 finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
 dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
 dfBookSummaries <- dfBookSummaries[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
@@ -351,7 +413,7 @@ https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
 ```{r acp}
 # install.packages("FactoMineR")
 # library(FactoMineR)
-# PCAResult <- PCA(dtm_m, scale.unit = FALSE, ncp = 10)
+# PCAResult <- PCA(dtmTfIdf_m, scale.unit = FALSE, ncp = 10)
 ```
 
 
@@ -362,7 +424,7 @@ A présent que nous disposons d'une matrice relativement propre, nous allons gé
 collections <- levels(dfBookSummaries$collection)
 
 for (i in 1:length(collections)) {
-  m <- dtm_m[dfBookSummaries$collection == collections[i],]
+  m <- dtmTfIdf_m[dfBookSummaries$collection == collections[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
   print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
@@ -380,7 +442,7 @@ On voit quelques mots typiques du genre Thriller comme "menace", le Fantastique 
 
 ### Normalize the vectors so Euclidean makes sense with kmeans
 norm_eucl <- function(m) m/apply(m, MARGIN=1, FUN=function(x) sum(x^2)^.5)
-dtm_norm <- norm_eucl(as.matrix(dtm_m))
+dtm_norm <- norm_eucl(as.matrix(dtmTfIdf_m))
 
 
 # Finding the optimal number of clusters
