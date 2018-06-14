@@ -60,8 +60,11 @@ accent <- function(x) stri_trans_general(x, "Latin-ASCII") # cela signifie qu'on
 documents <- tm_map(documents, content_transformer(accent))
 
 #Remove URLs
-removeURL <- content_transformer(function(x) gsub("(f|ht)tp(s?)://\\S+", "", x, perl=T))
+removeURL <- content_transformer(function(x) gsub("(f|ht)tp(s?)://\\S+", "", x, perl=T, ignore.case = T))
 documents <- tm_map(documents, removeURL)
+removeURL2 <- content_transformer(function(x) gsub("www\.\\S+", "", x, perl=T, ignore.case = T))
+documents <- tm_map(documents, removeURL2)
+
 #Put in lowercase
 documents <- tm_map(documents, content_transformer(tolower))
 
@@ -77,10 +80,10 @@ stopwords_fr2 = union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi',
                                      'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
                                      'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
                                      'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
-                                     'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux',
+                                     'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
                                      'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
                                      'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
-                                     'car','grands','grandes','question','fois','france','travers','jour','avant','apres',
+                                     'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
                                      'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
                                      'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
                                      'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
@@ -88,7 +91,7 @@ stopwords_fr2 = union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi',
                                      'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
                                      'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
                                      'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots','lorsqu'
+                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
 ))
 
 documents <- tm_map(documents, content_transformer(removeWords), stopwords_fr2)
@@ -455,14 +458,14 @@ plot(nnetFit)
 parallel::stopCluster(cl)
 
 
-### Predictions
-# rf: https://stackoverflow.com/questions/47521841/r-randomforest-caret-seeing-predictions
-# rf: http://rstudio-pubs-static.s3.amazonaws.com/27155_519e7e23601048d08eb8a74d2a01ad2f.html
-# nnet : 
+### Enregistrement des modèles
+# Best rf : mtry = 13
+# Best multinom : decay = 0.1
+save(file='models', list=c('rf_gridsearch','nnetFit'))
 
 
-## Write final dataset csv
-#write.csv2(tidy_df, file=paste0("dataset",".csv"), quote = TRUE)
+## Write df_used (final dtm)
+write.csv2(df_used, file=paste0("dtm-dataset",".csv"), quote = TRUE, row.names = FALSE)
 
 
 
