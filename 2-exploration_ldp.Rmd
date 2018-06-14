@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introduction
+## Introduction
 Ce notebook explore l'ensemble des résumés de livres scrapés depuis le site du Livre de Poche, toutes collections confondues. Il se décompose de la manière suivante :
 - import et description succincte du jeu de données
 - nettoyage du texte
@@ -20,8 +20,6 @@ Ce notebook explore l'ensemble des résumés de livres scrapés depuis le site d
 
 Ces différentes étapes doivent permettre de mieux appréhender le jeu de données, avant de s'engager dans une classification supervisée.
 
-
-# Déroulement de la procédure
 
 ## Chargement des packages
 On commence par charger les packages nécessaires :
@@ -113,6 +111,13 @@ dfBookSummaries <- dfBookSummaries %>% filter(keepOnlyLetters(text) != keepOnlyL
 On a donc supprimé 54 lignes du jeu de données (6 résumés vides et 48 doublons de résumés).
 
 
+Les précédents modèles ont montré que les frontières de la collection Littérature sont très floues :
+```{r test suppression collection littérature}
+dfBookSummaries <- dfBookSummaries %>% filter(collection != "Littérature")
+```
+
+
+
 ## Nettoyage du corpus de documents
 Maintenant que nous avons supprimé les doublons et validé le jeu de données, nous pouvons normaliser le texte pour pouvoir ensuite l'analyser.
 
@@ -122,8 +127,7 @@ On créé d'abord le corpus :
 
 ```{r corpus et dtm}
 docs <- Corpus(VectorSource(dfBookSummaries$text))
-dtm <- DocumentTermMatrix(docs)
-dtm
+DocumentTermMatrix(docs)
 inspect(docs[1])
 ```
 
@@ -211,17 +215,13 @@ inspect(docs[1])
 TODO : On veut pouvoir s'assurer que la grande majorité des stopwords a été supprimée. On va donc extraire les mots les plus fréquents dans le corpus et retirer ceux qui sont des mots-outils :
 
 ```{r termes fréquents}
-# FIXME : ne devrait-on pas nettoyer uniquement le jeu d'entrainement et pas celui de test ?
-# FIXME 2 : on veut prédire la collection d'appartenance pour un nouveau résumé saisi par l'utilisateur
 dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
-dtmTf
 dtmTf_m <- as.matrix(DocumentTermMatrix(docs))
 v <- sort(colSums(dtmTf_m),decreasing=TRUE)
 TopWords <- data.frame(word = names(v),freq = v)
 head(TopWords, 50)
-# minfreq <- findFreqTerms(dtmTf, 80,100)
 
-#puis à la main on enlève ceux qui paraissent "creux" dans notre contexte
+# Puis à la main on enlève ceux qui paraissent "creux" dans notre contexte
 docs <- tm_map(docs, removeWords, c("resume", "roman", "ans", "histoire", "livre", "faire", "auteur", "nouvelle"))
 
 # puis on vérifie
@@ -230,6 +230,9 @@ v <- sort(colSums(dtmTf_m),decreasing=TRUE)
 TopWords <- data.frame(word = names(v),freq = v)
 head(TopWords, 50)
 ```
+
+On retire les mots creux : résumé, roman, histoire, livre, auteur, ...
+
 
 La liste des mots les plus/moins fréquents dans le corpus peut aussi être donnée selon l'approche suivante : 
 ```{r top/bottom}
@@ -240,15 +243,22 @@ length(freqr)
 #length should be total number of terms
 ord <- order(freqr,decreasing=TRUE)
 #inspect most frequently occurring terms
-freqr[head(ord,200L)]
+freqr[head(ord,50L)]
 #inspect least frequently occurring terms
-freqr[tail(ord,100L)]
+freqr[tail(ord,50L)]
 #View(freqr)
+
+
+# dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(2,520)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
+# dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(2,520)), weighting = function(x) weightTf(x)))
 
 ```
 
 
-Après suppression des stopwords, on remarque des mots proches les uns des autres : homme/hommes, femme/femmes, ... On va raciniser le texte pour résoudre ce problème :
+### Racinisation
+Après suppression des stopwords, on remarque des mots proches les uns des autres : homme/hommes, femme/femmes, ...
+
+On va raciniser le texte pour résoudre ce problème :
 
 ```{r racinisation}
 # nonStemmedDocs <- docs
@@ -266,15 +276,14 @@ Après suppression des stopwords, on remarque des mots proches les uns des autre
 # TODO : voir s'il faut éliminer les mots de moins de 2/3 lettres
 ```
 
-Les résultats ne sont pas probants : homm renvoie hommage et homme par exemple.
+Les résultats ne sont pas probants : homm renvoie hommage et homme par exemple. On abandonne cette étape.
 
 
 ```{r réduction des séquences espaces}
 docs <- tm_map(docs, stripWhitespace)
 inspect(docs[1])
 
-dtm <- DocumentTermMatrix(docs)
-dtm
+DocumentTermMatrix(docs)
 ```
 
 
@@ -313,6 +322,7 @@ Puis aux mots les plus fréquents par collection :
 
 ```{r mots fréquents par collection}
 collections <- levels(dfBookSummaries$collection)
+
 dtmTf_m <- as.matrix(dtmTf)
 
 for (i in 1:length(collections)) {
@@ -329,72 +339,86 @@ for (i in 1:length(collections)) {
 
 
 ## Réduction de la dimension
-Bien que nous ayons normalisé le texte, retiré les stopwords et tous les caractères parasites, notre matrice possède encore presque 40k colonnes !
+Bien que nous ayons normalisé le texte, retiré les stopwords et tous les caractères parasites, notre matrice possède plusieurs dizaines de milliers de colonnes.
 
-On va réduire le vocabulaire :  au lieu de prendre les mots apparaissant au moins une fois, on prend le nombre de mots apparaissant au moins 5 fois afin de limiter un peu le nombre de colonnes avant même de calculer la matrice. Ce nombre est choisi arbitrairement : le vocabulaire du corpus représentant 40k mots sur 5k articles, 5 semble légitimement faible.
+On a déjà retiré à la main les mots très fréquents et qui n'améliorent pas la compréhension du résumé : auteur, nouvelle, livre.
 
-Au moment de créer la matrice, on en profite aussi pour calculer les pondérations `tfidf` qui sont des pondérations classiques pour le texte (pondère beaucoup les mots qui apparaissent souvent dans un document mais rarement dans le corpus pris globalement, a particulièrement du sens pour les documents longs, pas pour des tweets typiquement). Les résumés de livres se situant entre les 2 extrêmes, nous avons choisi TF-IDF car .... TODO
+On expérimente dans cette section 2 autres techniques : réduction du vocabulaire trop sparse ; variables avec peu de variance.
 
-TODO : On pourrait aussi réduire la dimension avec la fonction removeSparseTerms de tm.
+### Réduction du vocabulaire trop sparse
+
+Au lieu de prendre les mots apparaissant au moins une fois, on prend le nombre de mots apparaissant au moins 2 fois afin de limiter un peu le nombre de colonnes avant même de calculer la matrice. Ce nombre est choisi arbitrairement : le vocabulaire du corpus représentant 30k mots sur 3k articles, 2 semble légitimement faible.
+
+Au moment de créer la matrice, on en profite aussi pour calculer les pondérations `tfidf` qui sont des pondérations classiques pour le texte (pondère beaucoup les mots qui apparaissent souvent dans un document mais rarement dans le corpus pris globalement, a particulièrement du sens pour les documents longs, pas pour des tweets typiquement). Les résumés de livres se situant entre les 2 extrêmes, nous avons choisi TF-IDF car ???? TODO
 
 ```{r réduction en conservant les mots plus fréquents}
-# TODO : bounds ?
-inspect(dtmTf)
-as.matrix(dtmTf[1,1:20]) # on retrouve bien le nombre d'occurrences de chaque terme. Bizarre que ca s'appelle TF. Matrice ultra-sparse. sur le doc 1, cesar = 2 ; alors = 1. Bien le nombre d'occurrences
-
-minfreq <- findFreqTerms(dtmTf, 1) # On fonctionne ici toujours sur la DTM pondéré par TF !!!
+dtmTf <- DocumentTermMatrix(docs, control=list(weighting=weightTf))
+minfreq <- findFreqTerms(dtmTf, 2) # On fonctionne ici toujours sur la DTM pondéré par TF
+dtmTf <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTf))
 dtmTfIdf <- DocumentTermMatrix(docs, control=list(dictionary = minfreq, weighting=weightTfIdf))
 dtmTfIdf
-dtmTfIdf_m <- as.matrix(dtmTfIdf) # renvoie pour chaque document sa fréquence tf-idf : cesar sur doc 1 = 0.2086247 ; alors = 0.03171596
-dtmTfIdf_m[1,1:20]
-
+dtmTf
 ```
 
-Grâce à ce paramètre on descend à un nombre de variables plus gérable (11k vs. 30k). La sparsity a légèrement diminué. En revanche le nombre d'entrée non vides a aussi diminué, en passant de 358k à 308k. A-t-on été trop gourmand sur le nettoyage ? En choisissant 25 comme fréquence de coupure, on tombe à 2706 variables.
+Grâce à ce paramètre on descend à un nombre de variables plus gérable (16k vs. 30k). On a donc supprimé 15k variables qui apparaissaient une seule fois dans tout le corpus.
 
+La sparsity a légèrement diminué. En revanche le nombre d'entrée non vides a aussi diminué, en passant de 160k à 147k.
 
-Autre méthode, en identifiant puis supprimant les variables ayant très peu de variance :
+Remarque : les termes présents au moins 2 fois pourraient l'être aussi sur n collections...ou sur un seul document.
 
-```{r réduction par suppression des variables portant peu d'informations}
-library(caret)
-# Faut-il le faire sur la dtm Tf ou TF-IDF ? On fait les 2...
-dtmTf_m <- as.matrix(dtmTf)
-dim(dtmTf_m)
-nzv <- nearZeroVar(dtmTf_m)
-dtmTf_m_filtered <- dtmTf_m[, -nzv]
-dim(dtmTf_m_filtered)
-
-
-dim(dtmTfIdf_m)
-nzvTfIdf <- nearZeroVar(dtmTfIdf_m)
-dtmTfIdf_m_filtered <- dtmTfIdf_m[, -nzv]
-dim(dtmTfIdf_m_filtered)
-
-colnames(dtmTf_m_filtered)
-```
-
-Cette fonction conserve seulement 53 variables sur les 39k, que ce soit sur la matrice TF ou TF-IDF.
-
-
-Dernière méthode pour réduire la dimension : on retire les mots les plus rares ie. ceux qui apparaissent dans moins d'1% des documents. Cela semble beaucoup plus efficace qu'en conservant les mots assez fréquents :
+La fonction `removeSparseTerms` du package `tm` propose une approche similaire bien que plus boîte noire (ici on ne filtre pas de cette manière, le code est laissé à titre informatif) :
 
 ```{r réduction de la dimension par suppression des termes sparse}
-dtmTfIdf <- removeSparseTerms(dtm, 0.99)
+dtmTfIdf <- removeSparseTerms(dtmTfIdf, 0.97)
 dtmTfIdf
+dtmTf <- removeSparseTerms(dtmTf, 0.97)
+dtmTf
+
+dtmTf_m <- as.matrix(dtmTf)
 dtmTfIdf_m <- as.matrix(dtmTfIdf)
-dim(dtmTfIdf_m)
+
 colnames(dtmTfIdf_m)
 ```
 
-On conserve ici 941 variables.
+On retrouve un vocabulaire propre à certaines collections : imaginaire (planete, aventure, univers, roi, ...), thriller (victime, polar, tueur, cadavre, ...), classique (vie, mort, maison, famille, ...)
+
+### Suppression des variables avec peu de variance
+En complément, on peut appliquer une méthode qui va identifier et supprimer les variables ayant très peu de variance (cad. qui apportent très peu d'informations) :
+
+```{r préparation des matrices TF et TF-IDF}
+# Faut-il le faire sur la dtm Tf ou TF-IDF ? On fait les 2...
+dtmTf_m <- as.matrix(dtmTf)
+dtmTfIdf_m <- as.matrix(dtmTfIdf)
+
+dim(dtmTf_m)
+dim(dtmTfIdf_m)
+```
+
+On lance ensuite le traitement NZV :
+```{r réduction par suppression des variables portant peu d'informations}
+library(caret)
+
+nzv <- nearZeroVar(dtmTf_m)
+dtmTf_m_nzv <- dtmTf_m[, -nzv]
+
+dim(dtmTf_m_nzv)
+colnames(dtmTf_m_nzv)
+
+nzvTfIdf <- nearZeroVar(dtmTfIdf_m)
+dtmTfIdf_m_nzv <- dtmTfIdf_m[, -nzv]
+
+dim(dtmTfIdf_m_nzv)
+colnames(dtmTfIdf_m_nzv)
+
+```
+
+Cette fonction conserverait seulement 43 variables sur les 30k du départ, que ce soit sur la matrice TF ou TF-IDF. On ne va pas utiliser cette méthode car intuitivement on perd énormément de mots identifiés à l'étape précédente.
 
 
 Enfin on construit notre DTM finale :
 
 ```{r construction finale de la DTM}
-# Soit on s'appuie sur la matrice nettoyée avec removeSparseTerms :
-finalDTM <- dtmTfIdf # On sauvegarde notre DTM pour la classification supervisée.
-finalDTM_m <- dtmTfIdf_m
+# On a uniquement appliqué la suppression des variables ayant peu de variance :
 
 # # Soit on reprend la matrice filtrée avec caret :
 # dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
@@ -405,129 +429,93 @@ finalDTM_m <- dtmTfIdf_m
 ```
 
 
-
-TODO : On tente ensuite une ACP sur la matrice (trop long, code commenté) :
-
-Voir : https://www.usna.edu/Users/cs/lmcdowel/pubs/UnderhillIRI2007Final.pdf
-Et :
-https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
-
-
-```{r acp}
-# install.packages("FactoMineR")
-# Ou via caret ?
-# library(FactoMineR)
-# PCAResult <- PCA(finalDTM_m, scale.unit = FALSE, ncp = 10)
-```
-
-
 ## Nuages de mots
 A présent que nous disposons d'une matrice relativement propre, nous allons générer un nuage de mots par collection pour tenter de faire émerger quelques thèmes :
 
 ```{r nuages de mots par collection}
 collections <- levels(dfBookSummaries$collection)
 
+dtmTf_m <- as.matrix(dtmTf)
+dim(dtmTf_m)
+dim(dfBookSummaries)
+ncol(dtmTf_m)
+
 for (i in 1:length(collections)) {
-  m <- finalDTM_m[dfBookSummaries$collection == collections[i],]
+  m <- dtmTfIdf_m[dfBookSummaries$collection == collections[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
-  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+  print(wordcloud2(data = wordsFreq[1:ncol(dtmTf_m),]))
   }
 ```
 
-TODO : A réécrire : on voit quelques mots typiques du genre Thriller comme "menace", le Fantastique est sur-représenté par son auteur emblématique "King" et la Littérature aborde à peu très tous les thèmes (amour, argent, voyage, ...). Bref c'est encore assez confus.
 
+## Classification non supervisée : ACP / SKmeans / LDA
 
-## TODO : Classification non supervisée LDA (Topic Modeling) / KMeans / SKmeans / CAH / ACP / ...
+### ACP
+On tente ensuite une ACP sur la matrice :
 
-### Kmeans
-```{r kmeans}
-#http://michael.hahsler.net/SMU/CSE7337/ et http://michael.hahsler.net/SMU/CSE7337/install/tm.R
+Voir : https://www.usna.edu/Users/cs/lmcdowel/pubs/UnderhillIRI2007Final.pdf
+Et :
+https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
 
-rowTotals <- apply(finalDTM_m , 1, sum) # calcule la somme des termes dans chaque document
-finalDTM_m   <- finalDTM_m[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
-dim(finalDTM_m)
-
-### Normalize the vectors so Euclidean makes sense with kmeans
-norm_eucl <- function(m) m/apply(m, MARGIN=1, FUN=function(x) sum(x^2)^.5)
-dtm_norm <- norm_eucl(as.matrix(finalDTM_m))
-
-
-# Finding the optimal number of clusters
-
-# Compute the WSS for 
-# k = 2 to k.max (kmeans)
-k.max <- 50
-swss <- (nrow(dtm_norm)-1)*sum(apply(dtm_norm,2,var))
-for(i in 2:k.max){
-  set.seed(123)
-  swss[i] <- sum(kmeans(dtm_norm, centers = i, iter.max = 20)$withinss)
-}
-
-# Plot the elbow (kmeans)
-plot(1:k.max, swss, type = "b", pch = 19, 
-     frame = FALSE, xlab = "Number of clusters k")
-#abline(v = which.min(swss), lty = 2)
-
-
-# cluster into x (optimal) clusters - kmeans
-set.seed(123)
-cl2 <- kmeans(dtm_norm, centers = 8, iter.max = 20) # Remplacer 'centers' par nombre optimal trouvé
-table(cl2$cluster)
-# show clusters using the first 2 principal components
-plot(prcomp(dtm_norm)$x, col=cl2$cluster)
-
+```{r acp}
+# install.packages("FactoMineR")
+library(FactoMineR)
+PCAResult <- PCA(dtmTf_m, scale.unit = FALSE, ncp = 10)
 ```
+
+On voit un axe porté par "Vie" et l'autre par "Monde" : roman réaliste versus. imaginaire ?
+
 
 ### SKmeans
 
 ```{r skmeans}
 # install.packages("skmeans")
 library(skmeans)
-tdm <-TermDocumentMatrix(docs)
-dim(tdm)
-tdmss <- removeSparseTerms(tdm, 0.99)   
-dim(tdmss)
-sk <- skmeans(x=tdmss, 6) # on a choisi de voir ce qui ressortait pour 6 classes (pour voir si on retrouve les 6 collections utilisées pour classer les articles)
 
-## proportion par classe:
-table(sk$cluster)/sum(table(sk$cluster))
-for (i in 1:6){
-  print(paste('cluster ',i,sep=' '))
-  print(names(sk$cluster)[sk$cluster==i][1:50])
-  print('---------------')
-}
-
-
-
-## On partitionne en 6 clusters.
-# dtm <-DocumentTermMatrix(docs)
-# dim(dtm)
-# dtmss <- removeSparseTerms(dtm, 0.99)
-dim(finalDTM_m)
-sk <- skmeans(x=finalDTM_m, 6)
-## On regarde la r?partition dans les clusters
+## On partitionne en 5 clusters.
+rowTotals <- apply(dtmTf_m , 1, sum) # calcule la somme des termes dans chaque document
+nonEmptyDtmTf_m   <- dtmTf_m[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+dim(nonEmptyDtmTf_m)
+head(nonEmptyDtmTf_m)
+sk <- skmeans(x = nonEmptyDtmTf_m, 5)
+## On regarde la répartition dans les clusters
 table(sk$cluster)/sum(table(sk$cluster))
 
-for (i in 1:6){
-  m <- finalDTM_m[sk$cluster==i,]
+for (i in 1:5) {
+  m <- nonEmptyDtmTf_m[sk$cluster==i,]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
-  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))}
+  print(wordcloud2(data = wordsFreq[1:100,]))
+}
 ```
 
 
 
 On va regarder à présent les résultats d'une LDA, l'intérêt c'est que l'on regroupe les documents et les mots simultanément cette fois et que cela permet une exploration de résultats beaucoup plus aisée. La première chose à faire est de vérifier que l'on a pas de documents sans mot (notamment après avoir filtré sur la sparsité/parcimonie).
 
-La LDA s'applique sur une matrice documents termes sans pond?ration (nombre d'occurrences).
+!!! La LDA s'applique sur une matrice documents termes sans pondération (nombre d'occurrences) !!! :
 ```{r topic modeling}
-# TODO : topic modeling pour adresser les synonymes ?
-# Similarité entre mots
-# TODO : findAssocs(dtm, terms = "monde", corlimit = 0.3)
-# TODO : Word2Vec : mais pour faire quoi exactement dans notre cas ?
-# TODO : Classification non supervisée : SKmeans / CAH / LDA
-# TODO : tester la précision des catégories vs. les Y de sortie du premier dataframe (for JL : "accuracy").
-# TODO : kmeans et CAH (sur matrice nettoyée)
+
+library(topicmodels)
+# Paramètres du Gibbs sampling
+burnin <- 500
+iter <- 500
+thin <- 100
+seed <- list(2003,5,63,100001,765) # arbitraire
+nstart <- 5
+best <- TRUE
+
+# Nombre de thèmes
+k <- 10 # arbitraire à ce stade, nécessiterait d'être optimisé
+
+# Estimation de la LDA
+ldaOut <-LDA(nonEmptyDtmTf_m, k, method="Gibbs", control = list(nstart = nstart, seed = seed, best = best, burnin = burnin, iter = iter, thin = thin))
+
+ldaOut.topics <- as.matrix(topics(ldaOut))
+table(ldaOut.topics)
+
+ldaOut.terms <- as.matrix(terms(ldaOut,5))
+ldaOut.terms
 ```
 
