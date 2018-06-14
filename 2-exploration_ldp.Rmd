@@ -482,7 +482,7 @@ sk <- skmeans(x = nonEmptyDtmTf_m, 4)
 table(sk$cluster)/sum(table(sk$cluster))
 
 nonEmptyDfBookSummaries <- dfBookSummaries[-which(rowTotals == 0),]
-
+nonEmptyDtmTf <- dtmTf[-which(rowTotals == 0),]
 table(nonEmptyDfBookSummaries$collection, sk$cluster)
 
 

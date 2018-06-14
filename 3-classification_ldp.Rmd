@@ -16,10 +16,8 @@ Nous avons fini de préparer notre DTM. Nous la transformons en data frame, et l
 
 ```{r ajout variable Y}
 
-# finalDTM <- removeSparseTerms(finalDTM, 0.97)
-finalDTM
-dfReviews <- as.data.frame(as.matrix(finalDTM)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
-dfReviews$Y <- as.factor(dfBookSummaries$collection) # On peut ainsi renseigner la variable Y
+dfReviews <- as.data.frame(as.matrix(nonEmptyDtmTf)) # Alternative : on conserve TOUTES les variables, et le supervisé va s'en charger (via les SVM, le Lasso, ...)
+dfReviews$Y <- as.factor(nonEmptyDfBookSummaries$collection) # On peut ainsi renseigner la variable Y
 head(dfReviews) # 1185 variables car on a ajouté Y
 ```
 
