@@ -461,10 +461,10 @@ https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
 ```{r acp}
 # install.packages("FactoMineR")
 library(FactoMineR)
-PCAResult <- PCA(dtmTf_m, scale.unit = FALSE, ncp = 10)
+PCAResult <- PCA(dtmTf_m, scale.unit = FALSE, ncp = 180)
 ```
 
-On voit un axe porté par "Vie" et l'autre par "Monde" : roman réaliste versus. imaginaire ?
+On voit un axe porté par "Vie" et l'autre par "Monde" : roman réaliste versus. imaginaire ? Pas pertinent, on obtient du 3%
 
 
 ### SKmeans
@@ -477,21 +477,62 @@ library(skmeans)
 rowTotals <- apply(dtmTf_m , 1, sum) # calcule la somme des termes dans chaque document
 nonEmptyDtmTf_m   <- dtmTf_m[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
 dim(nonEmptyDtmTf_m)
-head(nonEmptyDtmTf_m)
-sk <- skmeans(x = nonEmptyDtmTf_m, 5)
+sk <- skmeans(x = nonEmptyDtmTf_m, 4)
 ## On regarde la répartition dans les clusters
 table(sk$cluster)/sum(table(sk$cluster))
 
-for (i in 1:5) {
-  m <- nonEmptyDtmTf_m[sk$cluster==i,]
-  wordsFreq <- sort(colSums(m),decreasing = TRUE)
-  wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
-  print(wordcloud2(data = wordsFreq[1:100,]))
-}
+nonEmptyDfBookSummaries <- dfBookSummaries[-which(rowTotals == 0),]
+
+table(nonEmptyDfBookSummaries$collection, sk$cluster)
+
+
 ```
 
 
+```{r kmeans}
+### Normalize the vectors so Euclidean makes sense with kmeans
+norm_eucl <- function(m) m/apply(m, MARGIN=1, FUN=function(x) sum(x^2)^.5)
+m_norm <- norm_eucl(as.matrix(nonEmptyDtmTf_m))
 
+
+set.seed(123)
+
+# Finding the optimal number of clusters
+
+# Compute the WSS for 
+# k = 2 to k.max (kmeans)
+k.max <- 15
+sil2 <- (nrow(m_norm)-1)*sum(apply(m_norm,2,var))
+for(i in 2:k.max){
+  set.seed(123)
+  sil2[i] <- sum(kmeans(m_norm, centers = i, iter.max = 20)$withinss)
+  #ss2 <- silhouette(k.res2$cluster, dist(m_norm))
+  #sil2[i] <- mean(ss2[, 3])
+}
+
+# Plot the elbow (kmeans)
+plot(1:k.max, sil2, type = "b", pch = 19, 
+     frame = FALSE, xlab = "Number of clusters k")
+#abline(v = which.min(sil2), lty = 2)
+
+
+# cluster into x (optimal) clusters - kmeans
+set.seed(123)
+cl2 <- kmeans(m_norm, 4, iter.max = 20)
+table(cl2$cluster)
+# show clusters using the first 2 principal components (ACP)
+plot(prcomp(m_norm)$x, col=cl2$cluster)
+
+
+nonEmptyDfBookSummaries <- dfBookSummaries[-which(rowTotals == 0),]
+table(nonEmptyDfBookSummaries$collection, cl2$cluster)
+```
+
+On note 2 décrochages : à 4 et à 10. La découpe à 4 sépare le mieux les groupes.
+
+
+
+### Topic modeling
 On va regarder à présent les résultats d'une LDA, l'intérêt c'est que l'on regroupe les documents et les mots simultanément cette fois et que cela permet une exploration de résultats beaucoup plus aisée. La première chose à faire est de vérifier que l'on a pas de documents sans mot (notamment après avoir filtré sur la sparsité/parcimonie).
 
 !!! La LDA s'applique sur une matrice documents termes sans pondération (nombre d'occurrences) !!! :
