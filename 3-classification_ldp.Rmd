@@ -47,29 +47,6 @@ data.test$Y <- NULL
 ```
 
 
-ANCIEN CODE MULTICLASSE, QUI ENCOURAGE A TESTER EN BINAIRE SUR CHACUNE DES CLASSES CAR LITTERATURE VAMPIRISE LA PREDICTION.
-stephanie.combes@gmail.com pour des questions
-
-TODO : voir à enlever les documents de la collection Littérature et refaire les modèles. Catégorie fourre-tout.
-
-```{r ancien code multiclasse}
-# # install.packages("randomForest")
-# library(randomForest)
-# fit <- randomForest(ytrain ~ ., data=data.train, importance=TRUE, ntree=500, mtry=17)
-# importance(fit)
-# varImpPlot(fit) # Graphe d'importance des variables de la RF
-# table(ytest, predict(fit, data.test, type="class")) # En récupérant la somme de la diagonale, on arrive à peu près à 60% de bien classés (défavorisé par la collection Littérature)
-
-# ytest         Classiques Documents Imaginaire Littérature Policier Thriller
-#   Classiques          21         1          2          46        2        0
-#   Documents            1        16          1          92        6        3
-#   Imaginaire           1         2         33          54        4        5
-#   Littérature          2         0          3         411        6       11
-#   Policier             1         0          2          65       44       24
-#   Thriller             0         1          0          57       20       68
-```
-
-
 
 La plupart des modèles choisissent comme classe de positifs, la classe correspondant au premier label, or ici "Imaginaire" arrive en second (ordre alphabétique). Afin que la lecture des différents scores (précision, rappel, spécificicité, sensibilité) soit cohérente avec la détection des positifs (ici les articles liés à l'imaginaire), on inverse les labels. On créé aussi notre split binaire :
 
@@ -134,7 +111,7 @@ cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur po
 registerDoParallel(cluster)
 
 
-rpartGridSearch <- expand.grid(cp = seq(0, 0.05, 0.001))
+rpartGridSearch <- expand.grid(cp = seq(0, 0.001, 0.0001))
 rpartModel <- train(data.trainImaginaire, ytrainImaginaire, method = "rpart", tuneGrid = rpartGridSearch, trControl = fitControl, metric = 'ROC')
 plot(rpartModel)
 
@@ -155,6 +132,9 @@ rpart.plot(rpartModel$finalModel)
 rpartConfusionMatrix$overall
 rpartConfusionMatrix$byClass
 
+
+# Ici, on peut choisir le seuil de proba qu'on souhaite qui décidera de la collection de sortie.
+# En multiclasse, on pourrait utiliser une matrice de coût.
 rpartPredictionProbability <- predict(object = rpartModel$finalModel, data.testImaginaire, type = 'prob')
 rpartRocCurve <- roc(response = ytestImaginaire, predictor = rpartPredictionProbability[, "Imaginaire"], levels = rev(levels(ytestImaginaire)))
 plot(rpartRocCurve, print.thres = "best")
@@ -173,27 +153,11 @@ registerDoSEQ()
 cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
 registerDoParallel(cluster)
 
-gridSearch <- expand.grid(mtry = 17)
+gridSearch <- expand.grid(mtry = c(1:17))
 
 rfModel <- train(data.trainImaginaire, ytrainImaginaire, method = "rf", tuneGrid = gridSearch, trControl = fitControl, metric = 'ROC')
 
-# A peu près 30min pour le faire tourner !
 rfModel
-# Random Forest 
-# 
-# 4034 samples
-# 1184 predictors
-#    2 classes: 'Autre', 'Imaginaire' 
-# 
-# No pre-processing
-# Resampling: Cross-Validated (3 fold) 
-# Summary of sample sizes: 2689, 2689, 2690 
-# Resampling results:
-# 
-#   ROC        Sens  Spec     
-#   0.8623885  1     0.1510974
-# 
-# Tuning parameter 'mtry' was held constant at a value of 17
 
 plot(rfModel) # There are no tuning parameters with more than 1 value : logique on a précisé 1 seul mtry
 
