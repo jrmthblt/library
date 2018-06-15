@@ -7,6 +7,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+#load("C:/Users/Arnaud/Documents/BDF/_formationENSAE-DataScientist/Projet/github/RDataArnaud.RData")
+
 ```
 
 
@@ -28,15 +31,22 @@ Pour tout le protocole de machine learning on utilise la librairie `caret` qui f
 
 ```{r préparation caret multiclasse}
 # install.packages("caret")
+# install.packages("tictoc")
 library(caret)
 library(parallel)
 library(doParallel)
+library(tictoc)
 
-splitIndex <- createDataPartition(dfReviews$Y, p = .80, list = FALSE, times = 1)
+splitIndex <- createDataPartition(dfReviews$Y, p = 1, list = FALSE, times = 1)
 data.train <- data.frame(dfReviews[ splitIndex,])
+data.train2 <- data.frame(dfReviews[ splitIndex,])
 data.test  <- data.frame(dfReviews[-splitIndex,])
 
 ytrain <- dfReviews$Y[splitIndex]
+ytrain2 <- droplevels(ytrain, 'Littérature')
+View(ytrain2)
+length(ytrain2)
+  
 ytest  <- dfReviews$Y[-splitIndex]
 table(ytrain)/sum(table(ytrain))
 
@@ -276,15 +286,101 @@ legend(0, 0.7, c('rpart','forest','glm'), 1:3)
 ## Régression logistique multinomiale (à réécrire)
 
 ```{r nnet}
-# install.packages("nnet")
-# library(nnet)
-# regm <- multinom(genre ~ ., data = train)
-# summary(regm)
-# table(predict(regm, newdata = test))
-# table(predict(regm, newdata = test), test$genre)
+# install.packages('nnet')
+library(nnet)
+
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+set.seed(123)
+seeds3 <- vector(mode = "list", length = 31)
+for(i in 1:30) seeds3[[i]]<- sample.int(n=1000, 18)
+#for the last model
+seeds3[[31]]<-sample.int(1000, 1)
+
+
+fitControl <- trainControl(method = "repeatedcv",
+                           number = 10,
+                           repeats = 1,
+                           search="grid",
+                           returnData = FALSE,
+                           seeds = seeds3,
+                           classProbs = TRUE,
+                           summaryFunction = multiClassSummary,
+                           allowParallel = TRUE,
+                           verboseIter = TRUE
+                           )
+
+nnetGrid <- expand.grid(.decay = c(1, 0.8, 0.7, 0.5, 0.3, 0.2, 0.1, 1e-2, 1e-3, 1e-4, 1e-5)) #, size = c(3, 5, 10, 20))
+#GnnetGrid <- expand.grid(.decay = c(0.1))
+                        
+tic()
+nnetFit <- train(Y ~ .,
+                 data= droplevels(data.train2,'Littérature'),
+                 method = "multinom",
+                 metric = "Accuracy",
+                 trControl = fitControl,
+                 tuneGrid = nnetGrid,
+                 MaxNWts=7000,
+                 maxit=1000,
+                 verbose = TRUE)
+toc()
+
+print(nnetFit)
+plot(nnetFit)
+
+stopCluster(cluster)
 ```
 
 
 https://rstudio-pubs-static.s3.amazonaws.com/132792_864e3813b0ec47cb95c7e1e2e2ad83e7.html
 
+
+## Random Forest multiclasse (caret)
+
+```{r rf }
+# install.packages('randomForest')
+library('randomForest')
+
+cluster <- makeCluster(detectCores() - 1) # par convention on laisse un coeur pour l'OS
+registerDoParallel(cluster)
+
+# Variation mtry de 1 à 15
+set.seed(123)
+seeds2 <- vector(mode = "list", length = 31)
+for(i in 1:30) seeds2[[i]]<- sample.int(n=1000, 25)
+#for the last model
+seeds2[[31]]<-sample.int(1000, 1)
+
+
+control <- trainControl(method="repeatedcv",
+                        number=10,
+                        repeats=1,
+                        search="grid",
+                        returnData = FALSE,
+                        seeds=seeds2,
+                        summaryFunction = multiClassSummary,
+                        allowParallel = TRUE,
+                        verboseIter = TRUE
+)
+
+tunegrid <- expand.grid(.mtry=c(1:15))
+
+tic()
+rf_gridsearch <- train(Y ~ .,
+                       data= droplevels(data.train2,'Littérature'),
+                       method="rf",
+                       metric="Accuracy",
+                       tuneGrid=tunegrid,
+                       trControl=control,
+                       verbose=TRUE)
+toc()
+
+print(rf_gridsearch)
+plot(rf_gridsearch)
+
+stopCluster(cluster)
+
 ```
+
+
