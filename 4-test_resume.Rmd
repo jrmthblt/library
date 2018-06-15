@@ -22,7 +22,13 @@ When you click the **Knit** button a document will be generated that includes bo
 # 
 # intersect avec la DTM du modèle + ajouter les colonnes manquantes
 
-inputResume <- "blabla Années Célèbre"
+inputResume <- "C'est au Texas que Mia se retrouve, auprès d'un magnat du pétrole, Maxwell Cunningham.Son père est décédé récemment et a laissé une bombe dans son testament. Il a légué 49 % de sa fortune à une jeune femme, la sœur de Maxwell, dont ce dernier n'a jamais entendu parler et qui répond au nom de... Mia Saunders.Il est précisé que Maxwell a un an pour retrouver cette sœur, ou il perdra son empire au profit d'un groupe d'investisseurs peu scrupuleux. Un mois riche en rebondissement étonnants.  12 MOIS – 12 HOMMES – 12 VILLESMIA VA-T-ELLE RELEVER SON INCROYABLE DÉFI ?La série culte aux 15 millions de lecteurs, déjà publiée dans 32 pays, vendue à la chaîne ABC (et qui sera produite par les producteurs de Gossip Girl).« Un véritable phénomène. » Direct Matin.« La plume hot. » Cosmo.Traduit de l’anglais (États-Unis) par Robyn Stella Bligh."
+
+
+inputImaginaireResume <- "Tu croyais pouvoir te débarrasser de moi. Tu pensais qu’avec un enterrement bidon pour mes fans et pour la presse, tout serait réglé. Tu te disais : \"\"Ce n’est qu’un pseudonyme, il n’existe même pas.\"\" Tu te disais : \"\"Fini George Stark, maintenant consacrons-nous à la vraie littérature…\"\" Pauvre naïf ! Non, ne t’imagine pas que tu vas pouvoir si facilement te débarrasser de moi. Je suis ton double, ta part de ténèbres… Et j’aurai ta peau ! »  Thad Beaumont et son pseudonyme George Stark n’ont fait qu’un pendant douze ans. Jusqu’à ce jour où l’écrivain décide d’écrire sous son vrai nom. Alors, quand on a signé des thrillers ultraviolents, se venger de celui qui a voulu vous faire disparaître est un réel plaisir…  Adapté au cinéma par George A. Romero en 1992, La Part des ténèbres nous plonge, sous la plume du maître inégalé de l’horreur et du suspense, dans les régions les plus reculées et les plus obscures  qui soient : au fond de nous-mêmes.  Traduit de l’anglais (États-Unis) par William Olivier Desmond."
+
+inputResume <- inputImaginaireResume
+
 resume <- Corpus(VectorSource(inputResume))
 resume <- tm_map(resume, content_transformer(nfdRemoveAccents))
 resume <- tm_map(resume, content_transformer(tolower))
@@ -31,17 +37,19 @@ inspect(resume[1])
 
 resume_m <- as.data.frame(as.matrix(DocumentTermMatrix(resume)))
 
-
-rpartPredictionProbability <- predict(object = rpartModel$finalModel, resume_m, type = 'prob')
-
-
 nonEmptyDtmTfDf <- as.data.frame(as.matrix(nonEmptyDtmTf))
 nonEmptyDtmTfDf <- nonEmptyDtmTfDf[1,]
 nonEmptyDtmTfDf[1,] <- 0
 
-bind_rows(nonEmptyDtmTfDf, resume_m) # TODO : supprimer la colonne blabla, passer en 0 les NA et et supprimer la première ligne.
+resume_m <- bind_rows(nonEmptyDtmTfDf, resume_m)
 
+resume_m <- resume_m[,colnames(nonEmptyDtmTfDf)]
+resume_m <- resume_m[2,]
 
+resume_m[,which(is.na(resume_m))] <- 0
+
+rpartPredictionProbability <- predict(object = rpartModel$finalModel, resume_m, type = 'prob')
+rpartPredictionProbability
 ```
 
 ## Including Plots
