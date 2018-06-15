@@ -325,11 +325,12 @@ collections <- levels(dfBookSummaries$collection)
 
 dtmTf_m <- as.matrix(dtmTf)
 
+# TODO : 
 for (i in 1:length(collections)) {
   m <- dtmTf_m[dfBookSummaries$collection == collections[i],]
   wordsFreq <- sort(colSums(m),decreasing = TRUE)
   wordsFreq <- data.frame(word = names(wordsFreq), Freq = as.vector(wordsFreq)) # mise au format pour wordcloud2
-  print(wordcloud2(data = wordsFreq[1:500,],minSize = 1, size = 3))
+  print(wordcloud2(data = wordsFreq[1:ncol(dtmTf_m),]))
 }
 
 # TODO : peut-être faut-il supprimer les mots qui apparaissent sur toutes les collections ? Par exemple "vie"
@@ -415,20 +416,6 @@ colnames(dtmTfIdf_m_nzv)
 Cette fonction conserverait seulement 43 variables sur les 30k du départ, que ce soit sur la matrice TF ou TF-IDF. On ne va pas utiliser cette méthode car intuitivement on perd énormément de mots identifiés à l'étape précédente.
 
 
-Enfin on construit notre DTM finale :
-
-```{r construction finale de la DTM}
-# On a uniquement appliqué la suppression des variables ayant peu de variance :
-
-# # Soit on reprend la matrice filtrée avec caret :
-# dtmTf_m_filtered <- dtmTf_m_filtered[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
-# 
-# finalDTM <- as.DocumentTermMatrix(dtmTf_m_filtered, weighting=weightTfIdf)
-# dtm_m <- as.matrix(finalDTM) # Problème : après avoir supprimé des documents, comment faire de même pour la taille de dfBookSummaries ?
-# dfBookSummaries <- dfBookSummaries[-c(55, 68, 130, 155, 252, 259, 298, 463, 476, 500, 541, 615, 616, 642, 666, 674, 686, 703, 715, 762, 770, 836, 843, 936, 1054, 1055, 1129, 1162, 1198, 1210, 1299, 1310, 1324, 1326, 1394, 1411, 1433, 1435, 1579, 1794, 1822, 1919, 1983, 1996, 2059, 2100, 2570, 2634, 2785, 2806, 2828, 2880, 2936, 2941, 2943, 2950, 3032, 3080, 3141, 3200, 3221, 3230, 3344, 3532, 3547, 3575, 3647, 3649, 3689, 3794, 3843, 3847, 3875, 3904, 3905, 3923, 3935, 3952, 3976, 3997, 4027, 4035, 4039, 4050, 4052, 4053, 4055, 4075, 4083, 4084, 4089, 4099, 4156, 4180, 4185, 4195, 4229, 4234, 4246, 4263, 4273, 4288, 4297, 4712, 4772, 4833, 4852, 4855, 4872, 4876, 4926),]
-```
-
-
 ## Nuages de mots
 A présent que nous disposons d'une matrice relativement propre, nous allons générer un nuage de mots par collection pour tenter de faire émerger quelques thèmes :
 
@@ -461,7 +448,8 @@ https://www.kdnuggets.com/2015/05/7-methods-data-dimensionality-reduction.html
 ```{r acp}
 # install.packages("FactoMineR")
 library(FactoMineR)
-PCAResult <- PCA(dtmTf_m, scale.unit = FALSE, ncp = 180)
+PCAResult <- PCA(dtmTf_m, scale.unit = FALSE, ncp = 5)
+PCAResult$var$cos2
 ```
 
 On voit un axe porté par "Vie" et l'autre par "Monde" : roman réaliste versus. imaginaire ? Pas pertinent, on obtient du 3%
@@ -521,7 +509,10 @@ set.seed(123)
 cl2 <- kmeans(m_norm, 4, iter.max = 20)
 table(cl2$cluster)
 # show clusters using the first 2 principal components (ACP)
-plot(prcomp(m_norm)$x, col=cl2$cluster)
+
+acp <- prcomp(m_norm)
+acp
+plot(acp$x, col=cl2$cluster)
 
 
 nonEmptyDfBookSummaries <- dfBookSummaries[-which(rowTotals == 0),]
