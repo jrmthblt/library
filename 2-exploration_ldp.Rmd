@@ -32,6 +32,8 @@ On commence par charger les packages nécessaires :
 # install.packages("SnowballC")
 # install.packages("wordcloud")
 # install.packages("RColorBrewer")
+# install.packages("readr")
+# install.packages("tidyverse")
 library(tidyverse)
 library(tm)
 library(stringi)
@@ -40,6 +42,7 @@ library(SnowballC)
 library(wordcloud)
 library(wordcloud2)
 library(RColorBrewer)
+library(readr)
 ```
 
 
@@ -48,6 +51,7 @@ On importe ensuite les données via readr (tidyverse).
 On en profite pour supprimer les colonnes inutiles :
 
 ```{r import csv}
+
 dfBookSummaries <- read_csv("dfAllBooksSummaries2405.csv", col_types = cols(X1 = col_skip(), X2 = col_skip(), text = col_character(), collection = col_factor(levels = c("Classiques", "Documents", "Imaginaire", "Littérature", "Policier", "Thriller"))))
 ```
 
@@ -370,9 +374,12 @@ Remarque : les termes présents au moins 2 fois pourraient l'être aussi sur n c
 La fonction `removeSparseTerms` du package `tm` propose une approche similaire bien que plus boîte noire (ici on ne filtre pas de cette manière, le code est laissé à titre informatif) :
 
 ```{r réduction de la dimension par suppression des termes sparse}
-dtmTfIdf <- removeSparseTerms(dtmTfIdf, 0.97)
+#dtmTfIdf2 <- dtmTfIdf
+#dtmTf2 <- dtmTf
+
+dtmTfIdf <- removeSparseTerms(dtmTfIdf, 0.98)
 dtmTfIdf
-dtmTf <- removeSparseTerms(dtmTf, 0.97)
+dtmTf <- removeSparseTerms(dtmTf, 0.98)
 dtmTf
 
 dtmTf_m <- as.matrix(dtmTf)
@@ -464,7 +471,9 @@ library(skmeans)
 ## On partitionne en 5 clusters.
 rowTotals <- apply(dtmTf_m , 1, sum) # calcule la somme des termes dans chaque document
 nonEmptyDtmTf_m   <- dtmTf_m[rowTotals> 0, ] # retire les documents vides, il peut arriver après nettoyage de se retrouver avec des documents vides, par exemple si on travaille sur des documents très courts type tweet
+
 dim(nonEmptyDtmTf_m)
+
 sk <- skmeans(x = nonEmptyDtmTf_m, 4)
 ## On regarde la répartition dans les clusters
 table(sk$cluster)/sum(table(sk$cluster))
