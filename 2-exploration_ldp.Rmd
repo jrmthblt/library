@@ -377,9 +377,9 @@ La fonction `removeSparseTerms` du package `tm` propose une approche similaire b
 #dtmTfIdf2 <- dtmTfIdf
 #dtmTf2 <- dtmTf
 
-dtmTfIdf <- removeSparseTerms(dtmTfIdf, 0.98)
+dtmTfIdf <- removeSparseTerms(dtmTfIdf, 0.97)
 dtmTfIdf
-dtmTf <- removeSparseTerms(dtmTf, 0.98)
+dtmTf <- removeSparseTerms(dtmTf, 0.97)
 dtmTf
 
 dtmTf_m <- as.matrix(dtmTf)
@@ -403,7 +403,7 @@ dim(dtmTfIdf_m)
 ```
 
 On lance ensuite le traitement NZV :
-```{r réduction par suppression des variables portant peu d'informations}
+```{r réduction par suppression des variables avec peu de variance}
 library(caret)
 
 nzv <- nearZeroVar(dtmTf_m)
