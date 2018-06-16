@@ -51,36 +51,39 @@ docs.pred2 <- tm_map(docs.pred, content_transformer(accent))
 #Remove URLs
 removeURL <- content_transformer(function(x) gsub("(f|ht)tp(s?)://\\S+", "", x, perl=T, ignore.case = T))
 docs.pred2 <- tm_map(docs.pred2, removeURL)
-removeURL2 <- content_transformer(function(x) gsub("www\.\\S+", "", x, perl=T, ignore.case = T))
+removeURL2 <- content_transformer(function(x) gsub("www\\.\\S+", "", x, perl=T, ignore.case = T))
 docs.pred2 <- tm_map(docs.pred2, removeURL2)
 
 #Put in lowercase
 docs.pred2 <- tm_map(docs.pred2, content_transformer(tolower))
 
-#Stopwords removal
-stopwords_fr <- sapply(stopwords("french"),accent)
-
 #Remove numbers and punctuation
 docs.pred2 <- tm_map(docs.pred2, content_transformer(gsub), pattern = "[^a-zA-Z]", replacement = " ")
 
+#Stopwords removal
+stopwords_fr <- sapply(stopwords("french"),accent)
+stopwords_jlt <- unlist(read.csv(file='jltStopwords_UTF8.txt', encoding = 'UTF-8', stringsAsFactors = F))
+stopwords_jlt <- unique(sapply(stopwords_jlt, accent))
 
-stopwords_fr2 <- union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
-                                     'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
-                                     'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
-                                     'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
-                                     'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
-                                     'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
-                                     'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
-                                     'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
-                                     'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
-                                     'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
-                                     'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
-                                     'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
-                                     'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
-                                     'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
-                                     'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
-))
+stopwords_fr2 <- union(stopwords_fr, stopwords_jlt)
+stopwords_fr2 <- union(stopwords_fr2,
+                       c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+                         'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
+                         'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
+                         'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                         'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
+                         'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
+                         'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                         'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
+                         'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
+                         'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
+                         'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
+                         'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
+                         'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
+                         'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
+                         'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                         'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
+                       ))
 
 docs.pred2 <- tm_map(docs.pred2, content_transformer(removeWords), stopwords_fr2)
 
@@ -224,6 +227,7 @@ library(tictoc)
 #tic()
 caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'raw')
 caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'prob')
+
 prediction1 <- caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'raw')
 
 confmat1 <- confusionMatrix(prediction1, factor(df.pred$Categorie, levels = levels(prediction1)))
