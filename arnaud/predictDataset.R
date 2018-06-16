@@ -51,36 +51,39 @@ docs.pred2 <- tm_map(docs.pred, content_transformer(accent))
 #Remove URLs
 removeURL <- content_transformer(function(x) gsub("(f|ht)tp(s?)://\\S+", "", x, perl=T, ignore.case = T))
 docs.pred2 <- tm_map(docs.pred2, removeURL)
-removeURL2 <- content_transformer(function(x) gsub("www\.\\S+", "", x, perl=T, ignore.case = T))
+removeURL2 <- content_transformer(function(x) gsub("www\\.\\S+", "", x, perl=T, ignore.case = T))
 docs.pred2 <- tm_map(docs.pred2, removeURL2)
 
 #Put in lowercase
 docs.pred2 <- tm_map(docs.pred2, content_transformer(tolower))
 
-#Stopwords removal
-stopwords_fr <- sapply(stopwords("french"),accent)
-
 #Remove numbers and punctuation
 docs.pred2 <- tm_map(docs.pred2, content_transformer(gsub), pattern = "[^a-zA-Z]", replacement = " ")
 
+#Stopwords removal
+stopwords_fr <- sapply(stopwords("french"),accent)
+stopwords_jlt <- unlist(read.csv(file='jltStopwords_UTF8.txt', encoding = 'UTF-8', stringsAsFactors = F))
+stopwords_jlt <- unique(sapply(stopwords_jlt, accent))
 
-stopwords_fr2 <- union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
-                                     'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
-                                     'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
-                                     'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
-                                     'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
-                                     'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
-                                     'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
-                                     'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
-                                     'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
-                                     'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
-                                     'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
-                                     'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
-                                     'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
-                                     'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
-                                     'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
-))
+stopwords_fr2 <- union(stopwords_fr, stopwords_jlt)
+stopwords_fr2 <- union(stopwords_fr2,
+                       c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+                         'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
+                         'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
+                         'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                         'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
+                         'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
+                         'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                         'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
+                         'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
+                         'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
+                         'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
+                         'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
+                         'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
+                         'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
+                         'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                         'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
+                       ))
 
 docs.pred2 <- tm_map(docs.pred2, content_transformer(removeWords), stopwords_fr2)
 
@@ -151,12 +154,22 @@ words.pred <- Terms(dtm.pred.tf.nosparse)
 words.used <- intersect(words.train, words.pred)
 
 dtm.pred.used <- dtm.pred.tf.nosparse[,words.used]
+df.pred.used <- as.data.frame(as.matrix(dtm.pred.used))
+df.merge <- as.data.frame(matrix(data = 0, nrow(dtm.pred.used), ncol(df.dtm)))
+names(df.merge) <- words.train
+#df.merge
+#dim(df.merge)
+#dim(dtm.pred.used)
 
-#View(as.data.frame(as.matrix(dtm.pred.used)))
+for (i in words.used) {
+  df.merge[, i] <- df.pred.used[, i]
+}
 
-wc.train <- apply(df.dtm, 2, FUN = function(x) length(x[x != 0])) #Find the frequency of words in train corpus
+#View(df.merge)
+
+wc.train <- apply(df.dtm, 2, FUN = function(x) length(x[x != 0])) # Find the frequency of words in train corpus
 totalDocs.train <- nrow(df.dtm)
-wc.bydoc.pred <- apply(as.matrix(dtm.pred.used), 1, FUN = function(x) length(x[x != 0]))
+wc.bydoc.pred <- apply(as.matrix(dtm.pred.used), 1, FUN = function(x) length(x[x != 0])) # Normalization term
 
 fun.mytfidf <- function(x,y,yy,z) {
   # http://www.tfidf.com/
@@ -171,34 +184,27 @@ fun.mytfidf <- function(x,y,yy,z) {
   return(tfidf.x)
 }
 
-
-### TODO : calcul TFIDF par rapport avec jeu de données d'entrainement
-### TODO : élagage / merge des mots
+### Calcul TFIDF par rapport avec jeu de données d'entrainement
+### Elagage / merge des mots
 ### https://stackoverflow.com/questions/10956873/how-to-print-the-name-of-current-row-when-using-apply-in-r
+### https://stackoverflow.com/questions/15287038/r-apply-on-a-matrix-a-function-of-columns-and-row-index
+### https://stackoverflow.com/questions/2545879/row-column-counter-in-apply-functions
+
+
+for (i in words.used) {
+  #print(i)
+  for (j in 1:length(df.merge[, i])) {
+    if (df.merge[j,i] != 0) {
+      val <- fun.mytfidf(df.merge[j, i], wc.bydoc.pred[j], wc.train[i], nrow(df.dtm))
+      df.merge[j,i] <- val
+    }
+  }
+}
+
+#View(df.merge)
 
 
 # Preparation de la dtm en vue de la classification supervisée
-# Obtention de la catégorie présumée pour chaque enregistrement present dans la DTM 
-
-row2keep2 <- (rowTotals2 > 0)
-documents3 <- documents2[row2keep2]
-ids <- as.numeric(meta(documents3,'id'))
-
-
-
-set.seed(123)
-
-
-
-### it seems the optimal number of cluster is more or less the number of remaining words in DTM... ###
-### Instability of the clustering with many tries ###
-
-
-
-### Predictions
-# rf: https://stackoverflow.com/questions/47521841/r-randomforest-caret-seeing-predictions
-# rf: http://rstudio-pubs-static.s3.amazonaws.com/27155_519e7e23601048d08eb8a74d2a01ad2f.html
-# nnet : 
 
 
 #install.packages('caret', dependencies = c('Depends','Imports'))
@@ -216,17 +222,33 @@ library(doParallel)
 library(tictoc)
 
 
-
 ## Random Forest
 
-tic()
-toc()
+#tic()
+caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'raw')
+caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'prob')
+
+prediction1 <- caret::predict.train(rf_gridsearch, newdata = df.merge, type = 'raw')
+
+confmat1 <- confusionMatrix(prediction1, factor(df.pred$Categorie, levels = levels(prediction1)))
+confmat1
+
+#toc()
 
 
 ## Multinomial logistic regression w/ nnet (neural network)
 
-tic()
-toc()
+#tic()
+caret::predict.train(nnetFit, newdata = df.merge, type ='raw')
+caret::predict.train(nnetFit, newdata = df.merge, type ='prob')
+
+prediction2 <- caret::predict.train(nnetFit, newdata = df.merge, type = 'raw')
+
+confmat2 <- confusionMatrix(prediction2, factor(df.pred$Categorie, levels = levels(prediction2)))
+confmat2
+
+#toc()
+
 
 
 

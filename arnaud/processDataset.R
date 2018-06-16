@@ -21,7 +21,7 @@ library(wordcloud)
 library('SnowballC')
 
 #install.packages('skmeans')
-library(skmeans)
+#library(skmeans)
 library(cluster)
 #install.packages('proxy')
 library(proxy)
@@ -62,37 +62,40 @@ documents <- tm_map(documents, content_transformer(accent))
 #Remove URLs
 removeURL <- content_transformer(function(x) gsub("(f|ht)tp(s?)://\\S+", "", x, perl=T, ignore.case = T))
 documents <- tm_map(documents, removeURL)
-removeURL2 <- content_transformer(function(x) gsub("www\.\\S+", "", x, perl=T, ignore.case = T))
+removeURL2 <- content_transformer(function(x) gsub("www\\.\\S+", "", x, perl=T, ignore.case = T))
 documents <- tm_map(documents, removeURL2)
 
 #Put in lowercase
 documents <- tm_map(documents, content_transformer(tolower))
 
-#Stopwords removal
-#stopwords_fr <- stopwords("french")
-stopwords_fr <- sapply(stopwords("french"),accent)
-
 #Remove numbers and punctuation
 documents <- tm_map(documents, content_transformer(gsub), pattern = "[^a-zA-Z]", replacement = " ")
 
+#Stopwords removal
+#stopwords_fr <- stopwords("french")
+stopwords_fr <- sapply(stopwords("french"),accent)
+stopwords_jlt <- unlist(read.csv(file='jltStopwords_UTF8.txt', encoding = 'UTF-8', stringsAsFactors = F))
+stopwords_jlt <- unique(sapply(stopwords_jlt, accent))
 
-stopwords_fr2 = union(stopwords_fr,c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
-                                     'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
-                                     'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
-                                     'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
-                                     'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
-                                     'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
-                                     'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
-                                     'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
-                                     'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
-                                     'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
-                                     'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
-                                     'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
-                                     'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
-                                     'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
-                                     'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
-                                     'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
-))
+stopwords_fr2 <- union(stopwords_fr, stopwords_jlt)
+stopwords_fr2 <- union(stopwords_fr2,
+                       c('a','h','lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche',
+                         'oui','non','apres','selon','comme','alors','tout','tous','faire','depuis','encore',
+                         'peut','doit','mieux','un','deux','trois','quatre','cinq','six','sept','huit','neuf','dix',
+                         'tant','ainsi','livre','livres','oeuvre','aussi','fait','entre','plus','moins','toute','donc',
+                         'toutes','auteur','bien','roman','comment','petit','petite','grand','grande','ceux','lorsque',
+                         'etc','annee','aujourd','hui','tres','seul','seule','autre','autres','celle','donc','dont',
+                         'donne','sous','sur','jusqu','quelqu','nombreux','propose','part','parti','partir','jamais',
+                         'car','grands','grandes','question','fois','france','travers','jour','avant','apres','lorsqu',
+                         'il','elle','ils','elles','tel','tels','telle','telles','quelque','quelques','toujours',
+                         'souvent','chez','celui','chaque','mis','mise','texte','moindre','peu','ouvrage','ouvrages',
+                         'rien','pourtant','texte','the','certains','certaines','lecteur','vers','parfois','grace','aime',
+                         'aimer','enfin','chacun','chacune','pourquoi','propos','plusieurs','avoir','etre','contre',
+                         'mais','faut','puis','notre','votre','seule','seules','seulement','note','noter','edition',
+                         'les','d','l','c','resume','science-fiction','ou','tome','serie','roman','romans','collection',
+                         'des','livre','gerard','dirigee','prix','king','auteur','stephen','histoire','etait','meme',
+                         'recueil','hugo','quinze','chose','jean','nombreuses','trop','peuvent','mot','mots'
+                       ))
 
 documents <- tm_map(documents, content_transformer(removeWords), stopwords_fr2)
 
@@ -143,8 +146,8 @@ freqr[tail(ord,100L)]
 # 'Bounds' (limites haute et basse) sur la répétition des mots
 # Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
 
-dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
-dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTf(x)))
+dtm.tfidf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,270)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
+dtm.tf <- DocumentTermMatrix(documents2, control=list(bounds = list(global = c(1,270)), weighting = function(x) weightTf(x)))
 
 
 dtm.tfidf.nosparse <- removeSparseTerms(dtm.tfidf, 0.98)
@@ -349,7 +352,7 @@ for(i in 1:30) seeds[[i]]<- sample.int(n=1000, 11)
 seeds[[31]]<-sample.int(1000, 1)
 
 
-# BASELINE : Create model with default parameters - mtry <- sqrt(ncol(x))
+# BASELINE : Create model with default parameters - mtry <- sqrt(ncol(df_used_class))
 control <- trainControl(method="repeatedcv",
                         number=10,
                         repeats=3,
@@ -377,7 +380,7 @@ toc()
 print(rf_default)
 
 
-# Variation mtry de 1 à 15
+# Variation mtry de 2 à 16
 set.seed(123)
 seeds2 <- vector(mode = "list", length = 31)
 for(i in 1:30) seeds2[[i]]<- sample.int(n=1000, 25)
@@ -391,12 +394,13 @@ control <- trainControl(method="repeatedcv",
                         search="grid",
                         returnData = FALSE,
                         seeds=seeds2,
+                        selectionFunction = "oneSE", # good metric and AND less model complexity 
                         summaryFunction = multiClassSummary,
                         allowParallel = TRUE,
                         verboseIter = TRUE
 )
 
-tunegrid <- expand.grid(.mtry=c(1:15))
+tunegrid <- expand.grid(.mtry=c(2:16))
 
 tic()
 rf_gridsearch <- train(CLASS~.,
@@ -459,7 +463,7 @@ parallel::stopCluster(cl)
 
 
 ### Enregistrement des modèles
-# Best rf : mtry = 13
+# Best rf : mtry = 6 (oneSE)
 # Best multinom : decay = 0.1
 save(file='models', list=c('rf_gridsearch','nnetFit'))
 
