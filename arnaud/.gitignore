@@ -1,5 +1,5 @@
 .Rproj.user/
 .Rprofile
 .Rhistory
-.RData
+.RData*
 log.txt
