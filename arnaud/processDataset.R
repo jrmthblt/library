@@ -52,8 +52,8 @@ names(dataset_df2)[2]<-"text"
 #Initial corpus
 #documents <- Corpus(VectorSource(dataset_df$volumeInfo.description))
 
-documents <- Corpus(DataframeSource(dataset_df2))
-docids <- meta(documents,'id') # Backup doc ids to avoid losses during tm_map operations
+documents <- VCorpus(DataframeSource(dataset_df2))
+docids <- unname(unlist(meta(documents,'id'))) # Backup doc ids to avoid losses during tm_map operations
 
 #Remove chars with accents
 accent <- function(x) stri_trans_general(x, "Latin-ASCII") # cela signifie qu'on remplace un caractère encodé en Latin1 par son équivalent le plus proche en ASCII, il n'y a par exemple pas de caractères accentués en ASCII
@@ -108,7 +108,6 @@ documents <- tm_map(documents, stemDocument, "french")
 documents <- tm_map(documents, stripWhitespace) # n'enleve pas le tout premier espace
 documents <- tm_map(documents, content_transformer(gsub), pattern = "^\\s+", replacement = "")
 
-
 # Restore the corpus - Fix metadata corruption of the corpus due to tm_map
 a <- list()
 for (i in seq_along(documents)) {
@@ -117,7 +116,7 @@ for (i in seq_along(documents)) {
 df <- data.frame(doc_id = docids, text = matrix(NA, nrow = length(a), ncol = 1), stringsAsFactors = FALSE)
 df$text <- unlist(a)
 
-documents <- Corpus(DataframeSource(df)) #This action restores the corpus.
+documents <- VCorpus(DataframeSource(df)) #This action restores the corpus.
 rm(list = c('a','df'))
 
 
@@ -302,7 +301,7 @@ plot(som_model,
 ### Classification supervisée
 
 #install.packages('caret', dependencies = c('Depends','Imports'))
-#install.packages("MLmetrics")
+#install.packages('MLmetrics')
 #install.packages('randomForest')
 #install.packages('nnet')
 #install.packages('doParallel')
@@ -393,9 +392,6 @@ control <- trainControl(method="repeatedcv",
                         repeats=3,
                         search="grid",
                         returnData = FALSE,
-                        seeds=seeds2,
-                        selectionFunction = "oneSE", # good metric and AND less model complexity 
-                        summaryFunction = multiClassSummary,
                         allowParallel = TRUE,
                         verboseIter = TRUE
 )
@@ -416,7 +412,7 @@ print(rf_gridsearch)
 plot(rf_gridsearch)
 
 
-## Multinomial logistic regression w/ nnet (neural network)
+## Penalized multinomial logistic regression w/ nnet (neural network)
 ## https://stackoverflow.com/questions/42417948/how-to-use-size-and-decay-in-nnet
 
 set.seed(123)

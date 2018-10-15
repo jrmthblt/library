@@ -40,8 +40,8 @@ print(nnetFit)
 names(df.pred)[1]<-"doc_id"
 names(df.pred)[2]<-"text"
 
-docs.pred <- Corpus(DataframeSource(df.pred))
-docids.pred <- meta(docs.pred,'id') # Backup doc ids to avoid losses during tm_map operations
+docs.pred <- VCorpus(DataframeSource(df.pred))
+docids.pred <- unname(unlist(meta(docs.pred,'id'))) # Backup doc ids to avoid losses during tm_map operations (workaround before tm 0.7-3.2)
 
 
 #Remove chars with accents
@@ -105,17 +105,16 @@ for (i in seq_along(docs.pred2)) {
 df <- data.frame(doc_id = docids.pred, text = matrix(NA, nrow = length(a), ncol = 1), stringsAsFactors = FALSE)
 df$text <- unlist(a)
 
-docs.pred2 <- Corpus(DataframeSource(df)) #This action restores the corpus.
+docs.pred2 <- VCorpus(DataframeSource(df)) #This action restores the corpus.
 rm(list = c('a','df'))
 
 
-#DTM
+### DTM
+# 'Bounds' (limites haute et basse) sur la répétition des mots
+# Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
 
 #dtm.pred.tfidf <- DocumentTermMatrix(docs.pred2.bis, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTfIdf(x, normalize = TRUE)))
 dtm.pred.tf <- DocumentTermMatrix(docs.pred2, control=list(bounds = list(global = c(1,260)), weighting = function(x) weightTf(x)))
-
-# 'Bounds' (limites haute et basse) sur la répétition des mots
-# Ex. dtm <-DocumentTermMatrix(docs, control=list(bounds = list(global = c(1,300))))
 
 
 #Terms frequency statistics
@@ -155,7 +154,7 @@ words.used <- intersect(words.train, words.pred)
 
 dtm.pred.used <- dtm.pred.tf.nosparse[,words.used]
 df.pred.used <- as.data.frame(as.matrix(dtm.pred.used))
-df.merge <- as.data.frame(matrix(data = 0, nrow(dtm.pred.used), ncol(df.dtm)))
+df.merge <- as.data.frame(matrix(data = 0L, nrow(dtm.pred.used), ncol(df.dtm)))
 names(df.merge) <- words.train
 #df.merge
 #dim(df.merge)
@@ -208,7 +207,7 @@ for (i in words.used) {
 
 
 #install.packages('caret', dependencies = c('Depends','Imports'))
-#install.packages("MLmetrics")
+#install.packages('MLmetrics')
 #install.packages('randomForest')
 #install.packages('nnet')
 #install.packages('doParallel')
@@ -236,7 +235,7 @@ confmat1
 #toc()
 
 
-## Multinomial logistic regression w/ nnet (neural network)
+## Penalized multinomial logistic regression w/ nnet (neural network)
 
 #tic()
 caret::predict.train(nnetFit, newdata = df.merge, type ='raw')
